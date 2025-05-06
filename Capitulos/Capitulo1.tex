@@ -1,122 +1,204 @@
 \chapter{MARCO TEÓRICO}
 \section{Antecedentes}
 \subsection{Antecedentes Internacionales}
-\textcite{Terzi2025} llevaron a cabo un estudio en la cuenca del río Ceyhan (CRB), situada en el sur de Turquía, una región particularmente expuesta a la variabilidad climática y con alta dependencia de los recursos hídricos para la agricultura, la industria y el consumo urbano. La investigación propuso una metodología innovadora para el cálculo del Índice Multivariado Estandarizado de Sequía (MSDI), con el fin de mejorar la detección y evaluación de sequías meteorológicas e hidrológicas de forma integrada. El enfoque se basó en el uso dinámico de cópulas estadísticas, seleccionadas mensualmente según criterios de ajuste óptimo (AIC y BIC), permitiendo modelar la dependencia entre variables hidrometeorológicas con sensibilidad estacional.
-
-Los datos utilizados abarcaron series mensuales de precipitación y caudal entre 1989 y 2011, recopilados en cuatro pares de estaciones meteorológicas e hidrológicas. La metodología comparó el rendimiento del MSDI frente a índices tradicionales como el SPI y el SSFI, evidenciando diferencias sustanciales. Mientras los índices univariados identificaron solo cuatro eventos principales de sequía, el MSDI detectó ocho, lo que demuestra su capacidad para reconocer eventos combinados y capturar condiciones de sequía simultáneas que de otro modo podrían pasar desapercibidas. Particularmente, la sequía del periodo 2007–2009 fue clasificada como la más severa por el MSDI en tres de los cuatro pares de estaciones, superando la capacidad de los índices clásicos para reflejar su intensidad real. Además, varios episodios que fueron considerados de severidad moderada por SPI o SSFI fueron reclasificados como severos al integrar ambas variables en el MSDI.
-
-Las conclusiones del estudio resaltan que el uso del MSDI con selección mensual de cópulas incrementa significativamente la precisión y sensibilidad del monitoreo de sequías. Esta herramienta proporciona una representación más realista y robusta de las condiciones hidrometeorológicas extremas, facilitando la formulación de estrategias de gestión hídrica y planificación de recursos en territorios complejos como la CRB. La investigación sugiere que este enfoque es transferible a otras regiones con similar variabilidad climática y dependencia hídrica, y plantea como línea futura la incorporación de indicadores agrícolas para expandir el análisis hacia una perspectiva aún más integral.
-
-\begin{center}
-    \begin{tikzpicture}[node distance=1.5cm]
-    
-    \node (start) [startstop] {Inicio: Construcción del MSDI};
-    \node (data) [process, below of=start] {Datos mensuales de precipitación y caudal (1989--2011)};
-    \node (pair) [process, below of=data] {Formación de pares estación meteorológica/hidrológica (P1--P4)};
-    \node (clean) [process, below of=pair] {Tratamiento de datos faltantes (LSTM, CNN)};
-    \node (group) [process, below of=clean] {Agrupación por mes (estacionalidad)};
-    \node (copulafit) [process, below of=group] {Ajuste de cópulas por mes y escala (AIC/BIC)};
-    \node (transform) [process, below of=copulafit] {Cálculo del MSDI a partir de la función conjunta};
-    \node (compare) [process, below of=transform] {Comparación MSDI vs SPI/SSFI};
-    \node (analysis) [process, below of=compare] {Evaluación de duración, severidad e intensidad (Yevjevich)};
-    \node (end) [startstop, below of=analysis] {Conclusiones sobre desempeño multivariado};
-    
-    \draw [arrow] (start) -- (data);
-    \draw [arrow] (data) -- (pair);
-    \draw [arrow] (pair) -- (clean);
-    \draw [arrow] (clean) -- (group);
-    \draw [arrow] (group) -- (copulafit);
-    \draw [arrow] (copulafit) -- (transform);
-    \draw [arrow] (transform) -- (compare);
-    \draw [arrow] (compare) -- (analysis);
-    \draw [arrow] (analysis) -- (end);
-    
-    \end{tikzpicture}
-    \end{center}
-    
-
-\textcite{Samadian2024} llevaron a cabo una investigación titulada \textit{´´Joint analysis of drought affected by climate change in Zarinehrood watershed, Iran, using copula functions"}, centrada en la cuenca del río Zarinehrood, una subcuenca esencial del lago Urmia ubicada en el noroeste de Irán. El objetivo del estudio fue evaluar la frecuencia conjunta de características de sequía meteorológica —específicamente su duración y severidad— tanto en el pasado como en escenarios climáticos futuros, mediante el uso de funciones cópula. La investigación, de naturaleza cuantitativa y no experimental, se apoyó en análisis estadístico multivariado y simulaciones climáticas derivadas del modelo CanESM2 bajo los escenarios RCP2.6, RCP4.5 y RCP8.5, abarcando el periodo 2020–2100.
-
-Se empleó el Índice de Precipitación Estandarizado (SPI) en escalas de 6, 12 y 24 meses, calculado a partir de datos históricos (1959–2019) obtenidos de tres estaciones meteorológicas: Miandoab, Saqez y Tekab. Las variables de duración (Dd) y severidad (Ds) de la sequía se analizaron conjuntamente utilizando cópulas bivariadas, entre las que destacaron las familias Frank y Galambos como las más representativas, seleccionadas mediante criterios de ajuste como RMSE y NSE.
-
-Los resultados en el periodo base revelaron que alrededor del 45\% de los meses presentaron déficit de precipitación (SPI < 0), y aproximadamente el 8\% calificaron como sequías severas (SPI < -1.5). En los análisis futuros, el escenario RCP8.5 mostró una reducción proyectada de precipitación entre 36\% y 42\%, junto con un incremento significativo en la probabilidad de eventos de sequía más prolongados e intensos en comparación con el escenario optimista RCP2.6. Por ejemplo, para un evento con severidad SPI = -1, la duración esperada en el escenario RCP2.6 fue de aproximadamente 5.5 a 6.7 meses, mientras que en RCP8.5 aumentó hasta 8 meses en las mismas condiciones de probabilidad.
-
-La investigación concluyó que el análisis conjunto de duración y severidad mediante cópulas ofrece una representación más realista del riesgo de sequía que los enfoques univariados tradicionales. Además, los resultados sugieren que, de mantenerse la tendencia actual de emisiones sin estrategias efectivas de mitigación, la región podría enfrentar sequías más frecuentes, extensas y severas. Esta metodología resulta valiosa para fundamentar políticas de planificación hídrica adaptativa, especialmente en regiones vulnerables como la cuenca del lago Urmia.
 
 
-\begin{center}
-    \begin{tikzpicture}[node distance=1.7cm]
-    
-    \node (start) [startstop] {Inicio: Evaluación de sequía bajo cambio climático};
-    \node (data) [process, below of=start] {Datos históricos SPI (1959--2019)};
-    \node (explore) [process, below of=data] {Análisis exploratorio y selección de estaciones};
-    \node (spi) [process, below of=explore] {Cálculo del SPI (6, 12, 24 meses)};
-    \node (char) [process, below of=spi] {Extracción de duración (Dd) y severidad (Ds)};
-    \node (margins) [process, below of=char] {Ajuste de distribuciones marginales};
-    \node (copulas) [process, below of=margins] {Evaluación de cópulas (Frank, Galambos)};
-    \node (validation) [process, below of=copulas] {Validación por RMSE y NSE};
-    \node (rcps) [process, below of=validation] {Proyecciones climáticas CanESM2 (RCP2.6, 4.5, 8.5)};
-    \node (joint) [process, below of=rcps] {Estimación futura de distribución conjunta Dd--Ds};
-    \node (end) [startstop, below of=joint] {Comparación de escenarios y recomendaciones};
-    
-    % Flechas
-    \draw [arrow] (start) -- (data);
-    \draw [arrow] (data) -- (explore);
-    \draw [arrow] (explore) -- (spi);
-    \draw [arrow] (spi) -- (char);
-    \draw [arrow] (char) -- (margins);
-    \draw [arrow] (margins) -- (copulas);
-    \draw [arrow] (copulas) -- (validation);
-    \draw [arrow] (validation) -- (rcps);
-    \draw [arrow] (rcps) -- (joint);
-    \draw [arrow] (joint) -- (end);
-    
-    \end{tikzpicture}
-    \end{center}
+En el estudio de \textcite{Terzi2025}, cuya investigación se titula \textit{“Advanced drought analysis using a novel copula-based multivariate index: a case study of the Ceyhan River Basin”}, se planteó como objetivo desarrollar una metodología innovadora para calcular el Índice Estandarizado Multivariado de Sequía (MSDI) utilizando funciones cópula ajustadas a la estacionalidad de los datos, y evaluar su eficacia comparativa frente a índices univariados como el SPI y SSFI en la cuenca del río Ceyhan (CRB), en Turquía.
+
+La metodología consistió en:
+\begin{itemize}
+    \item Se analizaron datos hidrometeorológicos históricos de cuatro estaciones meteorológicas e hidrológicas emparejadas por proximidad geográfica.
+    \item El rango temporal abarcó desde 1989 hasta 2011.
+    \item Las variables consideradas fueron la precipitación y el caudal fluvial; aunque no incluyeron directamente temperatura, humedad relativa o evapotranspiración, la metodología es extensible a estos parámetros.
+    \item Se aplicaron pruebas de homogeneidad (SNHT, Buishand Range y Q test) y técnicas de imputación de datos mediante redes neuronales (LSTM, CNN, FNN) con $R^2 > 0.80$.
+    \item Los análisis estadísticos incluyeron ajuste de distribuciones marginales (Gamma y Lognormal), pruebas de bondad de ajuste (Kolmogorov-Smirnov) y estimación de cópulas bivariadas (Clayton, Frank, Gumbel, Gaussian, Student-t).
+    \item Para seleccionar la cópula más adecuada se emplearon los criterios AIC y BIC en cada subgrupo mensual de datos, considerando la estacionalidad.
+    \item Se utilizaron tanto MSDI paramétrico como no paramétrico (MSDIe), además del SPI y SSFI.
+    \item La validación incluyó correlaciones cruzadas entre índices, comparación temporal y clasificación de eventos de sequía.
+\end{itemize}
+
+Los principales resultados obtenidos fueron que el MSDI mejoró la detección de eventos de sequía en comparación con los índices univariados, identificando eventos concurrentes meteorológicos e hidrológicos que estos últimos no detectaron. Se observaron correlaciones superiores al 99\% entre MSDI y MSDIe, aunque el MSDI ofreció una representación más precisa de la severidad de las sequías, especialmente en los extremos de la distribución.
+
+Se concluyó que el uso de múltiples cópulas seleccionadas según la estacionalidad de los datos mejora sustancialmente la precisión del MSDI. Esta aproximación permite una evaluación más integrada de las sequías, con ventajas claras para la planificación hídrica, especialmente en regiones con alta variabilidad estacional como la cuenca del río Ceyhan. Este enfoque es directamente comparable y adaptable a regiones como el sur del Perú, donde se dispone de datos de precipitación, temperatura, humedad relativa, viento y evapotranspiración, lo que lo convierte en una base metodológica relevante para el modelado de sequías multivariadas en el presente estudio doctoral.
 
 
-\textcite{Esit2023} realizaron un estudio titulado \textit{´´Copula-based bivariate drought severity and duration frequency analysis considering spatial–temporal variability in the Ceyhan Basin, Turkey"}, centrado en la cuenca del río Ceyhan, una región del sureste de Turquía caracterizada por un clima mediterráneo con marcada variabilidad espacial y altitudinal. El propósito de la investigación fue evaluar la frecuencia conjunta de la duración y la severidad de las sequías meteorológicas, utilizando para ello funciones de cópulas bivariadas que permitieran reflejar la complejidad estadística de estos eventos, así como sus variaciones según la altitud (zonas altas, medias y bajas de la cuenca).
+En el estudio de \textcite{Esit2023}, cuya investigación se titula \textit{´´Copula-based bivariate drought severity and duration frequency analysis considering spatial temporal variability in the Ceyhan Basin, Turkey”}, se planteó como objetivo principal modelar conjuntamente la duración y severidad de eventos de sequía utilizando cópulas bivariadas, incorporando la variabilidad espacio-temporal y elevacional de la cuenca del río Ceyhan en Turquía.
 
-El estudio adoptó un enfoque cuantitativo, de tipo básico y diseño no experimental, basado en el análisis estadístico multivariado. Se utilizaron registros mensuales de precipitación procedentes de 24 estaciones meteorológicas distribuidas estratégicamente a lo largo de la cuenca, seleccionadas mediante un muestreo no probabilístico basado en criterios geográficos y de altitud. Para la identificación de eventos de sequía se empleó el Índice de Precipitación Estandarizado (SPI) a una escala temporal de 3 meses (SPI-3), calculando como atributos principales la \textit{duración} —número de meses consecutivos con valores SPI negativos— y la \textit{severidad} —suma acumulada de dichos valores durante cada evento—.
+La metodología consistió en:
+\begin{itemize}
+    \item Se analizaron datos de 24 estaciones meteorológicas distribuidas en diferentes niveles de elevación (alta, media y baja) en la cuenca.
+    \item El rango temporal de los datos abarcó desde 1963 hasta 2016, variando ligeramente entre estaciones.
+    \item La variable considerada fue la precipitación mensual, y se utilizó el índice SPI a escala de 3 meses para definir eventos de sequía.
+    \item Se aplicaron pruebas de homogeneidad (Wald-Wolfowitz y Wallis-Moore) y de tendencia (Mann–Kendall y Spearman Rho) para evaluar la estacionariedad y aleatoriedad de las series.
+    \item Se ajustaron distribuciones marginales (Gamma, Weibull, Log-normal) a las series de duración (DD) y severidad (DS), y se seleccionaron con base en criterios de bondad de ajuste (Kolmogorov–Smirnov, Anderson–Darling, AIC y BIC).
+    \item Se evaluaron 10 cópulas bivariadas (Gaussian, t, Clayton, Frank, Gumbel, Joe, BB1, BB6, BB7, BB8) considerando la dependencia en colas superiores (tail dependence).
+    \item El ajuste óptimo se determinó mediante log-verosimilitud, AIC, BIC y análisis de dependencia con el coeficiente de Kendall y estimadores CFG.
+\end{itemize}
 
-En la etapa preliminar, se aplicaron las pruebas de Mann–Kendall y Spearman Rho para verificar la homogeneidad y la estacionariedad de las series. Luego, se ajustaron distribuciones marginales para las variables de interés (duración y severidad), seleccionando aquellas con mejor desempeño según criterios de bondad de ajuste (AIC, BIC, log-verosimilitud), destacándose las distribuciones Weibull, Gamma y Log-normal como las más adecuadas según la estación y la altitud correspondiente.
+Los principales resultados obtenidos mostraron que las cópulas BB1 y Gumbel ofrecieron el mejor ajuste en la mayoría de estaciones, permitiendo estimar los períodos de retorno conjuntos (TDS y T`DS) para diferentes escenarios de sequía. Por ejemplo, en una estación de elevación media, para una duración de sequía de 11.9 meses y severidad de 16.63, el período de retorno conjunto TDS fue de 137.9 años.
 
-Posteriormente, se evaluaron diez familias de cópulas bivariadas —entre ellas Gumbel, Clayton, Frank, BB1, BB6 y BB7— para modelar la dependencia entre las variables. La elección de la mejor cópula para cada estación se basó en criterios de ajuste estadístico y en la capacidad de capturar la dependencia en colas (tail dependence). Las cópulas Gumbel y BB1 demostraron ser las más robustas para representar la relación entre severidad y duración de las sequías.
+Se concluyó que el uso de cópulas bivariadas mejora sustancialmente la comprensión del riesgo de sequía al capturar la interdependencia entre duración y severidad, especialmente en contextos hidrológicos complejos como los asociados a gradientes altitudinales. Esta aproximación metodológica resulta relevante para la presente tesis, dado que permite extender su aplicación a variables adicionales como temperatura, humedad relativa, velocidad del viento y evapotranspiración potencial, favoreciendo una caracterización multivariada integral de las sequías en el sur del Perú.
 
-Los resultados revelaron una clara distribución espacial del riesgo: las zonas meridionales de la cuenca presentaron mayores niveles de riesgo (es decir, menores periodos de retorno conjuntos), mientras que las regiones septentrionales mostraron menor exposición. Por ejemplo, en una estación de altitud media, el periodo de retorno conjunto \( T_{DS} \) —representando sequías simultáneamente prolongadas e intensas— fue de aproximadamente 137.9 años, mientras que el periodo de retorno alternativo \( T'_{DS} \) —que representa la ocurrencia de al menos una de las dos condiciones— fue de 78.4 años, en contraste con un periodo de retorno de 100 años estimado mediante análisis univariado.
 
-En conclusión, Esit y Yuce \textcite{Esit2023} demostraron que el enfoque bivariado basado en cópulas proporciona una caracterización más completa y precisa del riesgo de sequía en comparación con los métodos tradicionales univariados. Además, permite integrar de manera explícita la influencia de la altitud en la modelación de eventos extremos, lo cual resulta especialmente útil para la toma de decisiones en planificación hídrica, agrícola y energética en zonas propensas a sequías recurrentes.
+\textcite{Samadian2024}, en su estudio titulado \textit{“Joint analysis of drought affected by climate change in Zarinehrood watershed, Iran, using copula functions”}, investigaron la frecuencia conjunta de eventos de sequía meteorológica bajo escenarios de cambio climático mediante funciones cópula en la cuenca del río Zarinehrood, Irán. Su objetivo fue modelar la duración y severidad de las sequías para los periodos histórico (1959–2019) y futuro (2020–2100), incorporando predictores climáticos CanESM2 bajo los escenarios RCP2.6 y RCP8.5.
+
+La metodología empleada comprendió:
+\begin{itemize}
+    \item Utilización de datos de precipitación mensual provenientes de tres estaciones sinópticas (Miandoab, Saqez y Tekab) durante el periodo 1959–2019.
+    \item Consideración de variables predictoras como precipitación, temperatura, humedad relativa y velocidad del viento, disponibles en los conjuntos CanESM2.
+    \item Cálculo del índice de sequía SPI en ventanas de 6, 12 y 24 meses.
+    \item Ajuste de distribuciones marginales (GEV para duración y logística para severidad), validadas con NSE > 0.93 y RMSE < 7.8.
+    \item Selección de cópulas (Frank y Galambos) evaluadas mediante NSE, RMSE y comparación con cópulas empíricas.
+    \item Simulación futura de precipitaciones mediante regresión multivariada usando 26 predictores CanESM2.
+    \item Evaluación del desempeño mediante coeficiente de determinación ($R^2 > 0.85$), NSE y RMSE.
+\end{itemize}
+
+Los principales hallazgos revelaron una disminución proyectada en la precipitación promedio bajo el escenario RCP8.5 entre 36–42\%, así como una mayor duración y severidad de las sequías. Las cópulas Frank y Galambos permitieron estimar con alta precisión las probabilidades conjuntas de duración y severidad para eventos futuros.
+
+Se concluyó que la combinación de funciones cópula con escenarios climáticos permite una caracterización probabilística más robusta de las sequías meteorológicas. Esta aproximación es extrapolable a contextos andinos como el sur del Perú, donde se dispone de variables relevantes (precipitación, temperatura, humedad relativa, velocidad del viento y evapotranspiración potencial), lo que ofrece una base metodológica adecuada para el modelado multivariado de sequías bajo escenarios climáticos.
 
 
 
-\begin{center}
-    \begin{tikzpicture}[node distance=1.5cm]
-    
-    \node (start) [startstop] {Inicio: Análisis bivariado de sequía};
-    \node (data) [process, below of=start] {Recolección de datos de 24 estaciones meteorológicas};
-    \node (spi) [process, below of=data] {Cálculo del SPI-3 (1959--2019)};
-    \node (extract) [process, below of=spi] {Extracción de duración (Dd) y severidad (Ds)};
-    \node (test) [process, below of=extract] {Pruebas de homogeneidad y estacionariedad (Mann-Kendall)};
-    \node (marginals) [process, below of=test] {Ajuste de distribuciones marginales (Weibull, Gamma, Log-normal)};
-    \node (copulas) [process, below of=marginals] {Evaluación de 10 cópulas (Gumbel, Frank, BB1...)};
-    \node (selection) [process, below of=copulas] {Selección de cópula por NSE, RMSE y ajuste de colas};
-    \node (joint) [process, below of=selection] {Análisis de frecuencia conjunta Dd--Ds};
-    \node (map) [process, below of=joint] {Identificación espacial de zonas con mayor riesgo};
-    \node (end) [startstop, below of=map] {Conclusiones y recomendaciones};
-    
-    \draw [arrow] (start) -- (data);
-    \draw [arrow] (data) -- (spi);
-    \draw [arrow] (spi) -- (extract);
-    \draw [arrow] (extract) -- (test);
-    \draw [arrow] (test) -- (marginals);
-    \draw [arrow] (marginals) -- (copulas);
-    \draw [arrow] (copulas) -- (selection);
-    \draw [arrow] (selection) -- (joint);
-    \draw [arrow] (joint) -- (map);
-    \draw [arrow] (map) -- (end);
-    
-    \end{tikzpicture}
-    \end{center}
+\textcite{Eskandaripour2025}, en su investigación titulada \textit{“Trivariate Frequency Analysis of Droughts Characteristics in Kerman City Using Asymmetric Copula Functions”}, estudiaron la caracterización conjunta de la severidad, duración y pico de eventos de sequía meteorológica en la ciudad de Kerman, Irán, mediante funciones de cópula asimétricas. Su objetivo fue establecer distribuciones trivariadas que permitan estimar periodos de retorno condicionales y conjuntos aplicables a la gestión de recursos hídricos.
+
+La metodología desarrollada comprendió:
+\begin{itemize}
+    \item Análisis de datos de precipitación mensual en 13 estaciones meteorológicas entre 1971 y 2019, destacando la estación de Kerman por su representatividad regional.
+    \item Cálculo del índice SPImod (SPI modificado), sensible a la estacionalidad, del cual se extrajeron las variables de severidad, duración y pico de sequía.
+    \item Ajuste de distribuciones marginales a cada variable (Gamma, Exponencial, Gumbel), validadas con la prueba Kolmogorov–Smirnov.
+    \item Evaluación de correlaciones entre variables mediante coeficientes de Pearson y Spearman, con valores positivos significativos (por ejemplo, 0.84 entre severidad y pico).
+    \item Aplicación del método IFM para estimar parámetros de dependencia en cópulas asimétricas anidadas.
+    \item Ajuste y comparación de 12 funciones de cópula (Clayton, Frank, Galambos, HRT, etc.) mediante RMSE, NSE y máxima verosimilitud (ML).
+    \item Cálculo de probabilidades conjuntas y periodos de retorno condicionales en configuraciones AND y OR.
+\end{itemize}
+
+Los resultados mostraron que la cópula HRT proporcionó el mejor ajuste tanto en modo bivariado como trivariado para todos los sitios, con valores de NSE superiores a 0.9 en la mayoría de las estaciones. Se identificó que las sequías más severas ocurrieron entre 2007 y 2009, mientras que la más prolongada fue de 1999 a 2003. La modelación trivariada permitió estimar con mayor precisión los riesgos combinados de eventos extremos.
+
+Se concluyó que el uso de funciones de cópula asimétricas permite una modelación más precisa de las características interdependientes de la sequía. Esta metodología es extensible a variables climáticas adicionales como la temperatura, humedad relativa, velocidad del viento y evapotranspiración potencial, por lo que ofrece una base sólida para el modelado multivariado en regiones como el sur del Perú, especialmente en contextos de cambio climático y escasez hídrica.
+
+
+En la investigación de \textcite{Menna2022}, titulada \textit{“Meteorological drought analysis using copula theory for the case of upper Tekeze river basin, Northern Ethiopia”}, se examinó la caracterización multivariada de sequías meteorológicas mediante funciones cópula, integrando los índices SPI y SSI para derivar el MSDI, con el fin de mejorar la estimación de severidad, duración y retorno de eventos extremos en la cuenca alta del río Tekeze, al norte de Etiopía.
+
+La metodología abarcó:
+\begin{itemize}
+    \item Uso de datos de precipitación mensual de 20 estaciones meteorológicas y datos satelitales de humedad del suelo del programa CCI-ESA, en el periodo 1982–2020.
+    \item Cálculo de los índices SPI (basado en precipitación) y SSI (basado en humedad del suelo), ajustados a distribuciones Gamma.
+    \item Aplicación del MSDI mediante la combinación de SPI y SSI a través de funciones cópula (Gumbel, Frank, Gaussian, t y Clayton).
+    \item Selección de la cópula óptima según criterios AIC, BIC, máxima verosimilitud, RMSE y NSE, utilizando el paquete MvCAT bajo simulaciones MCMC.
+    \item Evaluación del retorno conjunto de duración y severidad de sequías mediante configuraciones AND y OR, y análisis de tendencias con Mann–Kendall y Sen’s Slope.
+    \item Interpolación espacial de SPI, SSI y MSDI mediante Kriging Ordinario en ArcGIS.
+\end{itemize}
+
+Los resultados indicaron que la cópula Gumbel fue óptima para escalas de 3 y 6 meses, y Frank para 12 meses. El MSDI capturó todos los eventos de sequía relevantes entre 1982 y 2020, mostrando mayor capacidad de detección que SPI y SSI por separado. Por ejemplo, el evento de 2015 fue caracterizado con una duración de 4 meses, severidad de 6.4 y período de retorno conjunto de 5.24 años.
+
+Se concluyó que el enfoque multivariado basado en cópulas permite una mejor identificación del riesgo de sequía al integrar múltiples indicadores. Esta metodología puede ser directamente aplicada en el sur del Perú considerando la integración de variables como precipitación, temperatura, humedad relativa, viento y evapotranspiración potencial, favoreciendo modelos predictivos más robustos en escenarios de cambio climático.
+
+
+\textcite{Hasan2022} propusieron una metodología innovadora para el análisis bivariado de sequías agrícolas, utilizando funciones cópula para modelar conjuntamente la duración y severidad de eventos de sequía, en base al Índice Estandarizado de Precipitación Efectiva (SEPI) en el norte de Irak. Esta estrategia busca superar la limitación del uso de humedad del suelo, empleando en su lugar datos de precipitación efectiva como variable clave.
+
+La metodología se estructuró de la siguiente forma:
+\begin{itemize}
+    \item Se utilizaron datos de precipitación mensual de dos estaciones meteorológicas durante 50 años (1960–2010).
+    \item Se estimó la precipitación efectiva mediante la fórmula simplificada del método USDA-SCS, validada con correlaciones superiores al 98\%.
+    \item A partir de estos datos se construyó el índice SEPI a escalas de 3 y 6 meses, derivado del SPI, para caracterizar sequías agrícolas.
+    \item Se aplicó la teoría de corridas (run theory) para identificar eventos de sequía con duración y severidad, usando un umbral de SEPI < 0.
+    \item Se ajustaron distribuciones marginales a las variables: Pareto generalizada (duración) y log-normal (severidad), validadas con pruebas de Kolmogorov-Smirnov y Chi-cuadrado.
+    \item Se modeló la distribución conjunta usando cópulas Archimedeanas (Clayton, Frank y Gumbel), seleccionando la mejor mediante RMSE, BIC y NSE.
+    \item Se calcularon periodos de retorno conjuntos y se compararon con análisis univariado.
+\end{itemize}
+
+Los resultados indicaron que la cópula Gumbel fue la más adecuada para ambas escalas temporales y estaciones, con $NSE > 0.99$. Se evidenció que el análisis univariado subestima el riesgo de sequía al no considerar la dependencia entre variables. En contraste, el enfoque bivariado reveló que eventos con duración $\geq 4$ meses y severidad $\geq 3.3$ tienen un período de retorno de sólo 3 años, frente a 5 años según análisis univariado.
+
+Se concluyó que el SEPI, al requerir solo datos de precipitación, es altamente aplicable en regiones con limitaciones en datos de humedad del suelo. La estrategia metodológica basada en cópulas es altamente relevante para regiones semiáridas como el sur del Perú, donde se dispone de datos climáticos relacionados como precipitación, temperatura, viento y evapotranspiración, permitiendo extender este enfoque multivariado para caracterizar riesgos agrícolas y climáticos futuros.
+
+
+
+Kiafar y colaboradores \textcite{Kiafar2020} desarrollaron un análisis bivariado de sequías meteorológicas en la estación de Qazvin, Irán, mediante funciones cópula, incorporando un enfoque novedoso de estimación de parámetros con algoritmos genéticos (GA). El estudio tuvo como objetivo evaluar la duración y severidad de sequías, optimizando el ajuste de cópulas para mejorar la estimación de probabilidades conjuntas y períodos de retorno.
+
+La metodología consistió en:
+\begin{itemize}
+    \item Análisis de datos mensuales de precipitación entre 1964 y 2015, con cálculo del índice SPI para identificar eventos de sequía.
+    \item Extracción de duración y severidad de eventos usando un umbral de SPI $\leq -1$, aplicando teoría de corridas.
+    \item Ajuste de distribuciones marginales: exponencial para duración y gamma para severidad, validadas con la prueba de Kolmogorov-Smirnov.
+    \item Aplicación de cinco cópulas (Galambos, Frank, Clayton, Gumbel-Hougaard y Plackett) para modelado conjunto, evaluadas mediante RMSE, AIC y NSE.
+    \item Estimación de parámetros de cópula con dos métodos: IFM (Inference Function for Margins) y algoritmo genético (GA).
+    \item Cálculo de probabilidades conjuntas, condicionales y períodos de retorno (TDS y $T'_{DS}$), incluyendo análisis de dependencia en colas con el coeficiente de Capéraà–Fougeres–Genest.
+\end{itemize}
+
+Los resultados destacaron que la cópula Galambos ofreció el mejor ajuste, con valores de $NSE = 0.939$, $RMSE = 0.0649$ y $AIC = 720.78$ según IFM. No obstante, el uso de GA redujo aún más el error (RMSE = 0.0567), mejorando en un 13\% la precisión del modelo. Se estimó que una sequía con duración $\geq 5$ meses y severidad $\geq 7.36$ tiene un período de retorno conjunto de hasta 1195 años.
+
+Se concluyó que el uso de algoritmos evolutivos como el GA mejora la precisión en la estimación de parámetros de cópulas, fortaleciendo el análisis de riesgos de sequía. Esta estrategia puede ser replicada en contextos semiáridos como el sur del Perú, aplicando el mismo marco a variables como precipitación, temperatura, humedad relativa, viento y evapotranspiración, con gran potencial para mejorar la predicción de eventos extremos y la planificación hídrica.
+
+
+Terzi y Önöz \textcite{Terzi2025b}, en su estudio titulado \textit{“Drought analysis based on nonparametric multivariate standardized drought index in the Seyhan River Basin”}, propusieron el uso del Índice de Sequía Estandarizado Multivariado no Paramétrico (MSDI) como herramienta alternativa para caracterizar eventos de sequía integrando componentes meteorológicos e hidrológicos sin depender de distribuciones estadísticas específicas.
+
+La metodología implementada incluyó:
+\begin{itemize}
+    \item Uso de datos mensuales de precipitación (10 estaciones meteorológicas) y caudales (hidrológicas) desde 1989 hasta 2011.
+    \item Cálculo de índices SPI (precipitación), SSFI (caudal) y MSDI (precipitación + caudal) para escalas de 1, 3, 6, 9 y 12 meses.
+    \item Pruebas de ajuste de distribución (Kolmogorov–Smirnov) que revelaron inadecuación de distribuciones paramétricas para caudales.
+    \item Cálculo de MSDI mediante probabilidades conjuntas empíricas usando la fórmula de Gringorten y estandarización con la distribución normal.
+    \item Evaluación de tendencias mediante la prueba de Mann–Kendall modificada, y análisis de correlación cruzada con índices ENSO, AO y actividad solar mediante wavelet cruzado.
+\end{itemize}
+
+Los principales hallazgos indicaron que el MSDI reflejó con mayor precisión la duración y severidad de eventos de sequía comparado con SPI y SSFI por separado, detectando eventos extensos como el de 2006–2009 (hasta 40 meses). Las correlaciones de MSDI con SPI y SSFI superaron los valores de 0.75, confirmando su robustez. Se observó una relación positiva significativa entre el MSDI y el índice ENSO (Nino 3.4) y negativa con la Oscilación Ártica, lo que sugiere vínculos climáticos consistentes.
+
+Se concluyó que el MSDI no paramétrico ofrece una alternativa sólida y adaptable para monitorear sequías en cuencas con alta variabilidad estacional y limitaciones de datos, como ocurre en la región sur del Perú. Esta metodología puede adaptarse a incluir variables como temperatura, humedad relativa, velocidad del viento y evapotranspiración potencial, fortaleciendo el análisis multivariado en tu estudio doctoral.
+
+
+Aon y Biswas \textcite{Aon2024} llevaron a cabo un análisis bivariado de sequías meteorológicas en la cuenca del Alto Kangsabati, Bengala Occidental (India), con el fin de estimar la severidad y duración de eventos extremos mediante cópulas, incluyendo mapas espaciales de retorno conjunto para su gestión hidrológica.
+
+La metodología empleada fue:
+\begin{itemize}
+    \item Uso de datos de precipitación diaria (1971–2020) en 16 puntos de grilla provistos por el Departamento Meteorológico de India (IMD), acumulados a escala mensual.
+    \item Cálculo del SPI-3 para analizar condiciones de sequía a escala agrícola, y SPI-12 para identificación de años extremos.
+    \item Aplicación de teoría de corridas para extraer eventos de sequía con severidad y duración, empleando umbral SPI $\leq -1$.
+    \item Ajuste de distribuciones marginales (Generalized Pareto) validadas con pruebas K–S y A–D.
+    \item Estimación de dependencia entre variables con coeficientes de Kendall y Spearman (todos $\tau > 0.7$ y $\rho > 0.85$).
+    \item Modelado conjunto mediante cópulas (Gaussian, Frank, Clayton y Ali-Mikhail-Haq), seleccionando la Frank por mejor ajuste (NSE > 0.93).
+    \item Cálculo de períodos de retorno conjuntos en configuraciones OR y AND y determinación de eventos más probables.
+    \item Generación de mapas espaciales de severidad para diferentes niveles de retorno (5 a 100 años) mediante interpolación IDW.
+\end{itemize}
+
+Los resultados revelaron que eventos extremos como el de 2010 presentaron severidades de hasta 18.08 y duración de 14 meses en algunos puntos. Las zonas central y occidental del Alto Kangsabati mostraron mayor propensión a sequías severas en niveles de retorno altos $(\geqslant 50 años)$.
+
+Se concluyó que la modelación bivariada espacial basada en cópulas proporciona herramientas efectivas para el mapeo y priorización de zonas críticas frente a la sequía. Esta metodología es directamente aplicable al sur del Perú, permitiendo incorporar variables adicionales como temperatura, viento, humedad relativa y evapotranspiración para un análisis integral del riesgo hidrometeorológico.
+
+
+En la investigación desarrollada por \textcite{Parvaze2025}, titulada \textit{Drought severity index analysis using the copula-based joint deficit index in Greater Himalayas of India}, se propuso como objetivo principal evaluar las características de la sequía en la cuenca del río Jhelum, mediante la aplicación del índice de déficit conjunto (JDI) basado en funciones cópula.
+
+La metodología consistió en:
+\begin{itemize}
+  \item \textbf{Población y muestra:} No se reportó una población específica; se trabajó con datos hidrometeorológicos de la cuenca.
+  \item \textbf{Estaciones utilizadas:} 7 estaciones meteorológicas distribuidas en el sur, centro y norte de la cuenca del Jhelum.
+  \item \textbf{Rango temporal:} Serie histórica de precipitación mensual desde 1980 hasta 2019.
+  \item \textbf{Variables consideradas:} Precipitación; la evapotranspiración potencial (PET) también fue analizada como variable de contexto climático.
+  \item \textbf{Análisis estadístico previo:} Prueba de Kolmogorov–Smirnov (KS) para normalidad, usando distribución Gamma de dos parámetros. Se imputaron datos faltantes a partir de estaciones vecinas.
+  \item \textbf{Modelos estadísticos principales:} Se empleó el índice SPImod y el JDI, este último basado en una cópula empírica de 12 dimensiones para integrar déficits en ventanas de 1 a 12 meses.
+  \item \textbf{Validación:} Comparación entre JDI y SPImod mediante análisis gráfico, series temporales y consistencia con registros históricos.
+\end{itemize}
+
+Los principales resultados indicaron que el JDI permite una evaluación más precisa y continua de las sequías, al integrar la información sobre intensidad, duración y frecuencia en múltiples escalas temporales. Se identificó que las sequías han sido más severas y frecuentes durante los últimos 20 años, especialmente en primavera y en la parte sur de la cuenca. El evento más severo se registró entre 1998 y 2003, con un valor mínimo de JDI de -2.9 en enero de 2001. En comparación, el SPImod mostró inconsistencias al evaluar eventos multitemporales.
+
+Se concluyó que el JDI supera a los métodos univariados tradicionales como el SPI, al evitar contradicciones entre escalas temporales y al representar mejor la evolución y la severidad de las sequías. Asimismo, se sugiere su utilidad para sistemas de alerta temprana y planificación del recurso hídrico. Esta metodología es particularmente relevante para el sur del Perú, ya que puede integrarse con variables clave como la precipitación, PET, y eventualmente humedad relativa y temperatura, con el fin de desarrollar un marco robusto de predicción y monitoreo de sequías regionales.
+
+En el estudio de \textcite{Yang2022}, cuya investigación se titula \textit{Analyzing spatial–temporal change of multivariate drought risk based on Bayesian copula: Application to the Balkhash Lake basin}, se planteó como objetivo desarrollar un método de análisis multivariado de sequías (BCMA) que combine cópulas bayesianas con análisis espacio-temporal para evaluar el riesgo de sequía en la cuenca del lago Balkhash (Asia Central) durante el período 1901–2020.
+
+La metodología consistió en:
+\begin{itemize}
+    \item Población y muestra: No aplica población humana; se analizaron datos climáticos históricos sobre una malla raster.
+    \item Estaciones: Se utilizaron datos mensuales de scPDSI a una resolución de $0.5^\circ \times 0.5^\circ$ (grilla de clima global).
+    \item Rango temporal: 1901 a 2020.
+    \item Variables: Duración, severidad y área afectada por la sequía derivadas del scPDSI, que a su vez considera precipitación, temperatura, humedad del suelo y escorrentía (proxy de evapotranspiración).
+    \item Análisis previo: Prueba ADF de estacionariedad, correlaciones de Pearson, Spearman y Kendall.
+    \item Modelos estadísticos: Distribuciones marginales (GEV, Gamma, lognormal, etc.) y cópulas Archimedeanas (Clayton, Frank, Gumbel, Joe) con inferencia Bayesiana (MCMC).
+    \item Validación: AIC, BIC, RMSE y evaluación de parámetros a través de intervalos de credibilidad al 95\%.
+\end{itemize}
+
+Los principales resultados obtenidos fueron: se identificaron 53 eventos de sequía con duración promedio de 10.6 meses, severidad de 19.9 y un 56\% del área afectada. El evento más severo (1973–1977) duró 40 meses y afectó al 95\% del territorio. La mayoría de sequías ocurrieron en primavera y verano (64.2\%) y se desplazaron en sentido sureste-noroeste. La región del delta del río Ili fue la más afectada (47.2\%). Se hallaron correlaciones significativas entre las variables de duración, severidad y área. Las cópulas de Clayton resultaron óptimas. El riesgo multivariado de sequía varió entre 1.9\% y 59.8\% dependiendo de la tasa de garantía.
+
+Se concluyó que el método BCMA permite evaluar con mayor precisión el riesgo multivariado de sequías al considerar simultáneamente múltiples variables hidrometeorológicas y su dependencia estructural. Esta metodología es especialmente útil para regiones áridas como el sur del Perú, donde variables como la precipitación, temperatura, evapotranspiración potencial y humedad relativa interactúan de forma compleja. Su implementación puede contribuir al diseño de políticas de prevención y gestión de sequías bajo escenarios de cambio climático.
+
 \subsection{Antecedentes Nacionales}
 
 En el estudio de \textcite{Cabrera2023}, cuyo título es *"Modelamiento de sequías agrícolas en la región sur del Perú mediante el uso de funciones cópula"*, se planteó como objetivo modelar la incidencia de las sequías agrícolas en la cuenca alta de los ríos Locumba y Caplina utilizando funciones multivariadas de distribución de probabilidad, conocidas como cópulas. La investigación, de enfoque aplicado y cuantitativo, inició con la evaluación del impacto del Fenómeno del Niño-Oscilación del Sur (ENOS), la temperatura del aire y la temperatura de la superficie del mar (TSM) en varias zonas ENSO sobre la ocurrencia de sequías agrícolas. Los resultados iniciales mostraron correlaciones bajas con los índices ENSO, por lo que se optó por utilizar la TSM en la zona 1+2 (TSM1+2) y la temperatura del aire (T) debido a su correlación media. Mediante la prueba estadística de Cramer Von Mises, se determinó que la cópula t-Student es la más adecuada para representar la relación entre los índices SPI3 y EMI, mientras que la cópula Frank fue más apropiada para modelar las relaciones entre SPI3 y la temperatura del aire, así como entre SPI3 y TSM1+2. Finalmente, se construyó una cópula tridimensional para estimar la probabilidad conjunta de ocurrencia de sequías extremas, concluyéndose que estas son más frecuentes bajo temperaturas del aire entre 10°C y 12°C y temperaturas de la superficie del mar en la zona 1+2 entre 24°C y 26°C.

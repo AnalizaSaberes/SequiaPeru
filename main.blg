@@ -1,19 +1,19 @@
-[0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is 'main.blg'
-[130] biber-darwin:340> INFO - === Mon May  5, 2025, 22:08:44
-[190] Biber.pm:419> INFO - Reading 'main.bcf'
-[383] Biber.pm:979> INFO - Found 7 citekeys in bib section 0
-[419] Biber.pm:4419> INFO - Processing section 0
-[451] Biber.pm:4610> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
-[463] bibtex.pm:1713> INFO - LaTeX decoding ...
-[653] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
-[813] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[813] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[813] Biber.pm:4239> INFO - Sorting list 'apa/apasortcite//global/global' of type 'entry' with template 'apa' and locale 'es-ES'
-[845] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[845] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[845] Biber.pm:4239> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'es-ES'
-[886] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[899] bbl.pm:763> INFO - Output to main.bbl
-[900] Biber.pm:131> WARN - Duplicate entry key: 'palmer1965' in file 'bibliografia.bib', skipping ...
-[900] Biber.pm:133> INFO - WARNINGS: 1
+[1] Config.pm:307> INFO - This is Biber 2.19
+[1] Config.pm:310> INFO - Logfile is 'main.blg'
+[349] biber-darwin:340> INFO - === Tue May  6, 2025, 17:32:46
+[421] Biber.pm:419> INFO - Reading 'main.bcf'
+[828] Biber.pm:979> INFO - Found 15 citekeys in bib section 0
+[888] Biber.pm:4419> INFO - Processing section 0
+[938] Biber.pm:4610> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
+[978] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1659] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
+[2518] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2518] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2521] Biber.pm:4239> INFO - Sorting list 'apa/apasortcite//global/global' of type 'entry' with template 'apa' and locale 'es-ES'
+[2693] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2693] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2694] Biber.pm:4239> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'es-ES'
+[2787] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[2860] bbl.pm:763> INFO - Output to main.bbl
+[2860] Biber.pm:131> WARN - Duplicate entry key: 'palmer1965' in file 'bibliografia.bib', skipping ...
+[2861] Biber.pm:133> INFO - WARNINGS: 1

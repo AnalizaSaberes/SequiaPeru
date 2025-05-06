@@ -19,6 +19,50 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global}
+    \entry{Aon2024}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d1fda999c3276cd0f5a78378e9b55292}{%
+           family={Aon},
+           familyi={A\bibinitperiod},
+           given={Suvro},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d90633afb0cb6d9535c9b930df4a409}{%
+           family={Biswas},
+           familyi={B\bibinitperiod},
+           given={Sujata},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{11b11b65c48be7a92df0493faa7c99c1}
+      \strng{fullhash}{11b11b65c48be7a92df0493faa7c99c1}
+      \strng{bibnamehash}{11b11b65c48be7a92df0493faa7c99c1}
+      \strng{authorbibnamehash}{11b11b65c48be7a92df0493faa7c99c1}
+      \strng{authornamehash}{11b11b65c48be7a92df0493faa7c99c1}
+      \strng{authorfullhash}{11b11b65c48be7a92df0493faa7c99c1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoretical and Applied Climatology}
+      \field{title}{Spatially distributed bivariate meteorological drought analysis using copula technique in a semi-arid river basin of West Bengal, India}
+      \field{volume}{155}
+      \field{year}{2024}
+      \field{pages}{2885\bibrangedash 2901}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s00704-023-04790-w
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00704-023-04790-w
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00704-023-04790-w
+      \endverb
+    \endentry
     \entry{Cabrera2021}{article}{}
       \name{author}{3}{}{%
         {{un=1,uniquepart=given,hash=60993c6ee55e7186e4299180228f5d4a}{%
@@ -142,9 +186,6 @@
            giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod},
            givenun=0}}%
       }
-      \list{publisher}{1}{%
-        {Springer Nature}%
-      }
       \strng{namehash}{cafeaa7468e5ce722c2e6d2e1b4117b9}
       \strng{fullhash}{cafeaa7468e5ce722c2e6d2e1b4117b9}
       \strng{bibnamehash}{cafeaa7468e5ce722c2e6d2e1b4117b9}
@@ -172,6 +213,259 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1007/s00704-022-04317-9
+      \endverb
+    \endentry
+    \entry{Eskandaripour2025}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bc5ad1ced7f332382eb50d890a23f511}{%
+           family={Eskandaripour},
+           familyi={E\bibinitperiod},
+           given={Mehrtash},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbdd34bc8254849233b444f28c593d4f}{%
+           family={Soltaninia},
+           familyi={S\bibinitperiod},
+           given={Shahrokh},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b0572fdb7aac410f05518cead0888430}
+      \strng{fullhash}{b0572fdb7aac410f05518cead0888430}
+      \strng{bibnamehash}{b0572fdb7aac410f05518cead0888430}
+      \strng{authorbibnamehash}{b0572fdb7aac410f05518cead0888430}
+      \strng{authornamehash}{b0572fdb7aac410f05518cead0888430}
+      \strng{authorfullhash}{b0572fdb7aac410f05518cead0888430}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Natural Hazards}
+      \field{title}{Trivariate Frequency Analysis of Droughts Characteristics in Kerman City Using Asymmetric Copula Functions}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1007/s11069-025-07194-3
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11069-025-07194-3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11069-025-07194-3
+      \endverb
+    \endentry
+    \entry{Hasan2022}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=77c6ca2c805eb8f5a7a960f27b16b417}{%
+           family={Hasan},
+           familyi={H\bibinitperiod},
+           given={Ihsan\bibnamedelima F.},
+           giveni={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38f4cb8df11467db4ecc4f36177016de}{%
+           family={Abdullah},
+           familyi={A\bibinitperiod},
+           given={Rozi},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0cf5b98336acd95c429877b9e87f4f16}
+      \strng{fullhash}{0cf5b98336acd95c429877b9e87f4f16}
+      \strng{bibnamehash}{0cf5b98336acd95c429877b9e87f4f16}
+      \strng{authorbibnamehash}{0cf5b98336acd95c429877b9e87f4f16}
+      \strng{authornamehash}{0cf5b98336acd95c429877b9e87f4f16}
+      \strng{authorfullhash}{0cf5b98336acd95c429877b9e87f4f16}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Water Resources Management}
+      \field{title}{Agricultural Drought Characteristics Analysis Using Copula}
+      \field{volume}{36}
+      \field{year}{2022}
+      \field{pages}{5915\bibrangedash 5930}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/s11269-022-03331-w
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11269-022-03331-w
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11269-022-03331-w
+      \endverb
+    \endentry
+    \entry{Kiafar2020}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=a6607078333431f1a31b2e65c614b62e}{%
+           family={Kiafar},
+           familyi={K\bibinitperiod},
+           given={Hamed},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e22a83a50425da6a48a1346e7239290a}{%
+           family={Babazadeh},
+           familyi={B\bibinitperiod},
+           given={Hossein},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4eaf5c4aa0f300e2863856c81c14fbb6}{%
+           family={Sedghi},
+           familyi={S\bibinitperiod},
+           given={Hossein},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a3a3449ec6ab0c62c1d4821cabad0a3}{%
+           family={Saremi},
+           familyi={S\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b0302d8800bfe6a8e2accc00d4c3f76f}
+      \strng{fullhash}{9a719d2a1b79c68d1d2a0f7369b3dd74}
+      \strng{bibnamehash}{9a719d2a1b79c68d1d2a0f7369b3dd74}
+      \strng{authorbibnamehash}{9a719d2a1b79c68d1d2a0f7369b3dd74}
+      \strng{authornamehash}{b0302d8800bfe6a8e2accc00d4c3f76f}
+      \strng{authorfullhash}{9a719d2a1b79c68d1d2a0f7369b3dd74}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Arabian Journal of Geosciences}
+      \field{title}{Analyzing drought characteristics using copula-based genetic algorithm method}
+      \field{volume}{13}
+      \field{year}{2020}
+      \field{pages}{745}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s12517-020-05703-1
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s12517-020-05703-1
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s12517-020-05703-1
+      \endverb
+    \endentry
+    \entry{Menna2022}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=9da8a8af37b43f8a46e8dfd6794e9d49}{%
+           family={Menna},
+           familyi={M\bibinitperiod},
+           given={Biniyam\bibnamedelima Yisehak},
+           giveni={B\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fac3bc76b3439c6d763f92eb9172dbff}{%
+           family={Mesfin},
+           familyi={M\bibinitperiod},
+           given={Henok\bibnamedelima Shiferaw},
+           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b3f386e71abc5848fa2fab572f7c2e8c}{%
+           family={Gebrekidan},
+           familyi={G\bibinitperiod},
+           given={Atkilt\bibnamedelima Girma},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ecdcfc4491daacc9cd14073cfa43d954}{%
+           family={Siyum},
+           familyi={S\bibinitperiod},
+           given={Zenebe\bibnamedelima Girmay},
+           giveni={Z\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e00147136242ce4a2001d9664dafb3ed}{%
+           family={Tegene},
+           familyi={T\bibinitperiod},
+           given={Melaku\bibnamedelima Takele},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6abd6b4fed80d2f415d71642cff37f78}
+      \strng{fullhash}{a4bf6beba1b52fa271ad59cd373beb8c}
+      \strng{bibnamehash}{a4bf6beba1b52fa271ad59cd373beb8c}
+      \strng{authorbibnamehash}{a4bf6beba1b52fa271ad59cd373beb8c}
+      \strng{authornamehash}{6abd6b4fed80d2f415d71642cff37f78}
+      \strng{authorfullhash}{a4bf6beba1b52fa271ad59cd373beb8c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoretical and Applied Climatology}
+      \field{title}{Meteorological drought analysis using copula theory for the case of upper Tekeze river basin, Northern Ethiopia}
+      \field{volume}{149}
+      \field{year}{2022}
+      \field{pages}{621\bibrangedash 638}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/s00704-022-04061-0
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00704-022-04061-0
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00704-022-04061-0
+      \endverb
+    \endentry
+    \entry{Parvaze2025}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=20e6d1720d6084cf08f04b7ff2bea846}{%
+           family={Parvaze},
+           familyi={P\bibinitperiod},
+           given={Sabah},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56bdf246d93e571bca89dc05030ebfa6}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Rohitashw},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed4c12cf3b7308828c493f287638c7be}{%
+           family={Mirabbasi},
+           familyi={M\bibinitperiod},
+           given={Rasoul},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ad961900f9c3e2f3533d7c0594f1773}{%
+           family={Allaie},
+           familyi={A\bibinitperiod},
+           given={Saqib\bibnamedelima Parvaze},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cfd8fa76cbe0d99fc07668ffa5c779e4}
+      \strng{fullhash}{e84693d4c2ebd830803b760bd1844b75}
+      \strng{bibnamehash}{e84693d4c2ebd830803b760bd1844b75}
+      \strng{authorbibnamehash}{e84693d4c2ebd830803b760bd1844b75}
+      \strng{authornamehash}{cfd8fa76cbe0d99fc07668ffa5c779e4}
+      \strng{authorfullhash}{e84693d4c2ebd830803b760bd1844b75}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoretical and Applied Climatology}
+      \field{title}{Drought severity index analysis using the copula-based joint deficit index in greater Himalayas of India}
+      \field{volume}{156}
+      \field{year}{2025}
+      \field{pages}{217}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s00704-025-05449-4
       \endverb
     \endentry
     \entry{Samadian2024}{article}{}
@@ -257,8 +551,10 @@
       \strng{authorbibnamehash}{0502f123294e905f65e015fe333d0bce}
       \strng{authornamehash}{0502f123294e905f65e015fe333d0bce}
       \strng{authorfullhash}{0502f123294e905f65e015fe333d0bce}
+      \field{extraname}{1}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
@@ -279,6 +575,49 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1007/s40899-025-01189-5
+      \endverb
+    \endentry
+    \entry{Terzi2025b}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=31d88bc86187c6d0cfef999ac6a7cd01}{%
+           family={Terzi},
+           familyi={T\bibinitperiod},
+           given={Tolga\bibnamedelima Barış},
+           giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=79dcbab07093b46c78ce614de9b8317f}{%
+           family={Önöz},
+           familyi={Ö\bibinitperiod},
+           given={Bihrat},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0502f123294e905f65e015fe333d0bce}
+      \strng{fullhash}{0502f123294e905f65e015fe333d0bce}
+      \strng{bibnamehash}{0502f123294e905f65e015fe333d0bce}
+      \strng{authorbibnamehash}{0502f123294e905f65e015fe333d0bce}
+      \strng{authornamehash}{0502f123294e905f65e015fe333d0bce}
+      \strng{authorfullhash}{0502f123294e905f65e015fe333d0bce}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Natural Hazards}
+      \field{title}{Drought analysis based on nonparametric multivariate standardized drought index in the Seyhan River Basin}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1007/s11069-025-07234-y
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11069-025-07234-y
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11069-025-07234-y
       \endverb
     \endentry
     \entry{Vega2016}{thesis}{}
@@ -314,10 +653,110 @@
       \endverb
       \verb{url}
       \verb https://hdl.handle.net//20.500.12542/108
+      \endverb
+    \endentry
+    \entry{Yang2022}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=4a41a8c896da0124ca40ccc8b084022b}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=444cc243ef3de697c31925adfc0fd72f}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Y.\bibnamedelimi P.},
+           giveni={Y\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13f2838d5445cee4f6ed0bef7a2bf366}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={G.\bibnamedelimi H.},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62bd71659b0a2c6a9c696abe811cd828}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={S.\bibnamedelimi Q.},
+           giveni={S\bibinitperiod\bibinitdelim Q\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4eed095b2ccc7cb15345307cc836dec1}
+      \strng{fullhash}{d3973cee3d037b97f44eb0e380d55089}
+      \strng{bibnamehash}{d3973cee3d037b97f44eb0e380d55089}
+      \strng{authorbibnamehash}{d3973cee3d037b97f44eb0e380d55089}
+      \strng{authornamehash}{4eed095b2ccc7cb15345307cc836dec1}
+      \strng{authorfullhash}{d3973cee3d037b97f44eb0e380d55089}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoretical and Applied Climatology}
+      \field{title}{Analyzing spatial–temporal change of multivariate drought risk based on Bayesian copula: Application to the Balkhash Lake basin}
+      \field{volume}{149}
+      \field{year}{2022}
+      \field{pages}{787\bibrangedash 804}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/s00704-022-04062-z
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00704-022-04062-z
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00704-022-04062-z
       \endverb
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global}
+    \entry{Aon2024}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d1fda999c3276cd0f5a78378e9b55292}{%
+           family={Aon},
+           familyi={A\bibinitperiod},
+           given={Suvro},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d90633afb0cb6d9535c9b930df4a409}{%
+           family={Biswas},
+           familyi={B\bibinitperiod},
+           given={Sujata},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{11b11b65c48be7a92df0493faa7c99c1}
+      \strng{fullhash}{11b11b65c48be7a92df0493faa7c99c1}
+      \strng{bibnamehash}{11b11b65c48be7a92df0493faa7c99c1}
+      \strng{authorbibnamehash}{11b11b65c48be7a92df0493faa7c99c1}
+      \strng{authornamehash}{11b11b65c48be7a92df0493faa7c99c1}
+      \strng{authorfullhash}{11b11b65c48be7a92df0493faa7c99c1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoretical and Applied Climatology}
+      \field{title}{Spatially distributed bivariate meteorological drought analysis using copula technique in a semi-arid river basin of West Bengal, India}
+      \field{volume}{155}
+      \field{year}{2024}
+      \field{pages}{2885\bibrangedash 2901}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s00704-023-04790-w
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00704-023-04790-w
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00704-023-04790-w
+      \endverb
+    \endentry
     \entry{Cabrera2021}{article}{}
       \name{author}{3}{}{%
         {{un=1,uniquepart=given,hash=60993c6ee55e7186e4299180228f5d4a}{%
@@ -441,9 +880,6 @@
            giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod},
            givenun=0}}%
       }
-      \list{publisher}{1}{%
-        {Springer Nature}%
-      }
       \strng{namehash}{cafeaa7468e5ce722c2e6d2e1b4117b9}
       \strng{fullhash}{cafeaa7468e5ce722c2e6d2e1b4117b9}
       \strng{bibnamehash}{cafeaa7468e5ce722c2e6d2e1b4117b9}
@@ -471,6 +907,259 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1007/s00704-022-04317-9
+      \endverb
+    \endentry
+    \entry{Eskandaripour2025}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bc5ad1ced7f332382eb50d890a23f511}{%
+           family={Eskandaripour},
+           familyi={E\bibinitperiod},
+           given={Mehrtash},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbdd34bc8254849233b444f28c593d4f}{%
+           family={Soltaninia},
+           familyi={S\bibinitperiod},
+           given={Shahrokh},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b0572fdb7aac410f05518cead0888430}
+      \strng{fullhash}{b0572fdb7aac410f05518cead0888430}
+      \strng{bibnamehash}{b0572fdb7aac410f05518cead0888430}
+      \strng{authorbibnamehash}{b0572fdb7aac410f05518cead0888430}
+      \strng{authornamehash}{b0572fdb7aac410f05518cead0888430}
+      \strng{authorfullhash}{b0572fdb7aac410f05518cead0888430}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Natural Hazards}
+      \field{title}{Trivariate Frequency Analysis of Droughts Characteristics in Kerman City Using Asymmetric Copula Functions}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1007/s11069-025-07194-3
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11069-025-07194-3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11069-025-07194-3
+      \endverb
+    \endentry
+    \entry{Hasan2022}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=77c6ca2c805eb8f5a7a960f27b16b417}{%
+           family={Hasan},
+           familyi={H\bibinitperiod},
+           given={Ihsan\bibnamedelima F.},
+           giveni={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38f4cb8df11467db4ecc4f36177016de}{%
+           family={Abdullah},
+           familyi={A\bibinitperiod},
+           given={Rozi},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0cf5b98336acd95c429877b9e87f4f16}
+      \strng{fullhash}{0cf5b98336acd95c429877b9e87f4f16}
+      \strng{bibnamehash}{0cf5b98336acd95c429877b9e87f4f16}
+      \strng{authorbibnamehash}{0cf5b98336acd95c429877b9e87f4f16}
+      \strng{authornamehash}{0cf5b98336acd95c429877b9e87f4f16}
+      \strng{authorfullhash}{0cf5b98336acd95c429877b9e87f4f16}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Water Resources Management}
+      \field{title}{Agricultural Drought Characteristics Analysis Using Copula}
+      \field{volume}{36}
+      \field{year}{2022}
+      \field{pages}{5915\bibrangedash 5930}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/s11269-022-03331-w
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11269-022-03331-w
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11269-022-03331-w
+      \endverb
+    \endentry
+    \entry{Kiafar2020}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=a6607078333431f1a31b2e65c614b62e}{%
+           family={Kiafar},
+           familyi={K\bibinitperiod},
+           given={Hamed},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e22a83a50425da6a48a1346e7239290a}{%
+           family={Babazadeh},
+           familyi={B\bibinitperiod},
+           given={Hossein},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4eaf5c4aa0f300e2863856c81c14fbb6}{%
+           family={Sedghi},
+           familyi={S\bibinitperiod},
+           given={Hossein},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a3a3449ec6ab0c62c1d4821cabad0a3}{%
+           family={Saremi},
+           familyi={S\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b0302d8800bfe6a8e2accc00d4c3f76f}
+      \strng{fullhash}{9a719d2a1b79c68d1d2a0f7369b3dd74}
+      \strng{bibnamehash}{9a719d2a1b79c68d1d2a0f7369b3dd74}
+      \strng{authorbibnamehash}{9a719d2a1b79c68d1d2a0f7369b3dd74}
+      \strng{authornamehash}{b0302d8800bfe6a8e2accc00d4c3f76f}
+      \strng{authorfullhash}{9a719d2a1b79c68d1d2a0f7369b3dd74}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Arabian Journal of Geosciences}
+      \field{title}{Analyzing drought characteristics using copula-based genetic algorithm method}
+      \field{volume}{13}
+      \field{year}{2020}
+      \field{pages}{745}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s12517-020-05703-1
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s12517-020-05703-1
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s12517-020-05703-1
+      \endverb
+    \endentry
+    \entry{Menna2022}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=9da8a8af37b43f8a46e8dfd6794e9d49}{%
+           family={Menna},
+           familyi={M\bibinitperiod},
+           given={Biniyam\bibnamedelima Yisehak},
+           giveni={B\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fac3bc76b3439c6d763f92eb9172dbff}{%
+           family={Mesfin},
+           familyi={M\bibinitperiod},
+           given={Henok\bibnamedelima Shiferaw},
+           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b3f386e71abc5848fa2fab572f7c2e8c}{%
+           family={Gebrekidan},
+           familyi={G\bibinitperiod},
+           given={Atkilt\bibnamedelima Girma},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ecdcfc4491daacc9cd14073cfa43d954}{%
+           family={Siyum},
+           familyi={S\bibinitperiod},
+           given={Zenebe\bibnamedelima Girmay},
+           giveni={Z\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e00147136242ce4a2001d9664dafb3ed}{%
+           family={Tegene},
+           familyi={T\bibinitperiod},
+           given={Melaku\bibnamedelima Takele},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6abd6b4fed80d2f415d71642cff37f78}
+      \strng{fullhash}{a4bf6beba1b52fa271ad59cd373beb8c}
+      \strng{bibnamehash}{a4bf6beba1b52fa271ad59cd373beb8c}
+      \strng{authorbibnamehash}{a4bf6beba1b52fa271ad59cd373beb8c}
+      \strng{authornamehash}{6abd6b4fed80d2f415d71642cff37f78}
+      \strng{authorfullhash}{a4bf6beba1b52fa271ad59cd373beb8c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoretical and Applied Climatology}
+      \field{title}{Meteorological drought analysis using copula theory for the case of upper Tekeze river basin, Northern Ethiopia}
+      \field{volume}{149}
+      \field{year}{2022}
+      \field{pages}{621\bibrangedash 638}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/s00704-022-04061-0
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00704-022-04061-0
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00704-022-04061-0
+      \endverb
+    \endentry
+    \entry{Parvaze2025}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=20e6d1720d6084cf08f04b7ff2bea846}{%
+           family={Parvaze},
+           familyi={P\bibinitperiod},
+           given={Sabah},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56bdf246d93e571bca89dc05030ebfa6}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Rohitashw},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed4c12cf3b7308828c493f287638c7be}{%
+           family={Mirabbasi},
+           familyi={M\bibinitperiod},
+           given={Rasoul},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ad961900f9c3e2f3533d7c0594f1773}{%
+           family={Allaie},
+           familyi={A\bibinitperiod},
+           given={Saqib\bibnamedelima Parvaze},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cfd8fa76cbe0d99fc07668ffa5c779e4}
+      \strng{fullhash}{e84693d4c2ebd830803b760bd1844b75}
+      \strng{bibnamehash}{e84693d4c2ebd830803b760bd1844b75}
+      \strng{authorbibnamehash}{e84693d4c2ebd830803b760bd1844b75}
+      \strng{authornamehash}{cfd8fa76cbe0d99fc07668ffa5c779e4}
+      \strng{authorfullhash}{e84693d4c2ebd830803b760bd1844b75}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoretical and Applied Climatology}
+      \field{title}{Drought severity index analysis using the copula-based joint deficit index in greater Himalayas of India}
+      \field{volume}{156}
+      \field{year}{2025}
+      \field{pages}{217}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s00704-025-05449-4
       \endverb
     \endentry
     \entry{Samadian2024}{article}{}
@@ -556,8 +1245,10 @@
       \strng{authorbibnamehash}{0502f123294e905f65e015fe333d0bce}
       \strng{authornamehash}{0502f123294e905f65e015fe333d0bce}
       \strng{authorfullhash}{0502f123294e905f65e015fe333d0bce}
+      \field{extraname}{1}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
@@ -578,6 +1269,49 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1007/s40899-025-01189-5
+      \endverb
+    \endentry
+    \entry{Terzi2025b}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=31d88bc86187c6d0cfef999ac6a7cd01}{%
+           family={Terzi},
+           familyi={T\bibinitperiod},
+           given={Tolga\bibnamedelima Barış},
+           giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=79dcbab07093b46c78ce614de9b8317f}{%
+           family={Önöz},
+           familyi={Ö\bibinitperiod},
+           given={Bihrat},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0502f123294e905f65e015fe333d0bce}
+      \strng{fullhash}{0502f123294e905f65e015fe333d0bce}
+      \strng{bibnamehash}{0502f123294e905f65e015fe333d0bce}
+      \strng{authorbibnamehash}{0502f123294e905f65e015fe333d0bce}
+      \strng{authornamehash}{0502f123294e905f65e015fe333d0bce}
+      \strng{authorfullhash}{0502f123294e905f65e015fe333d0bce}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Natural Hazards}
+      \field{title}{Drought analysis based on nonparametric multivariate standardized drought index in the Seyhan River Basin}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1007/s11069-025-07234-y
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11069-025-07234-y
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11069-025-07234-y
       \endverb
     \endentry
     \entry{Vega2016}{thesis}{}
@@ -613,6 +1347,62 @@
       \endverb
       \verb{url}
       \verb https://hdl.handle.net//20.500.12542/108
+      \endverb
+    \endentry
+    \entry{Yang2022}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=4a41a8c896da0124ca40ccc8b084022b}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=444cc243ef3de697c31925adfc0fd72f}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Y.\bibnamedelimi P.},
+           giveni={Y\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13f2838d5445cee4f6ed0bef7a2bf366}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={G.\bibnamedelimi H.},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62bd71659b0a2c6a9c696abe811cd828}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={S.\bibnamedelimi Q.},
+           giveni={S\bibinitperiod\bibinitdelim Q\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4eed095b2ccc7cb15345307cc836dec1}
+      \strng{fullhash}{d3973cee3d037b97f44eb0e380d55089}
+      \strng{bibnamehash}{d3973cee3d037b97f44eb0e380d55089}
+      \strng{authorbibnamehash}{d3973cee3d037b97f44eb0e380d55089}
+      \strng{authornamehash}{4eed095b2ccc7cb15345307cc836dec1}
+      \strng{authorfullhash}{d3973cee3d037b97f44eb0e380d55089}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoretical and Applied Climatology}
+      \field{title}{Analyzing spatial–temporal change of multivariate drought risk based on Bayesian copula: Application to the Balkhash Lake basin}
+      \field{volume}{149}
+      \field{year}{2022}
+      \field{pages}{787\bibrangedash 804}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/s00704-022-04062-z
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00704-022-04062-z
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00704-022-04062-z
       \endverb
     \endentry
   \enddatalist

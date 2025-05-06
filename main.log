@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.16)  6 MAY 2025 12:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.16)  6 MAY 2025 17:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1247,7 +1247,16 @@ Package pdftex.def Info: Imagen 1.png  used on input line 12.
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Imagen 1.png>]) (./Capitulos/Capitulo1.tex
 Cap\'{\i }tulo 1.
-[1
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 6.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
 
 
 
@@ -1257,47 +1266,50 @@ Cap\'{\i }tulo 1.
 
 
 ]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 38.
 LaTeX Info: Symbol \textasciiacute not provided by
             font family phv in TS1 encoding.
-            Default family used instead on input line 38.
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 38.
+            Default family used instead on input line 25.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 25.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 38.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 25.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Info: Symbol \textasciiacute not provided by
             font family phv in TS1 encoding.
-            Default family used instead on input line 38.
+            Default family used instead on input line 25.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 39.
- [2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [3]
-LaTeX Info: Symbol \textasciiacute not provided by
-            font family phv in TS1 encoding.
-            Default family used instead on input line 78.
-LaTeX Info: Symbol \textasciiacute not provided by
-            font family phv in TS1 encoding.
-            Default family used instead on input line 78.
- [4] [5]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 122.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 34.
+ [2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [3] [4] [5] [6] [7]
+Overfull \hbox (37.26402pt too wide) in paragraph at lines 125--126
+\T1/phv/m/n/10.95 in-clu-yen-do aná-li-sis de de-pen-den-cia en co-las con el co-efi-cien-te de Ca-pé-raà^^UFougeres^^UGenest. 
+ []
+
+[8] [9]
+
+LaTeX Warning: Command \~ invalid in math mode on input line 163.
+
+Missing character: There is no ñ in font cmr10!
+[10] [11]
+Overfull \hbox (0.49196pt too wide) in paragraph at lines 185--186
+[]\T1/phv/m/n/10.95 En el es-tu-dio de []Yang et al. ([][]2022[][]), cu-ya in-ves-ti-ga-ción se ti-tu-la \T1/phv/m/sl/10.95 Analy-zing spa-tial^^Utemporal
+ []
+
+
+Overfull \hbox (3.27806pt too wide) in paragraph at lines 194--195
+\T1/phv/m/n/10.95 pu-las Ar-chi-me-dea-nas (Clay-ton, Frank, Gum-bel, Joe) con in-fe-ren-cia Ba-ye-sia-na (MCMC). 
+ []
+
+[12]
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 204.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-) [6] [7]) [8] [9
+) [13]) [14] [15
 
 
-]
+] [16]
 
 Package caption Warning: Unused \captionsetup[table] on input line 87.
 See the caption package documentation for explanation.
@@ -1325,18 +1337,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41434 strings out of 474116
- 797731 string characters out of 5743681
+ 41298 strings out of 474116
+ 795882 string characters out of 5743681
  1939187 words of memory out of 5000000
- 63160 multiletter control sequences out of 15000+600000
+ 63009 multiletter control sequences out of 15000+600000
  588482 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,12n,131p,1639b,2908s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (11 pages, 259868 bytes).
+ 102i,13n,131p,1639b,2908s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on main.pdf (18 pages, 318865 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
+ 232 PDF objects out of 1000 (max. 8388607)
+ 186 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
  58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
