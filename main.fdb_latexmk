@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1746500919.19702 "main.bcf" "main.bbl" "main" 1746502179.49219 0
+["biber main"] 1746500919.19702 "main.bcf" "main.bbl" "main" 1746553741.72613 0
   "bibliografia.bib" 1746500887.56638 37522 cb71abd5d31b4493590b15ac6273bda2 ""
-  "main.bcf" 1746502179.14161 133920 bfa3dae1b478e384d933dc4a03ccc4dc "pdflatex"
+  "main.bcf" 1746553741.06761 133920 bfa3dae1b478e384d933dc4a03ccc4dc "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1746502174.63229 "/Volumes/Arriaga/MESTRIA 2024/tesis/main.tex" "main.pdf" "main" 1746502179.49283 0
+["pdflatex"] 1746553733.35498 "/Volumes/Arriaga/MESTRIA 2024/tesis/main.tex" "main.pdf" "main" 1746553741.72707 0
   "/Volumes/Arriaga/MESTRIA 2024/tesis/main.tex" 1746502160.74055 9822 c30d3ecdfbcc4a239c58bc56fc3c242b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -248,12 +248,12 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1729122262.447 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1729122031 8221443 f2cedb70f35ffa5cb78b16706426097f ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Capitulos/Capitulo1.tex" 1746502160.74069 101859 06f32a826402394aed5711e337b076e7 ""
+  "Capitulos/Capitulo1.tex" 1746553731.75572 101872 0dc1e5a891fabe7d5b8e2d2faeb8f16a ""
   "Imagen 1.png" 1743890478 171244 4edfaa0677aac4258217115d7dfdc5a0 ""
-  "main.aux" 1746502179.12637 3318 1566cd4498178da6993d893a94db3e6c "pdflatex"
+  "main.aux" 1746553741.05243 3318 1566cd4498178da6993d893a94db3e6c "pdflatex"
   "main.bbl" 1746500924.89344 24354 f14627ac470b040b5c9894ec3b8ad2ed "biber main"
-  "main.out" 1746502179.13206 718 8a7c30c12e70f7e2d768c6cf1c2eb9d0 "pdflatex"
-  "main.run.xml" 1746502179.14355 2361 35d4ba219a86576031cb1c143b5e2c09 "pdflatex"
+  "main.out" 1746553741.06017 718 8a7c30c12e70f7e2d768c6cf1c2eb9d0 "pdflatex"
+  "main.run.xml" 1746553741.11419 2361 35d4ba219a86576031cb1c143b5e2c09 "pdflatex"
   "main.tex" 1746502160.74055 9822 c30d3ecdfbcc4a239c58bc56fc3c242b ""
   "portada.tex" 1743890478 1836 f81be721ed8404ea534317817152028a ""
   (generated)
