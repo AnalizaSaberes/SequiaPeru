@@ -1,0 +1,100 @@
+\chapter{DISEÑO METODOLÓGICO}
+
+\section{Tipo y Nivel de Investigación}
+
+La investigación observacional se caracteriza por estudiar las variables sin intervenir directamente sobre ellas, es decir, el investigador no modifica ni altera las condiciones naturales del fenómeno. Este tipo de investigación es frecuente en estudios explicativos no experimentales. Por otro lado, una investigación retrospectiva es aquella en la que el investigador utiliza información histórica, datos previamente registrados o recolectados por terceros, sin haber participado en el proceso de recopilación. Asimismo, una investigación longitudinal implica medir una o más variables en diferentes momentos, de manera periódica o rutinaria. Cuando estas mediciones periódicas se utilizan con fines científicos, forman lo que se conoce como estudios de series temporales. Finalmente, una investigación analítica es aquella en la que se estudia la relación entre dos o más variables.
+
+Por otro lado, el nivel de investigación predictivo se refiere al uso de modelos matemáticos o estadísticos que permiten estimar la probabilidad o frecuencia con la que puede ocurrir determinado fenómeno en el futuro \parencite{supo2024}.
+
+En este contexto, el presente estudio corresponde a una investigación observacional, retrospectiva, longitudinal y analítica, ya que utiliza datos hidrometeorológicos históricos previamente registrados por estaciones meteorológicas, sin que el investigador haya intervenido en su recopilación. Estos datos, que incluyen variables climáticas como precipitación, temperatura, humedad relativa y velocidad media del viento, son analizados a lo largo de diferentes períodos con el propósito de identificar relaciones que permitan predecir eventos de sequía agrícola. Asimismo, el nivel del estudio es predictivo debido a que se emplearán modelos geoestadísticos y de cópulas para desarrollar un modelo matemático capaz de anticipar la ocurrencia y severidad de las sequías en la región de estudio.
+
+\section{Métodos de Investigación}
+Para el desarrollo del estudio se empleó el método \textit{cuantitativo}, dado que se basa en el análisis estadístico de datos numéricos provenientes de variables hidrometeorológicas como la precipitación, temperatura, humedad relativa y velocidad media del viento. Este método permite identificar patrones, relaciones y tendencias objetivas en los datos, fundamentales para construir modelos predictivos de sequías. Asimismo, se utilizaron técnicas específicas como el \textit{análisis estadístico multivariado}, mediante la aplicación de \textit{modelos de cópulas}, que permiten evaluar la dependencia y relaciones no lineales entre las variables estudiadas, garantizando la validez, precisión y confiabilidad de los resultados obtenidos.
+
+\section{Diseño de la Investigación}
+
+El diseño de la investigación es de tipo \textit{no experimental y longitudinal}, ya que no se realiza manipulación ni control directo sobre las variables hidrometeorológicas analizadas (precipitación, temperatura, humedad relativa y velocidad media del viento). En este caso, las variables se observan y analizan en condiciones naturales, utilizando registros históricos previamente recopilados durante varios períodos. Este diseño es adecuado para el estudio porque permite evaluar la evolución y la variabilidad climática a lo largo del tiempo, aspectos esenciales para identificar patrones y relaciones entre las variables estudiadas. De este modo, se facilita el desarrollo del modelo predictivo propuesto, cumpliendo así con el objetivo principal de anticipar eventos de sequía agrícola en la región del sur del Perú mediante la aplicación de técnicas estadísticas avanzadas, como las cópulas y métodos geoestadísticos.
+
+\section{Población y Muestra}
+
+\subsection{Población}
+
+La población del estudio está conformada por todas las estaciones meteorológicas del Perú gestionadas por el Servicio Nacional de Meteorología e Hidrología del Perú (SENAMHI), incluyendo estaciones convencionales con recepción de datos en tiempo real, estaciones convencionales con recepción en tiempo diferido y estaciones automáticas. Estas estaciones tienen relevancia debido a que recopilan información clave como precipitación (PT), humedad relativa (HR), temperatura (TM) y velocidad media del viento (VTMED), las cuales constituyen las variables fundamentales para el estudio del fenómeno de sequías agrícolas en la región sur del país.
+
+\subsection{Muestra}
+
+Se seleccionó una muestra conformada por 19 estaciones meteorológicas ubicadas estratégicamente en la región sur del Perú, las cuales fueron elegidas debido a su representatividad geográfica y la disponibilidad de datos históricos completos y confiables. Los criterios considerados para la inclusión de estas estaciones fueron: disponer de registros continuos y de calidad en las variables necesarias (precipitación, temperatura, humedad relativa y velocidad media del viento) durante el periodo de análisis.
+
+Las estaciones meteorológicas que conforman la muestra son las siguientes: Andahuaylas, Ancachuro, Cayra, Sicuani, Pucará, Mañazo, Huaraya, Coracora, Cotahuasi, Caravelí, Huambo, Candarave, Imata, Ubinas, Pizacoma, La Yarada, Pampablanca, Punta de Atico y Punta Coles. Esta selección garantiza que la muestra sea suficientemente representativa y robusta para el desarrollo del modelo predictivo de sequías agrícolas planteado en esta investigación.
+
+\subsection{Técnica de Muestreo}
+
+Para la selección de la muestra, se empleó un enfoque basado en la geoestadística mediante variogramas, siguiendo los fundamentos propuestos por Ver Hoef (2002). Esta técnica considera la dependencia espacial y parte de la hipótesis de que las variables climáticas analizadas poseen un comportamiento espacial autocorrelacionado y estacionario. La estacionariedad implica que las variables tienen un promedio constante en toda el área de estudio y que la correlación entre dos puntos depende exclusivamente de la distancia que los separa, independientemente de su posición específica.
+
+La estructura espacial fue analizada utilizando variogramas experimentales definidos por la siguiente ecuación:
+
+\begin{equation}
+\gamma(h) = \frac{1}{2N(h)} \sum_{\alpha=1}^{N(h)} [Z(x_{\alpha}) - Z(x_{\alpha}+h)]^2
+\end{equation}
+
+donde \(\gamma(h)\) es el variograma experimental para una distancia \(h\), \(N(h)\) es el número de pares de observaciones separadas por dicha distancia, y \(Z(x_{\alpha})\), \(Z(x_{\alpha}+h)\) son los valores observados en las posiciones espaciales \(x_{\alpha}\) y \(x_{\alpha}+h\), respectivamente \parencite{VerHoef2002}.
+
+Este enfoque geoestadístico permitió seleccionar las estaciones meteorológicas que mejor reflejan la variabilidad espacial de las condiciones climáticas, asegurando así una muestra representativa y robusta. Además, la elección fundamentada en el análisis de variogramas contribuye significativamente a la precisión y fiabilidad del modelo predictivo desarrollado.
+
+
+
+
+\subsection{Técnicas e Instrumentos de Recopilación de Datos}
+Para la obtención de información relevante en el presente estudio se utilizó la técnica del \textit{análisis documental}, mediante la revisión y recopilación de datos hidrometeorológicos históricos registrados por las estaciones meteorológicas del SENAMHI. Las variables específicas recolectadas incluyeron precipitación, temperatura, humedad relativa y velocidad media del viento. Para el procesamiento, análisis estadístico y modelamiento predictivo, se emplearon instrumentos computacionales como los lenguajes de programación \textit{R, Python y Julia}, aplicando modelos geoestadísticos y cópulas estadísticas. Estos instrumentos han sido validados previamente en múltiples estudios científicos, garantizando así la precisión y confiabilidad de los resultados obtenidos.
+
+
+\subsection{Procesamiento de Datos}
+
+El procesamiento de datos se llevó a cabo inicialmente mediante la completación o imputación de valores faltantes utilizando el método MICE (Multiple Imputation by Chained Equations), implementado en el lenguaje de programación R. Posteriormente, se realizó un análisis exploratorio para identificar tendencias en las series históricas; cabe precisar que, en el caso específico de la temperatura, no se aplicó corrección de tendencia debido a que la variabilidad natural de esta variable es relevante para el estudio y no se desea eliminar dicha información. Luego, se ejecutó un análisis de tendencia para las demás variables hidrometeorológicas estudiadas, efectuando ajustes cuando fue necesario. Finalmente, el análisis predictivo inició con la estimación mediante regresión espacial, utilizando la técnica de regresión cuantil basada en cópulas mediante Python, lo que permitió modelar adecuadamente la probabilidad y severidad de la ocurrencia de sequías agrícolas en la región sur del Perú.
+
+\section{Área de Estudio}
+
+\subsection{Ubicación y Delimitación Geográfica}
+  \begin{itemize}
+    \item Límites administrativos (departamentos, provincias, distritos).
+    \item Coordenadas extremas (latitud, longitud).
+    \item Extensión total (superficie en km²).
+    \item Breve descripción del acceso vial.
+  \end{itemize}
+
+\subsection{Fisiografía e Hidrografía}
+  \begin{itemize}
+    \item Relieve y altitud (cotas mínimas y máximas).
+    \item Principales cuencas y ríos (características generales).
+    \item Importancia de la red hidrográfica (disponibilidad de agua).
+  \end{itemize}
+
+\subsection{Clima y Características Meteorológicas}
+  \begin{itemize}
+    \item Tipos de clima predominantes (árido, semiárido, etc.).
+    \item Régimen de precipitación (temporalidad, estacionalidad).
+    \item Temperatura media, evaporación, humedad relativa.
+    \item Riesgos climáticos (sequías, heladas, etc.).
+  \end{itemize}
+
+\subsection{Suelos, Cobertura Vegetal y Uso del Terreno}
+  \begin{itemize}
+    \item Descripción general de los suelos (clase, fertilidad).
+    \item Cobertura vegetal (ecosistemas presentes).
+    \item Principales actividades productivas (agrícolas, mineras, etc.).
+  \end{itemize}
+
+\subsection{Importancia del Área de Estudio para la Investigación}
+
+ \begin{figure}[h] % [p] fuerza a que la figura vaya a una página aparte
+    \centering
+     \caption{
+        {Mapa de Cuencas y Estaciones en el Sur de Perú}\\[0.5em]
+    }
+    % Ocupa todo el ancho de la página
+    \includegraphics[width=1.2\textwidth]{Capitulos/mapa_cuencas_estaciones_pequeña_leyenda.pdf}
+    \label{fig:mapa_localizacion}
+\end{figure}
+
+
+  

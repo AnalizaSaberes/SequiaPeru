@@ -1,0 +1,294 @@
+\documentclass[11pt]{report}
+
+% ============================
+%     Paquetes básicos y Fuente
+% ============================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{helvet}                % Para utilizar una fuente sans serif similar a Arial
+\renewcommand{\familydefault}{\sfdefault}  % Establece la fuente por defecto en sans serif
+
+
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning}
+
+% Estilos de nodos con colores personalizados
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=4.5cm, minimum height=1cm, text centered, draw=black, fill=orange!30, font=\bfseries]
+\tikzstyle{process} = [rectangle, minimum width=4.5cm, minimum height=1cm, text centered, draw=black, fill=blue!15]
+\tikzstyle{decision} = [diamond, minimum width=3.5cm, minimum height=1.2cm, text centered, draw=black, fill=green!25, aspect=2]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+
+% Matemáticas avanzadas
+\usepackage{amsmath, amssymb, amsthm, mathtools}
+
+% Código fuente
+\usepackage{listings}
+
+% Geometría de página
+\usepackage{geometry}
+\geometry{top=2.5cm, bottom=3cm, left=3cm, right=3cm}
+
+% Interlineado (1.5) y sin espacio extra entre párrafos
+\usepackage{setspace}
+\setstretch{1.5}
+\setlength{\parskip}{0pt}
+
+% Gráficos y figuras
+\usepackage{graphicx}
+\usepackage{float}
+
+% Paquete para manejar la numeración continua de figuras y tablas
+\usepackage{chngcntr}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+
+% Tablas
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{adjustbox}
+\usepackage{pdflscape}
+\usepackage{ragged2e} 
+\usepackage{rotating} % Para tablas en horizontal
+\usepackage{booktabs} % Para mejorar el diseño de la tabla
+\usepackage{colortbl} % Para color en las líneas de la tabla
+% Bibliografía en estilo APA
+\usepackage[backend=biber,style=apa,sortcites=true,giveninits=true]{biblatex}
+
+
+\addbibresource{bibliografia.bib}
+
+% Otras utilidades
+\usepackage{csquotes}
+\usepackage[table]{xcolor}  % Carga xcolor con opción para tablas
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\usepackage{tcolorbox}
+
+% Para subfiguras
+\usepackage{subcaption}
+
+% Paquete caption: personalizar títulos de tablas y figuras
+\usepackage{caption}
+
+% -----------------------
+% Configuración de caption para tablas
+% -----------------------
+\captionsetup[table]{
+  justification=raggedright,  % Alinea a la izquierda
+  singlelinecheck=false,       % Evita centrar si el título es de una sola línea
+  labelsep=newline,            % "Tabla X" en una línea y el título en la siguiente
+  labelfont=bf,                % "Tabla X" en negritas
+  textfont=it                  % Título en cursiva
+}
+
+% -----------------------
+% Configuración de caption para figuras
+% -----------------------
+\captionsetup[figure]{
+  justification=raggedright,  % Alinea a la izquierda
+  singlelinecheck=false,       % Evita centrar si el título es de una sola línea
+  labelsep=newline,            % "Figura X" en una línea y el título en la siguiente
+  labelfont=bf,                % "Figura X" en negritas
+  textfont=it                  % Título en cursiva
+}
+
+% -----------------------
+% Cambiar "Table" por "Tabla" en español, en negritas
+% -----------------------
+\addto\captionsspanish{\renewcommand{\tablename}{\textbf{Tabla}}}
+\addto\captionsspanish{\renewcommand{\listtablename}{Índice de Tablas}}
+
+% -----------------------
+% Colores personalizados
+% -----------------------
+\definecolor{CaribbeanGreen}{RGB}{0,204,153}
+\definecolor{TableHeaderColor}{RGB}{0,102,204}
+\definecolor{TableRowColor}{RGB}{230,242,255}
+\definecolor{TableAltRowColor}{RGB}{204,229,255}
+
+\definecolor{ExtremelyWet}{RGB}{0,128,255}
+\definecolor{VeryWet}{RGB}{102,178,255}
+\definecolor{ModeratelyWet}{RGB}{204,229,255}
+\definecolor{SlightlyWet}{RGB}{230,247,255}
+\definecolor{Normal}{RGB}{255,255,255}
+\definecolor{SlightlyDry}{RGB}{255,245,204}
+\definecolor{MildDry}{RGB}{255,229,153}
+\definecolor{ModeratelyDry}{RGB}{255,204,153}
+\definecolor{SeverelyDry}{RGB}{255,128,0}
+\definecolor{ExtremelyDry}{RGB}{255,51,51}
+
+\definecolor{TableHeader}{RGB}{70,130,180}  
+\definecolor{TableRowLight}{RGB}{220,230,242}
+\definecolor{TableRowDark}{RGB}{190,210,230}
+\definecolor{HeaderColor}{RGB}{60,120,180}
+\definecolor{RowColor1}{RGB}{220,240,255}
+\definecolor{RowColor2}{RGB}{245,245,245}
+\definecolor{NavyBlue}{RGB}{0,0,128}
+
+\DeclareUnicodeCharacter{2212}{-} % Mapea el carácter U+2212 al guion normal
+% Definir los colores relacionados con la sequía
+\definecolor{DroughtYellow}{rgb}{1, 0.9, 0}  % Amarillo, asociado con calor y sequedad
+\definecolor{DroughtBrown}{rgb}{0.6, 0.4, 0.2}  % Marrón, asociado con la tierra seca
+\definecolor{DroughtOrange}{rgb}{1, 0.65, 0}  % Naranja, asociado con el calor extremo
+
+% Definir colores suaves para tablas científicas
+\definecolor{HeaderColor}{rgb}{0.0, 0.4, 0.6}  % Azul oscuro para el encabezado
+\definecolor{RowColor1}{rgb}{0.9, 0.9, 0.9}   % Gris claro para la primera fila de datos
+\definecolor{RowColor2}{rgb}{0.95, 0.95, 1.0} % Azul claro suave para la segunda fila de datos
+
+\definecolor{azul}{rgb}{0.1, 0.3, 0.8}
+\definecolor{rojo}{rgb}{0.8, 0.1, 0.1}
+\definecolor{gris}{rgb}{0.8, 0.8, 0.8} % Color para líneas
+% -----------------------
+% Hipervínculos y cleveref
+% -----------------------
+
+\usepackage{hyperref}
+\usepackage{cleveref}
+\hypersetup{
+    colorlinks=true,                
+    linkcolor=blue,                % Cambiar aquí el color de los enlaces (referencias internas)
+    citecolor=NavyBlue,            % Las citas internas en azul oscuro
+    urlcolor=NavyBlue,             % Los enlaces URL en azul oscuro
+    pdftitle={Tesis Doctoral},
+    pdfauthor={Virgilio Arriaga Gomez},
+    pdfsubject={Tesis Doctoral en [Tu Especialidad]},
+    pdfkeywords={Tesis, Doctorado, [Palabras clave]},
+    pdfcreator={LaTeX},
+    pdfproducer={pdflatex}
+}
+
+% Cambiar color del texto de las etiquetas 'Tabla', 'Figura', etc.
+\crefformat{table}{\textcolor{NavyBlue}{Tabla~#2#1#3}}
+\crefformat{figure}{\textcolor{NavyBlue}{Figura~#2#1#3}}
+\crefformat{section}{\textcolor{NavyBlue}{Sección~#2#1#3}}
+
+
+% ============================
+%     Ajustes de estilo del índice
+% ============================
+\renewcommand{\contentsname}{\large\bfseries Índice General}
+
+\renewcommand{\cfttoctitlefont}{\color{black}\Large\bfseries}
+\renewcommand{\cftloftitlefont}{\color{black}\large\bfseries}
+\renewcommand{\cftlottitlefont}{\color{black}\large\bfseries}
+
+\renewcommand{\cftchapfont}{\color{black}\bfseries}
+\renewcommand{\cftchappagefont}{\color{black}\bfseries}
+
+% ============================
+%     Estilos de títulos y secciones
+% ============================
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\normalsize\centering}
+  {CAPÍTULO~\Roman{chapter}}
+  {0em}{\MakeUppercase}
+\titlespacing*{\chapter}{0pt}{0.5\baselineskip}{0.5\baselineskip}
+
+\titleformat{\section}[hang]
+  {\normalfont\bfseries\normalsize}  % 12pt en negrita
+  {\thesection.}{1em}{}
+\titlespacing*{\section}{0pt}{0.5\baselineskip}{0.5\baselineskip}
+
+\titleformat{\subsection}[hang]
+  {\normalfont\bfseries\normalsize}  % 12pt en negrita
+  {\thesubsection.}{1em}{}
+\titlespacing*{\subsection}{0pt}{0.5\baselineskip}{0.5\baselineskip}
+
+% ============================
+%     Encabezados y pies de página
+% ============================
+% Ajustar la altura de la cabecera para evitar el warning
+\setlength{\headheight}{14pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\itshape Universidad Nacional del Centro del Perú}
+\fancyhead[R]{\small\itshape Capítulo \thechapter}
+\fancyfoot[C]{\small \thepage}
+
+% ============================
+%     Configuración para incluir código (listings)
+% ============================
+\lstset{
+    basicstyle=\small\ttfamily,
+    keywordstyle=\color{green!90},
+    commentstyle=\color{green!90},
+    stringstyle=\color{red},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=10pt,
+    frame=single,
+    breaklines=true,
+    captionpos=b
+}
+
+% ============================
+%      Inicio del documento
+% ============================
+\begin{document}
+
+% ---------------------------
+% Preliminares: Portada, Dedicatoria, Agradecimientos, etc.
+% ---------------------------
+\pagenumbering{roman}                % Numeración romana
+\renewcommand{\thepage}{\roman{page}} % Forzar minúsculas (i, ii, iii...)
+
+ \input{portada.tex} % ES LA PORTADA DE LA TESIS
+
+
+\cleardoublepage
+%\chapter*{Dedicatoria}
+%\addcontentsline{toc}{chapter}{Dedicatoria}
+%\input{dedicatoria.tex}
+
+\cleardoublepage
+%\chapter*{Agradecimientos} % Este comando crea un capítulo sin numeración
+%\addcontentsline{toc}{chapter}{Agradecimientos} % este comando añade la sección al índice
+%\input{agradecimiento.tex}
+
+\cleardoublepage
+%\tableofcontents
+
+\cleardoublepage
+%\listoffigures
+%\addcontentsline{toc}{chapter}{Índice de Figuras}
+
+\cleardoublepage
+%\listoftables
+%\addcontentsline{toc}{chapter}{Índice de Tablas}
+
+% ---------------------------
+% Contenido principal (Introducción y demás capítulos)
+% ---------------------------
+\cleardoublepage
+% Cambia el formato de la numeración a árabe sin reiniciar el contador
+\renewcommand{\thepage}{\arabic{page}}
+
+\input{Capitulos/Capitulo1.tex}
+%\input{Capitulos/Capitulo2.tex}
+%\input{Capitulos/Capitulo3.tex}
+% (Añade más capítulos según sea necesario.)
+
+% ---------------------------
+% Bibliografía
+% ---------------------------
+\cleardoublepage
+\printbibliography
+\addcontentsline{toc}{chapter}{Bibliografía}
+
+% ---------------------------
+% Anexos (sin numeración)
+% ---------------------------
+\cleardoublepage
+\pagenumbering{gobble}  % Suprime la numeración de página en los anexos
+\chapter*{Anexo A: [Título del Anexo]}
+% Contenido de los anexos...
+  
+\end{document}

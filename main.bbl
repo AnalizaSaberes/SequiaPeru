@@ -1,0 +1,621 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global}
+    \entry{Cabrera2021}{article}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=60993c6ee55e7186e4299180228f5d4a}{%
+           family={Cabrera},
+           familyi={C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=da38301244ede5cfd5d038c5dd8fed17}{%
+           family={Mejía},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1aeebab63863deee832734f95f563d4c}{%
+           family={Guevara-Pérez},
+           familyi={G\bibinithyphendelim P\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bfa9299ab2b11d4989aed6e4094f2511}
+      \strng{fullhash}{a115330811298a73cdc4c4bbffadcc9d}
+      \strng{bibnamehash}{a115330811298a73cdc4c4bbffadcc9d}
+      \strng{authorbibnamehash}{a115330811298a73cdc4c4bbffadcc9d}
+      \strng{authornamehash}{bfa9299ab2b11d4989aed6e4094f2511}
+      \strng{authorfullhash}{a115330811298a73cdc4c4bbffadcc9d}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Ingeniería UC}
+      \field{number}{1}
+      \field{title}{Modelación probabilística de la relación entre ENSO y sequías agrícolas en el sur de Perú}
+      \field{volume}{28}
+      \field{year}{2021}
+      \field{pages}{59\bibrangedash 68}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.54139/revinguc.v28i1.13
+      \endverb
+    \endentry
+    \entry{Cabrera2019}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=7cee123eca476d85d5bb76adf0b09867}{%
+           family={Cabrera},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{7cee123eca476d85d5bb76adf0b09867}
+      \strng{fullhash}{7cee123eca476d85d5bb76adf0b09867}
+      \strng{bibnamehash}{7cee123eca476d85d5bb76adf0b09867}
+      \strng{authorbibnamehash}{7cee123eca476d85d5bb76adf0b09867}
+      \strng{authornamehash}{7cee123eca476d85d5bb76adf0b09867}
+      \strng{authorfullhash}{7cee123eca476d85d5bb76adf0b09867}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{38th IAHR World Congress}
+      \field{title}{Relación entre la ocurrencia de sequía y el fenómeno Enso en el sur del Perú: un análisis de cópulas}
+      \field{year}{2019}
+      \field{pages}{3750\bibrangedash 3756}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.3850/38WC092019-0161
+      \endverb
+    \endentry
+    \entry{Cabrera2023}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=7ab59f7212403ac1efb85be1301e98d6}{%
+           family={Cabrera},
+           familyi={C\bibinitperiod},
+           given={W.\bibnamedelimi J.},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{institution}{1}{%
+        {Universidad Nacional Agraria La Molina}%
+      }
+      \strng{namehash}{7ab59f7212403ac1efb85be1301e98d6}
+      \strng{fullhash}{7ab59f7212403ac1efb85be1301e98d6}
+      \strng{bibnamehash}{7ab59f7212403ac1efb85be1301e98d6}
+      \strng{authorbibnamehash}{7ab59f7212403ac1efb85be1301e98d6}
+      \strng{authornamehash}{7ab59f7212403ac1efb85be1301e98d6}
+      \strng{authorfullhash}{7ab59f7212403ac1efb85be1301e98d6}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Modelamiento de sequías agrícolas en la región sur del Perú mediante el uso de funciones cópula}
+      \field{type}{phdthesis}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://repositorio.senamhi.gob.pe/item/07
+      \endverb
+      \verb{url}
+      \verb https://repositorio.senamhi.gob.pe/item/07
+      \endverb
+    \endentry
+    \entry{Esit2023}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=05ec5e6a828c359c119d93a34da7432e}{%
+           family={Esit},
+           familyi={E\bibinitperiod},
+           given={Musa},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac05dbe83347129ec4e56c1f3ee7d0ff}{%
+           family={Yuce},
+           familyi={Y\bibinitperiod},
+           given={Mehmet\bibnamedelima Ishak},
+           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature}%
+      }
+      \strng{namehash}{cafeaa7468e5ce722c2e6d2e1b4117b9}
+      \strng{fullhash}{cafeaa7468e5ce722c2e6d2e1b4117b9}
+      \strng{bibnamehash}{cafeaa7468e5ce722c2e6d2e1b4117b9}
+      \strng{authorbibnamehash}{cafeaa7468e5ce722c2e6d2e1b4117b9}
+      \strng{authornamehash}{cafeaa7468e5ce722c2e6d2e1b4117b9}
+      \strng{authorfullhash}{cafeaa7468e5ce722c2e6d2e1b4117b9}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoretical and Applied Climatology}
+      \field{title}{Copula-based bivariate drought severity and duration frequency analysis considering spatial–temporal variability in the Ceyhan Basin, Turkey}
+      \field{volume}{151}
+      \field{year}{2023}
+      \field{pages}{1113\bibrangedash 1131}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1007/s00704-022-04317-9
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00704-022-04317-9
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00704-022-04317-9
+      \endverb
+    \endentry
+    \entry{Samadian2024}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=61aafb97472c3d0476fc569bf44e77b6}{%
+           family={Samadian},
+           familyi={S\bibinitperiod},
+           given={Morteza},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3a2710261ef45abc393179b943492564}{%
+           family={Asadi},
+           familyi={A\bibinitperiod},
+           given={Esmaeil},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ab8aae3dd05a1541106e2a76c1083f6}{%
+           family={Ghorbani},
+           familyi={G\bibinitperiod},
+           given={Mohammad\bibnamedelima Ali},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e7df25fccd81321ada394bc6afc06a4}{%
+           family={Ahmadi},
+           familyi={A\bibinitperiod},
+           given={Farshad},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature}%
+      }
+      \strng{namehash}{e6acc4024b3e09c997ae5362b6469c68}
+      \strng{fullhash}{e52eda8d8cc4bf2ff9f2a92e23d19b2c}
+      \strng{bibnamehash}{e52eda8d8cc4bf2ff9f2a92e23d19b2c}
+      \strng{authorbibnamehash}{e52eda8d8cc4bf2ff9f2a92e23d19b2c}
+      \strng{authornamehash}{e6acc4024b3e09c997ae5362b6469c68}
+      \strng{authorfullhash}{e52eda8d8cc4bf2ff9f2a92e23d19b2c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta Geophysica}
+      \field{title}{Joint analysis of drought affected by climate change in Zarinehrood watershed, Iran, using copula functions}
+      \field{volume}{72}
+      \field{year}{2024}
+      \field{pages}{3631\bibrangedash 3645}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/s11600-024-01306-6
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11600-024-01306-6
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11600-024-01306-6
+      \endverb
+    \endentry
+    \entry{Terzi2025}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=31d88bc86187c6d0cfef999ac6a7cd01}{%
+           family={Terzi},
+           familyi={T\bibinitperiod},
+           given={Tolga\bibnamedelima Barış},
+           giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=79dcbab07093b46c78ce614de9b8317f}{%
+           family={Önöz},
+           familyi={Ö\bibinitperiod},
+           given={Bihrat},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature Switzerland AG}%
+      }
+      \strng{namehash}{0502f123294e905f65e015fe333d0bce}
+      \strng{fullhash}{0502f123294e905f65e015fe333d0bce}
+      \strng{bibnamehash}{0502f123294e905f65e015fe333d0bce}
+      \strng{authorbibnamehash}{0502f123294e905f65e015fe333d0bce}
+      \strng{authornamehash}{0502f123294e905f65e015fe333d0bce}
+      \strng{authorfullhash}{0502f123294e905f65e015fe333d0bce}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sustainable Water Resources Management}
+      \field{number}{11}
+      \field{title}{Análisis avanzado de sequías mediante un nuevo índice multivariado basado en cópulas: un estudio de caso de la cuenca del río Ceyhan}
+      \field{volume}{11}
+      \field{year}{2025}
+      \field{pages}{1\bibrangedash 19}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1007/s40899-025-01189-5
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s40899-025-01189-5
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s40899-025-01189-5
+      \endverb
+    \endentry
+    \entry{Vega2016}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8ce6825492100c8c7d47917982eb64bd}{%
+           family={Vega-Jácome},
+           familyi={V\bibinithyphendelim J\bibinitperiod},
+           given={Fiorella},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universidad Nacional Agraria La Molina}%
+      }
+      \strng{namehash}{8ce6825492100c8c7d47917982eb64bd}
+      \strng{fullhash}{8ce6825492100c8c7d47917982eb64bd}
+      \strng{bibnamehash}{8ce6825492100c8c7d47917982eb64bd}
+      \strng{authorbibnamehash}{8ce6825492100c8c7d47917982eb64bd}
+      \strng{authornamehash}{8ce6825492100c8c7d47917982eb64bd}
+      \strng{authorfullhash}{8ce6825492100c8c7d47917982eb64bd}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Análisis del riesgo de sequía en el sur del Perú}
+      \field{type}{phdthesis}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://hdl.handle.net//20.500.12542/108
+      \endverb
+      \verb{url}
+      \verb https://hdl.handle.net//20.500.12542/108
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global}
+    \entry{Cabrera2021}{article}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=60993c6ee55e7186e4299180228f5d4a}{%
+           family={Cabrera},
+           familyi={C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=da38301244ede5cfd5d038c5dd8fed17}{%
+           family={Mejía},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1aeebab63863deee832734f95f563d4c}{%
+           family={Guevara-Pérez},
+           familyi={G\bibinithyphendelim P\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bfa9299ab2b11d4989aed6e4094f2511}
+      \strng{fullhash}{a115330811298a73cdc4c4bbffadcc9d}
+      \strng{bibnamehash}{a115330811298a73cdc4c4bbffadcc9d}
+      \strng{authorbibnamehash}{a115330811298a73cdc4c4bbffadcc9d}
+      \strng{authornamehash}{bfa9299ab2b11d4989aed6e4094f2511}
+      \strng{authorfullhash}{a115330811298a73cdc4c4bbffadcc9d}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Ingeniería UC}
+      \field{number}{1}
+      \field{title}{Modelación probabilística de la relación entre ENSO y sequías agrícolas en el sur de Perú}
+      \field{volume}{28}
+      \field{year}{2021}
+      \field{pages}{59\bibrangedash 68}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.54139/revinguc.v28i1.13
+      \endverb
+    \endentry
+    \entry{Cabrera2019}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=7cee123eca476d85d5bb76adf0b09867}{%
+           family={Cabrera},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{7cee123eca476d85d5bb76adf0b09867}
+      \strng{fullhash}{7cee123eca476d85d5bb76adf0b09867}
+      \strng{bibnamehash}{7cee123eca476d85d5bb76adf0b09867}
+      \strng{authorbibnamehash}{7cee123eca476d85d5bb76adf0b09867}
+      \strng{authornamehash}{7cee123eca476d85d5bb76adf0b09867}
+      \strng{authorfullhash}{7cee123eca476d85d5bb76adf0b09867}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{38th IAHR World Congress}
+      \field{title}{Relación entre la ocurrencia de sequía y el fenómeno Enso en el sur del Perú: un análisis de cópulas}
+      \field{year}{2019}
+      \field{pages}{3750\bibrangedash 3756}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.3850/38WC092019-0161
+      \endverb
+    \endentry
+    \entry{Cabrera2023}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=7ab59f7212403ac1efb85be1301e98d6}{%
+           family={Cabrera},
+           familyi={C\bibinitperiod},
+           given={W.\bibnamedelimi J.},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{institution}{1}{%
+        {Universidad Nacional Agraria La Molina}%
+      }
+      \strng{namehash}{7ab59f7212403ac1efb85be1301e98d6}
+      \strng{fullhash}{7ab59f7212403ac1efb85be1301e98d6}
+      \strng{bibnamehash}{7ab59f7212403ac1efb85be1301e98d6}
+      \strng{authorbibnamehash}{7ab59f7212403ac1efb85be1301e98d6}
+      \strng{authornamehash}{7ab59f7212403ac1efb85be1301e98d6}
+      \strng{authorfullhash}{7ab59f7212403ac1efb85be1301e98d6}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Modelamiento de sequías agrícolas en la región sur del Perú mediante el uso de funciones cópula}
+      \field{type}{phdthesis}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://repositorio.senamhi.gob.pe/item/07
+      \endverb
+      \verb{url}
+      \verb https://repositorio.senamhi.gob.pe/item/07
+      \endverb
+    \endentry
+    \entry{Esit2023}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=05ec5e6a828c359c119d93a34da7432e}{%
+           family={Esit},
+           familyi={E\bibinitperiod},
+           given={Musa},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac05dbe83347129ec4e56c1f3ee7d0ff}{%
+           family={Yuce},
+           familyi={Y\bibinitperiod},
+           given={Mehmet\bibnamedelima Ishak},
+           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature}%
+      }
+      \strng{namehash}{cafeaa7468e5ce722c2e6d2e1b4117b9}
+      \strng{fullhash}{cafeaa7468e5ce722c2e6d2e1b4117b9}
+      \strng{bibnamehash}{cafeaa7468e5ce722c2e6d2e1b4117b9}
+      \strng{authorbibnamehash}{cafeaa7468e5ce722c2e6d2e1b4117b9}
+      \strng{authornamehash}{cafeaa7468e5ce722c2e6d2e1b4117b9}
+      \strng{authorfullhash}{cafeaa7468e5ce722c2e6d2e1b4117b9}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoretical and Applied Climatology}
+      \field{title}{Copula-based bivariate drought severity and duration frequency analysis considering spatial–temporal variability in the Ceyhan Basin, Turkey}
+      \field{volume}{151}
+      \field{year}{2023}
+      \field{pages}{1113\bibrangedash 1131}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1007/s00704-022-04317-9
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00704-022-04317-9
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00704-022-04317-9
+      \endverb
+    \endentry
+    \entry{Samadian2024}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=61aafb97472c3d0476fc569bf44e77b6}{%
+           family={Samadian},
+           familyi={S\bibinitperiod},
+           given={Morteza},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3a2710261ef45abc393179b943492564}{%
+           family={Asadi},
+           familyi={A\bibinitperiod},
+           given={Esmaeil},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ab8aae3dd05a1541106e2a76c1083f6}{%
+           family={Ghorbani},
+           familyi={G\bibinitperiod},
+           given={Mohammad\bibnamedelima Ali},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e7df25fccd81321ada394bc6afc06a4}{%
+           family={Ahmadi},
+           familyi={A\bibinitperiod},
+           given={Farshad},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature}%
+      }
+      \strng{namehash}{e6acc4024b3e09c997ae5362b6469c68}
+      \strng{fullhash}{e52eda8d8cc4bf2ff9f2a92e23d19b2c}
+      \strng{bibnamehash}{e52eda8d8cc4bf2ff9f2a92e23d19b2c}
+      \strng{authorbibnamehash}{e52eda8d8cc4bf2ff9f2a92e23d19b2c}
+      \strng{authornamehash}{e6acc4024b3e09c997ae5362b6469c68}
+      \strng{authorfullhash}{e52eda8d8cc4bf2ff9f2a92e23d19b2c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta Geophysica}
+      \field{title}{Joint analysis of drought affected by climate change in Zarinehrood watershed, Iran, using copula functions}
+      \field{volume}{72}
+      \field{year}{2024}
+      \field{pages}{3631\bibrangedash 3645}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/s11600-024-01306-6
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11600-024-01306-6
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11600-024-01306-6
+      \endverb
+    \endentry
+    \entry{Terzi2025}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=31d88bc86187c6d0cfef999ac6a7cd01}{%
+           family={Terzi},
+           familyi={T\bibinitperiod},
+           given={Tolga\bibnamedelima Barış},
+           giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=79dcbab07093b46c78ce614de9b8317f}{%
+           family={Önöz},
+           familyi={Ö\bibinitperiod},
+           given={Bihrat},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature Switzerland AG}%
+      }
+      \strng{namehash}{0502f123294e905f65e015fe333d0bce}
+      \strng{fullhash}{0502f123294e905f65e015fe333d0bce}
+      \strng{bibnamehash}{0502f123294e905f65e015fe333d0bce}
+      \strng{authorbibnamehash}{0502f123294e905f65e015fe333d0bce}
+      \strng{authornamehash}{0502f123294e905f65e015fe333d0bce}
+      \strng{authorfullhash}{0502f123294e905f65e015fe333d0bce}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sustainable Water Resources Management}
+      \field{number}{11}
+      \field{title}{Análisis avanzado de sequías mediante un nuevo índice multivariado basado en cópulas: un estudio de caso de la cuenca del río Ceyhan}
+      \field{volume}{11}
+      \field{year}{2025}
+      \field{pages}{1\bibrangedash 19}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1007/s40899-025-01189-5
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s40899-025-01189-5
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s40899-025-01189-5
+      \endverb
+    \endentry
+    \entry{Vega2016}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8ce6825492100c8c7d47917982eb64bd}{%
+           family={Vega-Jácome},
+           familyi={V\bibinithyphendelim J\bibinitperiod},
+           given={Fiorella},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universidad Nacional Agraria La Molina}%
+      }
+      \strng{namehash}{8ce6825492100c8c7d47917982eb64bd}
+      \strng{fullhash}{8ce6825492100c8c7d47917982eb64bd}
+      \strng{bibnamehash}{8ce6825492100c8c7d47917982eb64bd}
+      \strng{authorbibnamehash}{8ce6825492100c8c7d47917982eb64bd}
+      \strng{authornamehash}{8ce6825492100c8c7d47917982eb64bd}
+      \strng{authorfullhash}{8ce6825492100c8c7d47917982eb64bd}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Análisis del riesgo de sequía en el sur del Perú}
+      \field{type}{phdthesis}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://hdl.handle.net//20.500.12542/108
+      \endverb
+      \verb{url}
+      \verb https://hdl.handle.net//20.500.12542/108
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

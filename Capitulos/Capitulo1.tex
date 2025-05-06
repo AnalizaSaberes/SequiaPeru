@@ -1,0 +1,1072 @@
+\chapter{MARCO TEÓRICO}
+\section{Antecedentes}
+\subsection{Antecedentes Internacionales}
+\textcite{Terzi2025} llevaron a cabo un estudio en la cuenca del río Ceyhan (CRB), situada en el sur de Turquía, una región particularmente expuesta a la variabilidad climática y con alta dependencia de los recursos hídricos para la agricultura, la industria y el consumo urbano. La investigación propuso una metodología innovadora para el cálculo del Índice Multivariado Estandarizado de Sequía (MSDI), con el fin de mejorar la detección y evaluación de sequías meteorológicas e hidrológicas de forma integrada. El enfoque se basó en el uso dinámico de cópulas estadísticas, seleccionadas mensualmente según criterios de ajuste óptimo (AIC y BIC), permitiendo modelar la dependencia entre variables hidrometeorológicas con sensibilidad estacional.
+
+Los datos utilizados abarcaron series mensuales de precipitación y caudal entre 1989 y 2011, recopilados en cuatro pares de estaciones meteorológicas e hidrológicas. La metodología comparó el rendimiento del MSDI frente a índices tradicionales como el SPI y el SSFI, evidenciando diferencias sustanciales. Mientras los índices univariados identificaron solo cuatro eventos principales de sequía, el MSDI detectó ocho, lo que demuestra su capacidad para reconocer eventos combinados y capturar condiciones de sequía simultáneas que de otro modo podrían pasar desapercibidas. Particularmente, la sequía del periodo 2007–2009 fue clasificada como la más severa por el MSDI en tres de los cuatro pares de estaciones, superando la capacidad de los índices clásicos para reflejar su intensidad real. Además, varios episodios que fueron considerados de severidad moderada por SPI o SSFI fueron reclasificados como severos al integrar ambas variables en el MSDI.
+
+Las conclusiones del estudio resaltan que el uso del MSDI con selección mensual de cópulas incrementa significativamente la precisión y sensibilidad del monitoreo de sequías. Esta herramienta proporciona una representación más realista y robusta de las condiciones hidrometeorológicas extremas, facilitando la formulación de estrategias de gestión hídrica y planificación de recursos en territorios complejos como la CRB. La investigación sugiere que este enfoque es transferible a otras regiones con similar variabilidad climática y dependencia hídrica, y plantea como línea futura la incorporación de indicadores agrícolas para expandir el análisis hacia una perspectiva aún más integral.
+
+\begin{center}
+    \begin{tikzpicture}[node distance=1.5cm]
+    
+    \node (start) [startstop] {Inicio: Construcción del MSDI};
+    \node (data) [process, below of=start] {Datos mensuales de precipitación y caudal (1989--2011)};
+    \node (pair) [process, below of=data] {Formación de pares estación meteorológica/hidrológica (P1--P4)};
+    \node (clean) [process, below of=pair] {Tratamiento de datos faltantes (LSTM, CNN)};
+    \node (group) [process, below of=clean] {Agrupación por mes (estacionalidad)};
+    \node (copulafit) [process, below of=group] {Ajuste de cópulas por mes y escala (AIC/BIC)};
+    \node (transform) [process, below of=copulafit] {Cálculo del MSDI a partir de la función conjunta};
+    \node (compare) [process, below of=transform] {Comparación MSDI vs SPI/SSFI};
+    \node (analysis) [process, below of=compare] {Evaluación de duración, severidad e intensidad (Yevjevich)};
+    \node (end) [startstop, below of=analysis] {Conclusiones sobre desempeño multivariado};
+    
+    \draw [arrow] (start) -- (data);
+    \draw [arrow] (data) -- (pair);
+    \draw [arrow] (pair) -- (clean);
+    \draw [arrow] (clean) -- (group);
+    \draw [arrow] (group) -- (copulafit);
+    \draw [arrow] (copulafit) -- (transform);
+    \draw [arrow] (transform) -- (compare);
+    \draw [arrow] (compare) -- (analysis);
+    \draw [arrow] (analysis) -- (end);
+    
+    \end{tikzpicture}
+    \end{center}
+    
+
+\textcite{Samadian2024} llevaron a cabo una investigación titulada \textit{´´Joint analysis of drought affected by climate change in Zarinehrood watershed, Iran, using copula functions"}, centrada en la cuenca del río Zarinehrood, una subcuenca esencial del lago Urmia ubicada en el noroeste de Irán. El objetivo del estudio fue evaluar la frecuencia conjunta de características de sequía meteorológica —específicamente su duración y severidad— tanto en el pasado como en escenarios climáticos futuros, mediante el uso de funciones cópula. La investigación, de naturaleza cuantitativa y no experimental, se apoyó en análisis estadístico multivariado y simulaciones climáticas derivadas del modelo CanESM2 bajo los escenarios RCP2.6, RCP4.5 y RCP8.5, abarcando el periodo 2020–2100.
+
+Se empleó el Índice de Precipitación Estandarizado (SPI) en escalas de 6, 12 y 24 meses, calculado a partir de datos históricos (1959–2019) obtenidos de tres estaciones meteorológicas: Miandoab, Saqez y Tekab. Las variables de duración (Dd) y severidad (Ds) de la sequía se analizaron conjuntamente utilizando cópulas bivariadas, entre las que destacaron las familias Frank y Galambos como las más representativas, seleccionadas mediante criterios de ajuste como RMSE y NSE.
+
+Los resultados en el periodo base revelaron que alrededor del 45\% de los meses presentaron déficit de precipitación (SPI < 0), y aproximadamente el 8\% calificaron como sequías severas (SPI < -1.5). En los análisis futuros, el escenario RCP8.5 mostró una reducción proyectada de precipitación entre 36\% y 42\%, junto con un incremento significativo en la probabilidad de eventos de sequía más prolongados e intensos en comparación con el escenario optimista RCP2.6. Por ejemplo, para un evento con severidad SPI = -1, la duración esperada en el escenario RCP2.6 fue de aproximadamente 5.5 a 6.7 meses, mientras que en RCP8.5 aumentó hasta 8 meses en las mismas condiciones de probabilidad.
+
+La investigación concluyó que el análisis conjunto de duración y severidad mediante cópulas ofrece una representación más realista del riesgo de sequía que los enfoques univariados tradicionales. Además, los resultados sugieren que, de mantenerse la tendencia actual de emisiones sin estrategias efectivas de mitigación, la región podría enfrentar sequías más frecuentes, extensas y severas. Esta metodología resulta valiosa para fundamentar políticas de planificación hídrica adaptativa, especialmente en regiones vulnerables como la cuenca del lago Urmia.
+
+
+\begin{center}
+    \begin{tikzpicture}[node distance=1.7cm]
+    
+    \node (start) [startstop] {Inicio: Evaluación de sequía bajo cambio climático};
+    \node (data) [process, below of=start] {Datos históricos SPI (1959--2019)};
+    \node (explore) [process, below of=data] {Análisis exploratorio y selección de estaciones};
+    \node (spi) [process, below of=explore] {Cálculo del SPI (6, 12, 24 meses)};
+    \node (char) [process, below of=spi] {Extracción de duración (Dd) y severidad (Ds)};
+    \node (margins) [process, below of=char] {Ajuste de distribuciones marginales};
+    \node (copulas) [process, below of=margins] {Evaluación de cópulas (Frank, Galambos)};
+    \node (validation) [process, below of=copulas] {Validación por RMSE y NSE};
+    \node (rcps) [process, below of=validation] {Proyecciones climáticas CanESM2 (RCP2.6, 4.5, 8.5)};
+    \node (joint) [process, below of=rcps] {Estimación futura de distribución conjunta Dd--Ds};
+    \node (end) [startstop, below of=joint] {Comparación de escenarios y recomendaciones};
+    
+    % Flechas
+    \draw [arrow] (start) -- (data);
+    \draw [arrow] (data) -- (explore);
+    \draw [arrow] (explore) -- (spi);
+    \draw [arrow] (spi) -- (char);
+    \draw [arrow] (char) -- (margins);
+    \draw [arrow] (margins) -- (copulas);
+    \draw [arrow] (copulas) -- (validation);
+    \draw [arrow] (validation) -- (rcps);
+    \draw [arrow] (rcps) -- (joint);
+    \draw [arrow] (joint) -- (end);
+    
+    \end{tikzpicture}
+    \end{center}
+
+
+\textcite{Esit2023} realizaron un estudio titulado \textit{´´Copula-based bivariate drought severity and duration frequency analysis considering spatial–temporal variability in the Ceyhan Basin, Turkey"}, centrado en la cuenca del río Ceyhan, una región del sureste de Turquía caracterizada por un clima mediterráneo con marcada variabilidad espacial y altitudinal. El propósito de la investigación fue evaluar la frecuencia conjunta de la duración y la severidad de las sequías meteorológicas, utilizando para ello funciones de cópulas bivariadas que permitieran reflejar la complejidad estadística de estos eventos, así como sus variaciones según la altitud (zonas altas, medias y bajas de la cuenca).
+
+El estudio adoptó un enfoque cuantitativo, de tipo básico y diseño no experimental, basado en el análisis estadístico multivariado. Se utilizaron registros mensuales de precipitación procedentes de 24 estaciones meteorológicas distribuidas estratégicamente a lo largo de la cuenca, seleccionadas mediante un muestreo no probabilístico basado en criterios geográficos y de altitud. Para la identificación de eventos de sequía se empleó el Índice de Precipitación Estandarizado (SPI) a una escala temporal de 3 meses (SPI-3), calculando como atributos principales la \textit{duración} —número de meses consecutivos con valores SPI negativos— y la \textit{severidad} —suma acumulada de dichos valores durante cada evento—.
+
+En la etapa preliminar, se aplicaron las pruebas de Mann–Kendall y Spearman Rho para verificar la homogeneidad y la estacionariedad de las series. Luego, se ajustaron distribuciones marginales para las variables de interés (duración y severidad), seleccionando aquellas con mejor desempeño según criterios de bondad de ajuste (AIC, BIC, log-verosimilitud), destacándose las distribuciones Weibull, Gamma y Log-normal como las más adecuadas según la estación y la altitud correspondiente.
+
+Posteriormente, se evaluaron diez familias de cópulas bivariadas —entre ellas Gumbel, Clayton, Frank, BB1, BB6 y BB7— para modelar la dependencia entre las variables. La elección de la mejor cópula para cada estación se basó en criterios de ajuste estadístico y en la capacidad de capturar la dependencia en colas (tail dependence). Las cópulas Gumbel y BB1 demostraron ser las más robustas para representar la relación entre severidad y duración de las sequías.
+
+Los resultados revelaron una clara distribución espacial del riesgo: las zonas meridionales de la cuenca presentaron mayores niveles de riesgo (es decir, menores periodos de retorno conjuntos), mientras que las regiones septentrionales mostraron menor exposición. Por ejemplo, en una estación de altitud media, el periodo de retorno conjunto \( T_{DS} \) —representando sequías simultáneamente prolongadas e intensas— fue de aproximadamente 137.9 años, mientras que el periodo de retorno alternativo \( T'_{DS} \) —que representa la ocurrencia de al menos una de las dos condiciones— fue de 78.4 años, en contraste con un periodo de retorno de 100 años estimado mediante análisis univariado.
+
+En conclusión, Esit y Yuce \textcite{Esit2023} demostraron que el enfoque bivariado basado en cópulas proporciona una caracterización más completa y precisa del riesgo de sequía en comparación con los métodos tradicionales univariados. Además, permite integrar de manera explícita la influencia de la altitud en la modelación de eventos extremos, lo cual resulta especialmente útil para la toma de decisiones en planificación hídrica, agrícola y energética en zonas propensas a sequías recurrentes.
+
+
+
+\begin{center}
+    \begin{tikzpicture}[node distance=1.5cm]
+    
+    \node (start) [startstop] {Inicio: Análisis bivariado de sequía};
+    \node (data) [process, below of=start] {Recolección de datos de 24 estaciones meteorológicas};
+    \node (spi) [process, below of=data] {Cálculo del SPI-3 (1959--2019)};
+    \node (extract) [process, below of=spi] {Extracción de duración (Dd) y severidad (Ds)};
+    \node (test) [process, below of=extract] {Pruebas de homogeneidad y estacionariedad (Mann-Kendall)};
+    \node (marginals) [process, below of=test] {Ajuste de distribuciones marginales (Weibull, Gamma, Log-normal)};
+    \node (copulas) [process, below of=marginals] {Evaluación de 10 cópulas (Gumbel, Frank, BB1...)};
+    \node (selection) [process, below of=copulas] {Selección de cópula por NSE, RMSE y ajuste de colas};
+    \node (joint) [process, below of=selection] {Análisis de frecuencia conjunta Dd--Ds};
+    \node (map) [process, below of=joint] {Identificación espacial de zonas con mayor riesgo};
+    \node (end) [startstop, below of=map] {Conclusiones y recomendaciones};
+    
+    \draw [arrow] (start) -- (data);
+    \draw [arrow] (data) -- (spi);
+    \draw [arrow] (spi) -- (extract);
+    \draw [arrow] (extract) -- (test);
+    \draw [arrow] (test) -- (marginals);
+    \draw [arrow] (marginals) -- (copulas);
+    \draw [arrow] (copulas) -- (selection);
+    \draw [arrow] (selection) -- (joint);
+    \draw [arrow] (joint) -- (map);
+    \draw [arrow] (map) -- (end);
+    
+    \end{tikzpicture}
+    \end{center}
+\subsection{Antecedentes Nacionales}
+
+En el estudio de \textcite{Cabrera2023}, cuyo título es *"Modelamiento de sequías agrícolas en la región sur del Perú mediante el uso de funciones cópula"*, se planteó como objetivo modelar la incidencia de las sequías agrícolas en la cuenca alta de los ríos Locumba y Caplina utilizando funciones multivariadas de distribución de probabilidad, conocidas como cópulas. La investigación, de enfoque aplicado y cuantitativo, inició con la evaluación del impacto del Fenómeno del Niño-Oscilación del Sur (ENOS), la temperatura del aire y la temperatura de la superficie del mar (TSM) en varias zonas ENSO sobre la ocurrencia de sequías agrícolas. Los resultados iniciales mostraron correlaciones bajas con los índices ENSO, por lo que se optó por utilizar la TSM en la zona 1+2 (TSM1+2) y la temperatura del aire (T) debido a su correlación media. Mediante la prueba estadística de Cramer Von Mises, se determinó que la cópula t-Student es la más adecuada para representar la relación entre los índices SPI3 y EMI, mientras que la cópula Frank fue más apropiada para modelar las relaciones entre SPI3 y la temperatura del aire, así como entre SPI3 y TSM1+2. Finalmente, se construyó una cópula tridimensional para estimar la probabilidad conjunta de ocurrencia de sequías extremas, concluyéndose que estas son más frecuentes bajo temperaturas del aire entre 10°C y 12°C y temperaturas de la superficie del mar en la zona 1+2 entre 24°C y 26°C.
+
+Por otro lado, \textcite{Cabrera2021} realizaron un análisis sobre la variabilidad espacio-temporal de las sequías en el Perú y su relación con el riesgo asociado al Fenómeno del Niño. Este estudio, de carácter aplicado y enfoque cuantitativo, utilizó series de datos climatológicos e hidrológicos para evaluar la frecuencia, duración e intensidad de las sequías. Los hallazgos revelaron variaciones significativas en el comportamiento espacial y temporal de estos eventos, confirmando que el Fenómeno del Niño incrementa considerablemente el riesgo de sequías en diversas regiones del país. Estos resultados son esenciales para mejorar la gestión de los recursos hídricos y desarrollar estrategias de mitigación efectivas.
+
+Asimismo, en el estudio de \textcite{Cabrera2019}, se planteó como objetivo analizar la relación entre la ocurrencia de sequías y el fenómeno ENSO en el sur del Perú, aplicando un enfoque basado en cópulas. La metodología incluyó el uso de funciones cópula para modelar la dependencia no lineal entre las condiciones de sequía y los eventos de ENSO, permitiendo capturar la complejidad de estas interacciones climáticas. Los resultados evidenciaron una correlación significativa entre las sequías en el sur del Perú y la fase de ENSO, demostrando que el uso de cópulas mejora la capacidad predictiva y ayuda a gestionar los riesgos climáticos en regiones vulnerables a eventos extremos.
+
+Finalmente, \textcite{Vega2016} se propuso evaluar el riesgo de sequías en el sur del Perú, basándose en la estimación del peligro y la vulnerabilidad a estos eventos. La metodología incluyó el uso de la base de datos PISCO V1.1 del SENAMHI, que contiene datos de precipitación grillada, junto con información espacial sobre factores físicos, ambientales y socioeconómicos. Para estimar el peligro de sequías, se desarrolló el Índice de Peligro de Sequías (DHI) mediante un análisis bivariado de la duración y severidad de estos eventos. La vulnerabilidad se determinó considerando variables como la elevación, pendiente, uso del suelo, textura del suelo, disponibilidad de presas de agua, distancia a ríos, densidad poblacional e Índice de Desarrollo Humano (IDH). Como resultado, se generaron mapas de peligro, vulnerabilidad y riesgo de sequías para la región sur del Perú, identificándose 24 distritos con riesgo de sequías muy alto y 210 distritos con riesgo alto en los 11 departamentos estudiados (Lima, Apurímac, Ayacucho, Arequipa, Cusco, Huancavelica, Ica, Junín, Moquegua, Puno y Tacna). Este estudio destaca la importancia de adoptar un enfoque integral para evaluar y gestionar los riesgos de sequía en una región altamente vulnerable.
+
+
+
+\begin{comment}
+\section{Bases Teóricas y conceptuales}
+
+\section{Conceptualización y definición de la sequía}
+
+El concepto de sequía ha evolucionado a lo largo de la historia. En sus primeras definiciones, como se refleja en los estudios de Grigg (1969), la sequía fue interpretada principalmente como la ausencia de precipitaciones durante períodos prolongados. En Gran Bretaña, el término "sequía" comenzó a utilizarse desde el siglo XVII, principalmente para describir los impactos negativos de la escasez de lluvias en la agricultura. Sin embargo, en esa época, la concepción de la sequía era limitada, pues no se reconocían sus efectos más amplios sobre la economía o la sociedad en general \parencite{eslamian, grigg1969}.
+
+A medida que avanzaron los estudios, investigadores como Lamb (1972) ampliaron la definición de sequía, no solo como la falta de lluvia, sino también incorporando otros factores relevantes como la evaporación y las altas temperaturas, que afectan el balance hídrico en las cuencas hidrográficas. De esta forma, las sequías empezaron a ser vistas como fenómenos climáticos complejos que incluyen tanto la escasez de precipitaciones como la alteración del ciclo natural del agua \parencite{lamb1972}.
+
+Durante la década de 1980, Palmer (1965) presentó una definición más detallada de la sequía, donde no solo se tenía en cuenta la falta de precipitaciones, sino también los efectos que esto tenía sobre los recursos hídricos y la producción agrícola. Palmer definió la sequía como "un periodo prolongado en el cual las precipitaciones son significativamente menores que el promedio histórico", enfatizando que esta definición debe ajustarse según el contexto en el que ocurra, como en la agricultura o el abastecimiento de agua \parencite{palmer1965}.
+
+En tiempos recientes, la definición de sequía ha seguido evolucionando. Actualmente, se considera un fenómeno multidimensional que no solo involucra el déficit hídrico, sino también los impactos sociales, económicos y ambientales de la escasez de agua. Según Wilhite (2000), la sequía puede definirse como "un déficit de agua que afecta diversos aspectos sociales y ambientales", destacando que las sequías son fenómenos que interactúan con el cambio climático, los patrones de uso del suelo y las dinámicas sociales y económicas \parencite{wilhite2000}.
+
+Hoy en día, los estudios contemporáneos sobre sequías profundizan aún más en cómo los cambios climáticos globales, como el cambio climático y la variabilidad climática, afectan la frecuencia, duración e intensidad de las sequías. Este fenómeno no solo altera los recursos hídricos, sino también los ecosistemas, la seguridad alimentaria y la salud humana, lo que demuestra la relevancia de una comprensión integral de las sequías en la actualidad \parencite{eslamian}.
+
+
+
+\section{Importancia histórica e impacto socioeconómico de las sequías}
+\textit{Consultar Capítulo 3 y 9 (Eslamian \& Eslamian, 2017)}
+
+
+Históricamente, la sequía ha estado estrechamente vinculada a crisis alimentarias y períodos prolongados de hambruna en diversas partes del mundo. Desde tiempos antiguos, estos eventos climáticos extremos han tenido graves consecuencias sobre la humanidad, afectando negativamente la producción agrícola, reduciendo significativamente la vegetación natural, provocando la disminución de las reservas hídricas, e incluso causando muertes masivas tanto de animales domésticos como de fauna silvestre debido a la falta de agua y alimentos. Adicionalmente, los largos períodos sin lluvias suficientes han dado lugar a fenómenos como tormentas de polvo y extensos incendios forestales, agravando aún más la situación.
+
+Por ejemplo, alrededor de los años 1200-1202 a.C., Egipto experimentó una severa hambruna debido a la ausencia prolongada de las inundaciones del río Nilo, fundamentales para fertilizar los cultivos. Este episodio histórico causó la muerte de aproximadamente 110,000 personas por inanición. Otro caso significativo ocurrió durante la década de 1930 en los Estados Unidos, cuando una de las sequías más extensas del siglo XX cubrió amplias regiones desde la costa este hasta California, generando el fenómeno conocido como "Dust Bowl". Las intensas tormentas de polvo causadas por la sequía arrasaron con alrededor de 50 millones de acres de tierras cultivables y provocaron serios problemas de salud pública.
+
+Asimismo, la Gran Hambruna China, ocurrida entre los años 1958 y 1961, es considerada una de las peores catástrofes relacionadas con sequías, registrando un número estimado de muertes entre 15 y 43 millones de personas. Anteriormente, en 1907, China ya había sufrido otra hambruna devastadora que cobró la vida de cerca de 24 millones de personas.
+
+En India, las consecuencias también fueron devastadoras. Entre los años 1896 y 1902, aproximadamente 19 millones de personas fallecieron como resultado de la hambruna provocada por sequías severas. Por otro lado, la Hambruna de Bengala, ocurrida en Bangladesh entre 1969 y 1973, cobró la vida de alrededor de 15 millones de individuos. Además, entre 1876 y 1879, otra grave hambruna afectó al norte de China, causando cerca de 13 millones de muertes, mientras que la Gran Hambruna India, entre 1876 y 1878, provocó más de 10 millones de víctimas mortales, afectando aproximadamente 250,000 millas cuadradas del territorio indio.
+
+Europa tampoco estuvo exenta de estos efectos devastadores; entre 1315 y 1317, aproximadamente 7.5 millones de personas murieron en la conocida como la Gran Hambruna Europea. Además, la Hambruna Soviética de 1932-1933 causó entre 7 y 10 millones de muertes, afectando severamente a Ucrania y Siberia. Otros eventos destacados incluyen la hambruna china de 1936 con aproximadamente 5 millones de muertes, y la hambruna rusa de 1921, que afectó principalmente a la región del Volga-Ural, dejando aproximadamente la misma cantidad de víctimas.
+
+Estos antecedentes históricos resaltan la necesidad crucial de estudiar y entender profundamente el fenómeno de la sequía, con el fin de anticipar y mitigar sus consecuencias potencialmente devastadoras en el futuro.
+
+La tabla \ref{tab:sequias_historicas} presenta un resumen de los eventos históricos más significativos relacionados con sequías y hambrunas, destacando las estadísticas de muertes y personas afectadas tanto a nivel mundial como en América Latina. Estos datos reflejan la magnitud del impacto de las sequías a lo largo de la historia y subrayan la importancia de estudiar y entender estos fenómenos, ya que las sequías continúan teniendo efectos devastadores en diferentes regiones del mundo, como lo evidencian los eventos históricos registrados en el informe de la FAO y el libro de Eslamian (2017) \parencite{eslamian,fao2024}.
+
+\begin{table}[htbp]
+\centering
+\scriptsize  % Reducir el tamaño del texto
+\caption{Eventos históricos relacionados con sequías y hambrunas.}
+\label{tab:sequias_historicas}
+\renewcommand{\arraystretch}{1.5}  % Aumentar el espacio entre las filas
+\setlength{\tabcolsep}{10pt}  % Ajustar el espacio entre las columnas
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\rowcolor{HeaderColor}\textcolor{white}{\textbf{Evento Histórico}} & \textcolor{white}{\textbf{Periodo}} & \textcolor{white}{\textbf{Muertes estimadas/Personas afectadas}} \\ \midrule
+\rowcolor{RowColor1} Gran Hambruna China & 1958--1961 & 15--43 millones \\
+\rowcolor{RowColor2} Hambruna China & 1907 & 24 millones \\
+\rowcolor{RowColor1} Hambruna India & 1896--1902 & 19 millones \\
+\rowcolor{RowColor2} Hambruna de Bengala & 1769--1773 & 15 millones \\
+\rowcolor{RowColor1} Hambruna del Norte de China & 1876--1879 & 13 millones \\
+\rowcolor{RowColor2} Gran Hambruna India & 1876--1878 & 10.3 millones \\
+\rowcolor{RowColor1} Gran Hambruna Europea & 1315--1317 & 7.5 millones \\
+\rowcolor{RowColor2} Hambruna Soviética & 1932--1933 & 7--10 millones \\
+\rowcolor{RowColor1} Sequía en Rusia & 1921 & 5 millones \\
+\rowcolor{RowColor2} Sequía China & 1928--1930 & 3 millones \\
+\rowcolor{RowColor1} Hambruna Rusa & 1601--1603 & 2 millones \\
+\rowcolor{RowColor2} Hambruna en Vietnam & 1945 & 400,000--2 millones \\
+\rowcolor{RowColor1} Sequía en Honduras & 2023 & 2.5 millones afectados \\
+\rowcolor{RowColor2} Sequía en Guatemala & 2023 & 4.3 millones afectados \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\section{Clasificación general de las sequías}
+\textit{Consultar Capítulos 6, 7, 8 y 9 (Eslamian \& Eslamian, 2017)}
+
+
+
+\section{Conceptualización y definición de la sequía}
+
+El concepto de sequía ha evolucionado a lo largo de la historia. En sus primeras definiciones, como se refleja en los estudios de Grigg (1969), la sequía fue interpretada principalmente como la ausencia de precipitaciones durante períodos prolongados. En Gran Bretaña, el término "sequía" comenzó a utilizarse desde el siglo XVII, principalmente para describir los impactos negativos de la escasez de lluvias en la agricultura. Sin embargo, en esa época, la concepción de la sequía era limitada, pues no se reconocían sus efectos más amplios sobre la economía o la sociedad en general \parencite{eslamian, grigg1969}.
+
+A medida que avanzaron los estudios, investigadores como Lamb (1972) ampliaron la definición de sequía, no solo como la falta de lluvia, sino también incorporando otros factores relevantes como la evaporación y las altas temperaturas, que afectan el balance hídrico en las cuencas hidrográficas. De esta forma, las sequías empezaron a ser vistas como fenómenos climáticos complejos que incluyen tanto la escasez de precipitaciones como la alteración del ciclo natural del agua \parencite{lamb1972}.
+
+Durante la década de 1980, Palmer (1965) presentó una definición más detallada de la sequía, donde no solo se tenía en cuenta la falta de precipitaciones, sino también los efectos que esto tenía sobre los recursos hídricos y la producción agrícola. Palmer definió la sequía como "un periodo prolongado en el cual las precipitaciones son significativamente menores que el promedio histórico", enfatizando que esta definición debe ajustarse según el contexto en el que ocurra, como en la agricultura o el abastecimiento de agua \parencite{palmer1965}.
+
+En tiempos recientes, la definición de sequía ha seguido evolucionando. Actualmente, se considera un fenómeno multidimensional que no solo involucra el déficit hídrico, sino también los impactos sociales, económicos y ambientales de la escasez de agua. Según Wilhite (2000), la sequía puede definirse como "un déficit de agua que afecta diversos aspectos sociales y ambientales", destacando que las sequías son fenómenos que interactúan con el cambio climático, los patrones de uso del suelo y las dinámicas sociales y económicas \parencite{wilhite2000}.
+
+Hoy en día, los estudios contemporáneos sobre sequías profundizan aún más en cómo los cambios climáticos globales, como el cambio climático y la variabilidad climática, afectan la frecuencia, duración e intensidad de las sequías. Este fenómeno no solo altera los recursos hídricos, sino también los ecosistemas, la seguridad alimentaria y la salud humana, lo que demuestra la relevancia de una comprensión integral de las sequías en la actualidad \parencite{eslamian}.
+
+\begin{table}[htbp]
+\centering
+\scriptsize  % Reducir el tamaño del texto
+\caption{Parámetros utilizados para calcular los diferentes tipos de sequía.}
+\label{tab:parametros_sequias}
+\renewcommand{\arraystretch}{1.5}  % Aumentar el espacio entre las filas
+\setlength{\tabcolsep}{12pt}  % Ajustar el espacio entre las columnas
+\begin{tabular}{@{}l>{\raggedright\arraybackslash}p{4.5cm}p{4.5cm}@{}}
+\toprule
+\rowcolor{HeaderColor}\textcolor{white}{\textbf{Tipo de Sequía}} & \textcolor{white}{\textbf{Parámetros/Variables}} & \textcolor{white}{\textbf{Descripción}} \\ \midrule
+\rowcolor{RowColor1} Sequía Meteorológica & Precipitación total & Análisis de la cantidad de lluvia caída en un periodo determinado. \\
+\rowcolor{RowColor2} Sequía Agrícola & Humedad del suelo & Mide el nivel de humedad en el suelo, crucial para el crecimiento de cultivos. \\
+\rowcolor{RowColor1} Sequía Hidrológica & Nivel de caudal de ríos & Mide la cantidad de agua en los ríos y acuíferos. \\
+\rowcolor{RowColor2} Sequía Socioeconómica & Índice de disponibilidad de agua & Evalúa la cantidad de agua disponible para consumo humano y agrícola. \\
+\rowcolor{RowColor1} Sequía Ambiental & Índice de vegetación & Mide la salud de la vegetación a través de la disponibilidad de agua. \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.5cm}  % Espacio entre la tabla y la nota
+
+\justifying  % Justificar el texto
+\small{\textit{Nota.} Los parámetros descritos son fundamentales para evaluar los efectos y la severidad de cada tipo de sequía, lo que permite planificar acciones de mitigación y adaptación ante estos fenómenos climáticos extremos. Estos valores pueden variar según las condiciones geográficas y climáticas específicas de cada región, y se utilizan principalmente para mejorar la comprensión y predicción de los impactos de la sequía en diferentes sectores.}
+\end{table}
+
+
+
+\section{Sequía Meteorológica}
+
+La sequía meteorológica se define como la falta prolongada de precipitación, que puede compararse con los valores históricos promedio de una región específica. Este tipo de sequía es uno de los primeros en ocurrir y se puede identificar mediante la deficiencia de precipitaciones durante un periodo determinado. La sequía meteorológica puede generar un efecto dominó en otros tipos de sequías, como la agrícola y la hidrológica, ya que la reducción en las precipitaciones afecta directamente el abastecimiento de agua, lo que impacta tanto en la agricultura como en los ecosistemas acuáticos.
+
+Según Serrano et al. (2010), los índices de sequía, como el Índice Estandarizado de Precipitación y Evapotranspiración (SPEI), se utilizan para medir la sequía meteorológica, considerando tanto la precipitación como la evapotranspiración. Estos índices son sensibles a los cambios en las condiciones climáticas y permiten evaluar la severidad de la sequía en función de los valores normales de precipitación para una región. La metodología propuesta por Vicente-Serrano y sus colaboradores ayuda a identificar de manera precisa los periodos de sequía, lo cual es fundamental para la gestión de recursos hídricos y la planificación agrícola \parencite{vicente2010}.
+
+En regiones con climas tropicales o subtropicales, las sequías meteorológicas pueden tener un impacto directo en la disponibilidad de agua para consumo y producción, mientras que en regiones con clima estacional, la sequía meteorológica es una amenaza más compleja que depende de los patrones de precipitación específicos de cada estación. Por lo tanto, la identificación temprana y el monitoreo constante de la sequía meteorológica son esenciales para mitigar sus efectos a largo plazo en la sociedad y el medio ambiente.
+
+
+\subsection{Definición específica y criterios para su identificación}
+
+La sequía meteorológica se define generalmente como el grado de sequedad determinado por la deficiencia de precipitaciones en comparación con un valor “normal” o promedio, y por la duración del periodo seco. Esta deficiencia de precipitaciones se evalúa mediante un umbral específico que se establece para un periodo de tiempo predeterminado. Por ejemplo, se puede considerar una deficiencia de precipitaciones del 80\% respecto al valor normal durante un periodo de 6 meses, aunque estos umbrales y duraciones pueden variar según las condiciones climáticas locales de cada región \parencite{vicente2010}.
+
+Este tipo de sequía es la primera en manifestarse, ya que la escasez de precipitaciones afecta directamente la disponibilidad de agua, lo cual puede desencadenar otros tipos de sequía, como la sequía agrícola o la sequía hidrológica. En las regiones caracterizadas por regímenes de precipitación durante todo el año, como en climas tropicales o subtropicales húmedos, la sequía meteorológica puede identificarse mediante el número de días con precipitaciones inferiores a un umbral específico. En contraste, en regiones con patrones estacionales de lluvia, esta definición puede no ser tan aplicable debido a las fluctuaciones naturales en la cantidad de precipitación de acuerdo con las estaciones del año.
+
+La sequía meteorológica, por lo tanto, no solo se relaciona con la falta de lluvia, sino también con los efectos prolongados de esta escasez sobre los recursos hídricos y los sectores que dependen de ellos, como la agricultura y la industria \parencite{vicente2010}.
+Para \textcite{chen2019} la sequía meteorológica se define como el déficit significativo de precipitaciones en comparación con los valores promedio históricos de una región, durante un periodo extendido. Este fenómeno se caracteriza por la escasez prolongada de lluvia, lo que afecta las reservas de agua superficiales y subterráneas en la región afectada. Para identificar la sequía meteorológica, se utilizan umbrales de deficiencia de precipitación en un intervalo de tiempo determinado, como un 80\% de lo normal durante seis meses, aunque este umbral varía según las condiciones climáticas locales de cada área 
+
+Los índices de sequía, como el Índice Estandarizado de Precipitación (SPI), son herramientas fundamentales para medir la sequía meteorológica. Estos índices comparan la precipitación actual con los promedios históricos y proporcionan un valor numérico que refleja la severidad de la sequía. La sequía meteorológica puede desencadenar otros tipos de sequías, como la **sequía agrícola** o la **sequía hidrológica**, cuando las condiciones de sequedad se prolongan lo suficiente como para afectar las fuentes de agua utilizadas para riego y consumo humano \parencite{chen2019}.
+
+
+\subsection{Indicadores para evaluar la sequía meteorológica}
+
+La evaluación de la sequía meteorológica se basa en diversos **índices climáticos** que permiten cuantificar el déficit de precipitaciones en una región, comparando las condiciones actuales con los valores climáticos históricos. Estos índices son herramientas clave para el monitoreo de la sequía, ya que no solo facilitan la identificación de este fenómeno, sino también permiten medir su severidad y duración. Entre los índices más utilizados se incluyen el \textit{Índice Estandarizado de Precipitación} (SPI), el \textit{Índice de Precipitación-Evapotranspiración Estandarizado} (SPEI), y el \textit{Índice de Palmer de Sequía Meteorológica} (PDSI).
+
+El \textit{SPI} es uno de los índices más comunes en la detección de la sequía meteorológica. Este índice se calcula comparando las precipitaciones actuales con la media histórica de la región. Su principal ventaja es su capacidad para capturar la variabilidad climática de la zona, lo que lo convierte en una herramienta flexible y adecuada para evaluar sequías en diversas regiones del mundo. \textcite{vicente2010} destacan que el \textit{SPI} no solo mide la cantidad de precipitación, sino que también es útil para identificar la intensidad y la duración de la sequía en relación con los valores históricos de precipitaciones, convirtiéndolo en un excelente indicador para evaluar las sequías meteorológicas.
+
+El \textit{SPEI}, por su parte, es una extensión del \textit{SPI} que tiene en cuenta no solo la precipitación, sino también la evapotranspiración. Esta versión es especialmente útil en regiones donde la evaporación juega un papel crucial en el balance hídrico, como en áreas cálidas. \textcite{wilhite2000} menciona que el \textit{SPEI} es más robusto en contextos de cambio climático, dado que incorpora tanto las precipitaciones como la variabilidad en temperatura y humedad, lo que lo hace más preciso al medir los déficits hídricos en estas situaciones.
+
+El \textit{PDSI} es otro índice importante en la evaluación de la sequía meteorológica. Desarrollado por \textcite{palmer1965}, este índice se basa en el balance hídrico del suelo, considerando tanto las precipitaciones como la evapotranspiración. A pesar de ser ampliamente utilizado, el \textit{PDSI} ha sido criticado por su tendencia a sobrestimar la sequía en zonas frías y subestimarla en áreas cálidas debido a su sensibilidad a las temperaturas. Sin embargo, sigue siendo un índice clave en la evaluación de la sequía, especialmente en estudios históricos y de largo plazo.
+
+Como se menciona en \textcite{eslamian}, la elección del índice adecuado depende de las características climáticas y geográficas de la región, ya que cada índice tiene sus limitaciones y es más adecuado para ciertos tipos de sequía. El uso combinado de varios índices permite realizar una evaluación más precisa de los eventos de sequía y sus impactos tanto en el entorno natural como en las sociedades humanas.
+
+
+\subsection{Clasificación del Índice de Precipitación Estandarizado (SPI)}
+
+El \textbf{Índice de Precipitación Estandarizado (SPI)} es una herramienta estadística utilizada para cuantificar la deficiencia o exceso de precipitación en diferentes escalas temporales, como los periodos de 3, 6, 9 y 12 meses, en comparación con los valores históricos correspondientes. Este índice es ampliamente utilizado en estudios climáticos y meteorológicos para identificar eventos de sequía o períodos de excesiva humedad \parencite{mckee1993}. Para su cálculo, es esencial contar con un registro histórico de datos de precipitaciones que cubra al menos 20 a 30 años. Sin embargo, una base de datos de 50 a 60 años o más proporciona una mayor robustez estadística, permitiendo obtener estimaciones más precisas de los valores medios y sus fluctuaciones \parencite{guttman1999}.
+
+El SPI se calcula mediante la comparación de la precipitación acumulada durante un periodo específico con el valor medio histórico de la misma estación o región, utilizando una distribución gamma para ajustar los datos de precipitación observados. La fórmula del SPI se expresa como la normalización de la precipitación estacional, la cual implica restar la media histórica de la precipitación y dividir el resultado entre la desviación estándar de la serie histórica de precipitaciones \parencite{mckee1993}.
+
+La siguiente fórmula representa el cálculo del SPI:
+
+\begin{equation}
+    \text{SPI} = \frac{X_{ij} - X_{im}}{\sigma}
+    \label{eq:spi_calculation2}
+\end{equation}
+
+donde:
+\begin{itemize}
+    \item $X_{ij}$ es la precipitación estacional en la estación $i$ durante la observación $j$.
+    \item $X_{im}$ es la media estacional a largo plazo en la estación $i$.
+    \item $\sigma$ es la desviación estándar de la serie temporal de precipitaciones.
+\end{itemize}
+
+Este índice no solo ayuda a identificar los eventos de sequía, sino también a evaluar la intensidad de las sequías. Valores negativos más bajos del SPI indican sequías más severas.
+
+\subsection*{Cálculo del SPI}
+
+El cálculo del \textit{SPI} se basa en la diferencia entre la precipitación observada y la media histórica de precipitaciones, normalizada por la desviación estándar de los valores históricos. Esta normalización permite comparar los valores de precipitación en una estación específica con su promedio histórico y determinar si las condiciones son más secas o húmedas de lo normal. Este enfoque proporciona un valor numérico que ayuda a evaluar la intensidad de la sequía y su severidad.
+
+A continuación se muestra la fórmula general para el cálculo del SPI, que se utiliza para ajustar la precipitación observada en función de su variabilidad histórica:
+\begin{equation}
+    P(x) = \frac{x^{\gamma-1} \exp\left(-\frac{x}{\beta}\right)}{\beta^{\gamma} \Gamma(\gamma)}
+    \label{eq:pdf_equation}
+\end{equation}
+
+donde:
+\begin{itemize}
+    \item $P(x)$ es la ecuación de densidad de probabilidad (p.d.f.).
+    \item $x$ es la variable aleatoria.
+    \item $\beta$ y $\gamma$ son los parámetros de la distribución gamma, donde $\beta$ es el parámetro de escala y $\gamma$ es el parámetro de forma.
+    \item $\Gamma(\gamma)$ es la función gamma evaluada en el parámetro $\gamma$.
+\end{itemize}
+
+
+Esta ecuación se emplea para ajustar los datos de precipitaciones en una distribución gamma, lo que facilita la comparación de la precipitación observada con los valores históricos y permite calcular la probabilidad de un déficit de precipitación en una región dada.
+
+\begin{table}[htbp]
+\centering
+\caption{Clasificación del Índice de Precipitación Estandarizado (SPI).}
+\label{tab:spi_classificationn}
+\renewcommand{\arraystretch}{1.5} % Espaciado entre filas
+\setlength{\tabcolsep}{10pt}     % Espaciado entre columnas
+\begin{tabular}{@{}p{5cm}p{7cm}@{}}
+\toprule
+\rowcolor{ExtremelyWet}
+\textcolor{white}{\textbf{Valor del SPI}} & \textcolor{white}{\textbf{Nivel de Humedad}} \\ 
+\midrule
+\rowcolor{ExtremelyWet}
++2.0 o mayor & Extremadamente húmedo \\ 
+\rowcolor{VeryWet}
++1.5 a +1.99 & Muy húmedo \\ 
+\rowcolor{ModeratelyWet}
++1.0 a +1.49 & Moderadamente húmedo \\ 
+\rowcolor{SlightlyWet}
+−0.99 a +0.99 & Normal \\ 
+\rowcolor{MildDry}
+−1.0 a −1.49 & Moderadamente seco \\ 
+\rowcolor{ModeratelyDry}
+−1.5 a −1.99 & Severamente seco \\ 
+\rowcolor{SeverelyDry}
+−2.0 o menor & Extremadamente seco \\ 
+\bottomrule
+\end{tabular}
+\caption*{\textit{Nota.} Adaptado de Guttman, N.B., J. Am. Water Resour. Assoc., 35(2), 311, 1999.}
+\end{table}
+
+
+
+\section{Geoestadística aplicada al estudio de sequías}
+
+\subsection{Fundamentos de geoestadística}
+
+La **geoestadística** es una rama de la estadística que se enfoca en el análisis espacial de datos, especialmente cuando estos datos están geográficamente correlacionados, como ocurre en el estudio de las sequías. En este contexto, los datos de precipitaciones y otros parámetros climáticos, como la temperatura y la humedad del suelo, presentan una **dependencia espacial** significativa. Esto significa que los valores observados en una ubicación están correlacionados con los valores en áreas cercanas. Este comportamiento de los datos es fundamental para modelar fenómenos naturales como la sequía.
+
+La **estacionariedad** es uno de los principios clave en la geoestadística, que implica que las propiedades estadísticas de un proceso no cambian a lo largo del espacio o del tiempo. En términos de sequías, esto significa que los patrones de precipitaciones y sus variaciones son constantes y predecibles dentro de una región dada, lo que facilita el análisis de los fenómenos de sequía. En regiones con climas estacionales, por ejemplo, el comportamiento de las precipitaciones puede seguir un patrón estacionario que ayuda a caracterizar las sequías y estimar su duración e intensidad bsection{Estacionariedad y dependencia espacial}
+
+La **dependencia espacial** es un concepto central en la geoestadística y se refiere a la correlación que existe entre las observaciones en distintos puntos del espacio. En el contexto de las sequías, esta dependencia espacial es clave para la predicción y el análisis de la severidad de los eventos. La **estacionariedad de segundo orden** implica que la autocovarianza entre dos puntos depende solo de la distancia entre ellos y no de su ubicación específica, lo que es útil para construir modelos espaciales que permitan predecir la intensidad de la sequía en diferentes áreas geográficas. Según **Lu Chen y Shenglian Guo (2019)**, la modelización de fenómenos espaciales, como la sequía, es más efectiva cuando se tiene en cuenta esta dependencia espacial a través de funciones como los **variogramas** y las **cópulas**.
+
+\subsubsection{Autocovarianza y variogramas}
+
+La **autocovarianza** mide la correlación entre dos puntos en el espacio, y es esencial para entender cómo las sequías se propagan en el territorio. Los **variogramas** son herramientas geoestadísticas que se utilizan para modelar esta autocovarianza espacial. Un variograma describe la variabilidad de un fenómeno (como la precipitación) en función de la distancia entre los puntos de observación. El análisis de variogramas es crucial para la comprensión de cómo las sequías afectan a distintas regiones y cómo estas regiones están interrelacionadas. Según **Grimaldi y Serinaldi (2006a)**, los variogramas son fundamentales para la estimación de la dependencia espacial en fenómenos hidrológicos como la sequía   .
+
+\subsection{Modelos  teóricos de variogramas}
+
+Existen varios modelos teóricos de variogramas que se utilizan en geoestadística para describir cómo la variabilidad de un fenómeno se distribuye a lo largo del espacio. Los modelos más comunes incluyen el modelo **exponencial**, **esférico** y **gaussiano**, que se utilizan para ajustar los datos de sequía. Estos modelos permiten estimar la dependencia espacial y son fundamentales para la construcción de modelos predictivos que evalúan la intensidad y la duración de la sequía. Según \textcite{eslamian}, la selección del modelo adecuado de variograma depende de la distribución espacial observada de la precipitación y otros factores climáticos relevantes  .
+
+\subsection{Métodos geostadístico para la interpolación espacial}
+
+Los métodos geoestadísticos, como el Kriging, son herramientas poderosas para la **interpolación espacial** de datos, lo que permite estimar los valores de precipitación o humedad en lugares donde no se dispone de mediciones directas. El Kriging ordinario es uno de los métodos más comunes, y se utiliza para estimar los valores en una ubicación específica basándose en la información de las ubicaciones cercanas. Esta técnica es particularmente útil para predecir la gravedad de la sequía en áreas no monitoreadas, ya que se basa en la suposición de que los puntos cercanos están correlacionados. Según \textcite{chen2019}, el Kriging es especialmente eficaz en la modelización de la variabilidad espacial de las precipitaciones y otros datos climáticos en zonas afectadas por sequías  .
+
+\subsection{Aplicaciones prácticas en estudios climáticos}
+
+La geoestadística aplicada al análisis de sequías ha demostrado ser una herramienta eficaz para el monitoreo y la predicción de sequías meteorológicas. En estudios recientes, como el realizado por \textcite{nohegar2013}, se emplearon diversos métodos geoestadísticos para analizar la variabilidad espacial de los índices de sequía, como el **SPI** (Índice de Precipitación Estandarizado) y el RDI (Reconnaissance Drought Index), en el sur de Irán. Estos métodos permiten realizar interpolaciones espaciales de los índices de sequía, lo que facilita la creación de mapas que muestran la severidad y extensión de las sequías en diferentes áreas.
+
+En este estudio, se utilizaron varias técnicas geoestadísticas, como kriging ordinario (OK), kriging indicador (IK) y kriging residual (RK), para derivar los mapas de los índices de sequía en 12 estaciones climáticas del sur de Irán. Los resultados indicaron que los métodos de kriging fueron los más precisos, mostrando los menores errores (RMSE) en comparación con otros métodos como el método de ponderación por distancia inversa (IDW). El análisis espacial realizado permitió identificar las áreas más afectadas por la sequía, lo que es fundamental para la gestión de recursos hídricos y la planificación de estrategias de mitigación.
+
+Como se señala en el trabajo de Nohegar et al. (2013), la capacidad de los métodos geoestadísticos para modelar la dependencia espacial de las precipitaciones y otros factores climáticos es crucial para una evaluación precisa de la sequía. La interpolación espacial mediante kriging no solo ayuda a predecir la intensidad de la sequía en áreas no muestreadas, sino que también permite una mejor comprensión de la variabilidad temporal y espacial de estos fenómenos.
+
+Los métodos geoestadísticos, como el kriging, son herramientas poderosas para el análisis y monitoreo de la sequía meteorológica, especialmente en regiones donde la variabilidad espacial es significativa. Este tipo de análisis permite identificar las áreas vulnerables y gestionar de manera más eficaz los recursos hídricos en épocas de sequía.
+
+
+
+
+\section{Cópulas}
+
+La teoría de las cópulas tiene sus raíces en los primeros intentos por modelar la dependencia entre variables aleatorias, un aspecto fundamental en estadística y probabilidad. El concepto de dependencia fue abordado inicialmente por Wassily Hoeffding en la década de 1940, quien introdujo métricas estadísticas que permitieron formalizar la relación entre variables aleatorias más allá de la correlación lineal. Una de sus contribuciones clave fue el desarrollo de una medida de dependencia invariante ante cambios de escala.
+
+En 1951, Maurice Fréchet amplió estas ideas al proponer una caracterización matemática de las relaciones de dependencia mediante funciones de distribución conjunta. Este trabajo planteó preguntas fundamentales sobre cómo combinar distribuciones marginales para generar distribuciones conjuntas. La desigualdad de Fréchet, que establece límites para una función de distribución conjunta \( H(x, y) \) en términos de sus marginales \( F(x) \) y \( G(y) \), es una de sus contribuciones más relevantes:
+
+\[
+\max(F(x) + G(y) - 1, 0) \leq H(x, y) \leq \min(F(x), G(y)).
+\]
+
+En 1956, Robert Féron continuó explorando la compatibilidad entre distribuciones marginales y conjuntas, estudiando correlaciones cuando los márgenes estaban dados. Este trabajo sentó las bases para una formalización más completa del concepto de dependencia.
+
+El siguiente avance significativo vino de Giorgio Dall'Aglio en 1959, quien trabajó en la compatibilidad de funciones de distribución y en el establecimiento de límites para estas combinaciones. Sus investigaciones apuntaban a resolver problemas asociados con la caracterización de relaciones de dependencia, lo que resultó crucial para los estudios posteriores.
+
+Ese mismo año, Abe Sklar formuló lo que hoy se conoce como el \textit{Teorema de Sklar}, el cual establece que cualquier función de distribución conjunta \( H(x, y) \) puede representarse mediante una cópula \( C(u, v) \) y las distribuciones marginales \( F(x) \) y \( G(y) \):
+
+\[
+H(x, y) = C(F(x), G(y)).
+\]
+
+El teorema de Sklar formalizó matemáticamente la relación entre distribuciones marginales y conjuntas, proporcionando una base sólida para el desarrollo de la teoría de las cópulas.
+
+En 1983, Berthold Schweizer y Abe Sklar publicaron el libro \textit{Probabilistic Metric Spaces}, que profundizó en el uso de cópulas dentro de espacios métricos probabilísticos. Este texto incluyó una exploración sobre normas triangulares, que también se relacionan con la estructura de las cópulas.
+
+Finalmente, en 1999, Roger Nelsen publicó el libro \textit{An Introduction to Copulas}, que consolidó el campo al presentar propiedades matemáticas, definiciones y aplicaciones prácticas de las cópulas. Su obra se convirtió rápidamente en una referencia clásica en el área, utilizada tanto por matemáticos como por profesionales en disciplinas aplicadas.
+
+Estas contribuciones colectivas establecieron las bases para el estudio moderno de las cópulas, posicionándolas como una herramienta clave en la modelación de dependencia entre variables aleatorias. 
+
+Las cópulas son funciones matemáticas que permiten conectar distribuciones conjuntas multivariadas con sus distribuciones marginales unidimensionales. Introducidas por Abe Sklar en 1959, las cópulas tienen la capacidad de capturar y modelar la estructura de dependencia entre dos o más variables aleatorias, lo que las convierte en una herramienta eficaz para representar la dependencia en datos multivariados. Entre sus principales ventajas se destacan: (1) la flexibilidad para seleccionar márgenes y estructuras de dependencia arbitrarias, (2) su aplicabilidad a distribuciones con más de dos variables y (3) la capacidad de separar el análisis de las distribuciones marginales de la estructura de dependencia. Las cópulas han encontrado un uso creciente en aplicaciones hidrológicas, donde han demostrado ser valiosas para modelar fenómenos complejos \parencite{chen2019}.
+
+
+
+
+
+\section{Definición de Cópulas}
+
+Para introducir de manera adecuada el concepto de \textit{cópulas}, es necesario abordar previamente la noción de \textit{subcópulas}, las cuales corresponden a una categoría especial de funciones 2-incrementales definidas en subconjuntos específicos del intervalo unitario \(I^2=[0,1]^2\). De manera sencilla, una subcópula puede entenderse como una función matemática que refleja parcialmente la dependencia entre dos variables aleatorias, siendo una clase particular de funciones acotadas con incrementos positivos \parencite{joe2015}.
+
+Formalmente, una cópula es una función conjunta de distribución acumulativa (CDF) cuyas marginales son uniformes en el intervalo [0,1]. Específicamente, una cópula permite vincular distribuciones marginales de diferentes variables aleatorias en una única función conjunta. La ventaja de las cópulas radica precisamente en su capacidad para modelar la estructura de dependencia de manera separada de las distribuciones marginales de las variables individuales, brindando flexibilidad en el análisis estadístico de fenómenos complejos, como las sequías meteorológicas \parencite{joe2015}.
+
+Las cópulas han cobrado gran relevancia en aplicaciones hidrológicas y climáticas, principalmente debido a su capacidad para capturar diferentes tipos de dependencia, incluyendo relaciones lineales, no lineales y dependencias en los extremos de las distribuciones (dependencias en las colas). Esta característica permite un análisis detallado de fenómenos climáticos extremos, como períodos secos o húmedos extremos, lo cual es especialmente relevante para la predicción y manejo de riesgos hidrometeorológicos \parencite{chen2019, joe2015}.
+
+Entre las propiedades importantes que caracterizan a las cópulas están la simetría, la invariancia frente a transformaciones monótonas crecientes y su capacidad de describir la dependencia tanto en el centro como en las colas de las distribuciones. Debido a estas propiedades, las cópulas proporcionan una forma sistemática y eficiente de estudiar la relación entre variables climáticas en múltiples escalas temporales \parencite{joe2015}.
+
+Por consiguiente, la aplicación del concepto de cópulas en estudios de sequía ofrece un marco sólido para evaluar la dependencia espacial y temporal entre variables hidrometeorológicas, facilitando así predicciones más precisas y robustas de fenómenos extremos.
+
+
+\subsection{Definición matemática de las cópulas}
+
+El teorema de Sklar establece que para un conjunto de \( n \) variables aleatorias continuas \(\{X_1, X_2, ..., X_n\}\) con funciones de distribución marginal acumulada (CDFs) \( u_i = F_{X_i}(x_i) \) para \( i = 1, ..., n \), existe una única cópula de dimensión \( n \) tal que:
+
+\begin{equation}
+    C(u_1, u_2, ..., u_n) = F(x_1, x_2, ..., x_n)
+    \label{eq:copula_cdf}
+\end{equation}
+
+donde:
+\begin{itemize}
+    \item \( C \) representa la función de distribución acumulada (CDF) de la cópula.
+    \item \( F_{X_i}(x_i) \) es la función de distribución marginal de la variable \( X_i \).
+\end{itemize}
+
+En términos más simples, las cópulas son funciones que vinculan distribuciones marginales de variables aleatorias en una distribución conjunta, definiéndose como funciones multivariadas sobre el hiper-cubo unitario \( [0,1]^n \), es decir:
+
+\begin{equation}
+    C(u_1, u_2, ..., u_n) = P(U_1 \leq u_1, U_2 \leq u_2, ..., U_n \leq u_n)
+    \label{eq:copula_joint_prob}
+\end{equation}
+
+Condiciones fundamentales de las cópulas
+
+Para que una función sea considerada una cópula válida, debe cumplir con dos condiciones principales: **condiciones de frontera** y **condiciones de incremento**.
+
+ Condiciones de frontera:
+\begin{enumerate}
+    \item \( C(u_1, 0) = C(0, u_2) = 0 \), lo que implica que si alguna de las variables marginales es cero, la probabilidad conjunta también lo será.
+    \item \( C(u_1,1) = u_1 \) y \( C(1,u_2) = u_2 \), indicando que si una variable alcanza su máximo valor de 1, la probabilidad conjunta se reduce a la probabilidad marginal de la otra variable.
+\end{enumerate}
+
+Condición de incremento:
+Para cualquier conjunto de valores \( u_{11}, u_{12}, u_{21}, u_{22} \) que cumplan con \( u_{11} \leq u_{12} \) y \( u_{21} \leq u_{22} \), se debe satisfacer la siguiente desigualdad:
+
+\begin{equation}
+    C(u_{12}, u_{22}) + C(u_{11}, u_{21}) - C(u_{12}, u_{21}) - C(u_{11}, u_{22}) \geq 0
+    \label{eq:copula_increasing}
+\end{equation}
+
+ Casos especiales de cópulas
+
+Las cópulas pueden modelar distintas estructuras de dependencia entre variables aleatorias. Dos casos extremos son:
+
+1. **Variables independientes**: La cópula que representa la independencia entre variables es el producto de sus distribuciones marginales:
+\begin{equation}
+    C(u_1, u_2) = u_1 u_2
+    \label{eq:copula_independent}
+\end{equation}
+
+2. **Variables completamente dependientes**: Cuando las variables están completamente correlacionadas, la cópula toma la forma:
+\begin{equation}
+    C(u_1, u_2) = \min(u_1, u_2)
+    \label{eq:copula_completely_dependent}
+\end{equation}
+
+Densidad de cópulas y función de densidad conjunta
+
+Si una cópula \( C \) es absolutamente continua, su **densidad de cópula** \( c(u_1, ..., u_n) \) está dada por la derivada parcial de la función de distribución conjunta:
+
+\begin{equation}
+    c(u_1, ..., u_n) = \frac{\partial^n C(u_1, ..., u_n)}{\partial u_1 \partial u_2 ... \partial u_n}
+    \label{eq:copula_density}
+\end{equation}
+
+La función de densidad de probabilidad conjunta (PDF) de un conjunto de variables aleatorias \( \{X_1, ..., X_n\} \) se obtiene como el producto de la densidad de la cópula y las densidades marginales:
+
+\begin{equation}
+    f(x_1, ..., x_n) = c(u_1, ..., u_n) \prod_{i=1}^{n} f_{X_i}(x_i)
+    \label{eq:copula_joint_pdf}
+\end{equation}
+
+Esta ecuación muestra cómo las cópulas permiten obtener la distribución conjunta de un conjunto de variables sin necesidad de asumir relaciones funcionales explícitas entre ellas, lo que proporciona un enfoque flexible para modelar estructuras de dependencia complejas más allá de la correlación tradicional.
+
+\section{ Diferentes Clases de Cópulas}
+
+Existen numerosas cópulas descritas en la literatura, las cuales se agrupan en tres categorías principales: (1) elípticas, (2) arqui-medeanas y (3) de valor extremo. Las cópulas gaussianas (normales) y t se clasifican dentro de las elípticas. En cuanto a las cópulas arqui-medeanas de un solo parámetro, se incluyen las cópulas Ali–Mikhail–Haq, Clayton, Frank, Gumbel–Hougaard y Joe, junto con sus extensiones. Las cópulas arqui-medeanas de dos parámetros comprenden las versiones BB1, BB2, BB3, BB6 y BB7 de Joe. Por otro lado, las cópulas de valor extremo incluyen algunas como Gumbel–Hougaard (que también es clasificada como una cópula arqui-medeana), la BB5 de Joe, así como las cópulas de Galambos, Hüsler y Tawn. Además, existen otras cópulas de uso más específico, como las cópulas Farlie–Gumbel–Morgenstern y Plackett.
+
+De todas las cópulas disponibles, las familias elípticas y arqui-medeanas son las más comúnmente empleadas en aplicaciones hidrológicas. Los detalles adicionales sobre estas dos clases de cópulas se definen en las secciones siguientes.
+
+\subsection{ Cópulas Elípticas}
+
+Las cópulas elípticas son aquellas correspondientes a distribuciones elípticas. La principal ventaja de las cópulas elípticas es que permiten capturar diferentes niveles de correlación entre un conjunto de variables aleatorias. Sin embargo, estas variables deben tener una matriz de correlación definida positiva. En estadística, una matriz de covarianza se considera definida positiva, a menos que una de las variables sea una combinación lineal exacta de las demás.
+
+El inconveniente principal de las cópulas elípticas es que no tienen una expresión en forma cerrada. Las cópulas elípticas más comúnmente usadas son la gaussiana (normal) y la t. La Tabla 26.1 presenta la definición de cada función de cópula para \( n = 2 \).
+
+
+
+
+\begin{table}[ht]
+\centering
+\caption{Summary of Elliptical Copulas with $n = 2$}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Copula} & \textbf{Function} & \textbf{Support} \\
+\hline
+Gaussian & 
+$C(u_1,u_2) = \int_{-\infty}^{\infty} \frac{1}{2\pi(1-\rho^2)^{1/2}} \exp \left( -\frac{x_1^2 + x_2^2 - 2\rho x_1 x_2}{2(1-\rho^2)} \right) \, dx_1 dx_2$ & 
+$x_1, x_2 \in \mathbb{R}$ \\
+\hline
+& $u_1 = \Phi(x_1), u_2 = \Phi(x_2)$ & \\
+\hline
+$t$ & 
+$C(u_1,u_2) = \int_{-\infty}^{\infty} \frac{1}{\pi(1-\rho^2)^{1/2}} \exp \left( \left[ 1 + \frac{x_1^2 + x_2^2 - 2\rho x_1 x_2}{\nu(1-\rho^2)} \right]^{-(\nu+2)/2} \right) \, dx_1 dx_2$ & 
+$x_1, x_2 \in \mathbb{R}$ \\
+\hline
+& $u_1 = t_\nu(x_1), u_2 = t_\nu(x_2)$ & \\
+\hline
+\end{tabular}
+\end{table}
+
+\vspace{1cm}
+
+\begin{table}[ht]
+\centering
+\caption{Summary of Commonly Used Archimedean Copulas with $n = 2$}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Copula} & \textbf{Function} & \textbf{Support} \\
+\hline
+Gumbel & 
+$C(u_1,u_2) = \exp \left( -\left[ (-\ln u_1)^\theta + (-\ln u_2)^\theta \right]^{1/\theta} \right)$ & 
+$\theta \in [1, \infty)$ \\
+\hline
+& $\theta$: Measure of dependency between $u_1$ and $u_2$ & \\
+\hline
+Clayton & 
+$C(u_1,u_2) = \left( u_1^{-\theta} + u_2^{-\theta} - 1 \right)^{-1/\theta}$ & 
+$\theta \in (0, \infty)$ \\
+\hline
+Frank & 
+$C(u_1,u_2) = -\frac{1}{\theta} \ln \left( \left( e^{-\theta u_1} - 1 \right) \left( e^{-\theta u_2} - 1 \right) \right) $ & 
+$\theta \in \mathbb{R}$ \\
+\hline
+Ali-Mikhail-Haq & 
+$C(u_1,u_2) = 1 - \left[ (1 - u_1)(1 - u_2) \right]^{\theta}$ & 
+$\theta \in [1, \infty)$ \\
+\hline
+Joe & 
+$C(u_1,u_2) = 1 - \left[ (1 - u_1)^\theta + (1 - u_2)^\theta \right]^{1/\theta}$ & 
+$\theta \in [1, \infty)$ \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{landscape} % Página en horizontal
+
+\begin{table}[htbp]
+\centering
+\caption{Modelos de Regresión Cuantil Basados en Cópulas}
+\label{tab:regresion_copulas}
+\renewcommand{\arraystretch}{1.4} % Espaciado entre filas
+\setlength{\tabcolsep}{12pt} % Espaciado entre columnas
+
+\begin{tabular}{@{}l c@{}}
+\toprule
+\textbf{Modelo} & \textbf{Ecuación} \\
+\midrule
+
+\textbf{Definición General} &
+\(
+P(Y \leq y \mid X = x) = C_u(v) = \alpha
+\) \\
+
+\textbf{Paso 1: Determinación de la Cópula} &
+\(
+C_u(v) = \alpha
+\) \\
+\multicolumn{2}{@{}l}{\textit{En este paso se define la relación entre las variables a través de la función de cópula.}} \\
+
+\textbf{Paso 2: Transformación de las Variables} &
+\(
+v = g_{\alpha}(u)
+\) \\
+\multicolumn{2}{@{}l}{\textit{Este paso involucra transformar las variables para ajustar la distribución a través de la función } \(g_{\alpha}\).} \\
+
+\textbf{Paso 3: Inversas de las Funciones Cuantiles} &
+\(
+u = Q_n^{-1}(x), \quad v = R_n^{-1}(y)
+\) \\
+\multicolumn{2}{@{}l}{\textit{Aquí se utilizan las funciones inversas de los cuantiles para calcular los valores de } \(u\) \textit{ y } \(v\).} \\
+
+\textbf{Paso 4: Obtención de la Ecuación Final} &
+\(
+y = \varphi_{\alpha}(x)
+\) \\
+\multicolumn{2}{@{}l}{\textit{Finalmente, se obtiene la relación final entre las variables mediante la función } \(\varphi_{\alpha}\).} \\
+
+\bottomrule
+\end{tabular}
+
+\end{table}
+
+\end{landscape} % Fin de la página horizontal
+
+
+
+
+
+
+\section{Modelado de Dependencia en Datos Climáticos Utilizando Cópulas}
+
+Las **cópulas** son funciones multivariadas que permiten modelar las dependencias entre variables aleatorias sin hacer suposiciones sobre sus distribuciones marginales. El uso de cópulas es particularmente útil en la modelización de fenómenos meteorológicos complejos, como las sequías, ya que permiten capturar dependencias no lineales entre variables como la temperatura, precipitación, y humedad relativa.
+
+En este análisis, se emplean diferentes técnicas estadísticas para estudiar las dependencias entre las variables. Los coeficientes de **correlación** como **Pearson**, **Spearman** y **Kendall**, calculados para los datos de las variables meteorológicas, permiten medir la fuerza y tipo de dependencia en las series temporales.
+
+ 1. **Cálculo de Coeficientes de Correlación**
+Uno de los pasos fundamentales en el análisis de dependencia es calcular los **coeficientes de correlación**, que indican la relación entre las variables en estudio. Los principales son:
+
+1.1 **Coeficiente de Correlación de Pearson**:
+El coeficiente de correlación de **Pearson** mide la relación lineal entre dos variables \( X \) y \( Y \), y se calcula de la siguiente manera:
+
+\begin{equation}
+    \rho_P = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x_i - \bar{x})^2 \sum_{i=1}^{n} (y_i - \bar{y})^2}}
+\end{equation}
+
+donde \( \bar{x} \) y \( \bar{y} \) son las medias de las variables \( X \) y \( Y \), respectivamente, y \( n \) es el número de observaciones.
+
+ 1.2 **Coeficiente de Correlación de Spearman**:
+El **coeficiente de Spearman** mide la relación monotónica entre las variables \( X \) y \( Y \). Se calcula en función de los rangos de las observaciones:
+
+\begin{equation}
+    \rho_S = 1 - \frac{6 \sum_{i=1}^{n} d_i^2}{n(n^2 - 1)}
+\end{equation}
+
+donde \( d_i \) es la diferencia entre los rangos de las observaciones \( x_i \) y \( y_i \).
+
+1.3 **Coeficiente de Correlación de Kendall**:
+El **coeficiente de Kendall** \( \tau \) mide la concordancia de los pares de datos. Se calcula como:
+
+\begin{equation}
+    \tau = \frac{(C - D)}{\binom{n}{2}}
+\end{equation}
+
+donde \( C \) es el número de pares concordantes y \( D \) es el número de pares discordantes.
+
+ 2. **Aplicación de Cópulas en la Modelización de Dependencia**
+
+Las **cópulas** permiten modelar la dependencia entre dos o más variables aleatorias de forma más general y flexible que los métodos tradicionales, que a menudo asumen distribuciones paramétricas. Para la aplicación de cópulas, se utilizan funciones de distribución acumulativa (CDF) y la densidad de cópulas para modelar las dependencias no lineales. En este contexto, la ecuación general de una cópula bivariada es:
+
+\begin{equation}
+    C(u_1, u_2) = P(U_1 \leq u_1, U_2 \leq u_2)
+\end{equation}
+
+donde \( u_1 \) y \( u_2 \) son las transformaciones de las variables \( X_1 \) y \( X_2 \) mediante sus distribuciones marginales.
+
+ 3. **Simulación y Gráficos de Dependencia**
+
+A través de la simulación de datos utilizando cópulas y funciones de densidad, podemos generar muestras de datos bivariados con las propiedades de dependencia deseadas. Un ejemplo de gráfico de dispersión de dos variables se muestra a continuación:
+
+\begin{equation}
+    \text{scatterplot}(X, Y) \quad \text{donde los puntos }(X, Y) \text{ son generados por la cópula seleccionada.}
+\end{equation}
+
+Los coeficientes de correlación, como se ilustran en la función de gráfica de dispersión, nos permiten visualizar la dependencia entre las variables.
+
+4. **Cálculo de Probabilidades Conjuntas con Cópulas**
+
+Una de las aplicaciones clave de las cópulas es la capacidad de calcular las probabilidades conjuntas de eventos extremos. Usando el enfoque de cópulas, podemos calcular las probabilidades de eventos simultáneos, como la ocurrencia de sequías extremas en múltiples variables climáticas. La fórmula general para las probabilidades conjuntas es:
+
+\begin{equation}
+    P(X \leq x, Y \leq y) = C(F_X(x), F_Y(y))
+\end{equation}
+
+donde \( F_X(x) \) y \( F_Y(y) \) son las funciones de distribución marginal de las variables \( X \) y \( Y \), respectivamente, y \( C \) es la cópula que describe la dependencia entre ellas.
+
+ 5. **Ejemplo de Aplicación: Evaluación de Dependencia entre Precipitación y Temperatura**
+
+Para ilustrar cómo se utilizan las cópulas en el análisis de sequías meteorológicas, se puede modelar la dependencia entre **precipitación** y **temperatura** usando una cópula gaussiana o Archimediana. La ecuación para evaluar la probabilidad conjunta de que ambos eventos ocurran simultáneamente (por ejemplo, un evento de sequía) sería:
+
+\begin{equation}
+    P(\text{Precipitación} \leq x, \text{Temperatura} \leq y) = C(F_{\text{Precip}}(x), F_{\text{Temp}}(y))
+\end{equation}
+
+Este modelo permite capturar la dependencia no lineal entre las variables, lo que es especialmente útil para predecir eventos extremos como las sequías.
+
+ 6. **Conclusión**
+
+El uso de cópulas para modelar la dependencia entre variables meteorológicas proporciona un enfoque flexible y robusto para evaluar y predecir eventos extremos, como sequías. A través de la regresión cuantil y el suavizamiento kernel, es posible realizar predicciones más precisas de estos fenómenos, capturando la variabilidad y las dependencias no lineales presentes en los datos meteorológicos.
+
+
+
+
+Este formato, que incluye **ecuaciones clave**, describe cómo las cópulas pueden aplicarse para modelar dependencias entre variables meteorológicas y cómo estas dependencias afectan la predicción de eventos de sequía. Si necesitas ajustar más detalles o agregar alguna sección adicional, avísame y estaré encantado de ayudarte.
+
+\begin{equation}
+    F_X(x) = P(X \leq x)
+    \label{eq:cdf_definition}
+\end{equation}
+
+\begin{equation}
+    \hat{F}(x) = \frac{1}{n h} \sum_{i=1}^{n} K \left( \frac{x - x_i}{h} \right)
+    \label{eq:kernel_density}
+\end{equation}
+
+\begin{equation}
+    K(u) = \frac{1}{\sqrt{2\pi}} \exp\left(-\frac{u^2}{2}\right)
+    \label{eq:gaussian_kernel}
+\end{equation}
+
+\begin{equation}
+    \hat{q}_\tau = \hat{F}^{-1}(\tau)
+    \label{eq:quantile_estimate}
+\end{equation}
+
+
+
+
+\section{Introducción}
+
+En muchos estudios, es común observar datos longitudinales donde los resultados se miden en múltiples momentos para cada sujeto. Un interés fundamental en los estudios longitudinales es predecir la respuesta basada en un conjunto de covariables y en su trayectoria pasada. Los métodos tradicionales de proyección se enfocan en predecir la media de la distribución condicional de la respuesta. Sin embargo, en algunas aplicaciones, los investigadores están interesados en predecir los cuantiles de cola, como por ejemplo, el bajo peso en estudios de crecimiento infantil (Abrevaya, 2001), los altos gastos en estudios de seguros (Shi y Frees, 2010), o en modelar toda la distribución condicional, como en los estudios de crecimiento infantil y presión arterial discutidos en Wu y Tian (2013).
+
+La regresión cuantil proporciona una herramienta conveniente para estudiar el comportamiento de las colas de la respuesta condicional a las covariables. Desde su introducción por Koenker y Bassett (1978), la regresión cuantil ha sido ampliamente estudiada para datos transversales, mientras que su desarrollo para datos longitudinales ha sido más limitado. Algunos investigadores han considerado modelos marginales de regresión cuantil para analizar datos longitudinales; por ejemplo, Jung (1996), He, Fu y Fung (2003), Wei y He (2006), Wang (2009), Mu y Wei (2009), Tang y Leng (2011), y Leng y Zhang (2014). Los modelos marginales se enfocan en los efectos de las covariables sobre las distribuciones marginales de las respuestas medidas repetidamente y, por lo tanto, no pueden ser utilizados para modelar la dependencia conjunta de estas.
+
+Considerando un modelo de regresión cuantil con un intercepto aleatorio, Koenker (2004) propuso un método de regularización L1 para obtener un estimador de reducción de los efectos aleatorios de los sujetos. Otros investigadores propusieron enfoques bayesianos para modelos de regresión cuantil condicional, como Geraci y Bottai (2007), Yuan y Yin (2010), Wang (2012), Geraci y Bottai (2014), Reich, Bondell y Wang (2010), y Kim y Yang (2011). Todos estos métodos requieren algún tipo de modelado paramétrico o semiparamétrico de la verosimilitud, y una suposición paramétrica sobre los efectos aleatorios.
+
+En este trabajo, proponemos un método semiparamétrico de regresión cuantil basado en cópulas, donde las funciones de cópulas se emplean para acomodar la dependencia temporal de los datos longitudinales. Las cópulas han sido aplicadas al análisis de datos longitudinales para modelos lineales generalizados (Meester y MacKay, 1994; Lambert y Vandenhende, 2002; Sun, Frees y Rosenberg, 2008; Song, 2000; Bai, Kang y Song, 2014). Para datos de series temporales, Bouyé y Salmon (2008) y Chen, Koenker y Xiao (2009) estudiaron modelos no lineales autorregresivos cuántiles implícitos en sus especificaciones de cópulas. Noh, Ghouch y Van Keilegom (2015) propusieron un método para la regresión cuantil semiparamétrica modelando la distribución conjunta de la respuesta y las covariables mediante cópulas.
+
+En un estudio empírico de datos longitudinales, Shi y Frees (2010) consideraron un método de cópula para la regresión cuantil modelando las marginals condicionales de las respuestas con una distribución Laplace asimétrica (AL), pero no se discutió la validez del método. La distribución AL tiene una estrecha conexión con la regresión cuantil porque el estimador de máxima verosimilitud en dicho modelo coincide con el estimador estándar de regresión cuantil para datos transversales. Sin embargo, demostraremos que el método basado en marginals Laplace asimétricos es restrictivo y puede tener efectos perjudiciales tanto en la estimación de los cuantiles como en la predicción bajo especificación incorrecta del modelo; se presentarán evidencias numéricas en las Secciones 3 y 4. Proponemos un enfoque más flexible y teóricamente justificable que aproxima las marginals condicionales mediante la regresión de cuantiles y modela la dependencia de las mediciones repetidas con funciones de cópulas. En lugar de hacer suposiciones paramétricas sobre las marginales, el método propuesto solo requiere que los cuantiles marginales de las respuestas longitudinales sean lineales en las covariables, y por lo tanto, puede considerarse un método semiparamétrico. El método propuesto no solo ofrece una estimación eficiente de los coeficientes en el modelo de regresión cuantil marginal, sino que también proporciona intervalos predictivos de la respuesta de un nuevo sujeto dado las mediciones previas y otras covariables.
+
+
+
+\section{Método Propuesto}
+
+\subsection{Notaciones y Modelos}
+
+Sea \( y_{ij} \) y \( x_{ij} \) la respuesta y las covariables de \( p \) dimensiones para el \( i \)-ésimo sujeto medido en el \( j \)-ésimo punto temporal, donde \( i = 1, \dots, n \) y \( j = 1, \dots, J_i \). Se asume que los sujetos son independientes, aunque las respuestas repetidas para el mismo sujeto pueden ser dependientes. Para simplificar, asumimos un diseño balanceado con \( J_i = J \) siendo finito. A lo largo de este trabajo, asumimos que el primer elemento de \( x_{ij} \) es 1, correspondiente al intercepto.
+
+Supongamos que \( \{y_i, x_i, i = 1, \dots, n\} \) es una muestra aleatoria de \( \{Y = (Y_1, \dots, Y_J)^T, X\} \). Denotemos \( G(y_1, \dots, y_J | x) \) como la distribución conjunta de \( (Y_1, \dots, Y_J)^T \) dado \( X = x \), con distribuciones marginales condicionales continuas \( F_1(\cdot | x), \dots, F_J(\cdot | x) \). Según el teorema de Sklar (1959), existe una función cópula \( C \) tal que:
+
+\begin{equation}
+    G(y_1, \dots, y_J | x) = C \left( F_1(y_1 | x), \dots, F_J(y_J | x); \theta_0 \right)
+    \label{eq:copula_model}
+\end{equation}
+
+Aquí, \( C \) es la cópula que vincula las distribuciones marginales. Para simplificar el modelo, consideramos que la función cópula es independiente de las covariables \( x \), excepto a través de las marginales condicionales \( F_j(\cdot | x) \), lo que lleva al modelo de cópula simplificado:
+
+\begin{equation}
+    G(y_1, \dots, y_J | x) = C \left( F_1(y_1 | x), \dots, F_J(y_J | x); \theta_0 \right)
+    \label{eq:simplified_copula}
+\end{equation}
+
+ 2.2. Modelo de Regresión Cuantil
+
+En lugar de hacer suposiciones paramétricas sobre \( F_j(\cdot | x) \), proponemos ajustar un proceso de cuantiles mediante el siguiente modelo de regresión cuantil lineal:
+
+\begin{equation}
+    Q_\tau (Y_j | x_{ij}) = x_{ij}^T \beta_0(\tau), \quad j = 1, \dots, J, \quad 0 < \tau < 1
+    \label{eq:quantile_regression}
+\end{equation}
+
+donde \( Q_\tau(Y_j | x_{ij}) \) es el \( \tau \)-ésimo cuantil de \( Y_j \) dado \( x_{ij} \), es decir, la solución de:
+
+\[
+Q_\tau(Y_j | x_{ij}) = \inf \left\{ y : F_j(y | x_{ij}) \geq \tau \right\}
+\]
+
+La ecuación anterior establece que el cuantil condicional \( Q_\tau \) depende linealmente de las covariables \( x_{ij} \), con el coeficiente de regresión \( \beta_0(\tau) \) que varía según el cuantil \( \tau \).
+
+ 2.3. Estimación del Modelo de Regresión Cuantil
+
+El estimador convencional de \( \beta_0(\tau) \), que ignora la correlación intra-sujeto, puede obtenerse mediante la minimización de la función de pérdida:
+
+\begin{equation}
+    \tilde{\beta}(\tau) = \arg \min_{b \in \mathbb{R}^p} \sum_{i=1}^{n} \sum_{j=1}^{J} \rho_\tau(y_{ij} - x_{ij}^T b)
+    \label{eq:quantile_loss}
+\end{equation}
+
+donde \( \rho_\tau(s) = s (\tau - I(s < 0)) \) es la función de pérdida de la regresión cuantil, y \( I(\cdot) \) es la función indicadora. Aunque \( \tilde{\beta}(\tau) \) es un estimador consistente de \( \beta_0(\tau) \), su eficiencia se ve comprometida si se ignora la correlación intra-sujeto.
+
+2.4. Estimación de la Cópula
+
+El log-likelihood condicional para el modelo propuesto, teniendo en cuenta la dependencia temporal, se puede escribir como:
+
+\begin{equation}
+    l\left( \beta(\tau), \theta \right) = \sum_{i=1}^{n} \sum_{j=1}^{J} \log \left( f \left( y_{ij} | x_{ij}; \beta(\tau) \right) \right) + \sum_{i=1}^{n} \log \left( c(u_{i1}, \dots, u_{iJ}; \theta) \right)
+    \label{eq:log_likelihood}
+\end{equation}
+
+donde:
+- \( f(y_{ij} | x_{ij}; \beta(\tau)) \) es la densidad condicional de \( y_{ij} \) dado \( x_{ij} \) y \( \beta(\tau) \).
+- \( c(u_{i1}, \dots, u_{iJ}; \theta) \) es la densidad asociada con la cópula \( C \), y \( u_{ij} \) es la transformación de \( y_{ij} \) según \( \beta(\tau) \).
+
+Este enfoque nos permite modelar la dependencia temporal mediante cópulas, lo que mejora la eficiencia en la estimación de \( \beta_0(\tau) \) y proporciona intervalos predictivos más precisos para nuevas observaciones.
+
+2.5. Estimación Semiparamétrica con Cópuas
+
+En lugar de asumir distribuciones paramétricas en las marginales \( F_j(\cdot | x) \), nuestro enfoque semiparamétrico considera que los cuantiles marginales de \( Y_{ij} \) son lineales en \( x_{ij} \), lo que permite modelar la dependencia entre las mediciones repetidas usando cópulas. Esto puede ser visto como un método de verosimilitud semiparamétrica que balancea la simplicidad del modelo con la flexibilidad necesaria para capturar las dependencias complejas.
+
+Este método no solo ofrece una estimación eficiente de los coeficientes en el modelo de regresión cuantil marginal, sino que también permite la construcción de intervalos predictivos para un nuevo sujeto, dados los valores de las covariables y las mediciones previas.
+
+\section{Regresión Cuantil Basada en Modelos de Cópulas: Enfoque No Paramétrico (Kernel Smoothing)}
+
+\subsection{Introducción a la Regresión Cuantil}
+La regresión cuantil se emplea para estimar los cuantiles condicionales de una variable dependiente \( y \) dado un conjunto de covariables \( X \). El \( \tau \)-ésimo cuantil condicional de \( y \) dado \( X \) se define como:
+
+\begin{equation}
+    Q_\tau(y | x) = \inf \left\{ y : F_Y(y | x) \geq \tau \right\}
+    \label{eq:quantile_definition}
+\end{equation}
+
+donde \( F_Y(y | x) \) es la función de distribución acumulada condicional de \( y \), y \( \tau \in (0, 1) \) representa el cuantil de interés.
+
+\subsubsection{Modelado No Paramétrico Mediante Suavizamiento Kernel}
+El suavizamiento kernel es una técnica no paramétrica utilizada para estimar la densidad de probabilidad \( f(x) \) de una variable aleatoria sin hacer suposiciones sobre la forma de la distribución subyacente. La estimación de la densidad de probabilidad en \( x \) se calcula con la siguiente fórmula:
+
+\begin{equation}
+    \hat{f}(x) = \frac{1}{n h} \sum_{i=1}^{n} K \left( \frac{x - x_i}{h} \right)
+    \label{eq:kernel_density_estimation}
+\end{equation}
+
+donde \( K \) es la función kernel, \( h \) es el ancho de banda que controla el grado de suavizado y \( n \) es el número total de observaciones.
+
+El **kernel gaussiano** es uno de los más comunes y se define como:
+
+\begin{equation}
+    K(u) = \frac{1}{\sqrt{2\pi}} \exp\left(-\frac{u^2}{2}\right)
+    \label{eq:gaussian_kernel}
+\end{equation}
+
+\subsection{Estimación de los Cuantiles Condicionales y Regresión Cuantil}
+La regresión cuantil condicional en este enfoque no paramétrico se estima mediante la minimización de una función de pérdida basada en la diferencia entre los cuantiles observados y los cuantiles estimados, en función de las covariables:
+
+\begin{equation}
+    \tilde{\beta}(\tau) = \arg \min_{\beta} \sum_{i=1}^{n} \rho_\tau(y_i - x_i^T \beta)
+    \label{eq:quantile_loss_function}
+\end{equation}
+
+donde \( \rho_\tau(u) = u (\tau - I(u < 0)) \) es la función de pérdida de la regresión cuantil, y \( I(\cdot) \) es la función indicadora.
+
+\subsection{Cálculo de la Log-Verosimilitud Condicional para Cópulas}
+El logaritmo de la verosimilitud condicional en el modelo propuesto, considerando la dependencia temporal entre las mediciones longitudinales, se expresa como:
+
+\begin{equation}
+    l\left( \beta(\tau), \theta \right) = \sum_{i=1}^{n} \sum_{j=1}^{J} \log \left( f \left( y_{ij} | x_{ij}; \beta(\tau) \right) \right) + \sum_{i=1}^{n} \log \left( c(u_{i1}, \dots, u_{iJ}; \theta) \right)
+    \label{eq:log_likelihood_copula}
+\end{equation}
+
+donde \( f(y_{ij} | x_{ij}; \beta(\tau)) \) es la densidad marginal de \( y_{ij} \), y \( c(u_{i1}, \dots, u_{iJ}; \theta) \) es la densidad de la cópula, con \( u_{ij} \) representando las transformaciones de \( y_{ij} \) bajo el modelo de regresión cuantil.
+
+ Evaluación de la Eficiencia y Exactitud del Estimador
+La eficiencia de los estimadores, tanto en la regresión cuantil tradicional como en la regresión cuantil basada en cópulas, se evalúa mediante simulaciones que calculan el **error de predicción promedio (MPE)** y las **probabilidades de cobertura** de los intervalos predictivos. La fórmula para el **error de predicción promedio** es:
+
+\begin{equation}
+    MPE = \frac{1}{500} \sum_{k=1}^{500} \rho_\tau(y_{n4,k} - \hat{q}_{n4,k}(\tau))
+    \label{eq:mpe_error}
+\end{equation}
+
+donde \( y_{n4,k} \) es la respuesta observada del sujeto \( n \) en el cuarto tiempo, y \( \hat{q}_{n4,k}(\tau) \) es el cuantil condicional estimado para el cuantil \( \tau \).
+
+\subsection{Resultados de Simulación y Comparación de Métodos}
+En los estudios de simulación, se comparan los métodos de regresión cuantil basados en cópulas (CQR) con otros métodos como la regresión cuantil convencional (QR) y el método propuesto por Leng y Zhang (LZ). Los resultados muestran que el **CQR** tiene una mayor eficiencia en comparación con otros métodos en la mayoría de los escenarios, especialmente cuando hay una dependencia intra-sujeto fuerte. Además, los intervalos predictivos generados por **CQR** son más estrechos, con una cobertura cercana al 95\%.
+
+\begin{table}[htbp]
+\centering
+\caption{Eficiencia relativa (RE) con respecto al estimador de independencia de trabajo (WI) y probabilidad de cobertura (CovP) de los intervalos de confianza del 95\% de diferentes métodos en \( \tau = 0.25 \) en los Casos 1–3.}
+\label{tab:efficiency_comparison}
+\renewcommand{\arraystretch}{1.5}
+\setlength{\tabcolsep}{10pt}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Método & \( \beta_0(\tau) \) & \( \beta_1(\tau) \) & \( \beta_2(\tau) \) \\ \midrule
+CQR & 1.04 & 1.07 & 1.26 \\ 
+LZ  & 1.09 & 1.06 & 1.06 \\ 
+AL  & 0.44 & 0.86 & 1.10 \\ 
+WI  & 1.00 & 1.00 & 1.00 \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\begin{equation}
+    f(x_1, ..., x_n) = c(u_1, ..., u_n) \prod_{i=1}^{n} f_{X_i}(x_i)
+    \label{eq:copula_pdf}
+\end{equation}
+
+\begin{equation}
+    \hat{f}(x) = \frac{1}{n h} \sum_{i=1}^{n} K \left( \frac{x - x_i}{h} \right)
+    \label{eq:kernel_density}
+\end{equation}
+
+\begin{equation}
+    K(u) = \frac{1}{\sqrt{2\pi}} \exp\left( -\frac{u^2}{2} \right)
+    \label{eq:gaussian_kernel}
+\end{equation}
+
+\subsection{Explicación de los Parámetros en el Método Kernel Smoothing y Cópulas}
+
+El método de **suavizamiento kernel** y las **cópulas** se utilizan conjuntamente para modelar la dependencia entre variables y estimar la distribución conjunta. A continuación, se explican los parámetros involucrados en las ecuaciones proporcionadas en la sección anterior:
+
+\subsubsection{Parámetros en la estimación de la densidad conjunta}
+
+1. **\( f(x_1, ..., x_n) \)**:
+    \begin{itemize}
+        \item Representa la **densidad conjunta** de las variables \( X_1, X_2, ..., X_n \), que describe la probabilidad de que las variables \( X_1, X_2, ..., X_n \) tomen valores específicos simultáneamente.
+    \end{itemize}
+
+2. **\( c(u_1, ..., u_n) \)**:
+    \begin{itemize}
+        \item Es la **densidad de la cópula**, que captura la dependencia entre las variables \( X_1, X_2, ..., X_n \). Esta función se evalúa en los valores transformados \( u_i = F_{X_i}(x_i) \), donde \( F_{X_i}(x_i) \) es la distribución marginal de la \( i \)-ésima variable \( X_i \).
+        \item La cópula permite modelar la relación entre las variables sin necesidad de especificar una distribución paramétrica para la dependencia.
+    \end{itemize}
+
+3. **\( f_{X_i}(x_i) \)**:
+    \begin{itemize}
+        \item Es la **densidad marginal** de la \( i \)-ésima variable \( X_i \). La densidad marginal describe la probabilidad de que una sola variable aleatoria \( X_i \) tome un valor específico sin tener en cuenta la dependencia con las demás variables.
+    \end{itemize}
+
+4. **\( u_i \)**:
+    \begin{itemize}
+        \item Es el **valor transformado** de \( x_i \) mediante la función de distribución marginal \( F_{X_i}(x_i) \). Se utiliza para vincular las distribuciones marginales con la cópula.
+        \item La transformación asegura que las variables estén en el intervalo \([0, 1]\), lo cual es necesario para aplicar cópulas.
+    \end{itemize}
+
+\subsubsection{Parámetros en la estimación de la densidad mediante suavizamiento kernel}
+
+1. **\( \hat{f}(x) \)**:
+    \begin{itemize}
+        \item Es la **estimación no paramétrica** de la densidad de probabilidad de la variable \( x \). Esta estimación se obtiene a partir de una combinación ponderada de las observaciones cercanas al punto \( x \).
+    \end{itemize}
+
+2. **\( n \)**:
+    \begin{itemize}
+        \item Representa el número de **observaciones** en el conjunto de datos. A mayor número de observaciones, la estimación de la densidad será más precisa.
+    \end{itemize}
+
+3. **\( h \)**:
+    \begin{itemize}
+        \item Es el **ancho de banda** o parámetro de suavizado. Este parámetro controla la cantidad de suavizado de los datos. Un \( h \) pequeño resulta en un suavizado más detallado (más sensible a las fluctuaciones de los datos), mientras que un \( h \) grande resulta en un suavizado más suave (con menos detalle).
+    \end{itemize}
+
+4. **\( K \)**:
+    \begin{itemize}
+        \item Es la **función kernel**, que es una función simétrica y suave. La función kernel asigna un peso a cada observación en función de su distancia del punto \( x \). Un kernel común es el **kernel Gaussiano**, definido como:
+        \[
+        K(u) = \frac{1}{\sqrt{2\pi}} \exp\left(-\frac{u^2}{2}\right)
+        \]
+        \item La función kernel debe ser no negativa, y su integral debe ser igual a 1 para asegurar que la densidad de probabilidad esté bien definida.
+    \end{itemize}
+
+\subsubsection{Parámetros en la regresión cuantil basada en cópulas}
+
+1. **\( Q_\tau (y | x) \)**:
+    \begin{itemize}
+        \item Representa el \( \tau \)-ésimo **cuantil condicional** de la variable \( Y \) dado el vector de covariables \( X \). El cuantil condicional es el valor de \( y \) para el cual la función de distribución condicional \( F_Y(y | x) \) alcanza el valor \( \tau \), es decir:
+        \[
+        Q_\tau (y | x) = \inf \left\{ y : F_Y(y | x) \geq \tau \right\}
+        \]
+        \item Este cuantil es de gran utilidad cuando se desean modelar los extremos de la distribución de \( Y \), como en el caso de fenómenos meteorológicos extremos como las sequías.
+    \end{itemize}
+
+2. **\( \beta_0(\tau) \)**:
+    \begin{itemize}
+        \item Es el **coeficiente de regresión cuantil** asociado al cuantil \( \tau \). Este coeficiente se estima para modelar cómo las covariables \( X \) afectan a la variable \( Y \) en el cuantil condicional \( \tau \).
+    \end{itemize}
+
+3. **\( \theta \)**:
+    \begin{itemize}
+        \item Representa el **parámetro de la cópula**, que describe la dependencia entre las variables. En el contexto de las cópulas, este parámetro define la relación entre las distribuciones marginales de las variables \( X_1, X_2, ..., X_n \).
+    \end{itemize}
+
+4. **\( F_j(y_j | x) \)**:
+    \begin{itemize}
+        \item Es la **distribución marginal condicional** de la \( j \)-ésima variable \( Y_j \), dada la covariable \( X \). Este término se utiliza en la estimación de la función de cópula para modelar la dependencia conjunta entre las variables.
+    \end{itemize}
+
+
+
+En resumen, los parámetros clave involucrados en el proceso de **Kernel Smoothing** y **cópulas** son el número de observaciones \( n \), el ancho de banda \( h \), la función kernel \( K \), el cuantil condicional \( Q_\tau \), los coeficientes de regresión \( \beta_0(\tau) \), y los parámetros de la cópula \( \theta \). Estos parámetros permiten construir un modelo flexible y no paramétrico para modelar la dependencia y los cuantiles condicionales en fenómenos como las sequías meteorológicas.
+
+
+\section{Regresión Cuantil Basada en Modelos de Cópulas: Enfoque No Paramétrico (Kernel Smoothing)}
+
+\subsection{Introducción a la Regresión Cuantil}
+\subsubsection{Conceptos Básicos y Diferencias con la Regresión Tradicional}
+La regresión cuantil es un enfoque estadístico que permite modelar relaciones entre variables considerando diferentes cuantiles de la distribución condicional de la variable dependiente, en lugar de únicamente su media. A diferencia de la regresión tradicional, que se enfoca en la estimación de la media condicional de la variable dependiente, la regresión cuantil proporciona una visión más completa del comportamiento de los datos, permitiendo la estimación de diferentes aspectos de la distribución de los datos condicionales, como el 10\%, 50\% y 90\% de los cuantiles. Este enfoque es particularmente útil cuando se desean modelar los efectos de variables independientes sobre las colas de la distribución, como en el caso de fenómenos climáticos extremos o eventos meteorológicos.
+
+\subsubsection{Aplicabilidad en Estudios Climáticos e Hidrológicos}
+En estudios climáticos e hidrológicos, la regresión cuantil es esencial para la modelización de fenómenos de alta y baja magnitud, tales como las sequías extremas y las precipitaciones. Al centrarse en los cuantiles, este método permite modelar no solo los eventos promedio, sino también aquellos de mayor o menor impacto, lo que resulta en una herramienta poderosa para la predicción y análisis de eventos climáticos extremos, como sequías severas o precipitaciones torrenciales. Además, permite evaluar la robustez de los modelos bajo diferentes escenarios de condiciones climáticas.
+
+\subsection{Modelado No Paramétrico Mediante Suavizamiento Kernel}
+\subsubsection{Fundamento Teórico del Método Kernel Smoothing}
+
+El suavizamiento kernel es una técnica estadística no paramétrica utilizada para estimar la función de densidad de probabilidad (PDF) de una variable aleatoria sin realizar suposiciones estrictas sobre la forma de la distribución subyacente. Esta propiedad hace que el suavizamiento kernel sea particularmente útil para modelar datos complejos y no lineales, como los que se encuentran en el análisis de fenómenos climáticos y meteorológicos. En la regresión cuantil, el método permite estimar cualquier cuantil de interés de forma flexible, sin imponer una estructura paramétrica rígida sobre los datos.
+
+El principio fundamental del suavizamiento kernel radica en utilizar un conjunto de "kernels" o funciones base para suavizar las observaciones, proporcionando así estimaciones de la distribución de los datos. Este enfoque permite obtener una estimación precisa de la función de distribución sin la necesidad de especificar una distribución paramétrica particular. Matemáticamente, el suavizamiento kernel se basa en una estimación de la densidad de probabilidad utilizando una función kernel \( K \), que pondera las observaciones cercanas según una ventana de suavizado definida por el ancho de banda \( h \).
+
+La estimación no paramétrica de la densidad \( \hat{f}(x) \) en el punto \( x \) se calcula como una media ponderada de las observaciones \( x_i \) de la muestra, utilizando el kernel \( K \) con el ancho de banda \( h \) para ajustar el suavizado. La fórmula general es:
+
+\begin{equation}
+    \hat{f}(x) = \frac{1}{n h} \sum_{i=1}^{n} K \left( \frac{x - x_i}{h} \right)
+    \label{eq:kernel_density_estimate}
+\end{equation}
+
+donde:
+\begin{itemize}
+    \item \( n \) es el número de observaciones en la muestra.
+    \item \( K \) es la función kernel, que es generalmente una función simétrica y suave, como el kernel Gaussiano:
+    \[
+    K(u) = \frac{1}{\sqrt{2\pi}} \exp\left(-\frac{u^2}{2}\right)
+    \]
+    \item \( h \) es el ancho de banda, que controla la cantidad de suavizado: un valor pequeño de \( h \) da lugar a un suavizado más preciso (con más detalle), mientras que un valor grande de \( h \) genera un suavizado más suave.
+\end{itemize}
+
+El suavizamiento kernel no solo permite la estimación de la densidad de probabilidad, sino también de funciones de distribución acumulada (CDF), lo cual es fundamental para la estimación de cuantiles. En el contexto de la regresión cuantil, el estimador del cuantíl \( q_\tau \) para un cuantil dado \( \tau \) (donde \( \tau \in (0, 1) \)) puede ser obtenido mediante la función de distribución acumulada estimada \( \hat{F}(x) \), utilizando el suavizado kernel en los datos.
+
+La estimación de los cuantiles en este enfoque no paramétrico se realiza mediante:
+
+\begin{equation}
+    \hat{q}_\tau = \hat{F}^{-1}(\tau)
+    \label{eq:quantile_estimate}
+\end{equation}
+
+donde \( \hat{F}^{-1} \) es la función inversa de la estimación de la CDF \( \hat{F} \), que se calcula de forma similar a la estimación de la densidad pero con el kernel aplicado a las distribuciones acumuladas de las observaciones.
+
+Este enfoque proporciona una gran flexibilidad y es especialmente adecuado para modelar fenómenos como las sequías meteorológicas, donde las distribuciones de las variables pueden ser complejas y no necesariamente gaussianas. La capacidad de capturar variabilidad en diferentes cuantiles sin imponer una distribución paramétrica rígida permite una mejor adaptación a los datos reales y una mayor precisión en la predicción de eventos extremos.
+
+
+\subsubsection{Procedimiento General de Aplicación}
+El proceso general del suavizamiento kernel en la regresión cuantil involucra los siguientes pasos: 
+1. Selección del kernel adecuado: El tipo más común es el kernel gaussiano, que se utiliza para suavizar los datos de manera eficiente.
+2. Determinación del ancho de banda: Este parámetro controla la cantidad de suavizado, siendo crucial para obtener estimaciones precisas y no sesgadas.
+3. Aplicación del kernel para suavizar los datos y estimar los cuantiles de interés, usando una función de pérdida adecuada y un procedimiento iterativo para calcular los coeficientes cuántiles.
+
+\subsection{Aplicación del Enfoque No Paramétrico en Predicción de Sequías Meteorológicas}
+\subsubsection{Ventajas del Modelado No Paramétrico Basado en Cópulas}
+El modelado no paramétrico basado en cópulas tiene varias ventajas cuando se utiliza en la predicción de fenómenos como las sequías meteorológicas. En primer lugar, permite modelar dependencias complejas entre variables climáticas sin la necesidad de suposiciones paramétricas estrictas sobre su distribución conjunta. Al usar cópulas, se pueden capturar dependencias no lineales y asimétricas entre variables como la temperatura, precipitación, y humedad relativa. Esto proporciona una mayor flexibilidad y precisión en la predicción de eventos extremos, como sequías severas, sin depender de modelos paramétricos rígidos.
+
+\subsubsection{Limitaciones y Consideraciones Prácticas del Enfoque Kernel}
+Aunque el suavizamiento kernel es una poderosa herramienta no paramétrica, tiene ciertas limitaciones. La principal de ellas es la elección del ancho de banda, que puede ser crítica para la precisión de la estimación. Un ancho de banda demasiado pequeño puede generar un sobreajuste (overfitting), mientras que uno demasiado grande puede suavizar demasiado los datos y perder detalles importantes. Además, el método kernel puede ser computacionalmente intensivo, especialmente cuando se tienen grandes conjuntos de datos, como es común en estudios climáticos y meteorológicos.
+
+\subsection{Aplicación en Datos Longitudinales Mediante Regresión Cuantil Basada en Cópulas}
+\subsubsection{Características y Retos en el Análisis de Datos Longitudinales}
+Los datos longitudinales son aquellos que se recogen a lo largo del tiempo para las mismas unidades de observación. En el contexto de las sequías meteorológicas, estos datos podrían incluir mediciones mensuales de temperatura, precipitación y humedad de varias estaciones meteorológicas a lo largo de varias décadas. El análisis de estos datos implica retos adicionales debido a la correlación temporal que puede existir entre las observaciones y la necesidad de modelar dependencias complejas en el tiempo.
+
+\subsubsection{Enfoque Semiparamétrico Basado en Cópulas para Datos Longitudinales}
+El enfoque semiparamétrico basado en cópulas, como el propuesto por Wang et al. (2015), combina las ventajas de los modelos paramétricos y no paramétricos. En este enfoque, las cópulas se utilizan para modelar las dependencias entre las variables, mientras que los marginales se modelan de manera independiente utilizando técnicas no paramétricas. Este enfoque es especialmente útil cuando se trata de datos longitudinales con dependencias complejas, como en el caso de las estaciones meteorológicas que recogen datos de diversas variables climáticas.
+
+\subsubsection{Ventajas del Método para la Predicción y Construcción de Intervalos Predictivos}
+Una de las principales ventajas de este enfoque es su capacidad para proporcionar intervalos predictivos más precisos, lo cual es fundamental para la planificación y la toma de decisiones en el ámbito de la gestión de recursos hídricos y la predicción de sequías. Además, al usar cópulas y la regresión cuantil, es posible modelar no solo la media de las variables climáticas, sino también sus colas, lo que resulta esencial para predecir eventos extremos como sequías prolongadas o periodos de fuertes lluvias.
+
+
+\subsection{Relación entre Cambio Climático y Sequías}
+\end{comment}
