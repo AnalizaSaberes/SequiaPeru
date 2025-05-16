@@ -59,6 +59,7 @@
 \usepackage[backend=biber,style=apa,sortcites=true,giveninits=true]{biblatex}
 
 
+
 \addbibresource{bibliografia.bib}
 
 % Otras utilidades
@@ -106,6 +107,9 @@
 % -----------------------
 % Colores personalizados
 % -----------------------
+% -----------------------
+% Colores personalizados
+% -----------------------
 \definecolor{CaribbeanGreen}{RGB}{0,204,153}
 \definecolor{TableHeaderColor}{RGB}{0,102,204}
 \definecolor{TableRowColor}{RGB}{230,242,255}
@@ -129,6 +133,7 @@
 \definecolor{RowColor1}{RGB}{220,240,255}
 \definecolor{RowColor2}{RGB}{245,245,245}
 \definecolor{NavyBlue}{RGB}{0,0,128}
+\definecolor{grisclaro}{gray}{0.95} % define un color suave
 
 \DeclareUnicodeCharacter{2212}{-} % Mapea el carácter U+2212 al guion normal
 % Definir los colores relacionados con la sequía
@@ -144,6 +149,10 @@
 \definecolor{azul}{rgb}{0.1, 0.3, 0.8}
 \definecolor{rojo}{rgb}{0.8, 0.1, 0.1}
 \definecolor{gris}{rgb}{0.8, 0.8, 0.8} % Color para líneas
+
+% Preambulo necesario
+\usepackage{pdflscape,longtable,xcolor,array}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 % -----------------------
 % Hipervínculos y cleveref
 % -----------------------
@@ -152,9 +161,9 @@
 \usepackage{cleveref}
 \hypersetup{
     colorlinks=true,                
-    linkcolor=blue,                % Cambiar aquí el color de los enlaces (referencias internas)
-    citecolor=NavyBlue,            % Las citas internas en azul oscuro
-    urlcolor=NavyBlue,             % Los enlaces URL en azul oscuro
+    linkcolor=CaribbeanGreen,                % Cambiar aquí el color de los enlaces (referencias internas)
+    citecolor=CaribbeanGreen,            % Las citas internas en azul oscuro
+    urlcolor=CaribbeanGreen,             % Los enlaces URL en azul oscuro
     pdftitle={Tesis Doctoral},
     pdfauthor={Virgilio Arriaga Gomez},
     pdfsubject={Tesis Doctoral en [Tu Especialidad]},

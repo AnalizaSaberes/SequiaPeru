@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.16)  6 MAY 2025 17:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.16)  16 MAY 2025 05:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1083,12 +1083,12 @@ LaTeX Info: Redefining \labelcpageref on input line 2370.
 Package cleveref Info: `amsthm' support loaded on input line 3026.
 Package cleveref Info: `listings' support loaded on input line 3131.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 164.
+Package hyperref Info: Option `colorlinks' set `true' on input line 173.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 235.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 244.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 ) (./main.aux
@@ -1097,26 +1097,26 @@ LaTeX Info: Redefining \% on input line 13.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 235.
-LaTeX Font Info:    ... okay on input line 235.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 235.
-LaTeX Font Info:    ... okay on input line 235.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 235.
-LaTeX Font Info:    ... okay on input line 235.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 235.
-LaTeX Font Info:    ... okay on input line 235.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 235.
-LaTeX Font Info:    ... okay on input line 235.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 235.
-LaTeX Font Info:    ... okay on input line 235.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 235.
-LaTeX Font Info:    ... okay on input line 235.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 235.
-LaTeX Font Info:    ... okay on input line 235.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 235.
-LaTeX Font Info:    ... okay on input line 235.
-LaTeX Info: Redefining \. on input line 235.
-LaTeX Info: Redefining \% on input line 235.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Info: Redefining \. on input line 244.
+LaTeX Info: Redefining \% on input line 244.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count494
@@ -1194,12 +1194,12 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 235.
-Package biblatex Info: Reference segment=0 on input line 235.
+Package biblatex Info: Reference section=0 on input line 244.
+Package biblatex Info: Reference segment=0 on input line 244.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 235.
+Package hyperref Info: Link coloring ON on input line 244.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -1248,15 +1248,8 @@ Package pdftex.def Info: Imagen 1.png  used on input line 12.
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Imagen 1.png>]) (./Capitulos/Capitulo1.tex
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 6.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
-(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 9.
+[1
 
 
 
@@ -1266,137 +1259,36 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
-LaTeX Info: Symbol \textasciiacute not provided by
-            font family phv in TS1 encoding.
-            Default family used instead on input line 25.
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 25.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmss.fd
-File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 25.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmss.fd
-File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-LaTeX Info: Symbol \textasciiacute not provided by
-            font family phv in TS1 encoding.
-            Default family used instead on input line 25.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 34.
- [2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [3] [4] [5] [6] [7]
-Overfull \hbox (37.26402pt too wide) in paragraph at lines 125--126
-\T1/phv/m/n/10.95 in-clu-yen-do aná-li-sis de de-pen-den-cia en co-las con el co-efi-cien-te de Ca-pé-raà^^UFougeres^^UGenest. 
- []
-
-[8] [9]
-
-LaTeX Warning: Command \~ invalid in math mode on input line 163.
-
-Missing character: There is no ñ in font cmr10!
-[10] [11]
-Overfull \hbox (0.49196pt too wide) in paragraph at lines 185--186
-[]\T1/phv/m/n/10.95 En el es-tu-dio de []Yang et al. ([][]2022[][]), cu-ya in-ves-ti-ga-ción se ti-tu-la \T1/phv/m/sl/10.95 Analy-zing spa-tial^^Utemporal
- []
-
-
-Overfull \hbox (3.27806pt too wide) in paragraph at lines 194--195
-\T1/phv/m/n/10.95 pu-las Ar-chi-me-dea-nas (Clay-ton, Frank, Gum-bel, Joe) con in-fe-ren-cia Ba-ye-sia-na (MCMC). 
- []
-
-[12]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 204.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 22.
+ [2]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [3] [4] [5] [6] [7] [8]
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 57.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-) [13]
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
-[]|\T1/phv/b/n/10.95 Método / Va-ria-bles
- []
+) [9] [10]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 136.
+ [11
+
+] [12
 
 
-Overfull \hbox (183.25023pt too wide) in alignment at lines 212--218
- [] [] [] [] [] [] 
- []
+] [13]) [14
+
+] [15
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
-[]|\T1/phv/b/n/10.95 Método / Va-ria-bles
- []
+] [16]
 
-
-Overfull \hbox (183.25023pt too wide) in alignment at lines 218--224
- [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (183.25023pt too wide) in alignment at lines 224--227
- [] [] [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
-[]|\T1/phv/m/n/10.95 Alizadeh-Sh et al.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
-[]|\T1/phv/m/n/10.95 100 es-ta-cio-nes
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
-[]|\T1/phv/m/n/10.95 Cópulas ar-chi-me-dea-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
-\T1/phv/m/n/10.95 nas ho-mo-gé-neas y
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--231
-[]|\T1/phv/m/n/10.95 Turquía
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--231
-[]|\T1/phv/m/n/10.95 24 es-ta-cio-nes
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
-[]|\T1/phv/m/n/10.95 Cópulas bi-va-ria-das
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
-[]|\T1/phv/m/n/10.95 Cópula tri-va-ria-da
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
-\T1/phv/m/n/10.95 ci-pi-ta-ción, cau-dal,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--233
-[]|\T1/phv/m/n/10.95 Turquía
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--233
-[]|\T1/phv/m/n/10.95 SPI, SS-FI,
- []
-
-
-Overfull \hbox (183.25023pt too wide) in alignment at lines 227--234
- [] [] [] [] [] [] 
- []
-
-[14]) [15] [16
-
-
-] [17]
-
-Package caption Warning: Unused \captionsetup[figure] on input line 98.
+Package caption Warning: Unused \captionsetup[figure] on input line 99.
 See the caption package documentation for explanation.
 
 [1
@@ -1418,18 +1310,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41311 strings out of 474116
- 796098 string characters out of 5743681
- 1945187 words of memory out of 5000000
- 63020 multiletter control sequences out of 15000+600000
- 588482 words of font info for 74 fonts, out of 8000000 for 9000
+ 41289 strings out of 474116
+ 795109 string characters out of 5743681
+ 1957187 words of memory out of 5000000
+ 63000 multiletter control sequences out of 15000+600000
+ 596866 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,13n,131p,1639b,2908s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (19 pages, 320674 bytes).
+ 102i,12n,131p,2288b,2908s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on main.pdf (18 pages, 303496 bytes).
 PDF statistics:
- 238 PDF objects out of 1000 (max. 8388607)
- 191 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 500000)
+ 237 PDF objects out of 1000 (max. 8388607)
+ 195 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
  58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
