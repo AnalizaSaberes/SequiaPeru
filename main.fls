@@ -297,6 +297,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.def
@@ -389,10 +391,6 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex-apa/spanish-apa.lbx
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex-apa/spanish-apa.lbx
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex-apa/spanish-apa.lbx
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
 OUTPUT main.bcf

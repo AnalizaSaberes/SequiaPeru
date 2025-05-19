@@ -1,15 +1,15 @@
 \documentclass[11pt]{report}
 
+
 % ============================
 %     Paquetes básicos y Fuente
 % ============================
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[spanish]{babel}
+
 \usepackage{helvet}                % Para utilizar una fuente sans serif similar a Arial
 \renewcommand{\familydefault}{\sfdefault}  % Establece la fuente por defecto en sans serif
-
-
 
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows.meta, positioning}
@@ -19,7 +19,6 @@
 \tikzstyle{process} = [rectangle, minimum width=4.5cm, minimum height=1cm, text centered, draw=black, fill=blue!15]
 \tikzstyle{decision} = [diamond, minimum width=3.5cm, minimum height=1.2cm, text centered, draw=black, fill=green!25, aspect=2]
 \tikzstyle{arrow} = [thick,->,>=stealth]
-
 
 % Matemáticas avanzadas
 \usepackage{amsmath, amssymb, amsthm, mathtools}
@@ -51,14 +50,18 @@
 \usepackage{multirow}
 \usepackage{adjustbox}
 \usepackage{pdflscape}
-\usepackage{ragged2e} 
+\usepackage{ragged2e}
 \usepackage{rotating} % Para tablas en horizontal
 \usepackage{booktabs} % Para mejorar el diseño de la tabla
 \usepackage{colortbl} % Para color en las líneas de la tabla
 % Bibliografía en estilo APA
-\usepackage[backend=biber,style=apa,sortcites=true,giveninits=true]{biblatex}
 
-
+%\usepackage\[backend=biber,style=apa,sortcites=true,giveninits=true]{biblatex}
+\usepackage[backend=biber,style=apa,backref=true,sortcites=true,giveninits=true]{biblatex}
+\DefineBibliographyStrings{spanish}{
+backrefpage  = {Citado en la pag.},
+backrefpages = {Citado en las pag.}
+}
 
 \addbibresource{bibliografia.bib}
 
@@ -80,22 +83,22 @@
 % Configuración de caption para tablas
 % -----------------------
 \captionsetup[table]{
-  justification=raggedright,  % Alinea a la izquierda
-  singlelinecheck=false,       % Evita centrar si el título es de una sola línea
-  labelsep=newline,            % "Tabla X" en una línea y el título en la siguiente
-  labelfont=bf,                % "Tabla X" en negritas
-  textfont=it                  % Título en cursiva
+justification=raggedright,  % Alinea a la izquierda
+singlelinecheck=false,       % Evita centrar si el título es de una sola línea
+labelsep=newline,            % "Tabla X" en una línea y el título en la siguiente
+labelfont=bf,                % "Tabla X" en negritas
+textfont=it                  % Título en cursiva
 }
 
 % -----------------------
 % Configuración de caption para figuras
 % -----------------------
 \captionsetup[figure]{
-  justification=raggedright,  % Alinea a la izquierda
-  singlelinecheck=false,       % Evita centrar si el título es de una sola línea
-  labelsep=newline,            % "Figura X" en una línea y el título en la siguiente
-  labelfont=bf,                % "Figura X" en negritas
-  textfont=it                  % Título en cursiva
+justification=raggedright,  % Alinea a la izquierda
+singlelinecheck=false,       % Evita centrar si el título es de una sola línea
+labelsep=newline,            % "Figura X" en una línea y el título en la siguiente
+labelfont=bf,                % "Figura X" en negritas
+textfont=it                  % Título en cursiva
 }
 
 % -----------------------
@@ -126,7 +129,7 @@
 \definecolor{SeverelyDry}{RGB}{255,128,0}
 \definecolor{ExtremelyDry}{RGB}{255,51,51}
 
-\definecolor{TableHeader}{RGB}{70,130,180}  
+\definecolor{TableHeader}{RGB}{70,130,180}
 \definecolor{TableRowLight}{RGB}{220,230,242}
 \definecolor{TableRowDark}{RGB}{190,210,230}
 \definecolor{HeaderColor}{RGB}{60,120,180}
@@ -153,6 +156,7 @@
 % Preambulo necesario
 \usepackage{pdflscape,longtable,xcolor,array}
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
 % -----------------------
 % Hipervínculos y cleveref
 % -----------------------
@@ -160,23 +164,22 @@
 \usepackage{hyperref}
 \usepackage{cleveref}
 \hypersetup{
-    colorlinks=true,                
-    linkcolor=CaribbeanGreen,                % Cambiar aquí el color de los enlaces (referencias internas)
-    citecolor=CaribbeanGreen,            % Las citas internas en azul oscuro
-    urlcolor=CaribbeanGreen,             % Los enlaces URL en azul oscuro
-    pdftitle={Tesis Doctoral},
-    pdfauthor={Virgilio Arriaga Gomez},
-    pdfsubject={Tesis Doctoral en [Tu Especialidad]},
-    pdfkeywords={Tesis, Doctorado, [Palabras clave]},
-    pdfcreator={LaTeX},
-    pdfproducer={pdflatex}
+colorlinks=true,
+linkcolor=CaribbeanGreen,                % Cambiar aquí el color de los enlaces (referencias internas)
+citecolor=CaribbeanGreen,            % Las citas internas en azul oscuro
+urlcolor=CaribbeanGreen,             % Los enlaces URL en azul oscuro
+pdftitle={Tesis Doctoral},
+pdfauthor={Virgilio Arriaga Gomez},
+pdfsubject={Tesis Doctoral en [Tu Especialidad]},
+pdfkeywords={Tesis, Doctorado, [Palabras clave]},
+pdfcreator={LaTeX},
+pdfproducer={pdflatex}
 }
 
 % Cambiar color del texto de las etiquetas 'Tabla', 'Figura', etc.
 \crefformat{table}{\textcolor{NavyBlue}{Tabla~#2#1#3}}
 \crefformat{figure}{\textcolor{NavyBlue}{Figura~#2#1#3}}
 \crefformat{section}{\textcolor{NavyBlue}{Sección~#2#1#3}}
-
 
 % ============================
 %     Ajustes de estilo del índice
@@ -194,19 +197,19 @@
 %     Estilos de títulos y secciones
 % ============================
 \titleformat{\chapter}[display]
-  {\normalfont\bfseries\normalsize\centering}
-  {CAPÍTULO~\Roman{chapter}}
-  {0em}{\MakeUppercase}
+{\normalfont\bfseries\normalsize\centering}
+{CAPÍTULO~\Roman{chapter}}  % Espacio no separable
+{0em}{\MakeUppercase}
 \titlespacing*{\chapter}{0pt}{0.5\baselineskip}{0.5\baselineskip}
 
 \titleformat{\section}[hang]
-  {\normalfont\bfseries\normalsize}  % 12pt en negrita
-  {\thesection.}{1em}{}
+{\normalfont\bfseries\normalsize}  % 12pt en negrita
+{\thesection.}{1em}{}
 \titlespacing*{\section}{0pt}{0.5\baselineskip}{0.5\baselineskip}
 
 \titleformat{\subsection}[hang]
-  {\normalfont\bfseries\normalsize}  % 12pt en negrita
-  {\thesubsection.}{1em}{}
+{\normalfont\bfseries\normalsize}  % 12pt en negrita
+{\thesubsection.}{1em}{}
 \titlespacing*{\subsection}{0pt}{0.5\baselineskip}{0.5\baselineskip}
 
 % ============================
@@ -225,22 +228,19 @@
 %     Configuración para incluir código (listings)
 % ============================
 \lstset{
-    basicstyle=\small\ttfamily,
-    keywordstyle=\color{green!90},
-    commentstyle=\color{green!90},
-    stringstyle=\color{red},
-    numbers=left,
-    numberstyle=\tiny\color{gray},
-    stepnumber=1,
-    numbersep=10pt,
-    frame=single,
-    breaklines=true,
-    captionpos=b
+basicstyle=\small\ttfamily,
+keywordstyle=\color{green!90},
+commentstyle=\color{green!90},
+stringstyle=\color{red},
+numbers=left,
+numberstyle=\tiny\color{gray},
+stepnumber=1,
+numbersep=10pt,
+frame=single,
+breaklines=true,
+captionpos=b
 }
 
-% ============================
-%      Inicio del documento
-% ============================
 \begin{document}
 
 % ---------------------------
@@ -249,16 +249,15 @@
 \pagenumbering{roman}                % Numeración romana
 \renewcommand{\thepage}{\roman{page}} % Forzar minúsculas (i, ii, iii...)
 
- \input{portada.tex} % ES LA PORTADA DE LA TESIS
-
+\input{portada.tex} % ES LA PORTADA DE LA TESIS
 
 \cleardoublepage
-%\chapter*{Dedicatoria}
+%\chapter\*{Dedicatoria}
 %\addcontentsline{toc}{chapter}{Dedicatoria}
 %\input{dedicatoria.tex}
 
 \cleardoublepage
-%\chapter*{Agradecimientos} % Este comando crea un capítulo sin numeración
+%\chapter\*{Agradecimientos} % Este comando crea un capítulo sin numeración
 %\addcontentsline{toc}{chapter}{Agradecimientos} % este comando añade la sección al índice
 %\input{agradecimiento.tex}
 
@@ -299,5 +298,5 @@
 \pagenumbering{gobble}  % Suprime la numeración de página en los anexos
 \chapter*{Anexo A: [Título del Anexo]}
 % Contenido de los anexos...
-  
+
 \end{document}

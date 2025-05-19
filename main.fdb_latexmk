@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1747390991.57772 "main.bcf" "main.bbl" "main" 1747391024.39453 0
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1747627993.21716 -1
   "bibliografia.bib" 1746841244.31234 45764 de70618d098f572b3b794e941f03b413 ""
-  "main.bcf" 1747391023.91861 136594 d60cab9ec9cc795bef219415a6f52fbe "pdflatex"
+  "main.bcf" 1747627992.65139 136594 d60cab9ec9cc795bef219415a6f52fbe "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1747391017.01252 "/Volumes/Arriaga/MESTRIA 2024/tesis/main.tex" "main.pdf" "main" 1747391024.39788 0
-  "/Volumes/Arriaga/MESTRIA 2024/tesis/main.tex" 1747383682.20724 10108 313c6b4b70a9a55024dbb605a8fc9ee6 ""
+["pdflatex"] 1747627986.59332 "/Volumes/Arriaga/MESTRIA 2024/tesis/main.tex" "main.pdf" "main" 1747627993.21782 0
+  "/Volumes/Arriaga/MESTRIA 2024/tesis/main.tex" 1747627574.08211 10105 314ffec89c1769c02d2ffdbf231790de ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvb8c.tfm" 1136768653 1344 2b79eb16daca0e8fd7cff8a5505df513 ""
@@ -249,13 +249,13 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1729122262.447 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1729122031 8221443 f2cedb70f35ffa5cb78b16706426097f ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Capitulos/Capitulo1.tex" 1747390981.61714 147800 f59e0e4df98790c9ba3ae169ba5bcfe0 ""
+  "Capitulos/Capitulo1.tex" 1747627971.86706 148519 37f835f3fc5bdb1c70c7395e967dc241 ""
   "Imagen 1.png" 1743890478 171244 4edfaa0677aac4258217115d7dfdc5a0 ""
-  "main.aux" 1747391023.79503 9035 c333bf6bcd1f2cdf125254881663c00f "pdflatex"
+  "main.aux" 1747627992.62864 11520 562353a4fc4f9a5943f9c1a47e222ffe "pdflatex"
   "main.bbl" 1747391003.23431 61526 436f09591de82dabdfcbcceccd8fdd2b "biber main"
-  "main.out" 1747391023.84981 718 8a7c30c12e70f7e2d768c6cf1c2eb9d0 "pdflatex"
-  "main.run.xml" 1747391023.92048 2361 35d4ba219a86576031cb1c143b5e2c09 "pdflatex"
-  "main.tex" 1747383682.20724 10108 313c6b4b70a9a55024dbb605a8fc9ee6 ""
+  "main.out" 1747627992.64075 931 3e11b5711a25ceaeaf987eff66018ded "pdflatex"
+  "main.run.xml" 1747627992.65402 2361 35d4ba219a86576031cb1c143b5e2c09 "pdflatex"
+  "main.tex" 1747627574.08211 10105 314ffec89c1769c02d2ffdbf231790de ""
   "portada.tex" 1743890478 1836 f81be721ed8404ea534317817152028a ""
   (generated)
   "main.aux"
