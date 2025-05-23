@@ -7,6 +7,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[spanish]{babel}
+\usepackage{gensymb}
 
 \usepackage{helvet}                % Para utilizar una fuente sans serif similar a Arial
 \renewcommand{\familydefault}{\sfdefault}  % Establece la fuente por defecto en sans serif
@@ -54,8 +55,10 @@
 \usepackage{rotating} % Para tablas en horizontal
 \usepackage{booktabs} % Para mejorar el diseño de la tabla
 \usepackage{colortbl} % Para color en las líneas de la tabla
-% Bibliografía en estilo APA
+%\usepackage{floatrow}
 
+% Bibliografía en estilo APA
+\usepackage{siunitx}
 %\usepackage\[backend=biber,style=apa,sortcites=true,giveninits=true]{biblatex}
 \usepackage[backend=biber,style=apa,backref=true,sortcites=true,giveninits=true]{biblatex}
 \DefineBibliographyStrings{spanish}{
@@ -262,7 +265,7 @@ captionpos=b
 %\input{agradecimiento.tex}
 
 \cleardoublepage
-%\tableofcontents
+\tableofcontents
 
 \cleardoublepage
 %\listoffigures
@@ -279,11 +282,11 @@ captionpos=b
 % Cambia el formato de la numeración a árabe sin reiniciar el contador
 \renewcommand{\thepage}{\arabic{page}}
 
-\input{Capitulos/Capitulo1.tex}
+%\input{Capitulos/Capitulo1.tex}
 %\input{Capitulos/Capitulo2.tex}
 %\input{Capitulos/Capitulo3.tex}
 % (Añade más capítulos según sea necesario.)
-
+\input{Capitulos/ReporteAED.tex} % Este es el reporte de AED
 % ---------------------------
 % Bibliografía
 % ---------------------------
