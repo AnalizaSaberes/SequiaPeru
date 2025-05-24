@@ -1,4 +1,4 @@
-\documentclass[11pt]{report}
+\documentclass[12pt]{report}
 
 
 % ============================
@@ -8,9 +8,13 @@
 \usepackage[T1]{fontenc}
 \usepackage[spanish]{babel}
 \usepackage{gensymb}
-
+%\usepackage{mathptmx}
+%\usepackage{ebgaramond}
+%\usepackage{libertinus}
+%\usepackage{newpxtext,newpxmath}
+%\usepackage{mathpazo}
 \usepackage{helvet}                % Para utilizar una fuente sans serif similar a Arial
-\renewcommand{\familydefault}{\sfdefault}  % Establece la fuente por defecto en sans serif
+%\renewcommand{\familydefault}{\sfdefault}  % Establece la fuente por defecto en sans serif
 
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows.meta, positioning}
@@ -23,6 +27,7 @@
 
 % Matemáticas avanzadas
 \usepackage{amsmath, amssymb, amsthm, mathtools}
+\usepackage{siunitx}
 
 % Código fuente
 \usepackage{listings}
@@ -72,8 +77,28 @@ backrefpages = {Citado en las pag.}
 \usepackage{csquotes}
 \usepackage[table]{xcolor}  % Carga xcolor con opción para tablas
 \usepackage{titlesec}
+
 \usepackage{fancyhdr}
 \usepackage{tocloft}
+% ============================
+%     Ajustes de estilo del índice
+% ============================
+
+\renewcommand{\contentsname}{\large\bfseries Índice General}
+
+% Título visual del índice
+\renewcommand{\cfttoctitlefont}{\color{black}\Large\bfseries}
+\renewcommand{\cftloftitlefont}{\color{black}\large\bfseries}
+\renewcommand{\cftlottitlefont}{\color{black}\large\bfseries}
+
+% Estilo del capítulo en el índice
+\renewcommand{\cftchapfont}{\bfseries\color{black}}
+\renewcommand{\cftchappagefont}{\bfseries\color{black}}
+
+% === Clave: redefinir SOLO lo que se ve en el índice ===
+\renewcommand{\cftchappresnum}{CAPÍTULO~\Roman{chapter}} %PODEMOS AGREGAR : PUNTITOS
+\renewcommand{\cftchapnumwidth}{10em}
+
 \usepackage{tcolorbox}
 
 % Para subfiguras
@@ -184,17 +209,8 @@ pdfproducer={pdflatex}
 \crefformat{figure}{\textcolor{NavyBlue}{Figura~#2#1#3}}
 \crefformat{section}{\textcolor{NavyBlue}{Sección~#2#1#3}}
 
-% ============================
-%     Ajustes de estilo del índice
-% ============================
-\renewcommand{\contentsname}{\large\bfseries Índice General}
 
-\renewcommand{\cfttoctitlefont}{\color{black}\Large\bfseries}
-\renewcommand{\cftloftitlefont}{\color{black}\large\bfseries}
-\renewcommand{\cftlottitlefont}{\color{black}\large\bfseries}
-
-\renewcommand{\cftchapfont}{\color{black}\bfseries}
-\renewcommand{\cftchappagefont}{\color{black}\bfseries}
+         % Estilo del número de página
 
 % ============================
 %     Estilos de títulos y secciones
@@ -265,7 +281,15 @@ captionpos=b
 %\input{agradecimiento.tex}
 
 \cleardoublepage
+%\tableofcontents
+
+% Redefinir temporalmente para mostrar números romanos en el índice
+{
+\renewcommand{\thechapter}{\Roman{chapter}}
 \tableofcontents
+}
+
+
 
 \cleardoublepage
 %\listoffigures

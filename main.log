@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.16)  23 MAY 2025 02:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.16)  24 MAY 2025 03:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,8 +9,8 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
-(/usr/local/texlive/2024/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count188
 \c@chapter=\count189
@@ -388,26 +388,82 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_shortintertext_sep=\dimen271
 \xmathstrut@box=\box64
 \xmathstrut@dim=\dimen272
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count303
-\lst@gtempboxa=\box65
-\lst@token=\toks44
-\lst@length=\count304
-\lst@currlwidth=\dimen273
-\lst@column=\count305
-\lst@pos=\count306
-\lst@lostspace=\dimen274
-\lst@width=\dimen275
-\lst@newlines=\count307
-\lst@lineno=\count308
-\lst@maxwidth=\dimen276
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2024-02-15 v3.3.12 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count303
+\l__siunitx_number_exponent_fixed_int=\count304
+\l__siunitx_number_min_decimal_int=\count305
+\l__siunitx_number_min_integer_int=\count306
+\l__siunitx_number_round_precision_int=\count307
+\l__siunitx_number_lower_threshold_int=\count308
+\l__siunitx_number_upper_threshold_int=\count309
+\l__siunitx_number_group_first_int=\count310
+\l__siunitx_number_group_size_int=\count311
+\l__siunitx_number_group_minimum_int=\count312
+\l__siunitx_angle_tmp_dim=\dimen273
+\l__siunitx_angle_marker_box=\box65
+\l__siunitx_angle_unit_box=\box66
+\l__siunitx_compound_count_int=\count313
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count314
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+\l__siunitx_table_tmp_box=\box67
+\l__siunitx_table_tmp_dim=\dimen274
+\l__siunitx_table_column_width_dim=\dimen275
+\l__siunitx_table_integer_box=\box68
+\l__siunitx_table_decimal_box=\box69
+\l__siunitx_table_uncert_box=\box70
+\l__siunitx_table_before_box=\box71
+\l__siunitx_table_after_box=\box72
+\l__siunitx_table_before_dim=\dimen276
+\l__siunitx_table_carry_dim=\dimen277
+\l__siunitx_unit_tmp_int=\count315
+\l__siunitx_unit_position_int=\count316
+\l__siunitx_unit_total_int=\count317
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen278
+\ar@mcellbox=\box73
+\extrarowheight=\dimen279
+\NC@list=\toks44
+\extratabsurround=\skip60
+\backup@length=\skip61
+\ar@cellbox=\box74
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count318
+\lst@gtempboxa=\box75
+\lst@token=\toks45
+\lst@length=\count319
+\lst@currlwidth=\dimen280
+\lst@column=\count320
+\lst@pos=\count321
+\lst@lostspace=\dimen281
+\lst@width=\dimen282
+\lst@newlines=\count322
+\lst@lineno=\count323
+\lst@maxwidth=\dimen283
  (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
-\c@lstnumber=\count309
-\lst@skipnumbers=\count310
-\lst@framebox=\box66
+\c@lstnumber=\count324
+\lst@skipnumbers=\count325
+\lst@framebox=\box76
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/02/21 1.10 listings configuration
 ))
@@ -416,67 +472,56 @@ Package: listings 2024/02/21 1.10 (Carsten Heinz)
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
-))
-\Gm@cnth=\count311
-\Gm@cntv=\count312
-\c@Gm@tempcnt=\count313
-\Gm@bindingoffset=\dimen277
-\Gm@wd@mp=\dimen278
-\Gm@odd@mp=\dimen279
-\Gm@even@mp=\dimen280
-\Gm@layoutwidth=\dimen281
-\Gm@layoutheight=\dimen282
-\Gm@layouthoffset=\dimen283
-\Gm@layoutvoffset=\dimen284
-\Gm@dimlist=\toks45
+)
+\Gm@cnth=\count326
+\Gm@cntv=\count327
+\c@Gm@tempcnt=\count328
+\Gm@bindingoffset=\dimen284
+\Gm@wd@mp=\dimen285
+\Gm@odd@mp=\dimen286
+\Gm@even@mp=\dimen287
+\Gm@layoutwidth=\dimen288
+\Gm@layoutheight=\dimen289
+\Gm@layouthoffset=\dimen290
+\Gm@layoutvoffset=\dimen291
+\Gm@dimlist=\toks46
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count314
-\float@exts=\toks46
-\float@box=\box67
-\@float@everytoks=\toks47
-\@floatcapt=\box68
+\c@float@type=\count329
+\float@exts=\toks47
+\float@box=\box77
+\@float@everytoks=\toks48
+\@floatcapt=\box78
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
-\LTleft=\skip60
-\LTright=\skip61
-\LTpre=\skip62
-\LTpost=\skip63
-\LTchunksize=\count315
-\LTcapwidth=\dimen285
-\LT@head=\box69
-\LT@firsthead=\box70
-\LT@foot=\box71
-\LT@lastfoot=\box72
-\LT@gbox=\box73
-\LT@cols=\count316
-\LT@rows=\count317
-\c@LT@tables=\count318
-\c@LT@chunks=\count319
-\LT@p@ftn=\toks48
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
-Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen286
-\ar@mcellbox=\box74
-\extrarowheight=\dimen287
-\NC@list=\toks49
-\extratabsurround=\skip64
-\backup@length=\skip65
-\ar@cellbox=\box75
+\LTleft=\skip62
+\LTright=\skip63
+\LTpre=\skip64
+\LTpost=\skip65
+\LTchunksize=\count330
+\LTcapwidth=\dimen292
+\LT@head=\box79
+\LT@firsthead=\box80
+\LT@foot=\box81
+\LT@lastfoot=\box82
+\LT@gbox=\box83
+\LT@cols=\count331
+\LT@rows=\count332
+\c@LT@tables=\count333
+\c@LT@chunks=\count334
+\LT@p@ftn=\toks49
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip66
-\multirow@cntb=\count320
+\multirow@cntb=\count335
 \multirow@dima=\skip67
-\bigstrutjot=\dimen288
+\bigstrutjot=\dimen293
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -485,7 +530,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks50
 \XKV@tempa@toks=\toks51
 )
-\XKV@depth=\count321
+\XKV@depth=\count336
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (/usr/local/texlive/2024/texmf-dist/tex/latex/adjustbox/adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
@@ -493,33 +538,33 @@ Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-
 Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
  (/usr/local/texlive/2024/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
-\collectedbox=\box76
+\collectedbox=\box84
 )
-\tc@llx=\dimen289
-\tc@lly=\dimen290
-\tc@urx=\dimen291
-\tc@ury=\dimen292
+\tc@llx=\dimen294
+\tc@lly=\dimen295
+\tc@urx=\dimen296
+\tc@ury=\dimen297
 Package trimclip Info: Using driver 'tc-pdftex.def'.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen293
-\adjbox@Height=\dimen294
-\adjbox@Depth=\dimen295
-\adjbox@Totalheight=\dimen296
-\adjbox@pwidth=\dimen297
-\adjbox@pheight=\dimen298
-\adjbox@pdepth=\dimen299
-\adjbox@ptotalheight=\dimen300
+\adjbox@Width=\dimen298
+\adjbox@Height=\dimen299
+\adjbox@Depth=\dimen300
+\adjbox@Totalheight=\dimen301
+\adjbox@pwidth=\dimen302
+\adjbox@pheight=\dimen303
+\adjbox@pdepth=\dimen304
+\adjbox@ptotalheight=\dimen305
  (/usr/local/texlive/2024/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
-\c@checkoddpage=\count322
+\c@checkoddpage=\count337
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box77
-\sift@deathcycles=\count323
-\@vwid@loff=\dimen301
-\@vwid@roff=\dimen302
+\@vwid@box=\box85
+\sift@deathcycles=\count338
+\@vwid@loff=\dimen306
+\@vwid@roff=\dimen307
 )) (/usr/local/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
  (/usr/local/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -549,80 +594,35 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count324
+\c@r@tfl@t=\count339
 \rotFPtop=\skip82
 \rotFPbot=\skip83
-\rot@float@box=\box78
+\rot@float@box=\box86
 \rot@mess@toks=\toks52
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen303
-\lightrulewidth=\dimen304
-\cmidrulewidth=\dimen305
-\belowrulesep=\dimen306
-\belowbottomsep=\dimen307
-\aboverulesep=\dimen308
-\abovetopsep=\dimen309
-\cmidrulesep=\dimen310
-\cmidrulekern=\dimen311
-\defaultaddspace=\dimen312
-\@cmidla=\count325
-\@cmidlb=\count326
-\@aboverulesep=\dimen313
-\@belowrulesep=\dimen314
-\@thisruleclass=\count327
-\@lastruleclass=\count328
-\@thisrulewidth=\dimen315
+\heavyrulewidth=\dimen308
+\lightrulewidth=\dimen309
+\cmidrulewidth=\dimen310
+\belowrulesep=\dimen311
+\belowbottomsep=\dimen312
+\aboverulesep=\dimen313
+\abovetopsep=\dimen314
+\cmidrulesep=\dimen315
+\cmidrulekern=\dimen316
+\defaultaddspace=\dimen317
+\@cmidla=\count340
+\@cmidlb=\count341
+\@aboverulesep=\dimen318
+\@belowrulesep=\dimen319
+\@thisruleclass=\count342
+\@lastruleclass=\count343
+\@thisrulewidth=\dimen320
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2024/02/20 v1.0g Color table columns (DPC)
 \everycr=\toks53
 \minrowclearance=\skip84
-\rownum=\count329
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/siunitx/siunitx.sty
-Package: siunitx 2024-02-15 v3.3.12 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count330
-\l__siunitx_number_exponent_fixed_int=\count331
-\l__siunitx_number_min_decimal_int=\count332
-\l__siunitx_number_min_integer_int=\count333
-\l__siunitx_number_round_precision_int=\count334
-\l__siunitx_number_lower_threshold_int=\count335
-\l__siunitx_number_upper_threshold_int=\count336
-\l__siunitx_number_group_first_int=\count337
-\l__siunitx_number_group_size_int=\count338
-\l__siunitx_number_group_minimum_int=\count339
-\l__siunitx_angle_tmp_dim=\dimen316
-\l__siunitx_angle_marker_box=\box79
-\l__siunitx_angle_unit_box=\box80
-\l__siunitx_compound_count_int=\count340
- (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations.sty
-Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
- (/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count341
-) (/usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (/usr/local/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (/usr/local/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-))
-\l__siunitx_table_tmp_box=\box81
-\l__siunitx_table_tmp_dim=\dimen317
-\l__siunitx_table_column_width_dim=\dimen318
-\l__siunitx_table_integer_box=\box82
-\l__siunitx_table_decimal_box=\box83
-\l__siunitx_table_uncert_box=\box84
-\l__siunitx_table_before_box=\box85
-\l__siunitx_table_after_box=\box86
-\l__siunitx_table_before_dim=\dimen319
-\l__siunitx_table_carry_dim=\dimen320
-\l__siunitx_unit_tmp_int=\count342
-\l__siunitx_unit_position_int=\count343
-\l__siunitx_unit_total_int=\count344
+\rownum=\count344
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
@@ -1117,15 +1117,12 @@ LaTeX Info: Redefining \labelcpageref on input line 2370.
 Package cleveref Info: `amsthm' support loaded on input line 3026.
 Package cleveref Info: `listings' support loaded on input line 3131.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 180.
+Package hyperref Info: Option `colorlinks' set `true' on input line 205.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 247.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1phv.fd
-File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
-) (./main.aux
+ (./main.aux
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
 
@@ -1225,37 +1222,49 @@ LaTeX Warning: Label `fig:cotahuasi_pairplot' multiply defined.
 
 LaTeX Warning: Label `fig:cotahuasi_pairplot@cref' multiply defined.
 
+
+LaTeX Warning: Label `fig:candavare_p_hist' multiply defined.
+
+
+LaTeX Warning: Label `fig:candavare_p_hist@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:candavare_p_box' multiply defined.
+
+
+LaTeX Warning: Label `fig:candavare_p_box@cref' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 247.
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 247.
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 247.
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 247.
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 247.
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 247.
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 247.
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 247.
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 247.
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Info: Redefining \. on input line 247.
-LaTeX Info: Redefining \% on input line 247.
-LaTeX Info: Redefining \celsius on input line 247.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 247.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 263.
+LaTeX Font Info:    ... okay on input line 263.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 263.
+LaTeX Font Info:    ... okay on input line 263.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 263.
+LaTeX Font Info:    ... okay on input line 263.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 263.
+LaTeX Font Info:    ... okay on input line 263.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 263.
+LaTeX Font Info:    ... okay on input line 263.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 263.
+LaTeX Font Info:    ... okay on input line 263.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 263.
+LaTeX Font Info:    ... okay on input line 263.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 263.
+LaTeX Font Info:    ... okay on input line 263.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 263.
+LaTeX Font Info:    ... okay on input line 263.
+LaTeX Info: Redefining \. on input line 263.
+LaTeX Info: Redefining \% on input line 263.
+LaTeX Info: Redefining \celsius on input line 263.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 263.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 247.
-Package gensymb Info: Using \Omega for \ohm on input line 247.
+LaTeX Info: Redefining \ohm on input line 263.
+Package gensymb Info: Using \Omega for \ohm on input line 263.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -1277,7 +1286,10 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-spanish.trsl
+File: translations-basic-dictionary-spanish.trsl (spanish translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 263.
 \c@lstlisting=\count514
 
 *geometry* driver: auto-detecting
@@ -1299,12 +1311,12 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \topmargin=-38.1381pt
 * \headheight=14.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=59.0pt
+* \marginparwidth=44.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1314,13 +1326,9 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-spanish.trsl
-File: translations-basic-dictionary-spanish.trsl (spanish translation file `translations-basic-dictionary')
-)
-Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 247.
 Package biblatex Info: Trying to load language 'spanish' -> 'spanish-apa'...
 Package biblatex Info: ... file 'spanish-apa.lbx' found.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex-apa/spanish-apa.lbx
+(/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex-apa/spanish-apa.lbx
 File: spanish-apa.lbx 2023/03/20 v9.17 APA biblatex localisation
 Package biblatex Info: Trying to load language 'spanish'...
 Package biblatex Info: ... file 'spanish.lbx' found.
@@ -1340,12 +1348,12 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 247.
-Package biblatex Info: Reference segment=0 on input line 247.
+Package biblatex Info: Reference section=0 on input line 263.
+Package biblatex Info: Reference segment=0 on input line 263.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 247.
+Package hyperref Info: Link coloring ON on input line 263.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -1368,12 +1376,12 @@ Package hyperref Info: Link coloring ON on input line 247.
 * \topmargin=-40.1381pt
 * \headheight=14.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=59.0pt
+* \marginparwidth=44.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1383,7 +1391,7 @@ Package hyperref Info: Link coloring ON on input line 247.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<Imagen 1.png, id=384, 457.71pt x 314.17375pt>
+<Imagen 1.png, id=437, 457.71pt x 314.17375pt>
 File: Imagen 1.png Graphic file (type png)
 <use Imagen 1.png>
 Package pdftex.def Info: Imagen 1.png  used on input line 12.
@@ -1391,7 +1399,7 @@ Package pdftex.def Info: Imagen 1.png  used on input line 12.
  [1
 
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Imagen 1.png>]) (./main.toc
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./Imagen 1.png>] [2]) (./main.toc
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1406,935 +1414,1240 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 ...Análisis Bivariado}{40}{subsection.1.7.3}
+l.27 ...de la Estación Coracora}{32}{section.2.5}
                                                   % [1
 
 
 
 
 ]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 60.
- [2] [3])
+pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.56 ...ticas Descriptivas}{64}{subsection.2.12.1}
+                                                  % [2] [3])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
  [4] (./Capitulos/ReporteAED.tex
 Cap\'{\i }tulo 1.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 8.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 13.
-(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1phv.fd
-File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-) [5
+[5
 
 
 
 
-]
-<resultados/global/univariado/P_histograma.png, id=514, 722.7pt x 542.025pt>
+{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+<resultados/global/univariado/P_histograma.png, id=590, 722.7pt x 542.025pt>
 File: resultados/global/univariado/P_histograma.png Graphic file (type png)
 <use resultados/global/univariado/P_histograma.png>
 Package pdftex.def Info: resultados/global/univariado/P_histograma.png  used on input line 41.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/global/univariado/T_histograma.png, id=515, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/global/univariado/T_histograma.png, id=591, 722.7pt x 542.025pt>
 File: resultados/global/univariado/T_histograma.png Graphic file (type png)
 <use resultados/global/univariado/T_histograma.png>
 Package pdftex.def Info: resultados/global/univariado/T_histograma.png  used on input line 54.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
  [6 <./resultados/global/univariado/P_histograma.png>] [7 <./resultados/global/univariado/T_histograma.png>]
-<resultados/global/univariado/RH_histograma.png, id=530, 722.7pt x 542.025pt>
+<resultados/global/univariado/RH_histograma.png, id=606, 722.7pt x 542.025pt>
 File: resultados/global/univariado/RH_histograma.png Graphic file (type png)
 <use resultados/global/univariado/RH_histograma.png>
 Package pdftex.def Info: resultados/global/univariado/RH_histograma.png  used on input line 67.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/global/univariado/WS_histograma.png, id=531, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/global/univariado/WS_histograma.png, id=607, 722.7pt x 542.025pt>
 File: resultados/global/univariado/WS_histograma.png Graphic file (type png)
 <use resultados/global/univariado/WS_histograma.png>
 Package pdftex.def Info: resultados/global/univariado/WS_histograma.png  used on input line 80.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
  [8 <./resultados/global/univariado/RH_histograma.png> <./resultados/global/univariado/WS_histograma.png>] [9]
-<resultados/global/univariado/PET_histograma.png, id=545, 722.7pt x 542.025pt>
+<resultados/global/univariado/PET_histograma.png, id=621, 722.7pt x 542.025pt>
 File: resultados/global/univariado/PET_histograma.png Graphic file (type png)
 <use resultados/global/univariado/PET_histograma.png>
 Package pdftex.def Info: resultados/global/univariado/PET_histograma.png  used on input line 94.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/global/bivariado/matriz_correlacion.png, id=546, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/global/bivariado/matriz_correlacion.png, id=622, 578.16pt x 433.62pt>
 File: resultados/global/bivariado/matriz_correlacion.png Graphic file (type png)
 <use resultados/global/bivariado/matriz_correlacion.png>
 Package pdftex.def Info: resultados/global/bivariado/matriz_correlacion.png  used on input line 109.
 (pdftex.def)             Requested size: 310.50357pt x 232.87433pt.
  [10 <./resultados/global/univariado/PET_histograma.png>]
-<resultados/global/bivariado/mutual_info_P.png, id=554, 599.841pt x 325.9377pt>
+<resultados/global/bivariado/mutual_info_P.png, id=631, 599.841pt x 325.9377pt>
 File: resultados/global/bivariado/mutual_info_P.png Graphic file (type png)
 <use resultados/global/bivariado/mutual_info_P.png>
 Package pdftex.def Info: resultados/global/bivariado/mutual_info_P.png  used on input line 121.
-(pdftex.def)             Requested size: 221.78923pt x 120.51547pt.
-<resultados/global/bivariado/mutual_info_T.png, id=555, 599.841pt x 325.9377pt>
+(pdftex.def)             Requested size: 177.42868pt x 96.4094pt.
+<resultados/global/bivariado/mutual_info_T.png, id=632, 599.841pt x 325.9377pt>
 File: resultados/global/bivariado/mutual_info_T.png Graphic file (type png)
 <use resultados/global/bivariado/mutual_info_T.png>
 Package pdftex.def Info: resultados/global/bivariado/mutual_info_T.png  used on input line 128.
-(pdftex.def)             Requested size: 221.78923pt x 120.51547pt.
+(pdftex.def)             Requested size: 177.42868pt x 96.4094pt.
  [11 <./resultados/global/bivariado/matriz_correlacion.png> <./resultados/global/bivariado/mutual_info_P.png>]
-<resultados/global/bivariado/mutual_info_RH.png, id=564, 599.841pt x 325.9377pt>
+<resultados/global/bivariado/mutual_info_RH.png, id=642, 599.841pt x 325.9377pt>
 File: resultados/global/bivariado/mutual_info_RH.png Graphic file (type png)
 <use resultados/global/bivariado/mutual_info_RH.png>
 Package pdftex.def Info: resultados/global/bivariado/mutual_info_RH.png  used on input line 135.
-(pdftex.def)             Requested size: 221.78923pt x 120.51547pt.
-<resultados/global/bivariado/mutual_info_WS.png, id=565, 599.841pt x 325.9377pt>
+(pdftex.def)             Requested size: 177.42868pt x 96.4094pt.
+<resultados/global/bivariado/mutual_info_WS.png, id=643, 599.841pt x 325.9377pt>
 File: resultados/global/bivariado/mutual_info_WS.png Graphic file (type png)
 <use resultados/global/bivariado/mutual_info_WS.png>
 Package pdftex.def Info: resultados/global/bivariado/mutual_info_WS.png  used on input line 142.
-(pdftex.def)             Requested size: 221.78923pt x 120.51547pt.
-<resultados/global/bivariado/mutual_info_PET.png, id=566, 597.6729pt x 325.9377pt>
+(pdftex.def)             Requested size: 177.42868pt x 96.4094pt.
+<resultados/global/bivariado/mutual_info_PET.png, id=644, 597.6729pt x 325.9377pt>
 File: resultados/global/bivariado/mutual_info_PET.png Graphic file (type png)
 <use resultados/global/bivariado/mutual_info_PET.png>
 Package pdftex.def Info: resultados/global/bivariado/mutual_info_PET.png  used on input line 149.
-(pdftex.def)             Requested size: 221.78923pt x 120.95314pt.
- [12 <./resultados/global/bivariado/mutual_info_T.png> <./resultados/global/bivariado/mutual_info_RH.png> <./resultados/global/bivariado/mutual_info_WS.png>]
-<resultados/global/bivariado/pairplot_global.png, id=580, 794.2473pt x 742.2129pt>
+(pdftex.def)             Requested size: 177.42868pt x 96.75754pt.
+ [12 <./resultados/global/bivariado/mutual_info_T.png> <./resultados/global/bivariado/mutual_info_RH.png> <./resultados/global/bivariado/mutual_info_WS.png> <./resultados/global/bivariado/mutual_info_PET.png>]
+<resultados/global/bivariado/pairplot_global.png, id=659, 794.2473pt x 742.2129pt>
 File: resultados/global/bivariado/pairplot_global.png Graphic file (type png)
 <use resultados/global/bivariado/pairplot_global.png>
 Package pdftex.def Info: resultados/global/bivariado/pairplot_global.png  used on input line 160.
-(pdftex.def)             Requested size: 354.86412pt x 331.62575pt.
- [13 <./resultados/global/bivariado/mutual_info_PET.png>] [14 <./resultados/global/bivariado/pairplot_global.png>]
-<resultados/por_estacion_meteorologica/Ancachuro/P_histograma.png, id=594, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 165.80154pt.
+ [13 <./resultados/global/bivariado/pairplot_global.png>]
+Cap\'{\i }tulo 2.
+<resultados/por_estacion_meteorologica/Ancachuro/P_histograma.png, id=667, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Ancachuro/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ancachuro/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ancachuro/P_histograma.png  used on input line 211.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [15]
-<resultados/por_estacion_meteorologica/Ancachuro/T_histograma.png, id=601, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+[14
+
+]
+<resultados/por_estacion_meteorologica/Ancachuro/T_histograma.png, id=677, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Ancachuro/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ancachuro/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ancachuro/T_histograma.png  used on input line 220.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [16 <./resultados/por_estacion_meteorologica/Ancachuro/P_histograma.png> <./resultados/por_estacion_meteorologica/Ancachuro/T_histograma.png>]
-<resultados/por_estacion_meteorologica/Ancachuro/RH_histograma.png, id=610, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Ancachuro/RH_histograma.png, id=678, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Ancachuro/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ancachuro/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ancachuro/RH_histograma.png  used on input line 229.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Ancachuro/WS_histograma.png, id=611, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [15 <./resultados/por_estacion_meteorologica/Ancachuro/P_histograma.png> <./resultados/por_estacion_meteorologica/Ancachuro/T_histograma.png>]
+<resultados/por_estacion_meteorologica/Ancachuro/WS_histograma.png, id=689, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Ancachuro/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ancachuro/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ancachuro/WS_histograma.png  used on input line 238.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [17 <./resultados/por_estacion_meteorologica/Ancachuro/RH_histograma.png> <./resultados/por_estacion_meteorologica/Ancachuro/WS_histograma.png>]
-<resultados/por_estacion_meteorologica/Ancachuro/PET_histograma.png, id=620, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Ancachuro/PET_histograma.png, id=690, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Ancachuro/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ancachuro/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ancachuro/PET_histograma.png  used on input line 247.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Ancachuro/matriz_correlacion.png, id=621, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [16 <./resultados/por_estacion_meteorologica/Ancachuro/RH_histograma.png> <./resultados/por_estacion_meteorologica/Ancachuro/WS_histograma.png>]
+<resultados/por_estacion_meteorologica/Ancachuro/matriz_correlacion.png, id=699, 578.16pt x 433.62pt>
 File: resultados/por_estacion_meteorologica/Ancachuro/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ancachuro/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ancachuro/matriz_correlacion.png  used on input line 258.
-(pdftex.def)             Requested size: 243.96951pt x 182.97269pt.
- [18 <./resultados/por_estacion_meteorologica/Ancachuro/PET_histograma.png>]
-<resultados/por_estacion_meteorologica/Ancachuro/pairplot.png, id=629, 810.8694pt x 742.2129pt>
+(pdftex.def)             Requested size: 199.60895pt x 149.70493pt.
+<resultados/por_estacion_meteorologica/Ancachuro/pairplot.png, id=700, 810.8694pt x 742.2129pt>
 File: resultados/por_estacion_meteorologica/Ancachuro/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ancachuro/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ancachuro/pairplot.png  used on input line 267.
-(pdftex.def)             Requested size: 243.96951pt x 223.31113pt.
- [19 <./resultados/por_estacion_meteorologica/Ancachuro/matriz_correlacion.png>] [20 <./resultados/por_estacion_meteorologica/Ancachuro/pairplot.png>]
-<resultados/por_estacion_meteorologica/Andahuaylas/P_histograma.png, id=643, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 199.60895pt x 182.6988pt.
+ [17 <./resultados/por_estacion_meteorologica/Ancachuro/PET_histograma.png> <./resultados/por_estacion_meteorologica/Ancachuro/matriz_correlacion.png>] [18 <./resultados/por_estacion_meteorologica/Ancachuro/pairplot.png>]
+<resultados/por_estacion_meteorologica/Andahuaylas/P_histograma.png, id=717, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Andahuaylas/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Andahuaylas/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Andahuaylas/P_histograma.png  used on input line 319.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [21]
-<resultados/por_estacion_meteorologica/Andahuaylas/T_histograma.png, id=649, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [19]
+<resultados/por_estacion_meteorologica/Andahuaylas/T_histograma.png, id=723, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Andahuaylas/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Andahuaylas/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Andahuaylas/T_histograma.png  used on input line 328.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [22 <./resultados/por_estacion_meteorologica/Andahuaylas/P_histograma.png> <./resultados/por_estacion_meteorologica/Andahuaylas/T_histograma.png>]
-<resultados/por_estacion_meteorologica/Andahuaylas/RH_histograma.png, id=658, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Andahuaylas/RH_histograma.png, id=724, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Andahuaylas/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Andahuaylas/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Andahuaylas/RH_histograma.png  used on input line 337.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Andahuaylas/WS_histograma.png, id=659, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [20 <./resultados/por_estacion_meteorologica/Andahuaylas/P_histograma.png> <./resultados/por_estacion_meteorologica/Andahuaylas/T_histograma.png>]
+<resultados/por_estacion_meteorologica/Andahuaylas/WS_histograma.png, id=733, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Andahuaylas/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Andahuaylas/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Andahuaylas/WS_histograma.png  used on input line 346.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [23 <./resultados/por_estacion_meteorologica/Andahuaylas/RH_histograma.png> <./resultados/por_estacion_meteorologica/Andahuaylas/WS_histograma.png>]
-<resultados/por_estacion_meteorologica/Andahuaylas/PET_histograma.png, id=669, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Andahuaylas/PET_histograma.png, id=734, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Andahuaylas/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Andahuaylas/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Andahuaylas/PET_histograma.png  used on input line 355.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Andahuaylas/matriz_correlacion.png, id=670, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [21 <./resultados/por_estacion_meteorologica/Andahuaylas/RH_histograma.png> <./resultados/por_estacion_meteorologica/Andahuaylas/WS_histograma.png>]
+<resultados/por_estacion_meteorologica/Andahuaylas/matriz_correlacion.png, id=743, 578.16pt x 433.62pt>
 File: resultados/por_estacion_meteorologica/Andahuaylas/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Andahuaylas/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Andahuaylas/matriz_correlacion.png  used on input line 366.
-(pdftex.def)             Requested size: 221.78923pt x 166.3388pt.
- [24 <./resultados/por_estacion_meteorologica/Andahuaylas/PET_histograma.png> <./resultados/por_estacion_meteorologica/Andahuaylas/matriz_correlacion.png>]
-<resultados/por_estacion_meteorologica/Andahuaylas/pairplot.png, id=680, 822.4326pt x 742.2129pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+<resultados/por_estacion_meteorologica/Andahuaylas/pairplot.png, id=744, 822.4326pt x 742.2129pt>
 File: resultados/por_estacion_meteorologica/Andahuaylas/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Andahuaylas/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Andahuaylas/pairplot.png  used on input line 375.
-(pdftex.def)             Requested size: 243.96951pt x 220.17403pt.
- [25 <./resultados/por_estacion_meteorologica/Andahuaylas/pairplot.png>]
+(pdftex.def)             Requested size: 199.60895pt x 180.1393pt.
+ [22 <./resultados/por_estacion_meteorologica/Andahuaylas/PET_histograma.png> <./resultados/por_estacion_meteorologica/Andahuaylas/matriz_correlacion.png>] [23 <./resultados/por_estacion_meteorologica/Andahuaylas/pairplot.png>]
 File: resultados/por_estacion_meteorologica/Ancachuro/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ancachuro/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ancachuro/P_histograma.png  used on input line 426.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [26]
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [24]
 File: resultados/por_estacion_meteorologica/Ancachuro/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ancachuro/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ancachuro/T_histograma.png  used on input line 435.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [27]
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
 File: resultados/por_estacion_meteorologica/Ancachuro/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ancachuro/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ancachuro/RH_histograma.png  used on input line 444.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
 File: resultados/por_estacion_meteorologica/Ancachuro/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ancachuro/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ancachuro/WS_histograma.png  used on input line 453.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [28]
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [25]
 File: resultados/por_estacion_meteorologica/Ancachuro/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ancachuro/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ancachuro/PET_histograma.png  used on input line 462.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
 File: resultados/por_estacion_meteorologica/Ancachuro/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ancachuro/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ancachuro/matriz_correlacion.png  used on input line 473.
-(pdftex.def)             Requested size: 243.96951pt x 182.97269pt.
- [29]
+(pdftex.def)             Requested size: 199.60895pt x 149.70493pt.
+ [26]
 File: resultados/por_estacion_meteorologica/Ancachuro/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ancachuro/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ancachuro/pairplot.png  used on input line 482.
-(pdftex.def)             Requested size: 243.96951pt x 223.31113pt.
- [30] [31]
-<resultados/por_estacion_meteorologica/Caraveli/P_histograma.png, id=720, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 199.60895pt x 182.6988pt.
+ [27]
+<resultados/por_estacion_meteorologica/Caraveli/P_histograma.png, id=784, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Caraveli/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Caraveli/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Caraveli/P_histograma.png  used on input line 532.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [32]
-<resultados/por_estacion_meteorologica/Caraveli/T_histograma.png, id=726, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [28]
+<resultados/por_estacion_meteorologica/Caraveli/T_histograma.png, id=790, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Caraveli/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Caraveli/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Caraveli/T_histograma.png  used on input line 541.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [33 <./resultados/por_estacion_meteorologica/Caraveli/P_histograma.png> <./resultados/por_estacion_meteorologica/Caraveli/T_histograma.png>]
-<resultados/por_estacion_meteorologica/Caraveli/RH_histograma.png, id=735, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Caraveli/RH_histograma.png, id=791, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Caraveli/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Caraveli/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Caraveli/RH_histograma.png  used on input line 550.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Caraveli/WS_histograma.png, id=736, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [29 <./resultados/por_estacion_meteorologica/Caraveli/P_histograma.png> <./resultados/por_estacion_meteorologica/Caraveli/T_histograma.png>]
+<resultados/por_estacion_meteorologica/Caraveli/WS_histograma.png, id=801, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Caraveli/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Caraveli/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Caraveli/WS_histograma.png  used on input line 559.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [34 <./resultados/por_estacion_meteorologica/Caraveli/RH_histograma.png> <./resultados/por_estacion_meteorologica/Caraveli/WS_histograma.png>]
-<resultados/por_estacion_meteorologica/Caraveli/PET_histograma.png, id=745, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Caraveli/PET_histograma.png, id=802, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Caraveli/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Caraveli/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Caraveli/PET_histograma.png  used on input line 568.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Caraveli/matriz_correlacion.png, id=746, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [30 <./resultados/por_estacion_meteorologica/Caraveli/RH_histograma.png> <./resultados/por_estacion_meteorologica/Caraveli/WS_histograma.png>]
+<resultados/por_estacion_meteorologica/Caraveli/matriz_correlacion.png, id=811, 578.16pt x 433.62pt>
 File: resultados/por_estacion_meteorologica/Caraveli/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Caraveli/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Caraveli/matriz_correlacion.png  used on input line 579.
-(pdftex.def)             Requested size: 221.78923pt x 166.3388pt.
- [35 <./resultados/por_estacion_meteorologica/Caraveli/PET_histograma.png> <./resultados/por_estacion_meteorologica/Caraveli/matriz_correlacion.png>]
-<resultados/por_estacion_meteorologica/Caraveli/pairplot.png, id=755, 799.3062pt x 742.2129pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+<resultados/por_estacion_meteorologica/Caraveli/pairplot.png, id=812, 799.3062pt x 742.2129pt>
 File: resultados/por_estacion_meteorologica/Caraveli/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Caraveli/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Caraveli/pairplot.png  used on input line 588.
-(pdftex.def)             Requested size: 243.96951pt x 226.53882pt.
- [36 <./resultados/por_estacion_meteorologica/Caraveli/pairplot.png>]
-<resultados/por_estacion_meteorologica/Coracora/P_histograma.png, id=763, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 199.60895pt x 185.3489pt.
+ [31 <./resultados/por_estacion_meteorologica/Caraveli/PET_histograma.png> <./resultados/por_estacion_meteorologica/Caraveli/matriz_correlacion.png>] [32 <./resultados/por_estacion_meteorologica/Caraveli/pairplot.png>]
+<resultados/por_estacion_meteorologica/Coracora/P_histograma.png, id=827, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Coracora/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Coracora/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Coracora/P_histograma.png  used on input line 637.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [37]
-<resultados/por_estacion_meteorologica/Coracora/T_histograma.png, id=769, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [33 <./resultados/por_estacion_meteorologica/Coracora/P_histograma.png>]
+<resultados/por_estacion_meteorologica/Coracora/T_histograma.png, id=836, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Coracora/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Coracora/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Coracora/T_histograma.png  used on input line 646.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Coracora/RH_histograma.png, id=770, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Coracora/RH_histograma.png, id=837, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Coracora/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Coracora/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Coracora/RH_histograma.png  used on input line 655.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [38 <./resultados/por_estacion_meteorologica/Coracora/P_histograma.png> <./resultados/por_estacion_meteorologica/Coracora/T_histograma.png>]
-<resultados/por_estacion_meteorologica/Coracora/WS_histograma.png, id=779, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Coracora/WS_histograma.png, id=838, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Coracora/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Coracora/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Coracora/WS_histograma.png  used on input line 664.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Coracora/PET_histograma.png, id=780, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [34 <./resultados/por_estacion_meteorologica/Coracora/T_histograma.png> <./resultados/por_estacion_meteorologica/Coracora/RH_histograma.png>]
+<resultados/por_estacion_meteorologica/Coracora/PET_histograma.png, id=847, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Coracora/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Coracora/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Coracora/PET_histograma.png  used on input line 673.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [39 <./resultados/por_estacion_meteorologica/Coracora/RH_histograma.png> <./resultados/por_estacion_meteorologica/Coracora/WS_histograma.png>]
-<resultados/por_estacion_meteorologica/Coracora/matriz_correlacion.png, id=789, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Coracora/matriz_correlacion.png, id=848, 578.16pt x 433.62pt>
 File: resultados/por_estacion_meteorologica/Coracora/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Coracora/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Coracora/matriz_correlacion.png  used on input line 684.
-(pdftex.def)             Requested size: 221.78923pt x 166.3388pt.
- [40 <./resultados/por_estacion_meteorologica/Coracora/PET_histograma.png> <./resultados/por_estacion_meteorologica/Coracora/matriz_correlacion.png>]
-<resultados/por_estacion_meteorologica/Coracora/pairplot.png, id=798, 803.6424pt x 742.2129pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+ [35 <./resultados/por_estacion_meteorologica/Coracora/WS_histograma.png> <./resultados/por_estacion_meteorologica/Coracora/PET_histograma.png>]
+<resultados/por_estacion_meteorologica/Coracora/pairplot.png, id=858, 803.6424pt x 742.2129pt>
 File: resultados/por_estacion_meteorologica/Coracora/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Coracora/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Coracora/pairplot.png  used on input line 693.
-(pdftex.def)             Requested size: 243.96951pt x 225.31569pt.
- [41 <./resultados/por_estacion_meteorologica/Coracora/pairplot.png>]
-<resultados/por_estacion_meteorologica/Cotahuasi/P_histograma.png, id=805, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 199.60895pt x 184.3523pt.
+ [36 <./resultados/por_estacion_meteorologica/Coracora/matriz_correlacion.png> <./resultados/por_estacion_meteorologica/Coracora/pairplot.png>]
+<resultados/por_estacion_meteorologica/Cotahuasi/P_histograma.png, id=867, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Cotahuasi/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Cotahuasi/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Cotahuasi/P_histograma.png  used on input line 743.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [42]
-<resultados/por_estacion_meteorologica/Cotahuasi/T_histograma.png, id=813, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [37]
+<resultados/por_estacion_meteorologica/Cotahuasi/T_histograma.png, id=873, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Cotahuasi/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Cotahuasi/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Cotahuasi/T_histograma.png  used on input line 752.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Cotahuasi/RH_histograma.png, id=814, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Cotahuasi/RH_histograma.png, id=874, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Cotahuasi/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Cotahuasi/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Cotahuasi/RH_histograma.png  used on input line 761.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [43 <./resultados/por_estacion_meteorologica/Cotahuasi/P_histograma.png> <./resultados/por_estacion_meteorologica/Cotahuasi/T_histograma.png>]
-<resultados/por_estacion_meteorologica/Cotahuasi/WS_histograma.png, id=823, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [38 <./resultados/por_estacion_meteorologica/Cotahuasi/P_histograma.png> <./resultados/por_estacion_meteorologica/Cotahuasi/T_histograma.png>]
+<resultados/por_estacion_meteorologica/Cotahuasi/WS_histograma.png, id=883, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Cotahuasi/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Cotahuasi/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Cotahuasi/WS_histograma.png  used on input line 770.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Cotahuasi/PET_histograma.png, id=824, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Cotahuasi/PET_histograma.png, id=884, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Cotahuasi/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Cotahuasi/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Cotahuasi/PET_histograma.png  used on input line 779.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [44 <./resultados/por_estacion_meteorologica/Cotahuasi/RH_histograma.png> <./resultados/por_estacion_meteorologica/Cotahuasi/WS_histograma.png>]
-<resultados/por_estacion_meteorologica/Cotahuasi/matriz_correlacion.png, id=833, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [39 <./resultados/por_estacion_meteorologica/Cotahuasi/RH_histograma.png> <./resultados/por_estacion_meteorologica/Cotahuasi/WS_histograma.png>]
+<resultados/por_estacion_meteorologica/Cotahuasi/matriz_correlacion.png, id=893, 578.16pt x 433.62pt>
 File: resultados/por_estacion_meteorologica/Cotahuasi/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Cotahuasi/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Cotahuasi/matriz_correlacion.png  used on input line 790.
-(pdftex.def)             Requested size: 221.78923pt x 166.3388pt.
- [45 <./resultados/por_estacion_meteorologica/Cotahuasi/PET_histograma.png> <./resultados/por_estacion_meteorologica/Cotahuasi/matriz_correlacion.png>]
-<resultados/por_estacion_meteorologica/Cotahuasi/pairplot.png, id=842, 807.9786pt x 742.2129pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+<resultados/por_estacion_meteorologica/Cotahuasi/pairplot.png, id=894, 807.9786pt x 742.2129pt>
 File: resultados/por_estacion_meteorologica/Cotahuasi/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Cotahuasi/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Cotahuasi/pairplot.png  used on input line 799.
-(pdftex.def)             Requested size: 243.96951pt x 224.1039pt.
- [46 <./resultados/por_estacion_meteorologica/Cotahuasi/pairplot.png>]
+(pdftex.def)             Requested size: 199.60895pt x 183.35567pt.
+ [40 <./resultados/por_estacion_meteorologica/Cotahuasi/PET_histograma.png> <./resultados/por_estacion_meteorologica/Cotahuasi/matriz_correlacion.png>] [41 <./resultados/por_estacion_meteorologica/Cotahuasi/pairplot.png>]
 File: resultados/por_estacion_meteorologica/Cotahuasi/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Cotahuasi/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Cotahuasi/P_histograma.png  used on input line 848.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [47]
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [42]
 File: resultados/por_estacion_meteorologica/Cotahuasi/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Cotahuasi/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Cotahuasi/T_histograma.png  used on input line 857.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
 File: resultados/por_estacion_meteorologica/Cotahuasi/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Cotahuasi/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Cotahuasi/RH_histograma.png  used on input line 866.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [48]
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
 File: resultados/por_estacion_meteorologica/Cotahuasi/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Cotahuasi/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Cotahuasi/WS_histograma.png  used on input line 875.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [43]
 File: resultados/por_estacion_meteorologica/Cotahuasi/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Cotahuasi/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Cotahuasi/PET_histograma.png  used on input line 884.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [49]
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
 File: resultados/por_estacion_meteorologica/Cotahuasi/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Cotahuasi/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Cotahuasi/matriz_correlacion.png  used on input line 895.
-(pdftex.def)             Requested size: 221.78923pt x 166.3388pt.
- [50]
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+ [44]
 File: resultados/por_estacion_meteorologica/Cotahuasi/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Cotahuasi/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Cotahuasi/pairplot.png  used on input line 904.
-(pdftex.def)             Requested size: 243.96951pt x 224.1039pt.
- [51]
-<resultados/por_estacion_meteorologica/Huambo/P_histograma.png, id=878, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 199.60895pt x 183.35567pt.
+ [45]
+<resultados/por_estacion_meteorologica/Huambo/P_histograma.png, id=934, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Huambo/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Huambo/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Huambo/P_histograma.png  used on input line 953.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [52]
-<resultados/por_estacion_meteorologica/Huambo/T_histograma.png, id=884, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [46]
+<resultados/por_estacion_meteorologica/Huambo/T_histograma.png, id=940, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Huambo/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Huambo/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Huambo/T_histograma.png  used on input line 962.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Huambo/RH_histograma.png, id=885, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Huambo/RH_histograma.png, id=941, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Huambo/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Huambo/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Huambo/RH_histograma.png  used on input line 971.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [53 <./resultados/por_estacion_meteorologica/Huambo/P_histograma.png> <./resultados/por_estacion_meteorologica/Huambo/T_histograma.png>]
-<resultados/por_estacion_meteorologica/Huambo/WS_histograma.png, id=894, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [47 <./resultados/por_estacion_meteorologica/Huambo/P_histograma.png> <./resultados/por_estacion_meteorologica/Huambo/T_histograma.png>]
+<resultados/por_estacion_meteorologica/Huambo/WS_histograma.png, id=951, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Huambo/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Huambo/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Huambo/WS_histograma.png  used on input line 980.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Huambo/PET_histograma.png, id=895, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Huambo/PET_histograma.png, id=952, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Huambo/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Huambo/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Huambo/PET_histograma.png  used on input line 989.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [54 <./resultados/por_estacion_meteorologica/Huambo/RH_histograma.png> <./resultados/por_estacion_meteorologica/Huambo/WS_histograma.png>]
-<resultados/por_estacion_meteorologica/Huambo/matriz_correlacion.png, id=905, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [48 <./resultados/por_estacion_meteorologica/Huambo/RH_histograma.png> <./resultados/por_estacion_meteorologica/Huambo/WS_histograma.png>]
+<resultados/por_estacion_meteorologica/Huambo/matriz_correlacion.png, id=961, 578.16pt x 433.62pt>
 File: resultados/por_estacion_meteorologica/Huambo/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Huambo/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Huambo/matriz_correlacion.png  used on input line 1000.
-(pdftex.def)             Requested size: 221.78923pt x 166.3388pt.
-<resultados/por_estacion_meteorologica/Huambo/pairplot.png, id=906, 800.0289pt x 742.2129pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+<resultados/por_estacion_meteorologica/Huambo/pairplot.png, id=962, 800.0289pt x 742.2129pt>
 File: resultados/por_estacion_meteorologica/Huambo/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Huambo/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Huambo/pairplot.png  used on input line 1009.
-(pdftex.def)             Requested size: 243.96951pt x 226.33496pt.
- [55 <./resultados/por_estacion_meteorologica/Huambo/PET_histograma.png> <./resultados/por_estacion_meteorologica/Huambo/matriz_correlacion.png>] [56 <./resultados/por_estacion_meteorologica/Huambo/pairplot.png>]
-<resultados/por_estacion_meteorologica/Huaraya/P_histograma.png, id=921, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 199.60895pt x 185.17903pt.
+ [49 <./resultados/por_estacion_meteorologica/Huambo/PET_histograma.png> <./resultados/por_estacion_meteorologica/Huambo/matriz_correlacion.png>] [50 <./resultados/por_estacion_meteorologica/Huambo/pairplot.png>]
+<resultados/por_estacion_meteorologica/Huaraya/P_histograma.png, id=978, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Huaraya/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Huaraya/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Huaraya/P_histograma.png  used on input line 1057.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [57]
-<resultados/por_estacion_meteorologica/Huaraya/T_histograma.png, id=927, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [51 <./resultados/por_estacion_meteorologica/Huaraya/P_histograma.png>]
+<resultados/por_estacion_meteorologica/Huaraya/T_histograma.png, id=986, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Huaraya/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Huaraya/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Huaraya/T_histograma.png  used on input line 1066.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Huaraya/RH_histograma.png, id=928, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Huaraya/RH_histograma.png, id=987, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Huaraya/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Huaraya/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Huaraya/RH_histograma.png  used on input line 1075.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [58 <./resultados/por_estacion_meteorologica/Huaraya/P_histograma.png> <./resultados/por_estacion_meteorologica/Huaraya/T_histograma.png>]
-<resultados/por_estacion_meteorologica/Huaraya/WS_histograma.png, id=937, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Huaraya/WS_histograma.png, id=988, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Huaraya/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Huaraya/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Huaraya/WS_histograma.png  used on input line 1084.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Huaraya/PET_histograma.png, id=938, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [52 <./resultados/por_estacion_meteorologica/Huaraya/T_histograma.png> <./resultados/por_estacion_meteorologica/Huaraya/RH_histograma.png>]
+<resultados/por_estacion_meteorologica/Huaraya/PET_histograma.png, id=997, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Huaraya/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Huaraya/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Huaraya/PET_histograma.png  used on input line 1093.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [59 <./resultados/por_estacion_meteorologica/Huaraya/RH_histograma.png> <./resultados/por_estacion_meteorologica/Huaraya/WS_histograma.png>]
-<resultados/por_estacion_meteorologica/Huaraya/matriz_correlacion.png, id=947, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Huaraya/matriz_correlacion.png, id=998, 578.16pt x 433.62pt>
 File: resultados/por_estacion_meteorologica/Huaraya/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Huaraya/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Huaraya/matriz_correlacion.png  used on input line 1104.
-(pdftex.def)             Requested size: 221.78923pt x 166.3388pt.
-<resultados/por_estacion_meteorologica/Huaraya/pairplot.png, id=948, 800.7516pt x 742.2129pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+ [53 <./resultados/por_estacion_meteorologica/Huaraya/WS_histograma.png> <./resultados/por_estacion_meteorologica/Huaraya/PET_histograma.png>]
+<resultados/por_estacion_meteorologica/Huaraya/pairplot.png, id=1008, 800.7516pt x 742.2129pt>
 File: resultados/por_estacion_meteorologica/Huaraya/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Huaraya/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Huaraya/pairplot.png  used on input line 1113.
-(pdftex.def)             Requested size: 243.96951pt x 226.1311pt.
- [60 <./resultados/por_estacion_meteorologica/Huaraya/PET_histograma.png> <./resultados/por_estacion_meteorologica/Huaraya/matriz_correlacion.png>] [61 <./resultados/por_estacion_meteorologica/Huaraya/pairplot.png>]
-<resultados/por_estacion_meteorologica/Imata/P_histograma.png, id=965, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 199.60895pt x 185.00916pt.
+ [54 <./resultados/por_estacion_meteorologica/Huaraya/matriz_correlacion.png> <./resultados/por_estacion_meteorologica/Huaraya/pairplot.png>]
+<resultados/por_estacion_meteorologica/Imata/P_histograma.png, id=1017, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Imata/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Imata/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Imata/P_histograma.png  used on input line 1161.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [62]
-<resultados/por_estacion_meteorologica/Imata/T_histograma.png, id=971, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [55]
+<resultados/por_estacion_meteorologica/Imata/T_histograma.png, id=1023, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Imata/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Imata/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Imata/T_histograma.png  used on input line 1169.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Imata/RH_histograma.png, id=972, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Imata/RH_histograma.png, id=1024, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Imata/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Imata/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Imata/RH_histograma.png  used on input line 1177.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [63 <./resultados/por_estacion_meteorologica/Imata/P_histograma.png> <./resultados/por_estacion_meteorologica/Imata/T_histograma.png>]
-<resultados/por_estacion_meteorologica/Imata/WS_histograma.png, id=981, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [56 <./resultados/por_estacion_meteorologica/Imata/P_histograma.png> <./resultados/por_estacion_meteorologica/Imata/T_histograma.png>]
+<resultados/por_estacion_meteorologica/Imata/WS_histograma.png, id=1033, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Imata/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Imata/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Imata/WS_histograma.png  used on input line 1185.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Imata/PET_histograma.png, id=982, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Imata/PET_histograma.png, id=1034, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Imata/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Imata/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Imata/PET_histograma.png  used on input line 1193.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [64 <./resultados/por_estacion_meteorologica/Imata/RH_histograma.png> <./resultados/por_estacion_meteorologica/Imata/WS_histograma.png>]
-<resultados/por_estacion_meteorologica/Imata/matriz_correlacion.png, id=991, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [57 <./resultados/por_estacion_meteorologica/Imata/RH_histograma.png> <./resultados/por_estacion_meteorologica/Imata/WS_histograma.png>]
+<resultados/por_estacion_meteorologica/Imata/matriz_correlacion.png, id=1043, 578.16pt x 433.62pt>
 File: resultados/por_estacion_meteorologica/Imata/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Imata/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Imata/matriz_correlacion.png  used on input line 1203.
-(pdftex.def)             Requested size: 221.78923pt x 166.3388pt.
-<resultados/por_estacion_meteorologica/Imata/pairplot.png, id=992, 787.0203pt x 742.2129pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+<resultados/por_estacion_meteorologica/Imata/pairplot.png, id=1044, 787.0203pt x 742.2129pt>
 File: resultados/por_estacion_meteorologica/Imata/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Imata/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Imata/pairplot.png  used on input line 1212.
-(pdftex.def)             Requested size: 243.96951pt x 230.0723pt.
- [65 <./resultados/por_estacion_meteorologica/Imata/PET_histograma.png> <./resultados/por_estacion_meteorologica/Imata/matriz_correlacion.png>] [66 <./resultados/por_estacion_meteorologica/Imata/pairplot.png>]
-<resultados/por_estacion_meteorologica/Kayra/P_histograma.png, id=1008, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 199.60895pt x 188.23685pt.
+ [58 <./resultados/por_estacion_meteorologica/Imata/PET_histograma.png> <./resultados/por_estacion_meteorologica/Imata/matriz_correlacion.png>] [59 <./resultados/por_estacion_meteorologica/Imata/pairplot.png>]
+<resultados/por_estacion_meteorologica/Kayra/P_histograma.png, id=1060, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Kayra/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Kayra/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Kayra/P_histograma.png  used on input line 1259.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [67]
-<resultados/por_estacion_meteorologica/Kayra/T_histograma.png, id=1014, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Kayra/T_histograma.png, id=1061, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Kayra/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Kayra/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Kayra/T_histograma.png  used on input line 1267.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Kayra/RH_histograma.png, id=1015, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [60 <./resultados/por_estacion_meteorologica/Kayra/P_histograma.png>]
+<resultados/por_estacion_meteorologica/Kayra/RH_histograma.png, id=1069, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Kayra/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Kayra/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Kayra/RH_histograma.png  used on input line 1275.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [68 <./resultados/por_estacion_meteorologica/Kayra/P_histograma.png> <./resultados/por_estacion_meteorologica/Kayra/T_histograma.png>]
-<resultados/por_estacion_meteorologica/Kayra/WS_histograma.png, id=1024, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Kayra/WS_histograma.png, id=1070, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Kayra/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Kayra/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Kayra/WS_histograma.png  used on input line 1283.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Kayra/PET_histograma.png, id=1025, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [61 <./resultados/por_estacion_meteorologica/Kayra/T_histograma.png> <./resultados/por_estacion_meteorologica/Kayra/RH_histograma.png>]
+<resultados/por_estacion_meteorologica/Kayra/PET_histograma.png, id=1079, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Kayra/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Kayra/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Kayra/PET_histograma.png  used on input line 1291.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [69 <./resultados/por_estacion_meteorologica/Kayra/RH_histograma.png> <./resultados/por_estacion_meteorologica/Kayra/WS_histograma.png>]
-<resultados/por_estacion_meteorologica/Kayra/matriz_correlacion.png, id=1034, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Kayra/matriz_correlacion.png, id=1080, 578.16pt x 433.62pt>
 File: resultados/por_estacion_meteorologica/Kayra/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Kayra/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Kayra/matriz_correlacion.png  used on input line 1301.
-(pdftex.def)             Requested size: 221.78923pt x 166.3388pt.
-<resultados/por_estacion_meteorologica/Kayra/pairplot.png, id=1035, 787.0203pt x 742.2129pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+ [62 <./resultados/por_estacion_meteorologica/Kayra/WS_histograma.png> <./resultados/por_estacion_meteorologica/Kayra/PET_histograma.png>]
+<resultados/por_estacion_meteorologica/Kayra/pairplot.png, id=1089, 787.0203pt x 742.2129pt>
 File: resultados/por_estacion_meteorologica/Kayra/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Kayra/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Kayra/pairplot.png  used on input line 1310.
-(pdftex.def)             Requested size: 243.96951pt x 230.0723pt.
- [70 <./resultados/por_estacion_meteorologica/Kayra/PET_histograma.png> <./resultados/por_estacion_meteorologica/Kayra/matriz_correlacion.png>] [71 <./resultados/por_estacion_meteorologica/Kayra/pairplot.png>]
-<resultados/por_estacion_meteorologica/Mañazo/P_histograma.png, id=1050, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 199.60895pt x 188.23685pt.
+ [63 <./resultados/por_estacion_meteorologica/Kayra/matriz_correlacion.png> <./resultados/por_estacion_meteorologica/Kayra/pairplot.png>]
+<resultados/por_estacion_meteorologica/Mañazo/P_histograma.png, id=1098, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Mañazo/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Mañazo/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Mañazo/P_histograma.png  used on input line 1357.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [72]
-<resultados/por_estacion_meteorologica/Mañazo/T_histograma.png, id=1057, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [64]
+<resultados/por_estacion_meteorologica/Mañazo/T_histograma.png, id=1104, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Mañazo/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Mañazo/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Mañazo/T_histograma.png  used on input line 1365.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Mañazo/RH_histograma.png, id=1058, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Mañazo/RH_histograma.png, id=1105, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Mañazo/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Mañazo/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Mañazo/RH_histograma.png  used on input line 1373.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [73 <./resultados/por_estacion_meteorologica/Mañazo/P_histograma.png> <./resultados/por_estacion_meteorologica/Mañazo/T_histograma.png>]
-<resultados/por_estacion_meteorologica/Mañazo/WS_histograma.png, id=1067, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [65 <./resultados/por_estacion_meteorologica/Mañazo/P_histograma.png> <./resultados/por_estacion_meteorologica/Mañazo/T_histograma.png>]
+<resultados/por_estacion_meteorologica/Mañazo/WS_histograma.png, id=1115, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Mañazo/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Mañazo/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Mañazo/WS_histograma.png  used on input line 1381.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Mañazo/PET_histograma.png, id=1068, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Mañazo/PET_histograma.png, id=1116, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Mañazo/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Mañazo/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Mañazo/PET_histograma.png  used on input line 1389.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [74 <./resultados/por_estacion_meteorologica/Mañazo/RH_histograma.png> <./resultados/por_estacion_meteorologica/Mañazo/WS_histograma.png>]
-<resultados/por_estacion_meteorologica/Mañazo/matriz_correlacion.png, id=1077, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [66 <./resultados/por_estacion_meteorologica/Mañazo/RH_histograma.png> <./resultados/por_estacion_meteorologica/Mañazo/WS_histograma.png>]
+<resultados/por_estacion_meteorologica/Mañazo/matriz_correlacion.png, id=1125, 578.16pt x 433.62pt>
 File: resultados/por_estacion_meteorologica/Mañazo/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Mañazo/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Mañazo/matriz_correlacion.png  used on input line 1399.
-(pdftex.def)             Requested size: 221.78923pt x 166.3388pt.
-<resultados/por_estacion_meteorologica/Mañazo/pairplot.png, id=1078, 796.4154pt x 742.2129pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+<resultados/por_estacion_meteorologica/Mañazo/pairplot.png, id=1126, 796.4154pt x 742.2129pt>
 File: resultados/por_estacion_meteorologica/Mañazo/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Mañazo/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Mañazo/pairplot.png  used on input line 1408.
-(pdftex.def)             Requested size: 243.96951pt x 227.36555pt.
- [75 <./resultados/por_estacion_meteorologica/Mañazo/PET_histograma.png> <./resultados/por_estacion_meteorologica/Mañazo/matriz_correlacion.png>] [76 <./resultados/por_estacion_meteorologica/Mañazo/pairplot.png>]
-<resultados/por_estacion_meteorologica/Pampa_Blanca/P_histograma.png, id=1093, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 199.60895pt x 186.0171pt.
+ [67 <./resultados/por_estacion_meteorologica/Mañazo/PET_histograma.png> <./resultados/por_estacion_meteorologica/Mañazo/matriz_correlacion.png>] [68 <./resultados/por_estacion_meteorologica/Mañazo/pairplot.png>]
+<resultados/por_estacion_meteorologica/Pampa_Blanca/P_histograma.png, id=1142, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Pampa_Blanca/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pampa_Blanca/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pampa_Blanca/P_histograma.png  used on input line 1455.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [77]
-<resultados/por_estacion_meteorologica/Pampa_Blanca/T_histograma.png, id=1099, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Pampa_Blanca/T_histograma.png, id=1143, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Pampa_Blanca/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pampa_Blanca/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pampa_Blanca/T_histograma.png  used on input line 1463.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Pampa_Blanca/RH_histograma.png, id=1100, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [69 <./resultados/por_estacion_meteorologica/Pampa_Blanca/P_histograma.png>]
+<resultados/por_estacion_meteorologica/Pampa_Blanca/RH_histograma.png, id=1151, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Pampa_Blanca/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pampa_Blanca/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pampa_Blanca/RH_histograma.png  used on input line 1471.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [78 <./resultados/por_estacion_meteorologica/Pampa_Blanca/P_histograma.png> <./resultados/por_estacion_meteorologica/Pampa_Blanca/T_histograma.png>]
-<resultados/por_estacion_meteorologica/Pampa_Blanca/WS_histograma.png, id=1110, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Pampa_Blanca/WS_histograma.png, id=1152, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Pampa_Blanca/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pampa_Blanca/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pampa_Blanca/WS_histograma.png  used on input line 1479.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Pampa_Blanca/PET_histograma.png, id=1111, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [70 <./resultados/por_estacion_meteorologica/Pampa_Blanca/T_histograma.png> <./resultados/por_estacion_meteorologica/Pampa_Blanca/RH_histograma.png>]
+<resultados/por_estacion_meteorologica/Pampa_Blanca/PET_histograma.png, id=1161, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Pampa_Blanca/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pampa_Blanca/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pampa_Blanca/PET_histograma.png  used on input line 1487.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [79 <./resultados/por_estacion_meteorologica/Pampa_Blanca/RH_histograma.png> <./resultados/por_estacion_meteorologica/Pampa_Blanca/WS_histograma.png>]
-<resultados/por_estacion_meteorologica/Pampa_Blanca/matriz_correlacion.png, id=1121, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Pampa_Blanca/matriz_correlacion.png, id=1162, 578.16pt x 433.62pt>
 File: resultados/por_estacion_meteorologica/Pampa_Blanca/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pampa_Blanca/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pampa_Blanca/matriz_correlacion.png  used on input line 1497.
-(pdftex.def)             Requested size: 221.78923pt x 166.3388pt.
-<resultados/por_estacion_meteorologica/Pampa_Blanca/pairplot.png, id=1122, 828.2142pt x 742.2129pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+ [71 <./resultados/por_estacion_meteorologica/Pampa_Blanca/WS_histograma.png> <./resultados/por_estacion_meteorologica/Pampa_Blanca/PET_histograma.png>]
+<resultados/por_estacion_meteorologica/Pampa_Blanca/pairplot.png, id=1172, 828.2142pt x 742.2129pt>
 File: resultados/por_estacion_meteorologica/Pampa_Blanca/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pampa_Blanca/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pampa_Blanca/pairplot.png  used on input line 1507.
-(pdftex.def)             Requested size: 243.96951pt x 218.6338pt.
- [80 <./resultados/por_estacion_meteorologica/Pampa_Blanca/PET_histograma.png> <./resultados/por_estacion_meteorologica/Pampa_Blanca/matriz_correlacion.png>] [81 <./resultados/por_estacion_meteorologica/Pampa_Blanca/pairplot.png>]
-<resultados/por_estacion_meteorologica/Pizacoma/P_histograma.png, id=1137, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 199.60895pt x 178.8822pt.
+ [72 <./resultados/por_estacion_meteorologica/Pampa_Blanca/matriz_correlacion.png> <./resultados/por_estacion_meteorologica/Pampa_Blanca/pairplot.png>]
+<resultados/por_estacion_meteorologica/Pizacoma/P_histograma.png, id=1181, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Pizacoma/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pizacoma/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pizacoma/P_histograma.png  used on input line 1555.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [82]
-<resultados/por_estacion_meteorologica/Pizacoma/T_histograma.png, id=1143, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [73]
+<resultados/por_estacion_meteorologica/Pizacoma/T_histograma.png, id=1187, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Pizacoma/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pizacoma/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pizacoma/T_histograma.png  used on input line 1564.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Pizacoma/RH_histograma.png, id=1144, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Pizacoma/RH_histograma.png, id=1188, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Pizacoma/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pizacoma/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pizacoma/RH_histograma.png  used on input line 1573.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [83 <./resultados/por_estacion_meteorologica/Pizacoma/P_histograma.png> <./resultados/por_estacion_meteorologica/Pizacoma/T_histograma.png>]
-<resultados/por_estacion_meteorologica/Pizacoma/WS_histograma.png, id=1153, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [74 <./resultados/por_estacion_meteorologica/Pizacoma/P_histograma.png> <./resultados/por_estacion_meteorologica/Pizacoma/T_histograma.png>]
+<resultados/por_estacion_meteorologica/Pizacoma/WS_histograma.png, id=1197, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Pizacoma/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pizacoma/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pizacoma/WS_histograma.png  used on input line 1582.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Pizacoma/PET_histograma.png, id=1154, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Pizacoma/PET_histograma.png, id=1198, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Pizacoma/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pizacoma/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pizacoma/PET_histograma.png  used on input line 1591.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [84 <./resultados/por_estacion_meteorologica/Pizacoma/RH_histograma.png> <./resultados/por_estacion_meteorologica/Pizacoma/WS_histograma.png>]
-<resultados/por_estacion_meteorologica/Pizacoma/matriz_correlacion.png, id=1164, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [75 <./resultados/por_estacion_meteorologica/Pizacoma/RH_histograma.png> <./resultados/por_estacion_meteorologica/Pizacoma/WS_histograma.png>]
+<resultados/por_estacion_meteorologica/Pizacoma/matriz_correlacion.png, id=1207, 578.16pt x 433.62pt>
 File: resultados/por_estacion_meteorologica/Pizacoma/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pizacoma/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pizacoma/matriz_correlacion.png  used on input line 1602.
-(pdftex.def)             Requested size: 221.78923pt x 166.3388pt.
-<resultados/por_estacion_meteorologica/Pizacoma/pairplot.png, id=1165, 805.8105pt x 742.2129pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+<resultados/por_estacion_meteorologica/Pizacoma/pairplot.png, id=1208, 805.8105pt x 742.2129pt>
 File: resultados/por_estacion_meteorologica/Pizacoma/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pizacoma/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pizacoma/pairplot.png  used on input line 1611.
-(pdftex.def)             Requested size: 243.96951pt x 224.71545pt.
- [85 <./resultados/por_estacion_meteorologica/Pizacoma/PET_histograma.png> <./resultados/por_estacion_meteorologica/Pizacoma/matriz_correlacion.png>] [86 <./resultados/por_estacion_meteorologica/Pizacoma/pairplot.png>]
-<resultados/por_estacion_meteorologica/Pucara/P_histograma.png, id=1180, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 199.60895pt x 183.85397pt.
+ [76 <./resultados/por_estacion_meteorologica/Pizacoma/PET_histograma.png> <./resultados/por_estacion_meteorologica/Pizacoma/matriz_correlacion.png>] [77 <./resultados/por_estacion_meteorologica/Pizacoma/pairplot.png>]
+<resultados/por_estacion_meteorologica/Pucara/P_histograma.png, id=1224, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Pucara/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pucara/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pucara/P_histograma.png  used on input line 1658.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [87]
-<resultados/por_estacion_meteorologica/Pucara/T_histograma.png, id=1186, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Pucara/T_histograma.png, id=1225, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Pucara/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pucara/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pucara/T_histograma.png  used on input line 1666.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Pucara/RH_histograma.png, id=1187, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [78 <./resultados/por_estacion_meteorologica/Pucara/P_histograma.png>]
+<resultados/por_estacion_meteorologica/Pucara/RH_histograma.png, id=1233, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Pucara/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pucara/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pucara/RH_histograma.png  used on input line 1674.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [88 <./resultados/por_estacion_meteorologica/Pucara/P_histograma.png> <./resultados/por_estacion_meteorologica/Pucara/T_histograma.png>]
-<resultados/por_estacion_meteorologica/Pucara/WS_histograma.png, id=1196, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Pucara/WS_histograma.png, id=1234, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Pucara/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pucara/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pucara/WS_histograma.png  used on input line 1682.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Pucara/PET_histograma.png, id=1197, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [79 <./resultados/por_estacion_meteorologica/Pucara/T_histograma.png> <./resultados/por_estacion_meteorologica/Pucara/RH_histograma.png>]
+<resultados/por_estacion_meteorologica/Pucara/PET_histograma.png, id=1243, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Pucara/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pucara/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pucara/PET_histograma.png  used on input line 1690.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [89 <./resultados/por_estacion_meteorologica/Pucara/RH_histograma.png> <./resultados/por_estacion_meteorologica/Pucara/WS_histograma.png>]
-<resultados/por_estacion_meteorologica/Pucara/matriz_correlacion.png, id=1206, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Pucara/matriz_correlacion.png, id=1244, 578.16pt x 433.62pt>
 File: resultados/por_estacion_meteorologica/Pucara/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pucara/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pucara/matriz_correlacion.png  used on input line 1700.
-(pdftex.def)             Requested size: 221.78923pt x 166.3388pt.
-<resultados/por_estacion_meteorologica/Pucara/pairplot.png, id=1207, 792.0792pt x 742.2129pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+ [80 <./resultados/por_estacion_meteorologica/Pucara/WS_histograma.png> <./resultados/por_estacion_meteorologica/Pucara/PET_histograma.png>]
+<resultados/por_estacion_meteorologica/Pucara/pairplot.png, id=1253, 792.0792pt x 742.2129pt>
 File: resultados/por_estacion_meteorologica/Pucara/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Pucara/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Pucara/pairplot.png  used on input line 1709.
-(pdftex.def)             Requested size: 243.96951pt x 228.61134pt.
- [90 <./resultados/por_estacion_meteorologica/Pucara/PET_histograma.png> <./resultados/por_estacion_meteorologica/Pucara/matriz_correlacion.png>] [91 <./resultados/por_estacion_meteorologica/Pucara/pairplot.png>]
-<resultados/por_estacion_meteorologica/Punta_Atico/P_histograma.png, id=1223, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 199.60895pt x 187.03638pt.
+ [81 <./resultados/por_estacion_meteorologica/Pucara/matriz_correlacion.png> <./resultados/por_estacion_meteorologica/Pucara/pairplot.png>]
+<resultados/por_estacion_meteorologica/Punta_Atico/P_histograma.png, id=1262, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Punta_Atico/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Punta_Atico/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Punta_Atico/P_histograma.png  used on input line 1756.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [92]
-<resultados/por_estacion_meteorologica/Punta_Atico/T_histograma.png, id=1229, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [82]
+<resultados/por_estacion_meteorologica/Punta_Atico/T_histograma.png, id=1268, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Punta_Atico/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Punta_Atico/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Punta_Atico/T_histograma.png  used on input line 1764.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Punta_Atico/RH_histograma.png, id=1230, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Punta_Atico/RH_histograma.png, id=1269, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Punta_Atico/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Punta_Atico/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Punta_Atico/RH_histograma.png  used on input line 1772.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [93 <./resultados/por_estacion_meteorologica/Punta_Atico/P_histograma.png> <./resultados/por_estacion_meteorologica/Punta_Atico/T_histograma.png>]
-<resultados/por_estacion_meteorologica/Punta_Atico/WS_histograma.png, id=1239, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [83 <./resultados/por_estacion_meteorologica/Punta_Atico/P_histograma.png> <./resultados/por_estacion_meteorologica/Punta_Atico/T_histograma.png>]
+<resultados/por_estacion_meteorologica/Punta_Atico/WS_histograma.png, id=1279, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Punta_Atico/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Punta_Atico/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Punta_Atico/WS_histograma.png  used on input line 1780.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Punta_Atico/PET_histograma.png, id=1240, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Punta_Atico/PET_histograma.png, id=1280, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Punta_Atico/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Punta_Atico/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Punta_Atico/PET_histograma.png  used on input line 1788.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [94 <./resultados/por_estacion_meteorologica/Punta_Atico/RH_histograma.png> <./resultados/por_estacion_meteorologica/Punta_Atico/WS_histograma.png>]
-<resultados/por_estacion_meteorologica/Punta_Atico/matriz_correlacion.png, id=1249, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [84 <./resultados/por_estacion_meteorologica/Punta_Atico/RH_histograma.png> <./resultados/por_estacion_meteorologica/Punta_Atico/WS_histograma.png>]
+<resultados/por_estacion_meteorologica/Punta_Atico/matriz_correlacion.png, id=1289, 578.16pt x 433.62pt>
 File: resultados/por_estacion_meteorologica/Punta_Atico/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Punta_Atico/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Punta_Atico/matriz_correlacion.png  used on input line 1798.
-(pdftex.def)             Requested size: 221.78923pt x 166.3388pt.
-<resultados/por_estacion_meteorologica/Punta_Atico/pairplot.png, id=1250, 814.4829pt x 742.2129pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+<resultados/por_estacion_meteorologica/Punta_Atico/pairplot.png, id=1290, 814.4829pt x 742.2129pt>
 File: resultados/por_estacion_meteorologica/Punta_Atico/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Punta_Atico/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Punta_Atico/pairplot.png  used on input line 1807.
-(pdftex.def)             Requested size: 243.96951pt x 222.3145pt.
- [95 <./resultados/por_estacion_meteorologica/Punta_Atico/PET_histograma.png> <./resultados/por_estacion_meteorologica/Punta_Atico/matriz_correlacion.png>] [96 <./resultados/por_estacion_meteorologica/Punta_Atico/pairplot.png>]
-<resultados/por_estacion_meteorologica/Punta_Coles/P_histograma.png, id=1266, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 199.60895pt x 181.89471pt.
+ [85 <./resultados/por_estacion_meteorologica/Punta_Atico/PET_histograma.png> <./resultados/por_estacion_meteorologica/Punta_Atico/matriz_correlacion.png>] [86 <./resultados/por_estacion_meteorologica/Punta_Atico/pairplot.png>]
+<resultados/por_estacion_meteorologica/Punta_Coles/P_histograma.png, id=1306, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Punta_Coles/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Punta_Coles/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Punta_Coles/P_histograma.png  used on input line 1856.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [97]
-<resultados/por_estacion_meteorologica/Punta_Coles/T_histograma.png, id=1272, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [87]
+<resultados/por_estacion_meteorologica/Punta_Coles/T_histograma.png, id=1312, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Punta_Coles/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Punta_Coles/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Punta_Coles/T_histograma.png  used on input line 1864.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Punta_Coles/RH_histograma.png, id=1273, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Punta_Coles/RH_histograma.png, id=1313, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Punta_Coles/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Punta_Coles/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Punta_Coles/RH_histograma.png  used on input line 1872.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [98 <./resultados/por_estacion_meteorologica/Punta_Coles/P_histograma.png> <./resultados/por_estacion_meteorologica/Punta_Coles/T_histograma.png>]
-<resultados/por_estacion_meteorologica/Punta_Coles/WS_histograma.png, id=1283, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [88 <./resultados/por_estacion_meteorologica/Punta_Coles/P_histograma.png> <./resultados/por_estacion_meteorologica/Punta_Coles/T_histograma.png>]
+<resultados/por_estacion_meteorologica/Punta_Coles/WS_histograma.png, id=1322, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Punta_Coles/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Punta_Coles/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Punta_Coles/WS_histograma.png  used on input line 1880.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Punta_Coles/PET_histograma.png, id=1284, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Punta_Coles/PET_histograma.png, id=1323, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Punta_Coles/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Punta_Coles/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Punta_Coles/PET_histograma.png  used on input line 1888.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [99 <./resultados/por_estacion_meteorologica/Punta_Coles/RH_histograma.png> <./resultados/por_estacion_meteorologica/Punta_Coles/WS_histograma.png>]
-<resultados/por_estacion_meteorologica/Punta_Coles/matriz_correlacion.png, id=1293, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [89 <./resultados/por_estacion_meteorologica/Punta_Coles/RH_histograma.png> <./resultados/por_estacion_meteorologica/Punta_Coles/WS_histograma.png>]
+<resultados/por_estacion_meteorologica/Punta_Coles/matriz_correlacion.png, id=1333, 578.16pt x 433.62pt>
 File: resultados/por_estacion_meteorologica/Punta_Coles/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Punta_Coles/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Punta_Coles/matriz_correlacion.png  used on input line 1898.
-(pdftex.def)             Requested size: 221.78923pt x 166.3388pt.
-<resultados/por_estacion_meteorologica/Punta_Coles/pairplot.png, id=1294, 815.2056pt x 742.2129pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+<resultados/por_estacion_meteorologica/Punta_Coles/pairplot.png, id=1334, 815.2056pt x 742.2129pt>
 File: resultados/por_estacion_meteorologica/Punta_Coles/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Punta_Coles/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Punta_Coles/pairplot.png  used on input line 1907.
-(pdftex.def)             Requested size: 243.96951pt x 222.12198pt.
- [100 <./resultados/por_estacion_meteorologica/Punta_Coles/PET_histograma.png> <./resultados/por_estacion_meteorologica/Punta_Coles/matriz_correlacion.png>]
-Overfull \hbox (4.97989pt too wide) in paragraph at lines 1911--1912
-[]\T1/phv/b/n/10.95 Interpretaci�n: \T1/phv/m/n/10.95 El gr�-fi-co evi-den-cia agru-pa-cio-nes den-sas en los pa-res T^^UPET y WS^^UPET,
- []
-
-[101 <./resultados/por_estacion_meteorologica/Punta_Coles/pairplot.png>]
-<resultados/por_estacion_meteorologica/Sicuani/P_histograma.png, id=1309, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 199.60895pt x 181.73616pt.
+ [90 <./resultados/por_estacion_meteorologica/Punta_Coles/PET_histograma.png> <./resultados/por_estacion_meteorologica/Punta_Coles/matriz_correlacion.png>] [91 <./resultados/por_estacion_meteorologica/Punta_Coles/pairplot.png>]
+<resultados/por_estacion_meteorologica/Sicuani/P_histograma.png, id=1349, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Sicuani/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Sicuani/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Sicuani/P_histograma.png  used on input line 1954.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [102]
-<resultados/por_estacion_meteorologica/Sicuani/T_histograma.png, id=1316, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Sicuani/T_histograma.png, id=1350, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Sicuani/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Sicuani/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Sicuani/T_histograma.png  used on input line 1962.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Sicuani/RH_histograma.png, id=1317, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [92 <./resultados/por_estacion_meteorologica/Sicuani/P_histograma.png>]
+<resultados/por_estacion_meteorologica/Sicuani/RH_histograma.png, id=1358, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Sicuani/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Sicuani/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Sicuani/RH_histograma.png  used on input line 1970.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [103 <./resultados/por_estacion_meteorologica/Sicuani/P_histograma.png> <./resultados/por_estacion_meteorologica/Sicuani/T_histograma.png>]
-<resultados/por_estacion_meteorologica/Sicuani/WS_histograma.png, id=1326, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Sicuani/WS_histograma.png, id=1359, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Sicuani/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Sicuani/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Sicuani/WS_histograma.png  used on input line 1978.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Sicuani/PET_histograma.png, id=1327, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [93 <./resultados/por_estacion_meteorologica/Sicuani/T_histograma.png> <./resultados/por_estacion_meteorologica/Sicuani/RH_histograma.png>]
+<resultados/por_estacion_meteorologica/Sicuani/PET_histograma.png, id=1368, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Sicuani/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Sicuani/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Sicuani/PET_histograma.png  used on input line 1986.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [104 <./resultados/por_estacion_meteorologica/Sicuani/RH_histograma.png> <./resultados/por_estacion_meteorologica/Sicuani/WS_histograma.png>]
-<resultados/por_estacion_meteorologica/Sicuani/matriz_correlacion.png, id=1336, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Sicuani/matriz_correlacion.png, id=1369, 578.16pt x 433.62pt>
 File: resultados/por_estacion_meteorologica/Sicuani/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Sicuani/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Sicuani/matriz_correlacion.png  used on input line 1996.
-(pdftex.def)             Requested size: 221.78923pt x 166.3388pt.
-<resultados/por_estacion_meteorologica/Sicuani/pairplot.png, id=1337, 794.2473pt x 742.2129pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+ [94 <./resultados/por_estacion_meteorologica/Sicuani/WS_histograma.png> <./resultados/por_estacion_meteorologica/Sicuani/PET_histograma.png>]
+<resultados/por_estacion_meteorologica/Sicuani/pairplot.png, id=1378, 794.2473pt x 742.2129pt>
 File: resultados/por_estacion_meteorologica/Sicuani/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Sicuani/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Sicuani/pairplot.png  used on input line 2005.
-(pdftex.def)             Requested size: 243.96951pt x 227.98845pt.
- [105 <./resultados/por_estacion_meteorologica/Sicuani/PET_histograma.png> <./resultados/por_estacion_meteorologica/Sicuani/matriz_correlacion.png>] [106 <./resultados/por_estacion_meteorologica/Sicuani/pairplot.png>]
-<resultados/por_estacion_meteorologica/Ubinas/P_histograma.png, id=1352, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 199.60895pt x 186.52673pt.
+ [95 <./resultados/por_estacion_meteorologica/Sicuani/matriz_correlacion.png> <./resultados/por_estacion_meteorologica/Sicuani/pairplot.png>]
+<resultados/por_estacion_meteorologica/Ubinas/P_histograma.png, id=1388, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Ubinas/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ubinas/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ubinas/P_histograma.png  used on input line 2052.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [107]
-<resultados/por_estacion_meteorologica/Ubinas/T_histograma.png, id=1358, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [96]
+<resultados/por_estacion_meteorologica/Ubinas/T_histograma.png, id=1394, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Ubinas/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ubinas/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ubinas/T_histograma.png  used on input line 2060.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Ubinas/RH_histograma.png, id=1359, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Ubinas/RH_histograma.png, id=1395, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Ubinas/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ubinas/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ubinas/RH_histograma.png  used on input line 2068.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [108 <./resultados/por_estacion_meteorologica/Ubinas/P_histograma.png> <./resultados/por_estacion_meteorologica/Ubinas/T_histograma.png>]
-<resultados/por_estacion_meteorologica/Ubinas/WS_histograma.png, id=1369, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [97 <./resultados/por_estacion_meteorologica/Ubinas/P_histograma.png> <./resultados/por_estacion_meteorologica/Ubinas/T_histograma.png>]
+<resultados/por_estacion_meteorologica/Ubinas/WS_histograma.png, id=1404, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Ubinas/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ubinas/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ubinas/WS_histograma.png  used on input line 2076.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Ubinas/PET_histograma.png, id=1370, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Ubinas/PET_histograma.png, id=1405, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Ubinas/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ubinas/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ubinas/PET_histograma.png  used on input line 2084.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [109 <./resultados/por_estacion_meteorologica/Ubinas/RH_histograma.png> <./resultados/por_estacion_meteorologica/Ubinas/WS_histograma.png>]
-<resultados/por_estacion_meteorologica/Ubinas/matriz_correlacion.png, id=1379, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [98 <./resultados/por_estacion_meteorologica/Ubinas/RH_histograma.png> <./resultados/por_estacion_meteorologica/Ubinas/WS_histograma.png>]
+<resultados/por_estacion_meteorologica/Ubinas/matriz_correlacion.png, id=1414, 578.16pt x 433.62pt>
 File: resultados/por_estacion_meteorologica/Ubinas/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ubinas/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ubinas/matriz_correlacion.png  used on input line 2094.
-(pdftex.def)             Requested size: 221.78923pt x 166.3388pt.
-<resultados/por_estacion_meteorologica/Ubinas/pairplot.png, id=1380, 792.0792pt x 742.2129pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+<resultados/por_estacion_meteorologica/Ubinas/pairplot.png, id=1415, 792.0792pt x 742.2129pt>
 File: resultados/por_estacion_meteorologica/Ubinas/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Ubinas/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Ubinas/pairplot.png  used on input line 2103.
-(pdftex.def)             Requested size: 243.96951pt x 228.61134pt.
- [110 <./resultados/por_estacion_meteorologica/Ubinas/PET_histograma.png> <./resultados/por_estacion_meteorologica/Ubinas/matriz_correlacion.png>] [111 <./resultados/por_estacion_meteorologica/Ubinas/pairplot.png>]
-<resultados/por_estacion_meteorologica/Yarada/P_histograma.png, id=1395, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 199.60895pt x 187.03638pt.
+ [99 <./resultados/por_estacion_meteorologica/Ubinas/PET_histograma.png> <./resultados/por_estacion_meteorologica/Ubinas/matriz_correlacion.png>] [100 <./resultados/por_estacion_meteorologica/Ubinas/pairplot.png>]
+<resultados/por_estacion_meteorologica/Yarada/P_histograma.png, id=1430, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Yarada/P_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Yarada/P_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Yarada/P_histograma.png  used on input line 2150.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [112]
-<resultados/por_estacion_meteorologica/Yarada/T_histograma.png, id=1401, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Yarada/T_histograma.png, id=1431, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Yarada/T_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Yarada/T_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Yarada/T_histograma.png  used on input line 2158.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Yarada/RH_histograma.png, id=1402, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [101 <./resultados/por_estacion_meteorologica/Yarada/P_histograma.png>]
+<resultados/por_estacion_meteorologica/Yarada/RH_histograma.png, id=1440, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Yarada/RH_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Yarada/RH_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Yarada/RH_histograma.png  used on input line 2166.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [113 <./resultados/por_estacion_meteorologica/Yarada/P_histograma.png> <./resultados/por_estacion_meteorologica/Yarada/T_histograma.png>]
-<resultados/por_estacion_meteorologica/Yarada/WS_histograma.png, id=1411, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Yarada/WS_histograma.png, id=1441, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Yarada/WS_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Yarada/WS_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Yarada/WS_histograma.png  used on input line 2174.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
-<resultados/por_estacion_meteorologica/Yarada/PET_histograma.png, id=1412, 722.7pt x 542.025pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+ [102 <./resultados/por_estacion_meteorologica/Yarada/T_histograma.png> <./resultados/por_estacion_meteorologica/Yarada/RH_histograma.png>]
+<resultados/por_estacion_meteorologica/Yarada/PET_histograma.png, id=1450, 722.7pt x 542.025pt>
 File: resultados/por_estacion_meteorologica/Yarada/PET_histograma.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Yarada/PET_histograma.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Yarada/PET_histograma.png  used on input line 2182.
-(pdftex.def)             Requested size: 221.78923pt x 166.33879pt.
- [114 <./resultados/por_estacion_meteorologica/Yarada/RH_histograma.png> <./resultados/por_estacion_meteorologica/Yarada/WS_histograma.png>]
-<resultados/por_estacion_meteorologica/Yarada/matriz_correlacion.png, id=1422, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.06607pt.
+<resultados/por_estacion_meteorologica/Yarada/matriz_correlacion.png, id=1451, 578.16pt x 433.62pt>
 File: resultados/por_estacion_meteorologica/Yarada/matriz_correlacion.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Yarada/matriz_correlacion.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Yarada/matriz_correlacion.png  used on input line 2192.
-(pdftex.def)             Requested size: 221.78923pt x 166.3388pt.
-<resultados/por_estacion_meteorologica/Yarada/pairplot.png, id=1423, 792.0792pt x 742.2129pt>
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+ [103 <./resultados/por_estacion_meteorologica/Yarada/WS_histograma.png> <./resultados/por_estacion_meteorologica/Yarada/PET_histograma.png>]
+<resultados/por_estacion_meteorologica/Yarada/pairplot.png, id=1460, 792.0792pt x 742.2129pt>
 File: resultados/por_estacion_meteorologica/Yarada/pairplot.png Graphic file (type png)
 <use resultados/por_estacion_meteorologica/Yarada/pairplot.png>
 Package pdftex.def Info: resultados/por_estacion_meteorologica/Yarada/pairplot.png  used on input line 2201.
-(pdftex.def)             Requested size: 243.96951pt x 228.61134pt.
- [115 <./resultados/por_estacion_meteorologica/Yarada/PET_histograma.png> <./resultados/por_estacion_meteorologica/Yarada/matriz_correlacion.png>] [116 <./resultados/por_estacion_meteorologica/Yarada/pairplot.png>]
-Cap\'{\i }tulo 2.
-<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Summer.png, id=1438, 383.7537pt x 295.5843pt>
+(pdftex.def)             Requested size: 199.60895pt x 187.03638pt.
+ [104 <./resultados/por_estacion_meteorologica/Yarada/matriz_correlacion.png> <./resultados/por_estacion_meteorologica/Yarada/pairplot.png>]
+Cap\'{\i }tulo 3.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Summer.png, id=1470, 383.7537pt x 295.5843pt>
 File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Summer.png Graphic file (type png)
 <use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Summer.png>
 Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Summer.png  used on input line 2223.
-(pdftex.def)             Requested size: 212.91577pt x 163.9971pt.
-<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Autumn.png, id=1439, 390.258pt x 295.5843pt>
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Autumn.png, id=1471, 390.258pt x 295.5843pt>
 File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Autumn.png Graphic file (type png)
 <use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Autumn.png>
 Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Autumn.png  used on input line 2228.
-(pdftex.def)             Requested size: 212.91577pt x 161.26389pt.
-<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Winter.png, id=1440, 390.258pt x 295.5843pt>
+(pdftex.def)             Requested size: 133.07489pt x 100.7905pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Winter.png, id=1472, 390.258pt x 295.5843pt>
 File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Winter.png Graphic file (type png)
 <use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Winter.png>
 Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Winter.png  used on input line 2235.
-(pdftex.def)             Requested size: 212.91577pt x 161.26389pt.
-<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Spring.png, id=1441, 390.258pt x 295.5843pt>
+(pdftex.def)             Requested size: 133.07489pt x 100.7905pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Spring.png, id=1473, 390.258pt x 295.5843pt>
 File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Spring.png Graphic file (type png)
 <use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Spring.png>
 Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Spring.png  used on input line 2240.
-(pdftex.def)             Requested size: 212.91577pt x 161.26389pt.
-[117
-
-]
-<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_ClassBoxplot_Season.png, id=1447, 614.295pt x 417.7206pt>
+(pdftex.def)             Requested size: 133.07489pt x 100.7905pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_ClassBoxplot_Season.png, id=1474, 614.295pt x 417.7206pt>
 File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_ClassBoxplot_Season.png Graphic file (type png)
 <use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_ClassBoxplot_Season.png>
 Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_ClassBoxplot_Season.png  used on input line 2251.
-(pdftex.def)             Requested size: 354.86412pt x 241.30928pt.
- [118 <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Summer.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Autumn.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Winter.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Spring.png>]
-<resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Autumn.png, id=1457, 383.7537pt x 295.5843pt>
+(pdftex.def)             Requested size: 177.42868pt x 120.65144pt.
+[105
+
+ <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Summer.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Autumn.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Winter.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Spring.png>]
+<resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Autumn.png, id=1484, 383.7537pt x 295.5843pt>
 File: resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Autumn.png Graphic file (type png)
 <use resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Autumn.png>
-Package pdftex.def Info: resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Autumn.png  used on input line 2276.
-(pdftex.def)             Requested size: 212.91577pt x 163.9971pt.
-<resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Spring.png, id=1458, 383.7537pt x 295.5843pt>
+Package pdftex.def Info: resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Autumn.png  used on input line 2275.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Spring.png, id=1485, 383.7537pt x 295.5843pt>
 File: resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Spring.png Graphic file (type png)
 <use resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Spring.png>
-Package pdftex.def Info: resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Spring.png  used on input line 2282.
-(pdftex.def)             Requested size: 212.91577pt x 163.9971pt.
-<resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Summer.png, id=1459, 383.7537pt x 295.5843pt>
+Package pdftex.def Info: resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Spring.png  used on input line 2281.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Summer.png, id=1486, 383.7537pt x 295.5843pt>
 File: resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Summer.png Graphic file (type png)
 <use resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Summer.png>
-Package pdftex.def Info: resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Summer.png  used on input line 2288.
-(pdftex.def)             Requested size: 212.91577pt x 163.9971pt.
-<resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Winter.png, id=1460, 383.7537pt x 295.5843pt>
+Package pdftex.def Info: resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Summer.png  used on input line 2287.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Winter.png, id=1487, 383.7537pt x 295.5843pt>
 File: resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Winter.png Graphic file (type png)
 <use resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Winter.png>
-Package pdftex.def Info: resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Winter.png  used on input line 2294.
-(pdftex.def)             Requested size: 212.91577pt x 163.9971pt.
- [119 <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_ClassBoxplot_Season.png>]
-<resultados/por_estacion_del_anio/Ancachuro/PET_ClassBoxplot_Season.png, id=1467, 611.4042pt x 417.7206pt>
+Package pdftex.def Info: resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Winter.png  used on input line 2293.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+ [106 <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_ClassBoxplot_Season.png>]
+<resultados/por_estacion_del_anio/Ancachuro/PET_ClassBoxplot_Season.png, id=1494, 611.4042pt x 417.7206pt>
 File: resultados/por_estacion_del_anio/Ancachuro/PET_ClassBoxplot_Season.png Graphic file (type png)
 <use resultados/por_estacion_del_anio/Ancachuro/PET_ClassBoxplot_Season.png>
-Package pdftex.def Info: resultados/por_estacion_del_anio/Ancachuro/PET_ClassBoxplot_Season.png  used on input line 2305.
-(pdftex.def)             Requested size: 354.86412pt x 242.45657pt.
- [120 <./resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Autumn.png> <./resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Spring.png> <./resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Summer.png> <./resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Winter.png>]) [121 <./resultados/por_estacion_del_anio/Ancachuro/PET_ClassBoxplot_Season.png>]
+Package pdftex.def Info: resultados/por_estacion_del_anio/Ancachuro/PET_ClassBoxplot_Season.png  used on input line 2304.
+(pdftex.def)             Requested size: 177.42868pt x 121.21872pt.
+ [107 <./resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Autumn.png> <./resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Spring.png> <./resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Summer.png> <./resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Winter.png> <./resultados/por_estacion_del_anio/Ancachuro/PET_ClassBoxplot_Season.png>]
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Summer.png, id=1507, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Summer.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Summer.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Summer.png  used on input line 2326.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Autumn.png, id=1508, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Autumn.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Autumn.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Autumn.png  used on input line 2331.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Winter.png, id=1509, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Winter.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Winter.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Winter.png  used on input line 2338.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Spring.png, id=1510, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Spring.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Spring.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Spring.png  used on input line 2343.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+ [108]
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_ClassBoxplot_Season.png, id=1515, 607.7907pt x 417.7206pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_ClassBoxplot_Season.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_ClassBoxplot_Season.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_ClassBoxplot_Season.png  used on input line 2354.
+(pdftex.def)             Requested size: 177.42868pt x 121.93898pt.
+ [109 <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Summer.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Autumn.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Winter.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Spring.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_ClassBoxplot_Season.png>]
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Summer.png, id=1527, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Summer.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Summer.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Summer.png  used on input line 2376.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Autumn.png, id=1528, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Autumn.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Autumn.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Autumn.png  used on input line 2381.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Winter.png, id=1529, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Winter.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Winter.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Winter.png  used on input line 2388.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Spring.png, id=1530, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Spring.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Spring.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Spring.png  used on input line 2393.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_ClassBoxplot_Season.png, id=1531, 608.5134pt x 417.7206pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_ClassBoxplot_Season.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_ClassBoxplot_Season.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_ClassBoxplot_Season.png  used on input line 2404.
+(pdftex.def)             Requested size: 177.42868pt x 121.79875pt.
+ [110 <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Summer.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Autumn.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Winter.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Spring.png>]
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Summer.png, id=1541, 384.4764pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Summer.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Summer.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Summer.png  used on input line 2427.
+(pdftex.def)             Requested size: 133.07489pt x 102.30594pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Autumn.png, id=1542, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Autumn.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Autumn.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Autumn.png  used on input line 2432.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Winter.png, id=1543, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Winter.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Winter.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Winter.png  used on input line 2439.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Spring.png, id=1544, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Spring.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Spring.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Spring.png  used on input line 2444.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+ [111 <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_ClassBoxplot_Season.png>]
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_ClassBoxplot_Season.png, id=1551, 602.0091pt x 417.7206pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_ClassBoxplot_Season.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_ClassBoxplot_Season.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_ClassBoxplot_Season.png  used on input line 2455.
+(pdftex.def)             Requested size: 177.42868pt x 123.11177pt.
+ [112 <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Summer.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Autumn.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Winter.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Spring.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_ClassBoxplot_Season.png>]
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Summer.png, id=1563, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Summer.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Summer.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Summer.png  used on input line 2479.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Autumn.png, id=1564, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Autumn.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Autumn.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Autumn.png  used on input line 2484.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Winter.png, id=1565, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Winter.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Winter.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Winter.png  used on input line 2491.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Spring.png, id=1566, 386.6445pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Spring.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Spring.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Spring.png  used on input line 2496.
+(pdftex.def)             Requested size: 133.07489pt x 101.73314pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_ClassBoxplot_Season.png, id=1567, 614.295pt x 417.7206pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_ClassBoxplot_Season.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_ClassBoxplot_Season.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_ClassBoxplot_Season.png  used on input line 2507.
+(pdftex.def)             Requested size: 177.42868pt x 120.65144pt.
+ [113 <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Summer.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Autumn.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Winter.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Spring.png>]
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Summer.png, id=1578, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Summer.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Summer.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Summer.png  used on input line 2529.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Autumn.png, id=1579, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Autumn.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Autumn.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Autumn.png  used on input line 2534.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Winter.png, id=1580, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Winter.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Winter.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Winter.png  used on input line 2541.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Spring.png, id=1581, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Spring.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Spring.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Spring.png  used on input line 2546.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+ [114 <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_ClassBoxplot_Season.png>]
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_ClassBoxplot_Season.png, id=1588, 611.4042pt x 417.7206pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_ClassBoxplot_Season.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_ClassBoxplot_Season.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_ClassBoxplot_Season.png  used on input line 2557.
+(pdftex.def)             Requested size: 177.42868pt x 121.21872pt.
+ [115 <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Summer.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Autumn.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Winter.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Spring.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_ClassBoxplot_Season.png>]
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Summer.png, id=1600, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Summer.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Summer.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Summer.png  used on input line 2579.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Autumn.png, id=1601, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Autumn.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Autumn.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Autumn.png  used on input line 2584.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Winter.png, id=1602, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Winter.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Winter.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Winter.png  used on input line 2591.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Spring.png, id=1603, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Spring.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Spring.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Spring.png  used on input line 2596.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+ [116]
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_ClassBoxplot_Season.png, id=1608, 607.7907pt x 417.7206pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_ClassBoxplot_Season.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_ClassBoxplot_Season.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_ClassBoxplot_Season.png  used on input line 2607.
+(pdftex.def)             Requested size: 177.42868pt x 121.93898pt.
+ [117 <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Summer.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Autumn.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Winter.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Spring.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_ClassBoxplot_Season.png>]
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Summer.png, id=1620, 387.3672pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Summer.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Summer.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Summer.png  used on input line 2629.
+(pdftex.def)             Requested size: 133.07489pt x 101.5437pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Autumn.png, id=1621, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Autumn.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Autumn.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Autumn.png  used on input line 2634.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Winter.png, id=1622, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Winter.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Winter.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Winter.png  used on input line 2641.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Spring.png, id=1623, 386.6445pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Spring.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Spring.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Spring.png  used on input line 2646.
+(pdftex.def)             Requested size: 133.07489pt x 101.73314pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_ClassBoxplot_Season.png, id=1624, 608.5134pt x 417.7206pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_ClassBoxplot_Season.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_ClassBoxplot_Season.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_ClassBoxplot_Season.png  used on input line 2657.
+(pdftex.def)             Requested size: 177.42868pt x 121.79875pt.
+ [118 <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Summer.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Autumn.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Winter.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Spring.png>]
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Summer.png, id=1634, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Summer.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Summer.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Summer.png  used on input line 2681.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Autumn.png, id=1635, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Autumn.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Autumn.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Autumn.png  used on input line 2686.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Winter.png, id=1636, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Winter.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Winter.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Winter.png  used on input line 2693.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Spring.png, id=1637, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Spring.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Spring.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Spring.png  used on input line 2698.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+ [119 <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_ClassBoxplot_Season.png>]
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_ClassBoxplot_Season.png, id=1645, 602.0091pt x 417.7206pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_ClassBoxplot_Season.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_ClassBoxplot_Season.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_ClassBoxplot_Season.png  used on input line 2709.
+(pdftex.def)             Requested size: 177.42868pt x 123.11177pt.
+ [120 <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Summer.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Autumn.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Winter.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Spring.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_ClassBoxplot_Season.png>]
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Summer.png, id=1657, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Summer.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Summer.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Summer.png  used on input line 2729.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Autumn.png, id=1658, 390.258pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Autumn.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Autumn.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Autumn.png  used on input line 2734.
+(pdftex.def)             Requested size: 133.07489pt x 100.7905pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Winter.png, id=1659, 390.258pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Winter.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Winter.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Winter.png  used on input line 2741.
+(pdftex.def)             Requested size: 133.07489pt x 100.7905pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Spring.png, id=1660, 390.258pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Spring.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Spring.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Spring.png  used on input line 2746.
+(pdftex.def)             Requested size: 133.07489pt x 100.7905pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_ClassBoxplot_Season.png, id=1661, 614.295pt x 417.7206pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_ClassBoxplot_Season.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_ClassBoxplot_Season.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_ClassBoxplot_Season.png  used on input line 2757.
+(pdftex.def)             Requested size: 177.42868pt x 120.65144pt.
+ [121 <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Summer.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Autumn.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Winter.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Spring.png>]
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Summer.png, id=1671, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Summer.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Summer.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Summer.png  used on input line 2776.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Autumn.png, id=1672, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Autumn.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Autumn.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Autumn.png  used on input line 2781.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Winter.png, id=1673, 390.258pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Winter.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Winter.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Winter.png  used on input line 2788.
+(pdftex.def)             Requested size: 133.07489pt x 100.7905pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Spring.png, id=1674, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Spring.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Spring.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Spring.png  used on input line 2793.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+ [122 <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_ClassBoxplot_Season.png>]
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_ClassBoxplot_Season.png, id=1681, 611.4042pt x 417.7206pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_ClassBoxplot_Season.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_ClassBoxplot_Season.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_ClassBoxplot_Season.png  used on input line 2804.
+(pdftex.def)             Requested size: 177.42868pt x 121.21872pt.
+ [123 <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Summer.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Autumn.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Winter.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Spring.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_ClassBoxplot_Season.png>]
+Overfull \hbox (4.80904pt too wide) in paragraph at lines 2815--2816
+[]\T1/cmr/m/n/12 El pa-tr�n es-ta-cio-nal se man-tie-ne cla-ro, con ma-yor eva-po-trans-pi-ra-ci�n en primavera-
+ []
 
-LaTeX Warning: Empty bibliography on input line 294.
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Summer.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Summer.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Summer.png  used on input line 2824.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Autumn.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Autumn.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Autumn.png  used on input line 2829.
+(pdftex.def)             Requested size: 133.07489pt x 100.7905pt.
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Winter.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Winter.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Winter.png  used on input line 2836.
+(pdftex.def)             Requested size: 133.07489pt x 100.7905pt.
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Spring.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Spring.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Spring.png  used on input line 2841.
+(pdftex.def)             Requested size: 133.07489pt x 100.7905pt.
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_ClassBoxplot_Season.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_ClassBoxplot_Season.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_ClassBoxplot_Season.png  used on input line 2852.
+(pdftex.def)             Requested size: 177.42868pt x 120.65144pt.
+[124]
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Summer.png, id=1699, 390.258pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Summer.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Summer.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Summer.png  used on input line 2871.
+(pdftex.def)             Requested size: 133.07489pt x 100.7905pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Autumn.png, id=1700, 391.7034pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Autumn.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Autumn.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Autumn.png  used on input line 2876.
+(pdftex.def)             Requested size: 133.07489pt x 100.42065pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Winter.png, id=1701, 390.258pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Winter.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Winter.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Winter.png  used on input line 2883.
+(pdftex.def)             Requested size: 133.07489pt x 100.7905pt.
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Spring.png, id=1702, 383.7537pt x 295.5843pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Spring.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Spring.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Spring.png  used on input line 2888.
+(pdftex.def)             Requested size: 133.07489pt x 102.49988pt.
+ [125]
+<resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_ClassBoxplot_Season.png, id=1709, 617.9085pt x 417.7206pt>
+File: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_ClassBoxplot_Season.png Graphic file (type png)
+<use resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_ClassBoxplot_Season.png>
+Package pdftex.def Info: resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_ClassBoxplot_Season.png  used on input line 2899.
+(pdftex.def)             Requested size: 177.42868pt x 119.94394pt.
+ [126 <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Summer.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Autumn.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Winter.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Spring.png> <./resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_ClassBoxplot_Season.png>]) [127]
+
+LaTeX Warning: Empty bibliography on input line 318.
 
 [1
 
@@ -2354,24 +2667,24 @@ L3 programming layer <2024-02-20>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7A754EBC0BE6B92F8A04DBB9C2090F84;18799.
+(rerunfilecheck)             Checksum: A8A14D152D1E82EFB7FD244D805CE094;21408.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46531 strings out of 474116
- 991585 string characters out of 5743681
- 1941187 words of memory out of 5000000
- 67869 multiletter control sequences out of 15000+600000
- 607128 words of font info for 91 fonts, out of 8000000 for 9000
+ 46938 strings out of 474116
+ 1032510 string characters out of 5743681
+ 1942187 words of memory out of 5000000
+ 68238 multiletter control sequences out of 15000+600000
+ 576383 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,13n,131p,1064b,3049s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (123 pages, 7821049 bytes).
+ 102i,13n,131p,1064b,3063s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0600.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on main.pdf (130 pages, 8970545 bytes).
 PDF statistics:
- 1616 PDF objects out of 1728 (max. 8388607)
- 1163 compressed objects within 12 object streams
- 395 named destinations out of 1000 (max. 500000)
- 1510 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1915 PDF objects out of 2073 (max. 8388607)
+ 1320 compressed objects within 14 object streams
+ 438 named destinations out of 1000 (max. 500000)
+ 1889 words of extra memory for PDF output out of 10000 (max. 10000000)
 
