@@ -2,108 +2,108 @@
 \contentsline {chapter}{\numberline {1}Análisis Global de datos Meteorilogicos}{5}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Análisis Univariado}{5}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Estadisticas Descriptivas Globales}{5}{subsection.1.1.1}%
-\contentsline {subsubsection}{Evapotranspiración Potencial (PET)}{10}{subsubsection*.6}%
-\contentsline {section}{\numberline {1.2}Análisis Bivariado Global}{10}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Matriz de Correlación}{11}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Análisis de Información Mutua}{11}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Pairplot Global}{13}{subsection.1.2.3}%
-\contentsline {chapter}{\numberline {2}Analisis de datos por Estación Meteorológica}{14}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Análisis Estadístico de la Estación Ancachuro}{14}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Estadísticas Descriptivas}{14}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Análisis Univariado}{15}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Análisis Bivariado}{17}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Análisis Estadístico de la Estación Andahuaylas}{18}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Estadísticas Descriptivas}{19}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Análisis Univariado}{20}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Análisis Bivariado}{22}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Análisis Estadístico de la Estación Ancachuro}{23}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Estadísticas Descriptivas}{24}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Análisis Univariado}{24}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Análisis Bivariado}{27}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Análisis Estadístico de la Estación Caraveli}{28}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Estadísticas Descriptivas}{28}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Análisis Univariado}{29}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Análisis Bivariado}{31}{subsection.2.4.3}%
-\contentsline {section}{\numberline {2.5}Análisis Estadístico de la Estación Coracora}{32}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Estadísticas Descriptivas}{33}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Análisis Univariado}{33}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Análisis Bivariado}{36}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Análisis Estadístico de la Estación Cotahuasi}{37}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Estadísticas Descriptivas}{37}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Análisis Univariado}{38}{subsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.6.3}Análisis Bivariado}{40}{subsection.2.6.3}%
-\contentsline {section}{\numberline {2.7}Análisis Estadístico de la Estación Cotahuasi}{41}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}Estadísticas Descriptivas}{42}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}Análisis Univariado}{42}{subsection.2.7.2}%
-\contentsline {subsection}{\numberline {2.7.3}Análisis Bivariado}{45}{subsection.2.7.3}%
-\contentsline {section}{\numberline {2.8}Análisis Estadístico de la Estación Huambo}{46}{section.2.8}%
-\contentsline {subsection}{\numberline {2.8.1}Estadísticas Descriptivas}{46}{subsection.2.8.1}%
-\contentsline {subsection}{\numberline {2.8.2}Análisis Univariado}{47}{subsection.2.8.2}%
-\contentsline {subsection}{\numberline {2.8.3}Análisis Bivariado}{49}{subsection.2.8.3}%
-\contentsline {section}{\numberline {2.9}Análisis Estadístico de la Estación Huaraya}{50}{section.2.9}%
-\contentsline {subsection}{\numberline {2.9.1}Estadísticas Descriptivas}{51}{subsection.2.9.1}%
-\contentsline {subsection}{\numberline {2.9.2}Análisis Univariado}{51}{subsection.2.9.2}%
-\contentsline {subsection}{\numberline {2.9.3}Análisis Bivariado}{54}{subsection.2.9.3}%
-\contentsline {section}{\numberline {2.10}Análisis Estadístico de la Estación Imata}{55}{section.2.10}%
-\contentsline {subsection}{\numberline {2.10.1}Estadísticas Descriptivas}{55}{subsection.2.10.1}%
-\contentsline {subsection}{\numberline {2.10.2}Análisis Univariado}{56}{subsection.2.10.2}%
-\contentsline {subsection}{\numberline {2.10.3}Análisis Bivariado}{58}{subsection.2.10.3}%
-\contentsline {section}{\numberline {2.11}Análisis Estadístico de la Estación Kayra}{59}{section.2.11}%
-\contentsline {subsection}{\numberline {2.11.1}Estadísticas Descriptivas}{60}{subsection.2.11.1}%
-\contentsline {subsection}{\numberline {2.11.2}Análisis Univariado}{60}{subsection.2.11.2}%
-\contentsline {subsection}{\numberline {2.11.3}Análisis Bivariado}{63}{subsection.2.11.3}%
-\contentsline {section}{\numberline {2.12}Análisis Estadístico de la Estación Mañazo}{64}{section.2.12}%
-\contentsline {subsection}{\numberline {2.12.1}Estadísticas Descriptivas}{64}{subsection.2.12.1}%
-\contentsline {subsection}{\numberline {2.12.2}Análisis Univariado}{65}{subsection.2.12.2}%
-\contentsline {subsection}{\numberline {2.12.3}Análisis Bivariado}{67}{subsection.2.12.3}%
-\contentsline {section}{\numberline {2.13}Análisis Estadístico de la Estación Pampa Blanca}{68}{section.2.13}%
-\contentsline {subsection}{\numberline {2.13.1}Estadísticas Descriptivas}{69}{subsection.2.13.1}%
-\contentsline {subsection}{\numberline {2.13.2}Análisis Univariado}{69}{subsection.2.13.2}%
-\contentsline {subsection}{\numberline {2.13.3}Análisis Bivariado}{72}{subsection.2.13.3}%
-\contentsline {section}{\numberline {2.14}Análisis Estadístico de la Estación Pizacoma}{73}{section.2.14}%
-\contentsline {subsection}{\numberline {2.14.1}Estadísticas Descriptivas}{73}{subsection.2.14.1}%
-\contentsline {subsection}{\numberline {2.14.2}Análisis Univariado}{74}{subsection.2.14.2}%
-\contentsline {subsection}{\numberline {2.14.3}Análisis Bivariado}{76}{subsection.2.14.3}%
-\contentsline {section}{\numberline {2.15}Análisis Estadístico de la Estación Pucara}{77}{section.2.15}%
-\contentsline {subsection}{\numberline {2.15.1}Estadísticas Descriptivas}{78}{subsection.2.15.1}%
-\contentsline {subsection}{\numberline {2.15.2}Análisis Univariado}{78}{subsection.2.15.2}%
-\contentsline {subsection}{\numberline {2.15.3}Análisis Bivariado}{81}{subsection.2.15.3}%
-\contentsline {section}{\numberline {2.16}Análisis Estadístico de la Estación Punta Atico}{82}{section.2.16}%
-\contentsline {subsection}{\numberline {2.16.1}Estadísticas Descriptivas}{82}{subsection.2.16.1}%
-\contentsline {subsection}{\numberline {2.16.2}Análisis Univariado}{83}{subsection.2.16.2}%
-\contentsline {subsection}{\numberline {2.16.3}Análisis Bivariado}{85}{subsection.2.16.3}%
-\contentsline {section}{\numberline {2.17}Análisis Estadístico de la Estación Punta Coles}{86}{section.2.17}%
-\contentsline {subsection}{\numberline {2.17.1}Estadísticas Descriptivas}{87}{subsection.2.17.1}%
-\contentsline {subsection}{\numberline {2.17.2}Análisis Univariado}{88}{subsection.2.17.2}%
-\contentsline {subsection}{\numberline {2.17.3}Análisis Bivariado}{90}{subsection.2.17.3}%
-\contentsline {section}{\numberline {2.18}Análisis Estadístico de la Estación Sicuani}{91}{section.2.18}%
-\contentsline {subsection}{\numberline {2.18.1}Estadísticas Descriptivas}{92}{subsection.2.18.1}%
-\contentsline {subsection}{\numberline {2.18.2}Análisis Univariado}{92}{subsection.2.18.2}%
-\contentsline {subsection}{\numberline {2.18.3}Análisis Bivariado}{95}{subsection.2.18.3}%
-\contentsline {section}{\numberline {2.19}Análisis Estadístico de la Estación Ubinas}{96}{section.2.19}%
-\contentsline {subsection}{\numberline {2.19.1}Estadísticas Descriptivas}{96}{subsection.2.19.1}%
-\contentsline {subsection}{\numberline {2.19.2}Análisis Univariado}{97}{subsection.2.19.2}%
-\contentsline {subsection}{\numberline {2.19.3}Análisis Bivariado}{99}{subsection.2.19.3}%
-\contentsline {section}{\numberline {2.20}Análisis Estadístico de la Estación Yarada}{100}{section.2.20}%
-\contentsline {subsection}{\numberline {2.20.1}Estadísticas Descriptivas}{101}{subsection.2.20.1}%
-\contentsline {subsection}{\numberline {2.20.2}Análisis Univariado}{101}{subsection.2.20.2}%
-\contentsline {subsection}{\numberline {2.20.3}Análisis Bivariado}{104}{subsection.2.20.3}%
-\contentsline {chapter}{\numberline {3}Análisis por estación y temporada}{105}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Estación: Ancachuro}{105}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Precipitation (P)}{105}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Evapotranspiración Potencial (PET)}{107}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Relative Humidity (RH)}{109}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Mean Temperature (T)}{110}{subsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.1.5}Wind Speed (WS)}{112}{subsection.3.1.5}%
-\contentsline {section}{\numberline {3.2}Estación: Andahuaylas}{113}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Precipitación (P)}{113}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Evapotranspiración Potencial (PET)}{115}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Humedad Relativa (RH)}{117}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Temperatura (T)}{118}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Velocidad del viento (WS)}{120}{subsection.3.2.5}%
-\contentsline {section}{\numberline {3.3}Estación: Candavare}{121}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Precipitation (P)}{121}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Evapotranspiration (PET)}{123}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Precipitación (P)}{124}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Velocidad Media del Viento (WS)}{126}{subsection.3.3.4}%
+\contentsline {subsubsection}{Evapotranspiración Potencial (PET)}{9}{subsubsection*.6}%
+\contentsline {section}{\numberline {1.2}Análisis Bivariado Global}{9}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Matriz de Correlación}{10}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Análisis de Información Mutua}{10}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Pairplot Global}{12}{subsection.1.2.3}%
+\contentsline {chapter}{\numberline {2}Analisis de datos por Estación Meteorológica}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Análisis Estadístico de la Estación Ancachuro}{13}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Estadísticas Descriptivas}{13}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Análisis Univariado}{14}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Análisis Bivariado}{16}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Análisis Estadístico de la Estación Andahuaylas}{17}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Estadísticas Descriptivas}{18}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Análisis Univariado}{18}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Análisis Bivariado}{21}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Análisis Estadístico de la Estación Ancachuro}{22}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Estadísticas Descriptivas}{22}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Análisis Univariado}{23}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Análisis Bivariado}{25}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Análisis Estadístico de la Estación Caraveli}{26}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Estadísticas Descriptivas}{27}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Análisis Univariado}{27}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Análisis Bivariado}{30}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Análisis Estadístico de la Estación Coracora}{31}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Estadísticas Descriptivas}{31}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Análisis Univariado}{32}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Análisis Bivariado}{34}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Análisis Estadístico de la Estación Cotahuasi}{35}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Estadísticas Descriptivas}{36}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Análisis Univariado}{36}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Análisis Bivariado}{39}{subsection.2.6.3}%
+\contentsline {section}{\numberline {2.7}Análisis Estadístico de la Estación Cotahuasi}{40}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Estadísticas Descriptivas}{40}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Análisis Univariado}{41}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.3}Análisis Bivariado}{43}{subsection.2.7.3}%
+\contentsline {section}{\numberline {2.8}Análisis Estadístico de la Estación Huambo}{44}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Estadísticas Descriptivas}{45}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}Análisis Univariado}{45}{subsection.2.8.2}%
+\contentsline {subsection}{\numberline {2.8.3}Análisis Bivariado}{48}{subsection.2.8.3}%
+\contentsline {section}{\numberline {2.9}Análisis Estadístico de la Estación Huaraya}{49}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Estadísticas Descriptivas}{49}{subsection.2.9.1}%
+\contentsline {subsection}{\numberline {2.9.2}Análisis Univariado}{50}{subsection.2.9.2}%
+\contentsline {subsection}{\numberline {2.9.3}Análisis Bivariado}{52}{subsection.2.9.3}%
+\contentsline {section}{\numberline {2.10}Análisis Estadístico de la Estación Imata}{53}{section.2.10}%
+\contentsline {subsection}{\numberline {2.10.1}Estadísticas Descriptivas}{54}{subsection.2.10.1}%
+\contentsline {subsection}{\numberline {2.10.2}Análisis Univariado}{54}{subsection.2.10.2}%
+\contentsline {subsection}{\numberline {2.10.3}Análisis Bivariado}{57}{subsection.2.10.3}%
+\contentsline {section}{\numberline {2.11}Análisis Estadístico de la Estación Kayra}{58}{section.2.11}%
+\contentsline {subsection}{\numberline {2.11.1}Estadísticas Descriptivas}{58}{subsection.2.11.1}%
+\contentsline {subsection}{\numberline {2.11.2}Análisis Univariado}{59}{subsection.2.11.2}%
+\contentsline {subsection}{\numberline {2.11.3}Análisis Bivariado}{61}{subsection.2.11.3}%
+\contentsline {section}{\numberline {2.12}Análisis Estadístico de la Estación Mañazo}{62}{section.2.12}%
+\contentsline {subsection}{\numberline {2.12.1}Estadísticas Descriptivas}{63}{subsection.2.12.1}%
+\contentsline {subsection}{\numberline {2.12.2}Análisis Univariado}{63}{subsection.2.12.2}%
+\contentsline {subsection}{\numberline {2.12.3}Análisis Bivariado}{66}{subsection.2.12.3}%
+\contentsline {section}{\numberline {2.13}Análisis Estadístico de la Estación Pampa Blanca}{67}{section.2.13}%
+\contentsline {subsection}{\numberline {2.13.1}Estadísticas Descriptivas}{67}{subsection.2.13.1}%
+\contentsline {subsection}{\numberline {2.13.2}Análisis Univariado}{68}{subsection.2.13.2}%
+\contentsline {subsection}{\numberline {2.13.3}Análisis Bivariado}{70}{subsection.2.13.3}%
+\contentsline {section}{\numberline {2.14}Análisis Estadístico de la Estación Pizacoma}{71}{section.2.14}%
+\contentsline {subsection}{\numberline {2.14.1}Estadísticas Descriptivas}{72}{subsection.2.14.1}%
+\contentsline {subsection}{\numberline {2.14.2}Análisis Univariado}{72}{subsection.2.14.2}%
+\contentsline {subsection}{\numberline {2.14.3}Análisis Bivariado}{75}{subsection.2.14.3}%
+\contentsline {section}{\numberline {2.15}Análisis Estadístico de la Estación Pucara}{76}{section.2.15}%
+\contentsline {subsection}{\numberline {2.15.1}Estadísticas Descriptivas}{76}{subsection.2.15.1}%
+\contentsline {subsection}{\numberline {2.15.2}Análisis Univariado}{77}{subsection.2.15.2}%
+\contentsline {subsection}{\numberline {2.15.3}Análisis Bivariado}{79}{subsection.2.15.3}%
+\contentsline {section}{\numberline {2.16}Análisis Estadístico de la Estación Punta Atico}{80}{section.2.16}%
+\contentsline {subsection}{\numberline {2.16.1}Estadísticas Descriptivas}{81}{subsection.2.16.1}%
+\contentsline {subsection}{\numberline {2.16.2}Análisis Univariado}{81}{subsection.2.16.2}%
+\contentsline {subsection}{\numberline {2.16.3}Análisis Bivariado}{84}{subsection.2.16.3}%
+\contentsline {section}{\numberline {2.17}Análisis Estadístico de la Estación Punta Coles}{85}{section.2.17}%
+\contentsline {subsection}{\numberline {2.17.1}Estadísticas Descriptivas}{85}{subsection.2.17.1}%
+\contentsline {subsection}{\numberline {2.17.2}Análisis Univariado}{86}{subsection.2.17.2}%
+\contentsline {subsection}{\numberline {2.17.3}Análisis Bivariado}{88}{subsection.2.17.3}%
+\contentsline {section}{\numberline {2.18}Análisis Estadístico de la Estación Sicuani}{89}{section.2.18}%
+\contentsline {subsection}{\numberline {2.18.1}Estadísticas Descriptivas}{90}{subsection.2.18.1}%
+\contentsline {subsection}{\numberline {2.18.2}Análisis Univariado}{90}{subsection.2.18.2}%
+\contentsline {subsection}{\numberline {2.18.3}Análisis Bivariado}{93}{subsection.2.18.3}%
+\contentsline {section}{\numberline {2.19}Análisis Estadístico de la Estación Ubinas}{94}{section.2.19}%
+\contentsline {subsection}{\numberline {2.19.1}Estadísticas Descriptivas}{94}{subsection.2.19.1}%
+\contentsline {subsection}{\numberline {2.19.2}Análisis Univariado}{95}{subsection.2.19.2}%
+\contentsline {subsection}{\numberline {2.19.3}Análisis Bivariado}{97}{subsection.2.19.3}%
+\contentsline {section}{\numberline {2.20}Análisis Estadístico de la Estación Yarada}{98}{section.2.20}%
+\contentsline {subsection}{\numberline {2.20.1}Estadísticas Descriptivas}{99}{subsection.2.20.1}%
+\contentsline {subsection}{\numberline {2.20.2}Análisis Univariado}{99}{subsection.2.20.2}%
+\contentsline {subsection}{\numberline {2.20.3}Análisis Bivariado}{102}{subsection.2.20.3}%
+\contentsline {chapter}{\numberline {3}Análisis por estación y temporada}{103}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Estación: Ancachuro}{103}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Precipitation (P)}{103}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Evapotranspiración Potencial (PET)}{105}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Relative Humidity (RH)}{106}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Mean Temperature (T)}{108}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Wind Speed (WS)}{109}{subsection.3.1.5}%
+\contentsline {section}{\numberline {3.2}Estación: Andahuaylas}{111}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Precipitación (P)}{111}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Evapotranspiración Potencial (PET)}{112}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Humedad Relativa (RH)}{114}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Temperatura (T)}{115}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Velocidad del viento (WS)}{117}{subsection.3.2.5}%
+\contentsline {section}{\numberline {3.3}Estación: Candavare}{118}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Precipitation (P)}{118}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Evapotranspiration (PET)}{119}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Precipitación (P)}{121}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Velocidad Media del Viento (WS)}{122}{subsection.3.3.4}%
 \contentsline {chapter}{Bibliografía}{}{figure.caption.202}%
