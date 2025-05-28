@@ -1,4 +1,4 @@
-\chapter{Análisis Global de datos Meteorilogicos}
+\chapter{Análisis Global de datos Meteorológicos}
 \section{Análisis Univariado}
 
 \subsection{Estadisticas Descriptivas Globales}
@@ -31,7 +31,7 @@ Kurtosis                   & 4.06   & -0.53  & -0.18  & 19.76  & -0.19 \\
 \end{table}
 
 
-La Tabla~\ref{tab:global_statistics} resume las estadísticas descriptivas globales de las variables meteorológicas. La precipitación (P) presenta una distribución altamente asimétrica a la derecha, con una Mean considerablemente mayor que la Median y un Range amplio, lo que evidencia eventos extremos de lluvia. La humedad relativa (RH) muestra una distribución relativamente simétrica, con valores concentrados entre 60~\% y 90~\%, y baja variabilidad. La temperatura (T) exhibe una distribución cercana a la simetría, con una Mean de 13.06~$^\circ$C y una dispersión moderada. La velocidad del viento (WS) tiene una alta Skewnesspositiva y curtosis, lo que sugiere la presencia de ráfagas fuertes poco frecuentes. Por último, la evapotranspiración potencial (PET) muestra una distribución bastante estable, con baja variabilidad y similitud entre Mean y mediana, indicando homogeneidad en los valores registrados.
+La Tabla~\ref{tab:global_statistics} muestra las estadísticas descriptivas globales de las variables meteorológicas. La precipitación (P) presenta una distribución altamente asimétrica a la derecha, con una Media considerablemente mayor que la Mediana y un Rango amplio, lo que evidencia eventos extremos de lluvia. La humedad relativa (RH) muestra una distribución relativamente simétrica, con valores concentrados entre 60~\% y 90~\%, y baja variabilidad. La temperatura (T) exhibe una distribución cercana a la simetría, con una Media de 13.06~$^\circ$C y una dispersión moderada. La velocidad del viento (WS) tiene una alta Skewness positiva y curtosis, lo que sugiere la presencia de ráfagas fuertes poco frecuentes. Por último, la evapotranspiración potencial (PET) muestra una distribución bastante estable, con baja variabilidad y similitud entre Media y mediana, indicando homogeneidad en los valores registrados.
 
 \subsubsection*{Precipitación (P)}
 
@@ -42,7 +42,7 @@ La Tabla~\ref{tab:global_statistics} resume las estadísticas descriptivas globa
     \label{fig:P_histograma}
 \end{figure}
 
-La distribución de la precipitación es altamente asimétrica a la derecha. Se observa un gran número de valores atípicos superiores, reflejo de eventos de lluvia extrema. La Mean supera considerablemente a la mediana, lo que confirma esta asimetría. La mayoría de los registros se concentran por debajo de \SI{50}{\milli\meter}.
+La distribución de la precipitación es altamente asimétrica a la derecha. Se observa un gran número de valores atípicos superiores, reflejo de eventos de lluvia extrema. La Media supera considerablemente a la mediana, lo que confirma esta asimetría. La mayoría de los registros se concentran por debajo de \SI{50}{\milli\meter}.
 
 \vspace{2em}
 
@@ -96,7 +96,7 @@ La velocidad del viento presenta una distribución marcadamente asimétrica a la
     \label{fig:PET_histograma}
 \end{figure}
 
-La evapotranspiración potencial muestra una distribución casi simétrica con ligera Skewnessa la derecha. Tanto la Mean como la Median se ubican en torno a \SI{5.7}{\milli\meter}. Se presentan pocos valores atípicos superiores, lo que indica una distribución bastante estable y consistente.
+La evapotranspiración potencial muestra una distribución casi simétrica con ligera Skewnessa la derecha. Tanto la Media como la Mediana se ubican en torno a \SI{5.7}{\milli\meter}. Se presentan pocos valores atípicos superiores, lo que indica una distribución bastante estable y consistente.
 
 \section{Análisis Bivariado Global}
 
@@ -162,7 +162,7 @@ A partir de las Figuras~\ref{fig:mutual_info_P} a~\ref{fig:mutual_info_PET}, se 
     \label{fig:pairplot_global}
 \end{figure}
 
-La Figura~\ref{fig:pairplot_global} permite observar visualmente las relaciones bivariadas entre todas las variables. Se destaca una relación creciente entre la temperatura (T) y la evapotranspiración potencial (PET), así como una distribución dispersa entre precipitación (P) y las demás variables, lo que refuerza la débil correlación lineal observada. También se puede apreciar la distribución de cada variable en la diagonal principal, indicando sesgos o asimetrías en las distribuciones.
+La Figura~\ref{fig:pairplot_global} permite observar visualmente las relaciones bivariadas entre todas las variables. Se destaca una relación creciente entre la temperatura (T) y la evapotranspiración potencial (PET), así como una distribución dispersa entre precipitación (P) y las demás variables, lo que refuerza la débil correlación lineal observada. También se puede observar la distribución de cada variable en la diagonal principal, indicando sesgos o asimetrías en las distribuciones.
 
 
 
