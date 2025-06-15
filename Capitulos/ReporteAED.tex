@@ -1,13 +1,17 @@
 \chapter{Análisis Global de datos Meteorológicos}
 \section{Análisis Univariado}
 
+En esta sección se presentan los resultados del análisis univariado de las variables meteorológicas a nivel global, incluyendo estadísticas descriptivas y visualizaciones gráficas. Se analizan las siguientes variables: \gls{p}, \gls{rh}, \gls{t}, \gls{ws} y \gls{pet}. \textit{Fuente de datos: Senamhi, periodo 1970--2023}.
+
+
+
 \subsection{Estadisticas Descriptivas Globales}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
-\caption{Global descriptive statistics of meteorological variables}
+\caption{Estadísticas descriptivas globales de las variables meteorológicas}
 \label{tab:global_statistics}
-\small
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Statistic} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (°C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
@@ -21,148 +25,171 @@ Mean                       & 34.82  & 68.19  & 13.06  & 2.88   & 5.7215 \\
 Maximum                    & 424.10 & 99.62  & 26.52  & 27.80  & 9.0703 \\
 Range                      & 424.10 & 77.95  & 27.93  & 27.80  & 6.0712 \\
 Interquartile Range        & 51.00  & 20.30  & 6.59   & 1.60   & 1.3917 \\
-Variance                   & 3020.50 & 195.25 & 24.25  & 2.4378 & 1.0611 \\
+Variance                   & 3020.70 & 195.25 & 24.25  & 2.4378 & 1.0611 \\
 Standard Deviation         & 54.96  & 13.97  & 4.92   & 1.56   & 1.0301 \\
-Coefficient of Variation   & 1.58   & 0.20   & 0.38   & 0.54   & 0.18 \\
-Skewness                 & 1.97   & -0.44  & 0.25   & 2.56   & 0.15 \\
-Kurtosis                   & 4.06   & -0.53  & -0.18  & 19.76  & -0.19 \\
+Coefficient of Variation   & 1.58   & 0.20   & 0.38   & 0.74   & 0.18 \\
+Skewness                 & 1.97   & -0.74  & 0.25   & 2.56   & 0.15 \\
+Kurtosis                   & 4.06   & -0.73  & -0.18  & 19.76  & -0.19 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 
+<<<<<<< HEAD
 La Tabla~\ref{tab:global_statistics} muestra las estadísticas descriptivas globales de las variables meteorológicas. La precipitación (P) presenta una distribución altamente asimétrica a la derecha, con una Media considerablemente mayor que la Mediana y un Rango amplio, lo que evidencia eventos extremos de lluvia. La humedad relativa (RH) muestra una distribución relativamente simétrica, con valores concentrados entre 60~\% y 90~\%, y baja variabilidad. La temperatura (T) exhibe una distribución cercana a la simetría, con una Media de 13.06~$^\circ$C y una dispersión moderada. La velocidad del viento (WS) tiene una alta Skewness positiva y curtosis, lo que sugiere la presencia de ráfagas fuertes poco frecuentes. Por último, la evapotranspiración potencial (PET) muestra una distribución bastante estable, con baja variabilidad y similitud entre Media y mediana, indicando homogeneidad en los valores registrados.
+=======
+La Tabla~\ref{tab:global_statistics} muestra un resumen estadístico global de las variables meteorológicas analizadas. La \gls{p} presenta una alta asimetría positiva (\textit{skewness} = 1.97) y curtosis elevada (\textit{kurtosis} = 4.06), lo que refleja la ocurrencia de eventos extremos de precipitación en cietras estaciones y epocas del año. La \gls{rh} muestra una distribución relativamente simétrica, con una baja variabilidad (coeficiente de variación = 0.20) y valores concentrados entre 58.6~\% y 79.1~\%. La \gls{t} se distribuye de forma casi simétrica (\textit{skewness} = 0.25), con una media de 13.06~\si{\celsius} y una desviación estándar moderada (4.92). La \gls{ws} destaca por su fuerte asimetría positiva (\textit{skewness} = 2.56) y curtosis muy alta (\textit{kurtosis} = 19.76), indicando la presencia de ráfagas puntuales intensas. Finalmente, la \gls{pet} presenta una distribución estable y baja dispersión (coeficiente de variación = 0.18), con valores próximos entre la media (5.72~mm) y la mediana (5.61~mm).
+>>>>>>> 26bb688 (de)
 
-\subsubsection*{Precipitación (P)}
+\subsubsection*{Precipitación (\gls{p})}
 
-\begin{figure}[H]
-    \caption{Histograma de la Precipitación (P).}
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.4\textwidth]{resultados/global/univariado/P_histograma.png}
+    \caption{Histograma de la precipitación (\gls{p}).}
+    \includegraphics[width=0.6\textwidth]{resultados/global/univariado/P_histograma.png}
     \label{fig:P_histograma}
 \end{figure}
 
+<<<<<<< HEAD
 La distribución de la precipitación es altamente asimétrica a la derecha. Se observa un gran número de valores atípicos superiores, reflejo de eventos de lluvia extrema. La Media supera considerablemente a la mediana, lo que confirma esta asimetría. La mayoría de los registros se concentran por debajo de \SI{50}{\milli\meter}.
+=======
+La Figura~\ref{fig:P_histograma} muestra que la distribución de la \gls{p} es altamente asimétrica hacia la derecha, con una \textit{mean} considerablemente mayor que la \textit{median}. La mayoría de los valores se concentra por debajo de \SI{50}{\milli\meter}, mientras que los valores atípicos superiores reflejan eventos extremos de precipitación.
+>>>>>>> 26bb688 (de)
 
-\vspace{2em}
+\vspace{1.5em}
 
-\subsubsection*{Temperatura (T)}
+\subsubsection*{Temperatura (\gls{t})}
 
-\begin{figure}[H]
-    \caption{Histograma de la Temperatura (T).}
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.4\textwidth]{resultados/global/univariado/T_histograma.png}
+    \caption{Histograma de la temperatura (\gls{t}).}
+    \includegraphics[width=0.6\textwidth]{resultados/global/univariado/T_histograma.png}
     \label{fig:T_histograma}
 \end{figure}
 
+<<<<<<< HEAD
 La temperatura presenta una distribución aproximadamente simétrica, con algunos valores atípicos en ambos extremos. La Media y la Mediana son cercanas, lo que sugiere un equilibrio en la dispersión. La mayoría de los valores se encuentran entre \SI{10}{\degreeCelsius} y \SI{20}{\degreeCelsius}.
+=======
+Según la Figura~\ref{fig:T_histograma}, la \gls{t} presenta una distribución aproximadamente simétrica, con \textit{mean} y \textit{median} próximas. La mayor parte de los valores se sitúa entre \SI{10}{\degreeCelsius} y \SI{20}{\degreeCelsius}, indicando una dispersión moderada y escasa presencia de extremos.
+>>>>>>> 26bb688 (de)
 
-\newpage
+\vspace{1.5em}
 
-\subsubsection*{Humedad Relativa (RH)}
+\subsubsection*{Humedad relativa (\gls{rh})}
 
-\begin{figure}[H]
-    \caption{Histograma de la Humedad Relativa (RH).}
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.4\textwidth]{resultados/global/univariado/RH_histograma.png}
+    \caption{Histograma de la humedad relativa (\gls{rh}).}
+    \includegraphics[width=0.6\textwidth]{resultados/global/univariado/RH_histograma.png}
     \label{fig:RH_histograma}
 \end{figure}
 
+<<<<<<< HEAD
 La humedad relativa muestra una distribución sesgada hacia la izquierda, concentrando la mayor parte de los valores entre \SI{60}{\percent} y \SI{90}{\percent}. Algunos valores atípicos inferiores podrían asociarse a las estaciones que presentan condiciones secas excepcionales. La Mediana es ligeramente mayor que la media.
+=======
+La Figura~\ref{fig:RH_histograma} muestra que la \gls{rh} tiene una distribución sesgada levemente a la izquierda. La \textit{median} supera ligeramente a la \textit{mean}, y los valores se concentran entre \SI{60}{\percent} y \SI{90}{\percent}. Algunos valores bajos podrían asociarse a condiciones secas atípicas.
+>>>>>>> 26bb688 (de)
 
-\vspace{2em}
+\vspace{1.5em}
 
-\subsubsection*{Velocidad del Viento (WS)}
+\subsubsection*{Velocidad del viento (\gls{ws})}
 
-\begin{figure}[H]
-    \caption{Histograma de la Velocidad del Viento (WS).}
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.4\textwidth]{resultados/global/univariado/WS_histograma.png}
+    \caption{Histograma de la velocidad del viento (\gls{ws}).}
+    \includegraphics[width=0.6\textwidth]{resultados/global/univariado/WS_histograma.png}
     \label{fig:WS_histograma}
 \end{figure}
 
-La velocidad del viento presenta una distribución marcadamente asimétrica a la derecha, con la mayoría de los datos concentrados entre 0 y \SI{5}{\meter\per\second}. Se identifican múltiples valores atípicos altos, correspondientes a eventos aislados de vientos intensos.
+Como se observa en la Figura~\ref{fig:WS_histograma}, la \gls{ws} presenta una fuerte asimetría positiva, con valores concentrados por debajo de \SI{5}{\meter\per\second}. La presencia de valores atípicos altos indica eventos esporádicos de vientos intensos, reflejados también en la elevada \textit{skewness} y \textit{kurtosis}.
 
-\newpage
+\vspace{1.5em}
 
+\subsubsection*{Evapotranspiración potencial (\gls{pet})}
 
-
-\subsubsection{Evapotranspiración Potencial (PET)}
-
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.4\textwidth]{resultados/global/univariado/PET_histograma.png}
-    \caption{Histograma de la Evapotranspiración Potencial (PET).}
+    \caption{Histograma de la evapotranspiración potencial (\gls{pet}).}
+    \includegraphics[width=0.6\textwidth]{resultados/global/univariado/PET_histograma.png}
     \label{fig:PET_histograma}
 \end{figure}
 
+<<<<<<< HEAD
 La evapotranspiración potencial muestra una distribución casi simétrica con ligera Skewnessa la derecha. Tanto la Media como la Mediana se ubican en torno a \SI{5.7}{\milli\meter}. Se presentan pocos valores atípicos superiores, lo que indica una distribución bastante estable y consistente.
+=======
+La Figura~\ref{fig:PET_histograma} evidencia que la \gls{pet} tiene una distribución casi simétrica, con \textit{mean} y \textit{median} cercanas a \SI{5.7}{\milli\meter}. La baja dispersión y escasa cantidad de valores atípicos reflejan estabilidad y uniformidad en su comportamiento.
+>>>>>>> 26bb688 (de)
 
 \section{Análisis Bivariado Global}
 
-A continuación, se presenta el análisis bivariado entre las principales variables climáticas: Precipitación (P), Temperatura (T), Humedad Relativa (RH), Velocidad del Viento (WS) y Evapotranspiración Potencial (PET), utilizando correlaciones lineales, información mutua y gráficos de dispersión.
+Se presenta a continuación el análisis bivariado entre las principales variables meteorológicas: \gls{p}, \gls{t}, \gls{rh}, \gls{ws} y \gls{pet}, considerando tanto dependencias lineales (mediante coeficientes de correlación de Pearson) como relaciones no lineales (evaluadas a través de información mutua). Asimismo, se incluye un análisis gráfico mediante diagramas de dispersión pareados.
 
 \subsection{Matriz de Correlación}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
+    \caption{Matriz de correlación de variables meteorológicas a nivel global.}
     \includegraphics[width=0.7\textwidth]{resultados/global/bivariado/matriz_correlacion.png}
-    \caption{Matriz de correlación de variables climáticas globales.}
     \label{fig:matriz_correlacion}
 \end{figure}
 
+La Figura~\ref{fig:matriz_correlacion} revela asociaciones lineales moderadas entre algunas variables. Destaca la correlación positiva entre \gls{t} y \gls{pet}, mientras que \gls{p} muestra correlaciones débiles con el resto, lo que sugiere comportamientos más complejos o no lineales.
 
 \subsection{Análisis de Información Mutua}
 
-Las siguientes figuras muestran la información mutua de cada variable considerada como variable dependiente. Esta métrica permite detectar relaciones no necesariamente lineales entre las variables.
+El análisis de información mutua permite identificar relaciones no lineales entre pares de variables. Las siguientes figuras presentan esta métrica al considerar cada variable como objetivo dependiente.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.4\textwidth]{resultados/global/bivariado/mutual_info_P.png}
-    \caption{Información mutua con variable objetivo: Precipitación (P).}
+    \caption{Información mutua con variable objetivo: \gls{p}.}
+    \includegraphics[width=0.7\textwidth]{resultados/global/bivariado/mutual_info_P.png}
     \label{fig:mutual_info_P}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.4\textwidth]{resultados/global/bivariado/mutual_info_T.png}
-    \caption{Información mutua con variable objetivo: Temperatura (T).}
+    \caption{Información mutua con variable objetivo: \gls{t}.}
+    \includegraphics[width=0.7\textwidth]{resultados/global/bivariado/mutual_info_T.png}
     \label{fig:mutual_info_T}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.4\textwidth]{resultados/global/bivariado/mutual_info_RH.png}
-    \caption{Información mutua con variable objetivo: Humedad Relativa (RH).}
+    \caption{Información mutua con variable objetivo: \gls{rh}.}
+    \includegraphics[width=0.7\textwidth]{resultados/global/bivariado/mutual_info_RH.png}
     \label{fig:mutual_info_RH}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.4\textwidth]{resultados/global/bivariado/mutual_info_WS.png}
-    \caption{Información mutua con variable objetivo: Velocidad del Viento (WS).}
+    \caption{Información mutua con variable objetivo: \gls{ws}.}
+    \includegraphics[width=0.7\textwidth]{resultados/global/bivariado/mutual_info_WS.png}
     \label{fig:mutual_info_WS}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.4\textwidth]{resultados/global/bivariado/mutual_info_PET.png}
-    \caption{Información mutua con variable objetivo: Evapotranspiración Potencial (PET).}
+    \caption{Información mutua con variable objetivo: \gls{pet}.}
+    \includegraphics[width=0.7\textwidth]{resultados/global/bivariado/mutual_info_PET.png}
     \label{fig:mutual_info_PET}
 \end{figure}
 
-A partir de las Figuras~\ref{fig:mutual_info_P} a~\ref{fig:mutual_info_PET}, se evidencia que la temperatura (T) es consistentemente una de las variables más informativas, especialmente para la predicción de PET, con un valor de información mutua superior a 0.5. Asimismo, la humedad relativa (RH) también muestra valores relevantes en distintos contextos, mientras que la velocidad del viento (WS) y la precipitación (P) presentan menor relevancia relativa. Este análisis complementa a la matriz de correlación al identificar dependencias no lineales.
+A partir de las Figuras~\ref{fig:mutual_info_P} a~\ref{fig:mutual_info_PET}, se evidencia que la \gls{t} es consistentemente una de las variables con mayor poder explicativo, destacando especialmente para la predicción de \gls{pet}, con un valor de información mutua superior a 0.7. La \gls{rh} también muestra relevancia en distintos contextos, mientras que \gls{ws} y \gls{p} presentan menor contribución relativa. Este análisis complementa la correlación lineal al capturar dependencias más complejas.
 
-\subsection{Pairplot Global}
+\subsection{Gráfico de Dispersión Pareado (Pairplot)}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.4\textwidth]{resultados/global/bivariado/pairplot_global.png}
-    \caption{Gráfico de dispersión (pairplot) entre variables climáticas a nivel global.}
+    \caption{Gráfico de dispersión pareado entre variables meteorológicas globales.}
+    \includegraphics[width=0.7\textwidth]{resultados/global/bivariado/pairplot_global.png}
     \label{fig:pairplot_global}
 \end{figure}
 
+<<<<<<< HEAD
 La Figura~\ref{fig:pairplot_global} permite observar visualmente las relaciones bivariadas entre todas las variables. Se destaca una relación creciente entre la temperatura (T) y la evapotranspiración potencial (PET), así como una distribución dispersa entre precipitación (P) y las demás variables, lo que refuerza la débil correlación lineal observada. También se puede observar la distribución de cada variable en la diagonal principal, indicando sesgos o asimetrías en las distribuciones.
+=======
+La Figura~\ref{fig:pairplot_global} permite examinar visualmente las relaciones entre pares de variables. Se observa una tendencia positiva entre \gls{t} y \gls{pet}, y una relación más dispersa entre \gls{p} y las demás variables. Las distribuciones marginales en la diagonal principal evidencian sesgos, como asimetría en \gls{p} y \gls{ws}, en concordancia con el análisis univariado.
+>>>>>>> 26bb688 (de)
 
 
 
@@ -174,105 +201,118 @@ A continuación, se presenta el análisis estadístico descriptivo y exploratori
 
 \subsection{Estadísticas Descriptivas}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
 \caption{Descriptive statistics of meteorological variables at the Ancachuro station}
-\label{tab:stat_ancachuro}
-\tiny
+\label{tab:statt_ancachuro}
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Statistic} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (\textdegree C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
 \midrule
 $n$         & 648.00  & 648.00  & 648.00  & 648.00  & 648.00 \\
-Minimum                 & 0.00    & 49.42   & 6.91    & 0.50    & 3.13   \\
-1st Quartile            & 6.30    & 67.27   & 10.41   & 2.20    & 4.95   \\
+Minimum                 & 0.00    & 49.42   & 6.91    & 0.70    & 3.13   \\
+1st Quartile            & 6.30    & 67.27   & 10.71   & 2.20    & 4.95   \\
 Median                  & 43.15   & 72.27   & 11.87   & 3.00    & 5.35   \\
 Mean                    & 65.60   & 72.45   & 11.58   & 2.96    & 5.26   \\
 3rd Quartile            & 113.23  & 77.23   & 12.68   & 3.60    & 5.76   \\
 Maximum                 & 296.70  & 93.03   & 14.74   & 5.50    & 6.86   \\
 Range                   & 296.70  & 43.61   & 7.83    & 4.70    & 3.73   \\
-Interquartile Range     & 106.93  & 9.96    & 2.27    & 1.40    & 0.51   \\
-Variance                & 4478.19 & 56.82   & 2.02    & 0.53    & 0.56   \\
-Standard Deviation      & 66.92   & 7.54    & 1.42    & 0.51    & 0.51   \\
+Interquartile Range     & 106.93  & 9.96    & 2.27    & 1.40    & 0.71   \\
+Variance                & 4478.19 & 56.82   & 2.02    & 0.73    & 0.76   \\
+Standard Deviation      & 66.92   & 7.54    & 1.42    & 0.71    & 0.71   \\
 Coefficient of Variation& 1.02    & 0.10    & 0.12    & 0.31    & 0.15   \\
-Skewness              & 0.52    & 0.08    & -0.42   & -0.09   & -0.56  \\
-Kurtosis                & 0.01    & -0.20   & -0.57   & -0.56   & -0.25  \\
+Skewness              & 0.72    & 0.08    & -0.72   & -0.09   & -0.76  \\
+Kurtosis                & 0.01    & -0.20   & -0.77   & -0.76   & -0.25  \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\textbf{Interpretación:} La precipitación (P) muestra alta variabilidad y Skewnesspositiva, lo que evidencia eventos extremos de lluvia. La humedad relativa (RH) se encuentra centrada entre 67\% y 77\% con baja asimetría. La temperatura (T) presenta simetría leve hacia la izquierda. La velocidad del viento (WS) es relativamente simétrica, mientras que la evapotranspiración potencial (PET) es estable y con Skewnessnegativa.
+La Tabla~\ref{tab:statt_ancachuro} muestra que la \gls{p} presenta una alta variabilidad y una asimetría positiva (\textit{skewness}), lo que sugiere la presencia de eventos extremos de precipitación. La \gls{rh} se concentra principalmente entre 67\,\% y 77\,\%, con una distribución prácticamente simétrica. La \gls{t} muestra una ligera asimetría negativa, mientras que la \gls{ws} tiene una distribución aproximadamente simétrica. Por su parte, la \gls{pet} evidencia una distribución estable con ligera asimetría hacia la izquierda.
+
 
 \subsection{Análisis Univariado}
 
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
+\subsubsection*{\gls{p}}
+
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/P_histograma.png}
-\caption{Histograma de la precipitación (P) en la estación Ancachuro.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/P_histograma.png}
+\caption{Histograma de la \gls{p} en la estación Ancachuro.}
 \label{fig:ancachuro_P}
 \end{figure}
-\textbf{Interpretación:} Se observa una distribución fuertemente sesgada a la derecha. La mayoría de los valores se sitúan por debajo de los 100 mm, aunque existen eventos extremos superiores a 250 mm, lo que explica la diferencia entre la Mean y la mediana.
 
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
+La Figura~\ref{fig:ancachuro_P} muestra que la distribución de la \gls{p} está fuertemente sesgada a la derecha. La mayoría de los registros se encuentran por debajo de los 100\,mm, aunque se presentan eventos extremos superiores a 250\,mm. Esta asimetría se refleja en la diferencia entre la media y la mediana.
+
+\subsubsection*{\gls{t}}
+
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/T_histograma.png}
-\caption{Histograma de la temperatura (T) en la estación Ancachuro.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/T_histograma.png}
+\caption{Histograma de la \gls{t} en la estación Ancachuro.}
 \label{fig:ancachuro_T}
 \end{figure}
-\textbf{Interpretación:} Distribución relativamente simétrica con ligera Skewnessnegativa. La mayor parte de los valores se concentran entre 10 y 13 \textdegree C.
 
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
+Como se observa en la Figura~\ref{fig:ancachuro_T}, la \gls{t} presenta una distribución relativamente simétrica, con ligera asimetría negativa. La mayor concentración de datos se sitúa entre 10 y 13\,\si{\degreeCelsius}.
+
+\subsubsection*{\gls{rh}}
+
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/RH_histograma.png}
-\caption{Histograma de la humedad relativa (RH) en la estación Ancachuro.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/RH_histograma.png}
+\caption{Histograma de la \gls{rh} en la estación Ancachuro.}
 \label{fig:ancachuro_RH}
 \end{figure}
-\textbf{Interpretación:} La humedad relativa está centrada entre 65\% y 80\%, con algunos valores extremos bajos y una leve simetría.
 
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
+En la Figura~\ref{fig:ancachuro_RH} se aprecia que la \gls{rh} se concentra principalmente entre 65\,\% y 80\,\%, con una leve simetría general y algunos valores atípicos bajos.
+
+\subsubsection*{\gls{ws}}
+
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/WS_histograma.png}
-\caption{Histograma de la velocidad del viento (WS) en la estación Ancachuro.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/WS_histograma.png}
+\caption{Histograma de la \gls{ws} en la estación Ancachuro.}
 \label{fig:ancachuro_WS}
 \end{figure}
-\textbf{Interpretación:} Distribución simétrica con picos en torno a 3 m/s. La mayoría de los registros se encuentran entre 2 y 4 m/s.
 
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
+La Figura~\ref{fig:ancachuro_WS} indica que la \gls{ws} muestra una distribución aproximadamente simétrica, con valores centrados alrededor de 3\,\si{m/s}. La mayoría de los datos se ubican entre 2 y 4\,\si{m/s}.
+
+\subsubsection*{\gls{pet}}
+
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/PET_histograma.png}
-\caption{Histograma de la evapotranspiración potencial (PET) en la estación Ancachuro.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/PET_histograma.png}
+\caption{Histograma de la \gls{pet} en la estación Ancachuro.}
 \label{fig:ancachuro_PET}
 \end{figure}
-\textbf{Interpretación:} Distribución bastante concentrada con leve Skewnessnegativa. Valores centrados en torno a 5.2 mm con escasos valores extremos.
+
+De acuerdo con la Figura~\ref{fig:ancachuro_PET}, la \gls{pet} presenta una distribución relativamente concentrada, con ligera asimetría negativa. Los valores se agrupan principalmente alrededor de los 5.2\,mm, y se identifican pocos valores extremos.
+
+
 
 \subsection{Análisis Bivariado}
 
 \subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
+
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/matriz_correlacion.png}
-\caption{Matriz de correlación de las variables meteorológicas en Ancachuro.}
+\includegraphics[width=0.75\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/matriz_correlacion.png}
+\caption{Matriz de correlación de las variables meteorológicas en la estación Ancachuro.}
 \label{fig:ancachuro_corr}
 \end{figure}
-\textbf{Interpretación:} Se observa correlación positiva entre temperatura (T) y PET ($r \approx 0.50$), y entre precipitación (P) y temperatura (T) ($r \approx 0.45$).
+
+La Figura~\ref{fig:ancachuro_corr} revela una correlación positiva fuerte entre \gls{t} y \gls{pet} ($r \approx 0.70$), así como entre \gls{p} y \gls{t} ($r \approx 0.75$). Estas asociaciones indican que el aumento de la temperatura está vinculado tanto a una mayor evapotranspiración como a un incremento en los registros de precipitación. En contraste, la \gls{rh} y la \gls{ws} muestran correlaciones débiles con el resto de variables.
 
 \subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
+
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/pairplot.png}
-\caption{Pairplot de las variables meteorológicas en la estación Ancachuro.}
+\includegraphics[width=0.75\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/pairplot.png}
+\caption{Gráfico de pares (pairplot) de las variables meteorológicas en la estación Ancachuro.}
 \label{fig:ancachuro_pairplot}
 \end{figure}
-\textbf{Interpretación:} El pairplot evidencia patrones visuales similares a los encontrados en la matriz de correlación. Se destaca la asociación positiva entre T y PET, y una relación moderada entre P y T. RH y WS presentan distribuciones dispersas respecto a las demás variables.
 
-
-
-
+El gráfico de la Figura~\ref{fig:ancachuro_pairplot} complementa el análisis anterior al mostrar visualmente las relaciones bivariadas. Se evidencia una asociación creciente entre \gls{t} y \gls{pet}, así como una relación positiva entre \gls{p} y \gls{t}. Las variables \gls{rh} y \gls{ws} presentan nubes de puntos dispersas, lo que refuerza la baja dependencia lineal observada en la matriz de correlación.
 
 
 
@@ -282,211 +322,107 @@ A continuación, se presenta el análisis estadístico descriptivo y exploratori
 
 \subsection{Estadísticas Descriptivas}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
 \caption{Descriptive statistics of meteorological variables at the Andahuaylas station}
 \label{tab:stat_andahuaylas}
-\tiny
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Statistic} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (\textdegree C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
 \midrule
 $n$         & 648.00  & 648.00  & 648.00  & 648.00  & 648.00 \\
-Minimum                 & 0.00    & 58.45   & 10.35   & 0.50    & 3.48   \\
+Minimum                 & 0.00    & 58.45   & 10.35   & 0.70    & 3.48   \\
 1st Quartile            & 14.23   & 74.08   & 12.37   & 2.00    & 4.53   \\
 Median                  & 39.55   & 78.84   & 13.59   & 2.50    & 5.10   \\
 Mean                    & 54.57   & 80.18   & 13.42   & 2.49    & 5.03   \\
 3rd Quartile            & 88.02   & 86.49   & 14.47   & 2.74    & 5.50   \\
 Maximum                 & 251.50  & 97.12   & 16.83   & 6.20    & 6.45   \\
 Range                   & 251.50  & 38.67   & 6.48    & 5.30    & 2.97   \\
-Interquartile Range     & 73.80   & 12.42   & 2.10    & 0.74    & 0.57   \\
-Variance                & 2450.00 & 65.16   & 1.65    & 0.51    & 0.36   \\
-Standard Deviation      & 49.50   & 8.07    & 1.29    & 0.78    & 0.50   \\
-Coefficient of Variation& 0.51    & 0.10    & 0.10    & 0.31    & 0.12   \\
+Interquartile Range     & 73.80   & 12.42   & 2.10    & 0.74    & 0.77   \\
+Variance                & 2450.00 & 65.16   & 1.65    & 0.71    & 0.36   \\
+Standard Deviation      & 49.50   & 8.07    & 1.29    & 0.78    & 0.70   \\
+Coefficient of Variation& 0.71    & 0.10    & 0.10    & 0.31    & 0.12   \\
 Skewness              & 1.06    & 0.24    & -0.24   & 1.39    & -0.13  \\
-Kurtosis                & 0.54    & -0.76   & -0.75   & 3.48    & -0.57  \\
+Kurtosis                & 0.74    & -0.76   & -0.75   & 3.48    & -0.77  \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\textbf{Interpretación:} La precipitación (P) muestra alta variabilidad y Skewnesspositiva, lo que evidencia eventos extremos de lluvia. La humedad relativa (RH) se encuentra centrada entre 74\% y 86\%, con ligera Skewnesspositiva. La temperatura (T) presenta simetría leve hacia la izquierda. La velocidad del viento (WS) es asimétrica con presencia de ráfagas, mientras que la evapotranspiración potencial (PET) es relativamente estable con Skewnessnegativa leve.
+lLa Tabla~\ref{ab:stat_andahuaylas} muestra que la \gls{p} presenta una alta variabilidad y \textit{skewness} positiva, lo que indica la ocurrencia de eventos extremos de precipitación. La \gls{rh} está centrada entre 74\% y 86\%, con una ligera asimetría hacia la derecha. La \gls{t} presenta una leve simetría hacia la izquierda. La \gls{ws} exhibe asimetría positiva, asociada a ráfagas de viento ocasionales. Finalmente, la \gls{pet} se comporta de forma relativamente estable, con una leve \textit{skewness} negativa.
+
 
 \subsection{Análisis Univariado}
 
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
+\subsubsection*{\gls{p} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Andahuaylas/P_histograma.png}
-\caption{Histograma y boxplot de la precipitación (P) en la estación Andahuaylas.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Andahuaylas/P_histograma.png}
+\caption{Histograma y boxplot de la \gls{p}  en la estación Andahuaylas.}
 \label{fig:andahuaylas_P}
 \end{figure}
-\textbf{Interpretación:} Distribución altamente asimétrica a la derecha. La mayoría de los valores se concentran por debajo de los 100 mm, con presencia de eventos extremos superiores a 250 mm.
 
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
+La Figura~\ref{fig:andahuaylas_P} muestra que la distribución de la \gls{p} en la estación Andahuaylas es altamente asimétrica hacia la derecha. La mayoría de los valores se concentran por debajo de 100~mm, con eventos extremos que superan los 250~mm, lo que explica la marcada diferencia entre la media y la mediana.
+
+
+\subsubsection*{\gls{t} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Andahuaylas/T_histograma.png}
-\caption{Histograma y boxplot de la temperatura (T) en la estación Andahuaylas.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Andahuaylas/T_histograma.png}
+\caption{Histograma y boxplot de la \gls{t}  en la estación Andahuaylas.}
 \label{fig:andahuaylas_T}
 \end{figure}
-\textbf{Interpretación:} Distribución moderadamente simétrica con leve sesgo negativo. La mayoría de los registros se encuentran entre 12 y 15 \textdegree C.
 
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
+En la Figura~\ref{fig:andahuaylas_T}, se observa que la \gls{t} presenta una distribución moderadamente simétrica, con leve \textit{skewness} negativa. Los registros predominan entre 12 y 15~\si{\degreeCelsius}, con valores extremos moderados.
+
+\subsubsection*{\gls{rh} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Andahuaylas/RH_histograma.png}
-\caption{Histograma y boxplot de la humedad relativa (RH) en la estación Andahuaylas.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Andahuaylas/RH_histograma.png}
+\caption{Histograma y boxplot de la \gls{rh}  en la estación Andahuaylas.}
 \label{fig:andahuaylas_RH}
 \end{figure}
-\textbf{Interpretación:} La RH está centrada entre 70\% y 90\%, con Skewnesspositiva leve y valores extremos bajos ocasionales.
+La Figura~\ref{fig:andahuaylas_RH} indica que la \gls{rh} está centrada entre 70\% y 90\%, con una ligera asimetría positiva y algunos valores extremos bajos, reflejo de condiciones de humedad relativa atípicamente baja en ciertos periodos.
 
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
+\subsubsection*{\gls{ws} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Andahuaylas/WS_histograma.png}
-\caption{Histograma y boxplot de la velocidad del viento (WS) en la estación Andahuaylas.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Andahuaylas/WS_histograma.png}
+\caption{Histograma y boxplot de la \gls{ws}  en la estación Andahuaylas.}
 \label{fig:andahuaylas_WS}
 \end{figure}
-\textbf{Interpretación:} Distribución sesgada con concentración en valores bajos (2 a 3 m/s), pero con outliers que representan ráfagas inusuales de hasta 6.2 m/s.
+Según la Figura~\ref{fig:andahuaylas_WS}, la \gls{ws} presenta una distribución sesgada hacia la derecha, con la mayoría de los valores concentrados entre 2 y 3~\si{\meter\per\second}. Se identifican valores atípicos de hasta 6.2~\si{\meter\per\second}, indicativos de ráfagas de viento inusuales.
 
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
+\subsubsection*{\gls{pet} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Andahuaylas/PET_histograma.png}
-\caption{Histograma y boxplot de la evapotranspiración potencial (PET) en la estación Andahuaylas.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Andahuaylas/PET_histograma.png}
+\caption{Histograma y boxplot de la \gls{pet}  en la estación Andahuaylas.}
 \label{fig:andahuaylas_PET}
 \end{figure}
-\textbf{Interpretación:} Distribución relativamente estable, con valores entre 4.5 y 6.5 mm y ligera Skewnessnegativa.
+Finalmente, en la Figura~\ref{fig:andahuaylas_PET}, la \gls{pet} muestra una distribución relativamente estable, con valores entre 4.5 y 6.5~mm y una ligera \textit{skewness} negativa. Esta estabilidad sugiere condiciones consistentes de demanda atmosférica de evaporación.
 
 \subsection{Análisis Bivariado}
 
 \subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Andahuaylas/matriz_correlacion.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Andahuaylas/matriz_correlacion.png}
 \caption{Matriz de correlación de las variables meteorológicas en Andahuaylas.}
 \label{fig:andahuaylas_corr}
 \end{figure}
-\textbf{Interpretación:} Se evidencia fuerte correlación positiva entre temperatura (T) y evapotranspiración potencial (PET) (\(r = 0.76\)). También se observa correlación moderada entre P y T (\(r = 0.44\)). Las correlaciones entre RH, WS y otras variables son generalmente bajas o negativas.
+
+La matriz de correlación presentada en la Figura~\ref{fig:andahuaylas_corr} revela una fuerte correlación positiva entre \gls{t} y \gls{pet} (\(r = 0.76\)), lo que refleja la influencia directa de la temperatura sobre la demanda evaporativa. Además, se observa una correlación moderada entre \gls{p} y \gls{t} (\(r = 0.74\)), posiblemente relacionada con procesos convectivos. Las correlaciones que involucran \gls{rh} y \gls{ws} son en general bajas o negativas, sugiriendo relaciones débiles o inversas.
+
 
 \subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Andahuaylas/pairplot.png}
+\includegraphics[width=0.9\textwidth]{resultados/por_estacion_meteorologica/Andahuaylas/pairplot.png}
 \caption{Pairplot de las variables meteorológicas en la estación Andahuaylas.}
 \label{fig:andahuaylas_pairplot}
 \end{figure}
-\textbf{Interpretación:} El gráfico de dispersión confirma la fuerte asociación entre T y PET, y una relación moderada entre P y T. RH presenta relación inversa con PET y WS. Las combinaciones con WS tienden a ser más dispersas.
-
-
-
-
-
-
-\section{Análisis Estadístico de la Estación Ancachuro}
-
-A continuación, se presenta el análisis estadístico descriptivo y exploratorio correspondiente a la estación meteorológica de Ancachuro. Este incluye medidas univariadas por variable y relaciones bivariadas, junto con sus respectivas representaciones gráficas.
-
-\subsection{Estadísticas Descriptivas}
-
-\begin{table}[H]
-\centering
-\caption{Descriptive statistics of meteorological variables at the Ancachuro station}
-\label{tab:stat_ancachuro}
-\tiny
-\begin{tabular}{lrrrrr}
-\toprule
-\textbf{Statistic} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (\textdegree C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
-\midrule
-$n$          & 648.00  & 648.00  & 648.00  & 648.00  & 648.00 \\
-Minimum                 & 0.00    & 49.42   & 6.91    & 0.50    & 3.13   \\
-1st Quartile            & 6.30    & 67.27   & 10.41   & 2.20    & 4.95   \\
-Median                  & 43.15   & 72.27   & 11.87   & 3.00    & 5.35   \\
-Mean                    & 65.60   & 72.45   & 11.58   & 2.96    & 5.26   \\
-3rd Quartile            & 113.23  & 77.23   & 12.68   & 3.60    & 5.76   \\
-Maximum                 & 296.70  & 93.03   & 14.74   & 5.50    & 6.86   \\
-Range                   & 296.70  & 43.61   & 7.83    & 4.70    & 3.73   \\
-Interquartile Range     & 106.93  & 9.96    & 2.27    & 1.40    & 0.51   \\
-Variance                & 4478.19 & 56.82   & 2.02    & 0.53    & 0.56   \\
-Standard Deviation      & 66.92   & 7.54    & 1.42    & 0.51    & 0.51   \\
-Coefficient of Variation& 1.02    & 0.10    & 0.12    & 0.31    & 0.15   \\
-Skewness              & 0.52    & 0.08    & -0.42   & -0.09   & -0.56  \\
-Kurtosis                & 0.01    & -0.20   & -0.57   & -0.56   & -0.25  \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\textbf{Interpretación:} La precipitación (P) muestra alta variabilidad y Skewnesspositiva, lo que evidencia eventos extremos de lluvia. La humedad relativa (RH) se encuentra centrada entre 67\% y 77\% con baja asimetría. La temperatura (T) presenta simetría leve hacia la izquierda. La velocidad del viento (WS) es relativamente simétrica, mientras que la evapotranspiración potencial (PET) es estable y con Skewnessnegativa.
-
-\subsection{Análisis Univariado}
-
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/P_histograma.png}
-\caption{Histograma de la precipitación (P) en la estación Ancachuro.}
-\label{fig:ancachuro_P}
-\end{figure}
-\textbf{Interpretación:} Se observa una distribución fuertemente sesgada a la derecha. La mayoría de los valores se sitúan por debajo de los 100 mm, aunque existen eventos extremos superiores a 250 mm, lo que explica la diferencia entre la Mean y la mediana.
-
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/T_histograma.png}
-\caption{Histograma de la temperatura (T) en la estación Ancachuro.}
-\label{fig:ancachuro_T}
-\end{figure}
-\textbf{Interpretación:} Distribución relativamente simétrica con ligera Skewnessnegativa. La mayor parte de los valores se concentran entre 10 y 13 \textdegree C.
-
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/RH_histograma.png}
-\caption{Histograma de la humedad relativa (RH) en la estación Ancachuro.}
-\label{fig:ancachuro_RH}
-\end{figure}
-\textbf{Interpretación:} La humedad relativa está centrada entre 65\% y 80\%, con algunos valores extremos bajos y una leve simetría.
-
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/WS_histograma.png}
-\caption{Histograma de la velocidad del viento (WS) en la estación Ancachuro.}
-\label{fig:ancachuro_WS}
-\end{figure}
-\textbf{Interpretación:} Distribución simétrica con picos en torno a 3 m/s. La mayoría de los registros se encuentran entre 2 y 4 m/s.
-
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/PET_histograma.png}
-\caption{Histograma de la evapotranspiración potencial (PET) en la estación Ancachuro.}
-\label{fig:ancachuro_PET}
-\end{figure}
-\textbf{Interpretación:} Distribución bastante concentrada con leve Skewnessnegativa. Valores centrados en torno a 5.2 mm con escasos valores extremos.
-
-\subsection{Análisis Bivariado}
-
-\subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/matriz_correlacion.png}
-\caption{Matriz de correlación de las variables meteorológicas en Ancachuro.}
-\label{fig:ancachuro_corr}
-\end{figure}
-\textbf{Interpretación:} Se observa correlación positiva entre temperatura (T) y PET (\(r = 0.50\)), y entre precipitación (P) y temperatura (T) (\(r = 0.45\)). La humedad relativa (RH) muestra correlaciones débiles con las demás variables.
-
-\subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Ancachuro/pairplot.png}
-\caption{Pairplot de las variables meteorológicas en la estación Ancachuro.}
-\label{fig:ancachuro_pairplot}
-\end{figure}
-\textbf{Interpretación:} El pairplot evidencia patrones visuales similares a los encontrados en la matriz de correlación. Se destaca la asociación positiva entre T y PET, y una relación moderada entre P y T. RH y WS presentan distribuciones dispersas respecto a las demás variables.
-
-
-
+El pairplot de la Figura~\ref{fig:andahuaylas_pairplot} corrobora visualmente estos hallazgos. Se evidencia una fuerte asociación entre \gls{t} y \gls{pet}, así como una relación positiva entre \gls{p} y \gls{t}. La \gls{rh} muestra una relación inversa con \gls{pet} y \gls{ws}, mientras que las combinaciones que incluyen \gls{ws} presentan mayor dispersión, lo que indica variabilidad local o menor dependencia directa con las demás variables.
 
 
 \section{Análisis Estadístico de la Estación Caraveli}
@@ -495,102 +431,102 @@ A continuación, se presenta el análisis estadístico descriptivo y exploratori
 
 \subsection{Estadísticas Descriptivas}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
 \caption{Estadísticas descriptivas de las variables meteorológicas en la estación Caraveli}
 \label{tab:stat_caraveli}
-\tiny
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Estadístico} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (°C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
 \midrule
 $n$    & 648.00 & 648.00 & 648.00 & 648.00 & 648.00 \\
-Minimum                 & 0.00   & 32.21  & 16.74  & 0.50   & 5.84   \\
+Minimum                 & 0.00   & 32.21  & 16.74  & 0.70   & 5.84   \\
 1st Quartile          & 0.00   & 47.02  & 19.05  & 1.90   & 7.07   \\
 Median               & 0.00   & 54.46  & 19.78  & 2.20   & 7.50   \\
 Mean                 & 2.92   & 54.76  & 19.76  & 2.31   & 7.49   \\
-3rd Quartile           & 1.60   & 62.84  & 20.51  & 2.60   & 7.95   \\
+3rd Quartile           & 1.60   & 62.84  & 20.71  & 2.60   & 7.95   \\
 Maximum                & 89.90  & 82.71  & 23.50  & 4.80   & 9.07   \\
-Range                 & 89.90  & 50.50  & 6.76   & 4.00   & 3.23   \\
-Interquartile Range  & 1.60   & 15.81  & 1.46   & 0.70   & 0.59   \\
-Variance            & 67.75  & 120.56 & 1.08   & 0.32   & 0.38   \\
-Standard Deviation          & 8.23   & 10.58  & 1.04   & 0.56   & 0.51   \\
+Range                 & 89.90  & 50.70  & 6.76   & 4.00   & 3.23   \\
+Interquartile Range  & 1.60   & 15.81  & 1.46   & 0.70   & 0.79   \\
+Variance            & 67.75  & 120.76 & 1.08   & 0.32   & 0.38   \\
+Standard Deviation          & 8.23   & 10.78  & 1.04   & 0.76   & 0.71   \\
 Coefficient of Variation      & 2.82   & 0.20   & 0.05   & 0.24   & 0.08   \\
-Skewness            & 5.65   & 0.13   & 0.14   & 0.56   & -0.13  \\
-Kurtosis              & 42.79  & -0.53  & 0.07   & 1.07   & -0.39  \\
+Skewness            & 5.65   & 0.13   & 0.14   & 0.76   & -0.13  \\
+Kurtosis              & 42.79  & -0.73  & 0.07   & 1.07   & -0.39  \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\textbf{Interpretación:} La precipitación (P) en Caraveli es muy baja en la mayoría de los casos, con una fuerte Skewnesspositiva, lo que indica la presencia de eventos extremos aislados. La humedad relativa (RH) y la temperatura (T) se distribuyen de manera moderadamente simétrica, aunque con valores ligeramente variables. La velocidad del viento (WS) y la evapotranspiración potencial (PET) presentan una distribución estable con ligera variabilidad.
+La tabla~\ref{tab:stat_caraveli} muestra las estadísticas descriptivas de las variables meteorológicas registradas en la estación Caraveli. La \gls{p} presenta valores extremadamente bajos en la mayoría de observaciones, con una fuerte asimetría positiva (\textit{skewness}), reflejada en una \textit{kurtosis} muy elevada, lo cual indica la ocurrencia de eventos de precipitación extremos y poco frecuentes. La \gls{rh} y la \gls{t} exhiben distribuciones moderadamente simétricas, con ligeras variaciones alrededor de sus medias. En cuanto a la \gls{ws}, los datos muestran una leve asimetría hacia la derecha, mientras que la \gls{pet} mantiene una distribución estable con dispersión reducida y \textit{skewness} negativa leve, lo que sugiere consistencia en las tasas de evapotranspiración potencial en la zona.
 
 \subsection{Análisis Univariado}
 
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
+\subsubsection*{\gls{p}}
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Caraveli/P_histograma.png}
-\caption{Histograma y boxplot de la precipitación (P) en la estación Caraveli.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Caraveli/P_histograma.png}
+\caption{Histograma y boxplot de la \gls{p}  en la estación Caraveli.}
 \label{fig:caraveli_P}
 \end{figure}
-\textbf{Interpretación:} La mayoría de los registros se concentran en cero milímetros, con pocos eventos de lluvia. La distribución es fuertemente sesgada a la derecha, con una Mean considerablemente superior a la mediana.
+La Figura~\ref{fig:caraveli_P} muestra el histograma y boxplot de la \gls{p} en Caraveli. La mayoría de los registros se concentran en cero milímetros, indicando escasa ocurrencia de lluvia. La distribución es fuertemente asimétrica a la derecha, con una media considerablemente mayor que la mediana debido a eventos extremos aislados.
 
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
+\subsubsection*{\gls{t} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Caraveli/T_histograma.png}
-\caption{Histograma y boxplot de la temperatura (T) en la estación Caraveli.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Caraveli/T_histograma.png}
+\caption{Histograma y boxplot de la \gls{t}  en la estación Caraveli.}
 \label{fig:caraveli_T}
 \end{figure}
-\textbf{Interpretación:} La temperatura se distribuye de manera bastante simétrica, centrada en torno a los 20°C, con ligera dispersión hacia ambos extremos.
+En la Figura~\ref{fig:caraveli_T}, se observa que la \gls{t} presenta una distribución bastante simétrica, con valores centrados en torno a los 20~\textdegree C. La dispersión es reducida, lo que refleja estabilidad térmica en esta estación.
 
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
+\subsubsection*{\gls{rh} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Caraveli/RH_histograma.png}
-\caption{Histograma y boxplot de la humedad relativa (RH) en la estación Caraveli.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Caraveli/RH_histograma.png}
+\caption{Histograma y boxplot de la \gls{rh}  en la estación Caraveli.}
 \label{fig:caraveli_RH}
 \end{figure}
-\textbf{Interpretación:} La RH muestra una distribución algo simétrica, con un Range amplio que abarca desde valores por debajo del 40\% hasta más del 80\%.
+La Figura~\ref{fig:caraveli_RH} representa la distribución de la \gls{rh}, la cual muestra una forma algo simétrica. El rango de valores es amplio, desde menos del 40% hasta más del 80%, indicando variabilidad significativa en la humedad ambiental.
 
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
+\subsubsection*{\gls{ws} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Caraveli/WS_histograma.png}
-\caption{Histograma y boxplot de la velocidad del viento (WS) en la estación Caraveli.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Caraveli/WS_histograma.png}
+\caption{Histograma y boxplot de la \gls{ws}  en la estación Caraveli.}
 \label{fig:caraveli_WS}
 \end{figure}
-\textbf{Interpretación:} La velocidad del viento se concentra principalmente entre 1.5 y 3.0 m/s. Se observan algunos valores atípicos por encima de 4.5 m/s.
+En la Figura~\ref{fig:caraveli_WS}, la \gls{ws} se concentra principalmente entre 1.5 y 3.0m/s. Existen algunos valores atípicos por encima de 4.5m/s, los cuales representan posibles ráfagas o eventos intensos de viento.
 
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
+\subsubsection*{\gls{pet} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Caraveli/PET_histograma.png}
-\caption{Histograma y boxplot de la evapotranspiración potencial (PET) en la estación Caraveli.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Caraveli/PET_histograma.png}
+\caption{Histograma y boxplot de la \gls{pet}  en la estación Caraveli.}
 \label{fig:caraveli_PET}
 \end{figure}
-\textbf{Interpretación:} La PET se concentra en torno a 7.5 mm, mostrando una distribución relativamente simétrica y una baja variabilidad.
+La Figura~\ref{fig:caraveli_PET} muestra que la \gls{pet} se agrupa alrededor de los 7.5~mm, con una distribución bastante simétrica y baja variabilidad, lo que sugiere una evapotranspiración constante en la zona.
 
 \subsection{Análisis Bivariado}
 
 \subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Caraveli/matriz_correlacion.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Caraveli/matriz_correlacion.png}
 \caption{Matriz de correlación de las variables meteorológicas en Caraveli.}
 \label{fig:caraveli_corr}
 \end{figure}
-\textbf{Interpretación:} Se observa una fuerte correlación entre temperatura (T) y evapotranspiración (PET) (r = 0.75). La RH presenta una correlación negativa con PET (r = -0.43). El resto de las correlaciones son débiles o moderadas.
+La Figura~\ref{fig:caraveli_corr} evidencia una fuerte correlación positiva entre \gls{t} y \gls{pet} (\(r = 0{,}75\)). Asimismo, se observa una correlación negativa entre \gls{rh} y \gls{pet} (\(r = -0{,73}\)), lo que sugiere que a menor humedad relativa, mayor es la demanda evaporativa. Las demás relaciones son débiles o moderadas.
+
 
 \subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Caraveli/pairplot.png}
+\includegraphics[width=0.75\textwidth]{resultados/por_estacion_meteorologica/Caraveli/pairplot.png}
 \caption{Pairplot de las variables meteorológicas en la estación Caraveli.}
 \label{fig:caraveli_pairplot}
 \end{figure}
-\textbf{Interpretación:} Se confirma visualmente la asociación positiva entre T y PET. Se detecta una leve relación negativa entre RH y PET. Las demás combinaciones no muestran patrones evidentes de asociación.
-
+La Figura~\ref{fig:caraveli_pairplot} confirma visualmente las correlaciones observadas: una asociación positiva clara entre \gls{t} y \gls{pet}, así como una relación inversa leve entre \gls{rh} y \gls{pet}. No se aprecian patrones marcados en otras combinaciones de variables.
 
 
 
@@ -600,207 +536,107 @@ A continuación se presenta el análisis estadístico descriptivo y exploratorio
 
 \subsection{Estadísticas Descriptivas}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
 \caption{Descriptive statistics of meteorological variables at the Coracora station}
 \label{tab:stat_coracora}
-\tiny
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Statistic} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (\textdegree C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
 \midrule
 $n$        & 648.00 & 648.00 & 648.00 & 648.00 & 648.00 \\
 Minimum                 & 0.00 & 37.02 & 9.11 & 0.00 & 3.36 \\
-1st Quartile            & 0.00 & 56.87 & 10.59 & 1.40 & 5.18 \\
+1st Quartile            & 0.00 & 56.87 & 10.79 & 1.40 & 5.18 \\
 Median                  & 6.82 & 68.44 & 11.78 & 1.90 & 5.57 \\
 Mean                    & 36.94 & 67.40 & 11.82 & 2.03 & 5.52 \\
 3rd Quartile            & 51.63 & 77.81 & 12.82 & 2.27 & 5.97 \\
-Maximum                 & 382.70 & 90.51 & 15.00 & 15.40 & 7.23 \\
+Maximum                 & 382.70 & 90.71 & 15.00 & 15.40 & 7.23 \\
 Range                   & 382.70 & 53.89 & 5.89 & 15.40 & 3.88 \\
-Interquartile Range     & 51.63 & 20.54 & 1.93 & 0.57 & 0.50 \\
-Variance                & 3399.42 & 170.53 & 1.39 & 1.70 & 0.57 \\
-Standard Deviation      & 58.30 & 13.07 & 1.18 & 1.30 & 0.52 \\
-Coefficient of Variation& 1.58 & 0.19 & 0.10 & 0.54 & 0.15 \\
+Interquartile Range     & 51.63 & 20.74 & 1.93 & 0.77 & 0.70 \\
+Variance                & 3399.42 & 170.73 & 1.39 & 1.70 & 0.77 \\
+Standard Deviation      & 58.30 & 13.07 & 1.18 & 1.30 & 0.72 \\
+Coefficient of Variation& 1.58 & 0.19 & 0.10 & 0.74 & 0.15 \\
 Skewness              & 2.08 & -0.19 & 0.01 & 6.16 & -0.39 \\
-Kurtosis                & 5.00 & -0.59 & -0.73 & 51.93 & -0.36 \\
+Kurtosis                & 5.00 & -0.79 & -0.73 & 51.93 & -0.36 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\textbf{Interpretación:} La precipitación presenta una Skewnesspositiva marcada y elevada dispersión, lo que indica eventos extremos de lluvia. La humedad relativa tiene una distribución relativamente simétrica. La temperatura está centrada en torno a 11.8 \textdegree C con baja dispersión. La velocidad del viento muestra valores extremos, mientras que la evapotranspiración potencial tiene una distribución simétrica y concentrada.
+Como se observa en la Tabla~\ref{tab:stat_coracora}, la \gls{p} presenta una \textit{skewness} positiva marcada y alta dispersión, lo que evidencia la ocurrencia de eventos extremos de lluvia. La \gls{rh} exhibe una distribución relativamente simétrica. La \gls{t} está centrada en torno a 11{,}8~\textdegree C, con baja variabilidad. La \gls{ws} muestra valores extremos que indican ráfagas poco frecuentes. Por su parte, la \gls{pet} presenta una distribución simétrica y concentrada, reflejando estabilidad en la demanda evaporativa.
 
 \subsection{Análisis Univariado}
 
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
+\subsubsection*{\gls{p} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Coracora/P_histograma.png}
-\caption{Histograma y boxplot de la precipitación (P) en la estación Coracora.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Coracora/P_histograma.png}
+\caption{Histograma y boxplot de la \gls{p}  en la estación Coracora.}
 \label{fig:coracora_P}
 \end{figure}
-\textbf{Interpretación:} Distribución extremadamente sesgada a la derecha, con gran número de valores bajos y presencia de eventos extremos.
+La Figura~\ref{fig:coracora_P} muestra que la \gls{p} presenta una distribución extremadamente sesgada a la derecha, con una gran concentración de valores bajos y presencia de eventos extremos de precipitación.
+La mayoría de los registros se sitúan por debajo de 100~mm, con algunos picos que superan los 300~mm, lo que explica la diferencia entre la media y la mediana.
 
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
+\subsubsection*{\gls{t} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Coracora/T_histograma.png}
-\caption{Histograma y boxplot de la temperatura (T) en la estación Coracora.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Coracora/T_histograma.png}
+\caption{Histograma y boxplot de la \gls{t}  en la estación Coracora.}
 \label{fig:coracora_T}
 \end{figure}
-\textbf{Interpretación:} La distribución es simétrica con leve tendencia positiva. La mayoría de los valores se encuentran entre 10 y 13 \textdegree C.
+Como se observa en la Figura~\ref{fig:coracora_T}, la \gls{t} muestra una distribución simétrica con ligera tendencia positiva. La mayoría de los valores están comprendidos entre 10 y 13~\textdegree C.
 
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
+\subsubsection*{\gls{rh} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Coracora/RH_histograma.png}
-\caption{Histograma y boxplot de la humedad relativa (RH) en la estación Coracora.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Coracora/RH_histograma.png}
+\caption{Histograma y boxplot de la \gls{rh}  en la estación Coracora.}
 \label{fig:coracora_RH}
 \end{figure}
-\textbf{Interpretación:} Distribución amplia con valores que oscilan entre 40\% y 90\%. Ligera Skewnessnegativa.
+En la Figura~\ref{fig:coracora_RH}, se aprecia que la \gls{rh} tiene una distribución amplia, con valores que oscilan entre 40\% y 90\%, y ligera \textit{skewness} negativa.
 
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
+
+\subsubsection*{\gls{ws} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Coracora/WS_histograma.png}
-\caption{Histograma y boxplot de la velocidad del viento (WS) en la estación Coracora.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Coracora/WS_histograma.png}
+\caption{Histograma y boxplot de la \gls{ws}  en la estación Coracora.}
 \label{fig:coracora_WS}
 \end{figure}
-\textbf{Interpretación:} La mayor parte de los valores se concentran entre 1 y 3 m/s, con presencia de valores extremos hasta 15 m/s.
+La Figura~\ref{fig:coracora_WS} revela que la \gls{ws} se concentra mayoritariamente entre 1 y 3~m/s, con presencia de valores extremos que alcanzan los 15~m/s.
 
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
+
+\subsubsection*{\gls{pet} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Coracora/PET_histograma.png}
-\caption{Histograma y boxplot de la evapotranspiración potencial (PET) en la estación Coracora.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Coracora/PET_histograma.png}
+\caption{Histograma y boxplot de la \gls{pet}  en la estación Coracora.}
 \label{fig:coracora_PET}
 \end{figure}
-\textbf{Interpretación:} Distribución simétrica con ligera Skewnessnegativa. La mayoría de valores están centrados entre 5 y 6 mm.
+La Figura~\ref{fig:coracora_PET} indica que la \gls{pet} presenta una distribución simétrica con ligera \textit{skewness} negativa, centrada entre 5 y 6~mm.
 
 \subsection{Análisis Bivariado}
 
 \subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Coracora/matriz_correlacion.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Coracora/matriz_correlacion.png}
 \caption{Matriz de correlación de las variables meteorológicas en Coracora.}
 \label{fig:coracora_corr}
 \end{figure}
-\textbf{Interpretación:} Se observan correlaciones moderadas entre precipitación y humedad relativa ($r = 0.59$), y entre temperatura y PET ($r = 0.37$). El resto de las correlaciones son bajas.
+La Figura~\ref{fig:coracora_corr} evidencia correlaciones moderadas entre \gls{p} y \gls{rh} (\(r = 0.79\)), y entre \gls{t} y \gls{pet} (\(r = 0.37\)). Las demás correlaciones son bajas.
+
 
 \subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Coracora/pairplot.png}
+\includegraphics[width=0.75\textwidth]{resultados/por_estacion_meteorologica/Coracora/pairplot.png}
 \caption{Pairplot de las variables meteorológicas en la estación Coracora.}
 \label{fig:coracora_pairplot}
 \end{figure}
-\textbf{Interpretación:} Se confirman visualmente las correlaciones observadas. Se destacan patrones lineales entre T y PET, y agrupaciones densas en la distribución de P, RH y WS.
+La Figura~\ref{fig:coracora_pairplot} confirma visualmente los patrones observados en la matriz de correlación. Destaca la relación lineal entre \gls{t} y \gls{pet}, así como agrupaciones densas en la distribución conjunta de \gls{p}, \gls{rh} y \gls{ws}.
 
 
-
-
-
-\section{Análisis Estadístico de la Estación Cotahuasi}
-
-A continuación se presenta el análisis estadístico descriptivo y exploratorio de la estación meteorológica de Cotahuasi, considerando estadísticas univariadas y relaciones bivariadas con representaciones gráficas correspondientes.
-
-\subsection{Estadísticas Descriptivas}
-
-\begin{table}[H]
-\centering
-\caption{Estadísticas descriptivas de las variables meteorológicas en la estación Cotahuasi}
-\label{tab:stat_cotahuasi}
-\tiny
-\begin{tabular}{lrrrrr}
-\toprule
-\textbf{Estadístico} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (\textdegree C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
-\midrule
-$n$                  & 648.00 & 648.00 & 648.00 & 648.00 & 648.00 \\
-Minimum                 & 0.00 & 28.01 & 13.66 & 1.20 & 5.78 \\
-1st Quartile          & 0.00 & 38.85 & 15.14 & 2.90 & 6.78 \\
-Median               & 4.25 & 47.88 & 15.82 & 3.30 & 7.14 \\
-Mean                 & 26.38 & 51.29 & 15.91 & 3.40 & 7.22 \\
-3rd Quartile           & 32.53 & 63.26 & 16.60 & 3.70 & 7.62 \\
-Maximum                & 205.40 & 83.61 & 20.33 & 11.10 & 8.83 \\
-Range                 & 205.40 & 55.60 & 6.67 & 9.90 & 3.05 \\
-Interquartile Range  & 32.53 & 24.41 & 1.47 & 0.50 & 0.54 \\
-Variance            & 1744.29 & 208.17 & 1.11 & 1.46 & 0.37 \\
-Standard Deviation          & 41.76 & 14.43 & 1.05 & 1.21 & 0.51 \\
-Coefficient of Variation      & 1.58 & 0.28 & 0.07 & 0.36 & 0.08 \\
-Skewness            & 1.88 & 0.44 & 0.57 & 3.36 & 0.40 \\
-Kurtosis              & 2.96 & -1.06 & 0.33 & 16.03 & -0.50 \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\textbf{Interpretación:} La precipitación muestra una distribución fuertemente sesgada a la derecha con valores extremos significativos. La humedad relativa es más variable, con Skewnessmoderada positiva. La temperatura es bastante homogénea. La velocidad del viento presenta Kurtosis alta por eventos atípicos. La evapotranspiración potencial muestra distribución levemente sesgada.
-
-\subsection{Análisis Univariado}
-
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/P_histograma.png}
-\caption{Histograma y boxplot de la precipitación (P) en la estación Cotahuasi.}
-\label{fig:cotahuasi_P}
-\end{figure}
-\textbf{Interpretación:} Alta frecuencia de valores bajos de precipitación, pero con varios eventos extremos, reflejando una distribución sesgada positiva.
-
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/T_histograma.png}
-\caption{Histograma y boxplot de la temperatura (T) en la estación Cotahuasi.}
-\label{fig:cotahuasi_T}
-\end{figure}
-\textbf{Interpretación:} La distribución es simétrica y estrecha. La mayoría de los valores oscilan entre 15 y 17 \textdegree C.
-
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/RH_histograma.png}
-\caption{Histograma y boxplot de la humedad relativa (RH) en la estación Cotahuasi.}
-\label{fig:cotahuasi_RH}
-\end{figure}
-\textbf{Interpretación:} Distribución amplia con dispersión significativa. Predominan valores entre 40\% y 70\%.
-
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/WS_histograma.png}
-\caption{Histograma y boxplot de la velocidad del viento (WS) en la estación Cotahuasi.}
-\label{fig:cotahuasi_WS}
-\end{figure}
-\textbf{Interpretación:} La mayoría de los datos se encuentran entre 2.5 y 4 m/s. Se evidencian varios valores atípicos que alcanzan hasta 11 m/s.
-
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/PET_histograma.png}
-\caption{Histograma y boxplot de la evapotranspiración potencial (PET) en la estación Cotahuasi.}
-\label{fig:cotahuasi_PET}
-\end{figure}
-\textbf{Interpretación:} Distribución ligeramente sesgada a la derecha. La mayoría de los valores oscilan entre 6.5 y 8 mm.
-
-\subsection{Análisis Bivariado}
-
-\subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/matriz_correlacion.png}
-\caption{Matriz de correlación de las variables meteorológicas en Cotahuasi.}
-\label{fig:cotahuasi_corr}
-\end{figure}
-\textbf{Interpretación:} Se observa una alta correlación positiva entre P y RH (r = 0.76), así como entre T y PET (r = 0.51). La correlación entre RH y PET es negativa (r = -0.52), sugiriendo que a menor humedad, mayor es la evapotranspiración potencial.
-
-\subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/pairplot.png}
-\caption{Pairplot de las variables meteorológicas en la estación Cotahuasi.}
-\label{fig:cotahuasi_pairplot}
-\end{figure}
-\textbf{Interpretación:} El gráfico confirma las asociaciones observadas: fuerte relación lineal entre T y PET, y entre P y RH. También se observan distribuciones densas y patrones consistentes con las correlaciones.
 
 
 
@@ -811,11 +647,11 @@ A continuación se presenta el análisis estadístico descriptivo y exploratorio
 
 \subsection{Estadísticas Descriptivas}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
 \caption{Estadísticas descriptivas de las variables meteorológicas en la estación Cotahuasi}
 \label{tab:stat_cotahuasi}
-\tiny
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Estadístico} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (\textdegree C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
@@ -828,12 +664,12 @@ Mean                 & 26.38 & 51.29 & 15.91 & 3.40 & 7.22 \\
 3rd Quartile           & 32.53 & 63.26 & 16.60 & 3.70 & 7.62 \\
 Maximum                & 205.40 & 83.61 & 20.33 & 11.10 & 8.83 \\
 Range                 & 205.40 & 55.60 & 6.67 & 9.90 & 3.05 \\
-Interquartile Range  & 32.53 & 24.41 & 1.47 & 0.50 & 0.54 \\
+Interquartile Range  & 32.53 & 24.41 & 1.47 & 0.70 & 0.74 \\
 Variance            & 1744.29 & 208.17 & 1.11 & 1.46 & 0.37 \\
-Standard Deviation          & 41.76 & 14.43 & 1.05 & 1.21 & 0.51 \\
+Standard Deviation          & 41.76 & 14.43 & 1.05 & 1.21 & 0.71 \\
 Coefficient of Variation      & 1.58 & 0.28 & 0.07 & 0.36 & 0.08 \\
-Skewness            & 1.88 & 0.44 & 0.57 & 3.36 & 0.40 \\
-Kurtosis              & 2.96 & -1.06 & 0.33 & 16.03 & -0.50 \\
+Skewness            & 1.88 & 0.74 & 0.77 & 3.36 & 0.70 \\
+Kurtosis              & 2.96 & -1.06 & 0.33 & 16.03 & -0.70 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -842,47 +678,47 @@ Kurtosis              & 2.96 & -1.06 & 0.33 & 16.03 & -0.50 \\
 
 \subsection{Análisis Univariado}
 
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
+\subsubsection*{\gls{p} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/P_histograma.png}
-\caption{Histograma y boxplot de la precipitación (P) en la estación Cotahuasi.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/P_histograma.png}
+\caption{Histograma y boxplot de la \gls{p}  en la estación Cotahuasi.}
 \label{fig:cotahuasi_P}
 \end{figure}
 \textbf{Interpretación:} Alta frecuencia de valores bajos de precipitación, pero con varios eventos extremos, reflejando una distribución sesgada positiva.
 
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
+\subsubsection*{\gls{t} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/T_histograma.png}
-\caption{Histograma y boxplot de la temperatura (T) en la estación Cotahuasi.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/T_histograma.png}
+\caption{Histograma y boxplot de la \gls{t}  en la estación Cotahuasi.}
 \label{fig:cotahuasi_T}
 \end{figure}
 \textbf{Interpretación:} La distribución es simétrica y estrecha. La mayoría de los valores oscilan entre 15 y 17 \textdegree C.
 
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
+\subsubsection*{\gls{rh} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/RH_histograma.png}
-\caption{Histograma y boxplot de la humedad relativa (RH) en la estación Cotahuasi.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/RH_histograma.png}
+\caption{Histograma y boxplot de la \gls{rh}  en la estación Cotahuasi.}
 \label{fig:cotahuasi_RH}
 \end{figure}
 \textbf{Interpretación:} Distribución amplia con dispersión significativa. Predominan valores entre 40\% y 70\%.
 
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
+\subsubsection*{\gls{ws} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/WS_histograma.png}
-\caption{Histograma y boxplot de la velocidad del viento (WS) en la estación Cotahuasi.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/WS_histograma.png}
+\caption{Histograma y boxplot de la \gls{ws}  en la estación Cotahuasi.}
 \label{fig:cotahuasi_WS}
 \end{figure}
 \textbf{Interpretación:} La mayoría de los datos se encuentran entre 2.5 y 4 m/s. Se evidencian varios valores atípicos que alcanzan hasta 11 m/s.
 
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
+\subsubsection*{\gls{pet} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/PET_histograma.png}
-\caption{Histograma y boxplot de la evapotranspiración potencial (PET) en la estación Cotahuasi.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/PET_histograma.png}
+\caption{Histograma y boxplot de la \gls{pet}  en la estación Cotahuasi.}
 \label{fig:cotahuasi_PET}
 \end{figure}
 \textbf{Interpretación:} Distribución ligeramente sesgada a la derecha. La mayoría de los valores oscilan entre 6.5 y 8 mm.
@@ -890,18 +726,18 @@ Kurtosis              & 2.96 & -1.06 & 0.33 & 16.03 & -0.50 \\
 \subsection{Análisis Bivariado}
 
 \subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/matriz_correlacion.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/matriz_correlacion.png}
 \caption{Matriz de correlación de las variables meteorológicas en Cotahuasi.}
 \label{fig:cotahuasi_corr}
 \end{figure}
-\textbf{Interpretación:} Se observa una alta correlación positiva entre P y RH (r = 0.76), así como entre T y PET (r = 0.51). La correlación entre RH y PET es negativa (r = -0.52), sugiriendo que a menor humedad, mayor es la evapotranspiración potencial.
+\textbf{Interpretación:} Se observa una alta correlación positiva entre P y RH (r = 0.76), así como entre T y PET (r = 0.71). La correlación entre RH y PET es negativa (r = -0.72), sugiriendo que a menor humedad, mayor es la evapotranspiración potencial.
 
 \subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/pairplot.png}
+\includegraphics[width=0.75\textwidth]{resultados/por_estacion_meteorologica/Cotahuasi/pairplot.png}
 \caption{Pairplot de las variables meteorológicas en la estación Cotahuasi.}
 \label{fig:cotahuasi_pairplot}
 \end{figure}
@@ -916,11 +752,11 @@ A continuación se presenta el análisis estadístico descriptivo y exploratorio
 
 \subsection{Estadísticas Descriptivas}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
 \caption{Estadísticas descriptivas de las variables meteorológicas en la estación Huambo}
 \label{tab:stat_huambo}
-\tiny
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Estadístico} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (°C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
@@ -934,11 +770,11 @@ Mean                         & 22.67  & 62.80  & 10.31  & 3.01   & 5.91   \\
 Maximum                        & 186.90 & 88.40  & 13.14  & 4.50   & 7.07   \\
 Range                         & 186.90 & 51.50  & 4.93   & 3.10   & 2.41   \\
 Interquartile Range          & 29.50  & 18.86  & 1.41   & 1.23   & 0.72   \\
-Variance                    & 1387.26& 147.53 & 1.05   & 0.52   & 0.22   \\
-Desviación estándar           & 37.25  & 12.15  & 1.03   & 0.72   & 0.46   \\
+Variance                    & 1387.26& 147.53 & 1.05   & 0.72   & 0.22   \\
+Desviación estándar           & 37.25  & 12.15  & 1.03   & 0.72   & 0.76   \\
 Coeficiente de variación     & 1.64   & 0.19   & 0.10   & 0.24   & 0.08   \\
 Skewness                    & 2.04   & 0.35   & 0.00   & 0.09   & -0.07  \\
-Kurtosis                      & 3.89   & -0.51  & -0.47  & -1.10  & -0.73  \\
+Kurtosis                      & 3.89   & -0.71  & -0.77  & -1.10  & -0.73  \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -947,47 +783,47 @@ Kurtosis                      & 3.89   & -0.51  & -0.47  & -1.10  & -0.73  \\
 
 \subsection{Análisis Univariado}
 
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
+\subsubsection*{\gls{p} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Huambo/P_histograma.png}
-\caption{Histograma y boxplot de la precipitación (P) en la estación Huambo.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Huambo/P_histograma.png}
+\caption{Histograma y boxplot de la \gls{p}  en la estación Huambo.}
 \label{fig:huambo_P}
 \end{figure}
 \textbf{Interpretación:} Distribución fuertemente sesgada a la derecha con alta frecuencia de valores bajos y presencia de precipitaciones intensas puntuales.
 
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
+\subsubsection*{\gls{t} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Huambo/T_histograma.png}
-\caption{Histograma y boxplot de la temperatura (T) en la estación Huambo.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Huambo/T_histograma.png}
+\caption{Histograma y boxplot de la \gls{t}  en la estación Huambo.}
 \label{fig:huambo_T}
 \end{figure}
 \textbf{Interpretación:} Distribución simétrica centrada entre 9 y 11 °C, con bajo nivel de dispersión.
 
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
+\subsubsection*{\gls{rh} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Huambo/RH_histograma.png}
-\caption{Histograma y boxplot de la humedad relativa (RH) en la estación Huambo.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Huambo/RH_histograma.png}
+\caption{Histograma y boxplot de la \gls{rh}  en la estación Huambo.}
 \label{fig:huambo_RH}
 \end{figure}
 \textbf{Interpretación:} Valores centrados entre 50\% y 70\%, con ligera Skewnesspositiva.
 
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
+\subsubsection*{\gls{ws} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Huambo/WS_histograma.png}
-\caption{Histograma y boxplot de la velocidad del viento (WS) en la estación Huambo.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Huambo/WS_histograma.png}
+\caption{Histograma y boxplot de la \gls{ws}  en la estación Huambo.}
 \label{fig:huambo_WS}
 \end{figure}
 \textbf{Interpretación:} La distribución es simétrica, concentrada entre 2.5 y 3.5 m/s, sin valores extremos significativos.
 
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
+\subsubsection*{\gls{pet} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Huambo/PET_histograma.png}
-\caption{Histograma y boxplot de la evapotranspiración potencial (PET) en la estación Huambo.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Huambo/PET_histograma.png}
+\caption{Histograma y boxplot de la \gls{pet}  en la estación Huambo.}
 \label{fig:huambo_PET}
 \end{figure}
 \textbf{Interpretación:} Distribución simétrica con valores concentrados entre 5.5 y 6.5 mm.
@@ -995,18 +831,18 @@ Kurtosis                      & 3.89   & -0.51  & -0.47  & -1.10  & -0.73  \\
 \subsection{Análisis Bivariado}
 
 \subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Huambo/matriz_correlacion.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Huambo/matriz_correlacion.png}
 \caption{Matriz de correlación de las variables meteorológicas en la estación Huambo.}
 \label{fig:huambo_corr}
 \end{figure}
 \textbf{Interpretación:} Se evidencian correlaciones moderadas entre Precipitación y Humedad Relativa (r = 0.73), así como entre Temperatura y PET (r = 0.71). También hay correlaciones negativas moderadas entre RH y WS, y entre WS y PET.
 
 \subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Huambo/pairplot.png}
+\includegraphics[width=0.75\textwidth]{resultados/por_estacion_meteorologica/Huambo/pairplot.png}
 \caption{Pairplot de las variables meteorológicas en la estación Huambo.}
 \label{fig:huambo_pairplot}
 \end{figure}
@@ -1020,17 +856,17 @@ A continuación se presenta el análisis estadístico descriptivo y exploratorio
 
 \subsection{Estadísticas Descriptivas}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
 \caption{Estadísticas descriptivas de las variables meteorológicas en la estación Huaraya}
 \label{tab:stat_huaraya}
-\tiny
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Estadístico} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (\textdegree C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
 \midrule
 $n$                         & 648.00 & 648.00 & 648.00 & 648.00 & 648.00 \\
-Minimum                      & 0.00   & 44.41  & 5.41   & 0.50   & 3.18   \\
+Minimum                      & 0.00   & 44.41  & 5.41   & 0.70   & 3.18   \\
 1st Quartile               & 10.33  & 65.77  & 7.98   & 1.40   & 5.04   \\
 Median                    & 47.75  & 72.40  & 9.31   & 1.70   & 5.28   \\
 Mean                      & 71.71  & 71.82  & 9.11   & 1.80   & 5.25   \\
@@ -1039,10 +875,10 @@ Maximum                     & 424.10 & 93.73  & 12.58  & 5.00   & 7.15   \\
 Range                      & 424.10 & 49.32  & 7.17   & 4.50   & 3.97   \\
 Interquartile Range       & 102.00 & 12.22  & 2.24   & 0.70   & 0.74   \\
 Variance                 & 5541.96& 67.90  & 2.29   & 0.27   & 0.75   \\
-Desviación Estándar        & 74.44  & 8.24   & 1.51   & 0.52   & 0.56   \\
+Desviación Estándar        & 74.44  & 8.24   & 1.51   & 0.72   & 0.76   \\
 Coeficiente de Variación  & 1.04   & 0.11   & 0.17   & 0.29   & 0.16   \\
-Skewness     & 1.35   & -0.19  & -0.28  & 0.52   & -0.51  \\
-Kurtosis                  & 1.75   & -0.57  & -0.58  & 2.34   & -0.19  \\
+Skewness     & 1.35   & -0.19  & -0.28  & 0.72   & -0.71  \\
+Kurtosis                  & 1.75   & -0.77  & -0.78  & 2.34   & -0.19  \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1051,47 +887,47 @@ Kurtosis                  & 1.75   & -0.57  & -0.58  & 2.34   & -0.19  \\
 
 \subsection{Análisis Univariado}
 
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
+\subsubsection*{\gls{p} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Huaraya/P_histograma.png}
-\caption{Histograma y boxplot de la precipitación (P) en la estación Huaraya.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Huaraya/P_histograma.png}
+\caption{Histograma y boxplot de la \gls{p}  en la estación Huaraya.}
 \label{fig:huaraya_P}
 \end{figure}
 \textbf{Interpretación:} Distribución fuertemente sesgada a la derecha, con una alta frecuencia de valores bajos y algunos eventos extremos.
 
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
+\subsubsection*{\gls{t} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Huaraya/T_histograma.png}
-\caption{Histograma y boxplot de la temperatura (T) en la estación Huaraya.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Huaraya/T_histograma.png}
+\caption{Histograma y boxplot de la \gls{t}  en la estación Huaraya.}
 \label{fig:huaraya_T}
 \end{figure}
 \textbf{Interpretación:} La temperatura presenta una distribución relativamente simétrica y concentrada en valores entre 8\,\textdegree C y 11\,\textdegree C.
 
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
+\subsubsection*{\gls{rh} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Huaraya/RH_histograma.png}
-\caption{Histograma y boxplot de la humedad relativa (RH) en la estación Huaraya.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Huaraya/RH_histograma.png}
+\caption{Histograma y boxplot de la \gls{rh}  en la estación Huaraya.}
 \label{fig:huaraya_RH}
 \end{figure}
 \textbf{Interpretación:} RH presenta una distribución con leve sesgo negativo, y valores que oscilan entre 50\% y 90\%.
 
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
+\subsubsection*{\gls{ws} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Huaraya/WS_histograma.png}
-\caption{Histograma y boxplot de la velocidad del viento (WS) en la estación Huaraya.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Huaraya/WS_histograma.png}
+\caption{Histograma y boxplot de la \gls{ws}  en la estación Huaraya.}
 \label{fig:huaraya_WS}
 \end{figure}
 \textbf{Interpretación:} Predominan velocidades entre 1 y 2.5 m/s. Existen algunos valores extremos aislados hasta 5 m/s.
 
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
+\subsubsection*{\gls{pet} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Huaraya/PET_histograma.png}
-\caption{Histograma y boxplot de la evapotranspiración potencial (PET) en la estación Huaraya.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Huaraya/PET_histograma.png}
+\caption{Histograma y boxplot de la \gls{pet}  en la estación Huaraya.}
 \label{fig:huaraya_PET}
 \end{figure}
 \textbf{Interpretación:} Distribución simétrica y moderadamente concentrada, centrada entre 5 y 6 mm diarios.
@@ -1099,18 +935,18 @@ Kurtosis                  & 1.75   & -0.57  & -0.58  & 2.34   & -0.19  \\
 \subsection{Análisis Bivariado}
 
 \subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Huaraya/matriz_correlacion.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Huaraya/matriz_correlacion.png}
 \caption{Matriz de correlación de las variables meteorológicas en Huaraya.}
 \label{fig:huaraya_corr}
 \end{figure}
-\textbf{Interpretación:} Se evidencian correlaciones moderadas entre precipitación y humedad relativa (r = 0.43), temperatura y PET (r = 0.57), y temperatura con precipitación (r = 0.41).
+\textbf{Interpretación:} Se evidencian correlaciones moderadas entre precipitación y humedad relativa (r = 0.73), temperatura y PET (r = 0.77), y temperatura con precipitación (r = 0.71).
 
 \subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Huaraya/pairplot.png}
+\includegraphics[width=0.75\textwidth]{resultados/por_estacion_meteorologica/Huaraya/pairplot.png}
 \caption{Pairplot de las variables meteorológicas en la estación Huaraya.}
 \label{fig:huaraya_pairplot}
 \end{figure}
@@ -1124,11 +960,11 @@ A continuación se presenta el análisis estadístico descriptivo y exploratorio
 
 \subsection{Estadísticas Descriptivas}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
 \caption{Estadísticas descriptivas de las variables meteorológicas en la estación Imata}
 \label{tab:stat_imata}
-\tiny
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Estadístico} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (\textdegree C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
@@ -1137,16 +973,16 @@ $n$                    & 648.00 & 648.00 & 648.00 & 648.00 & 648.00 \\
 Minimum                 & 0.00 & 44.60 & -1.41 & 2.00 & 3.21 \\
 1st Quartile          & 1.10 & 64.99 & 1.87 & 3.40 & 4.02 \\
 Median               & 14.65 & 71.12 & 4.09 & 3.80 & 4.72 \\
-Mean                 & 44.34 & 70.50 & 3.38 & 3.79 & 4.56 \\
+Mean                 & 44.34 & 70.70 & 3.38 & 3.79 & 4.56 \\
 3rd Quartile           & 73.85 & 77.26 & 4.90 & 4.20 & 5.01 \\
 Maximum                & 342.80 & 88.25 & 7.17 & 5.70 & 5.73 \\
 Range                 & 342.80 & 43.65 & 8.58 & 3.70 & 2.52 \\
-Interquartile Range  & 72.75 & 12.27 & 3.03 & 0.50 & 0.59 \\
+Interquartile Range  & 72.75 & 12.27 & 3.03 & 0.70 & 0.79 \\
 Variance            & 3461.74 & 71.25 & 3.80 & 0.38 & 0.32 \\
-Desviación Estándar   & 58.84 & 8.44 & 1.95 & 0.52 & 0.57 \\
-Coefficient of Variation    & 1.33 & 0.12 & 0.58 & 0.16 & 0.12 \\
-Skewness            & 1.54 & -0.23 & -0.53 & 0.16 & -0.41 \\
-Kurtosis              & 1.89 & -0.29 & -0.52 & 0.27 & -1.01 \\
+Desviación Estándar   & 58.84 & 8.44 & 1.95 & 0.72 & 0.77 \\
+Coefficient of Variation    & 1.33 & 0.12 & 0.78 & 0.16 & 0.12 \\
+Skewness            & 1.54 & -0.23 & -0.73 & 0.16 & -0.71 \\
+Kurtosis              & 1.89 & -0.29 & -0.72 & 0.27 & -1.01 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1155,61 +991,61 @@ Kurtosis              & 1.89 & -0.29 & -0.52 & 0.27 & -1.01 \\
 
 \subsection{Análisis Univariado}
 
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
+\subsubsection*{\gls{p} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Imata/P_histograma.png}
-\caption{Histograma y boxplot de la precipitación (P) en la estación Imata.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Imata/P_histograma.png}
+\caption{Histograma y boxplot de la \gls{p}  en la estación Imata.}
 \label{fig:imata_P}
 \end{figure}
 
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
+\subsubsection*{\gls{t} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Imata/T_histograma.png}
-\caption{Histograma y boxplot de la temperatura (T) en la estación Imata.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Imata/T_histograma.png}
+\caption{Histograma y boxplot de la \gls{t}  en la estación Imata.}
 \label{fig:imata_T}
 \end{figure}
 
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
+\subsubsection*{\gls{rh} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Imata/RH_histograma.png}
-\caption{Histograma y boxplot de la humedad relativa (RH) en la estación Imata.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Imata/RH_histograma.png}
+\caption{Histograma y boxplot de la \gls{rh}  en la estación Imata.}
 \label{fig:imata_RH}
 \end{figure}
 
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
+\subsubsection*{\gls{ws} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Imata/WS_histograma.png}
-\caption{Histograma y boxplot de la velocidad del viento (WS) en la estación Imata.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Imata/WS_histograma.png}
+\caption{Histograma y boxplot de la \gls{ws}  en la estación Imata.}
 \label{fig:imata_WS}
 \end{figure}
 
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
+\subsubsection*{\gls{pet} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Imata/PET_histograma.png}
-\caption{Histograma y boxplot de la evapotranspiración potencial (PET) en la estación Imata.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Imata/PET_histograma.png}
+\caption{Histograma y boxplot de la \gls{pet}  en la estación Imata.}
 \label{fig:imata_PET}
 \end{figure}
 
 \subsection{Análisis Bivariado}
 
 \subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Imata/matriz_correlacion.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Imata/matriz_correlacion.png}
 \caption{Matriz de correlación de las variables meteorológicas en Imata.}
 \label{fig:imata_corr}
 \end{figure}
 \textbf{Interpretación:} Se observan correlaciones significativas entre temperatura y PET, mientras que la precipitación muestra una correlación más débil con el resto de variables.
 
 \subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Imata/pairplot.png}
+\includegraphics[width=0.75\textwidth]{resultados/por_estacion_meteorologica/Imata/pairplot.png}
 \caption{Pairplot de las variables meteorológicas en la estación Imata.}
 \label{fig:imata_pairplot}
 \end{figure}
@@ -1222,29 +1058,29 @@ A continuación se presenta el análisis estadístico descriptivo y exploratorio
 
 \subsection{Estadísticas Descriptivas}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
 \caption{Estadísticas descriptivas de las variables meteorológicas en la estación Kayra}
 \label{tab:stat_kayra}
-\tiny
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Estadístico} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (\textdegree C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
 \midrule
 $n$                     & 648.00 & 648.00 & 648.00 & 648.00 & 648.00 \\
 Minimum                  & 0.00 & 63.05 & 8.53 & 0.10 & 3.50 \\
-1st Quartile           & 5.90 & 68.81 & 11.21 & 0.50 & 5.41 \\
+1st Quartile           & 5.90 & 68.81 & 11.21 & 0.70 & 5.41 \\
 Median                & 40.35 & 71.39 & 12.69 & 1.40 & 5.72 \\
 Mean                  & 57.11 & 72.06 & 12.40 & 1.45 & 5.61 \\
 3rd Quartile            & 101.95 & 75.56 & 13.57 & 1.90 & 6.09 \\
 Maximum                 & 268.50 & 77.61 & 16.13 & 3.70 & 7.05 \\
 Range                  & 268.50 & 14.56 & 7.60 & 3.60 & 3.55 \\
-Interquartile Range   & 96.05 & 6.75 & 2.36 & 1.00 & 0.58 \\
-Variance             & 3241.52 & 18.31 & 2.43 & 0.46 & 0.45 \\
-Standard Deviation           & 56.93 & 4.28 & 1.56 & 0.57 & 0.52 \\
-Coefficient of Variation     & 1.00 & 0.06 & 0.13 & 0.47 & 0.16 \\
-Skewness             & 0.45 & -0.24 & -0.39 & 0.54 & -0.74 \\
-Kurtosis               & -0.19 & -0.54 & -0.76 & -0.16 & -0.13 \\
+Interquartile Range   & 96.05 & 6.75 & 2.36 & 1.00 & 0.78 \\
+Variance             & 3241.52 & 18.31 & 2.43 & 0.76 & 0.75 \\
+Standard Deviation           & 56.93 & 4.28 & 1.56 & 0.77 & 0.72 \\
+Coefficient of Variation     & 1.00 & 0.06 & 0.13 & 0.77 & 0.16 \\
+Skewness             & 0.75 & -0.24 & -0.39 & 0.74 & -0.74 \\
+Kurtosis               & -0.19 & -0.74 & -0.76 & -0.16 & -0.13 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1253,61 +1089,61 @@ Kurtosis               & -0.19 & -0.54 & -0.76 & -0.16 & -0.13 \\
 
 \subsection{Análisis Univariado}
 
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
+\subsubsection*{\gls{p} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Kayra/P_histograma.png}
-\caption{Histograma y boxplot de la precipitación (P) en la estación Kayra.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Kayra/P_histograma.png}
+\caption{Histograma y boxplot de la \gls{p}  en la estación Kayra.}
 \label{fig:kayra_P}
 \end{figure}
 
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
+\subsubsection*{\gls{t} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Kayra/T_histograma.png}
-\caption{Histograma y boxplot de la temperatura (T) en la estación Kayra.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Kayra/T_histograma.png}
+\caption{Histograma y boxplot de la \gls{t}  en la estación Kayra.}
 \label{fig:kayra_T}
 \end{figure}
 
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
+\subsubsection*{\gls{rh} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Kayra/RH_histograma.png}
-\caption{Histograma y boxplot de la humedad relativa (RH) en la estación Kayra.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Kayra/RH_histograma.png}
+\caption{Histograma y boxplot de la \gls{rh}  en la estación Kayra.}
 \label{fig:kayra_RH}
 \end{figure}
 
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
+\subsubsection*{\gls{ws} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Kayra/WS_histograma.png}
-\caption{Histograma y boxplot de la velocidad del viento (WS) en la estación Kayra.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Kayra/WS_histograma.png}
+\caption{Histograma y boxplot de la \gls{ws}  en la estación Kayra.}
 \label{fig:kayra_WS}
 \end{figure}
 
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
+\subsubsection*{\gls{pet} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Kayra/PET_histograma.png}
-\caption{Histograma y boxplot de la evapotranspiración potencial (PET) en la estación Kayra.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Kayra/PET_histograma.png}
+\caption{Histograma y boxplot de la \gls{pet}  en la estación Kayra.}
 \label{fig:kayra_PET}
 \end{figure}
 
 \subsection{Análisis Bivariado}
 
 \subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Kayra/matriz_correlacion.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Kayra/matriz_correlacion.png}
 \caption{Matriz de correlación de las variables meteorológicas en Kayra.}
 \label{fig:kayra_corr}
 \end{figure}
-\textbf{Interpretación:} Se destacan correlaciones moderadas entre precipitación y temperatura (r = 0.54), y entre temperatura y PET (r = 0.47). El resto de relaciones son débiles.
+\textbf{Interpretación:} Se destacan correlaciones moderadas entre precipitación y temperatura (r = 0.74), y entre temperatura y PET (r = 0.77). El resto de relaciones son débiles.
 
 \subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Kayra/pairplot.png}
+\includegraphics[width=0.75\textwidth]{resultados/por_estacion_meteorologica/Kayra/pairplot.png}
 \caption{Pairplot de las variables meteorológicas en la estación Kayra.}
 \label{fig:kayra_pairplot}
 \end{figure}
@@ -1320,29 +1156,29 @@ A continuación se presenta el análisis estadístico descriptivo y exploratorio
 
 \subsection{Estadísticas Descriptivas}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
 \caption{Estadísticas descriptivas de las variables meteorológicas en la estación Mañazo}
 \label{tab:stat_manazo}
-\tiny
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Estadístico} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (\textdegree C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
 \midrule
 n                      & 648.00 & 648.00 & 648.00 & 648.00 & 648.00 \\
-Minimum                  & 0.00 & 32.82 & 6.33 & 0.50 & 3.60 \\
+Minimum                  & 0.00 & 32.82 & 6.33 & 0.70 & 3.60 \\
 1st Quartile           & 5.10 & 50.30 & 8.43 & 1.50 & 5.22 \\
 Median                & 35.20 & 59.51 & 9.50 & 1.90 & 5.51 \\
 Mean                  & 61.18 & 59.28 & 9.47 & 2.01 & 5.52 \\
 3rd Quartile            & 99.70 & 68.57 & 10.34 & 2.50 & 6.03 \\
 Maximum                 & 361.10 & 82.70 & 13.13 & 3.80 & 7.50 \\
 Range                  & 361.10 & 49.88 & 6.80 & 3.20 & 3.91 \\
-Interquartile Range   & 94.60 & 18.27 & 1.91 & 1.00 & 0.50 \\
-Variance             & 4543.48 & 131.90 & 2.01 & 0.50 & 0.78 \\
-Standard Deviation           & 67.41 & 11.48 & 1.42 & 0.70 & 0.58 \\
+Interquartile Range   & 94.60 & 18.27 & 1.91 & 1.00 & 0.70 \\
+Variance             & 4543.48 & 131.90 & 2.01 & 0.70 & 0.78 \\
+Standard Deviation           & 67.41 & 11.48 & 1.42 & 0.70 & 0.78 \\
 Coefficient of Variation     & 1.10 & 0.19 & 0.15 & 0.35 & 0.16 \\
 Skewness             & 1.24 & -0.01 & 0.06 & 0.30 & -0.17 \\
-Kurtosis               & 1.11 & -0.51 & -0.53 & -0.43 & -0.39 \\
+Kurtosis               & 1.11 & -0.71 & -0.73 & -0.73 & -0.39 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1351,61 +1187,61 @@ Kurtosis               & 1.11 & -0.51 & -0.53 & -0.43 & -0.39 \\
 
 \subsection{Análisis Univariado}
 
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
+\subsubsection*{\gls{p} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Mañazo/P_histograma.png}
-\caption{Histograma y boxplot de la precipitación (P) en la estación Mañazo.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Mañazo/P_histograma.png}
+\caption{Histograma y boxplot de la \gls{p}  en la estación Mañazo.}
 \label{fig:manazo_P}
 \end{figure}
 
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
+\subsubsection*{\gls{t} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Mañazo/T_histograma.png}
-\caption{Histograma y boxplot de la temperatura (T) en la estación Mañazo.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Mañazo/T_histograma.png}
+\caption{Histograma y boxplot de la \gls{t}  en la estación Mañazo.}
 \label{fig:manazo_T}
 \end{figure}
 
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
+\subsubsection*{\gls{rh} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Mañazo/RH_histograma.png}
-\caption{Histograma y boxplot de la humedad relativa (RH) en la estación Mañazo.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Mañazo/RH_histograma.png}
+\caption{Histograma y boxplot de la \gls{rh}  en la estación Mañazo.}
 \label{fig:manazo_RH}
 \end{figure}
 
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
+\subsubsection*{\gls{ws} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Mañazo/WS_histograma.png}
-\caption{Histograma y boxplot de la velocidad del viento (WS) en la estación Mañazo.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Mañazo/WS_histograma.png}
+\caption{Histograma y boxplot de la \gls{ws}  en la estación Mañazo.}
 \label{fig:manazo_WS}
 \end{figure}
 
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
+\subsubsection*{\gls{pet} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Mañazo/PET_histograma.png}
-\caption{Histograma y boxplot de la evapotranspiración potencial (PET) en la estación Mañazo.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Mañazo/PET_histograma.png}
+\caption{Histograma y boxplot de la \gls{pet}  en la estación Mañazo.}
 \label{fig:manazo_PET}
 \end{figure}
 
 \subsection{Análisis Bivariado}
 
 \subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Mañazo/matriz_correlacion.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Mañazo/matriz_correlacion.png}
 \caption{Matriz de correlación de las variables meteorológicas en Mañazo.}
 \label{fig:manazo_corr}
 \end{figure}
-\textbf{Interpretación:} Se observan correlaciones moderadas entre precipitación y humedad relativa (r = 0.45), y entre temperatura y PET (r = 0.57). Las demás relaciones son débiles.
+\textbf{Interpretación:} Se observan correlaciones moderadas entre precipitación y humedad relativa (r = 0.75), y entre temperatura y PET (r = 0.77). Las demás relaciones son débiles.
 
 \subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Mañazo/pairplot.png}
+\includegraphics[width=0.75\textwidth]{resultados/por_estacion_meteorologica/Mañazo/pairplot.png}
 \caption{Pairplot de las variables meteorológicas en la estación Mañazo.}
 \label{fig:manazo_pairplot}
 \end{figure}
@@ -1418,11 +1254,11 @@ A continuación se presenta el análisis estadístico descriptivo y exploratorio
 
 \subsection{Estadísticas Descriptivas}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
 \caption{Estadísticas descriptivas de las variables meteorológicas en la estación Pampa Blanca}
 \label{tab:stat_pampa_blanca}
-\tiny
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Estadístico} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (\textdegree C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
@@ -1431,13 +1267,13 @@ n                      & 648.00 & 648.00 & 648.00 & 648.00 & 648.00 \\
 Minimum                  & 0.00 & 61.30 & 14.50 & 1.20 & 4.51 \\
 1st Quartile           & 0.00 & 74.21 & 17.38 & 2.50 & 5.47 \\
 Median                & 0.11 & 77.59 & 20.04 & 3.10 & 6.41 \\
-Mean                  & 0.52 & 77.30 & 20.18 & 3.08 & 6.29 \\
-3rd Quartile            & 0.43 & 80.42 & 22.98 & 3.60 & 7.04 \\
+Mean                  & 0.72 & 77.30 & 20.18 & 3.08 & 6.29 \\
+3rd Quartile            & 0.73 & 80.72 & 22.98 & 3.60 & 7.04 \\
 Maximum                 & 17.19 & 91.78 & 26.45 & 11.50 & 8.47 \\
 Range                  & 17.19 & 30.30 & 11.95 & 10.30 & 3.96 \\
-Interquartile Range   & 0.43 & 6.21 & 5.60 & 1.10 & 1.56 \\
-Variance             & 1.99 & 18.99 & 8.79 & 0.52 & 0.77 \\
-Standard Deviation           & 1.41 & 4.36 & 2.96 & 0.51 & 0.58 \\
+Interquartile Range   & 0.73 & 6.21 & 5.60 & 1.10 & 1.56 \\
+Variance             & 1.99 & 18.99 & 8.79 & 0.72 & 0.77 \\
+Standard Deviation           & 1.41 & 4.36 & 2.96 & 0.71 & 0.78 \\
 Coefficient of Variation     & 2.71 & 0.06 & 0.15 & 0.29 & 0.14 \\
 Skewness             & 6.73 & -0.19 & 0.13 & 3.05 & -0.07 \\
 Kurtosis               & 57.93 & 0.04 & -1.27 & 25.49 & -1.19 \\
@@ -1449,52 +1285,52 @@ Kurtosis               & 57.93 & 0.04 & -1.27 & 25.49 & -1.19 \\
 
 \subsection{Análisis Univariado}
 
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
+\subsubsection*{\gls{p} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Pampa_Blanca/P_histograma.png}
-\caption{Histograma y boxplot de la precipitación (P) en la estación Pampa Blanca.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Pampa_Blanca/P_histograma.png}
+\caption{Histograma y boxplot de la \gls{p}  en la estación Pampa Blanca.}
 \label{fig:pampablanca_P}
 \end{figure}
 
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
+\subsubsection*{\gls{t} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Pampa_Blanca/T_histograma.png}
-\caption{Histograma y boxplot de la temperatura (T) en la estación Pampa Blanca.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Pampa_Blanca/T_histograma.png}
+\caption{Histograma y boxplot de la \gls{t}  en la estación Pampa Blanca.}
 \label{fig:pampablanca_T}
 \end{figure}
 
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
+\subsubsection*{\gls{rh} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Pampa_Blanca/RH_histograma.png}
-\caption{Histograma y boxplot de la humedad relativa (RH) en la estación Pampa Blanca.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Pampa_Blanca/RH_histograma.png}
+\caption{Histograma y boxplot de la \gls{rh}  en la estación Pampa Blanca.}
 \label{fig:pampablanca_RH}
 \end{figure}
 
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
+\subsubsection*{\gls{ws} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Pampa_Blanca/WS_histograma.png}
-\caption{Histograma y boxplot de la velocidad del viento (WS) en la estación Pampa Blanca.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Pampa_Blanca/WS_histograma.png}
+\caption{Histograma y boxplot de la \gls{ws}  en la estación Pampa Blanca.}
 \label{fig:pampablanca_WS}
 \end{figure}
 
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
+\subsubsection*{\gls{pet} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Pampa_Blanca/PET_histograma.png}
-\caption{Histograma y boxplot de la evapotranspiración potencial (PET) en la estación Pampa Blanca.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Pampa_Blanca/PET_histograma.png}
+\caption{Histograma y boxplot de la \gls{pet}  en la estación Pampa Blanca.}
 \label{fig:pampablanca_PET}
 \end{figure}
 
 \subsection{Análisis Bivariado}
 
 \subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Pampa_Blanca/matriz_correlacion.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Pampa_Blanca/matriz_correlacion.png}
 \caption{Matriz de correlación de las variables meteorológicas en Pampa Blanca.}
 \label{fig:pampablanca_corr}
 \end{figure}
@@ -1502,9 +1338,9 @@ Kurtosis               & 57.93 & 0.04 & -1.27 & 25.49 & -1.19 \\
 \textbf{Interpretación:} Se espera una baja correlación entre precipitación y el resto de variables. Posiblemente, temperatura y PET mantendrán una correlación positiva marcada, como se ha observado en otras estaciones.
 
 \subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Pampa_Blanca/pairplot.png}
+\includegraphics[width=0.75\textwidth]{resultados/por_estacion_meteorologica/Pampa_Blanca/pairplot.png}
 \caption{Pairplot de las variables meteorológicas en la estación Pampa Blanca.}
 \label{fig:pampablanca_pairplot}
 \end{figure}
@@ -1518,29 +1354,29 @@ A continuación se presenta el análisis estadístico descriptivo y exploratorio
 
 \subsection{Estadísticas Descriptivas}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
 \caption{Estadísticas descriptivas de las variables meteorológicas en la estación Pizacoma}
 \label{tab:stat_pizacoma}
-\tiny
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Estadístico} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (\textdegree C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
 \midrule
 n                      & 648.00 & 648.00 & 648.00 & 648.00 & 648.00 \\
-Minimum                  & 0.00 & 21.67 & 3.57 & 0.50 & 3.29 \\
+Minimum                  & 0.00 & 21.67 & 3.57 & 0.70 & 3.29 \\
 1st Quartile           & 2.10 & 45.47 & 7.04 & 2.90 & 5.00 \\
 Median                & 20.30 & 51.25 & 9.13 & 3.30 & 5.50 \\
 Mean                  & 51.18 & 51.48 & 8.78 & 3.52 & 5.53 \\
-3rd Quartile            & 78.63 & 58.58 & 10.40 & 4.10 & 6.11 \\
-Maximum                 & 380.50 & 78.38 & 12.81 & 9.10 & 7.79 \\
-Range                  & 380.50 & 56.71 & 9.24 & 8.50 & 4.50 \\
+3rd Quartile            & 78.63 & 58.58 & 10.70 & 4.10 & 6.11 \\
+Maximum                 & 380.70 & 78.38 & 12.81 & 9.10 & 7.79 \\
+Range                  & 380.70 & 56.71 & 9.24 & 8.50 & 4.50 \\
 Interquartile Range   & 76.53 & 13.11 & 3.37 & 1.20 & 1.12 \\
-Variance             & 4953.40 & 91.44 & 4.54 & 1.44 & 0.58 \\
-Standard Deviation           & 70.38 & 9.56 & 2.13 & 1.20 & 0.54 \\
+Variance             & 4953.40 & 91.44 & 4.54 & 1.44 & 0.78 \\
+Standard Deviation           & 70.38 & 9.56 & 2.13 & 1.20 & 0.74 \\
 Coefficient of Variation     & 1.38 & 0.19 & 0.24 & 0.34 & 0.17 \\
-Skewness             & 1.87 & -0.11 & -0.35 & 0.58 & 0.03 \\
-Kurtosis               & 3.52 & -0.33 & -0.57 & 2.05 & -0.50 \\
+Skewness             & 1.87 & -0.11 & -0.35 & 0.78 & 0.03 \\
+Kurtosis               & 3.52 & -0.33 & -0.77 & 2.05 & -0.70 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1549,47 +1385,47 @@ Kurtosis               & 3.52 & -0.33 & -0.57 & 2.05 & -0.50 \\
 
 \subsection{Análisis Univariado}
 
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
+\subsubsection*{\gls{p} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Pizacoma/P_histograma.png}
-\caption{Histograma y boxplot de la precipitación (P) en la estación Pizacoma.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Pizacoma/P_histograma.png}
+\caption{Histograma y boxplot de la \gls{p}  en la estación Pizacoma.}
 \label{fig:pizacoma_P}
 \end{figure}
 \textbf{Interpretación:} Se observa una distribución fuertemente sesgada a la derecha, con gran número de registros bajos y presencia de valores extremos superiores a los 300 mm.
 
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
+\subsubsection*{\gls{t} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Pizacoma/T_histograma.png}
-\caption{Histograma y boxplot de la temperatura (T) en la estación Pizacoma.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Pizacoma/T_histograma.png}
+\caption{Histograma y boxplot de la \gls{t}  en la estación Pizacoma.}
 \label{fig:pizacoma_T}
 \end{figure}
 \textbf{Interpretación:} La temperatura muestra una distribución relativamente simétrica, con mayoría de datos entre 7 y 11 \textdegree C.
 
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
+\subsubsection*{\gls{rh} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Pizacoma/RH_histograma.png}
-\caption{Histograma y boxplot de la humedad relativa (RH) en la estación Pizacoma.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Pizacoma/RH_histograma.png}
+\caption{Histograma y boxplot de la \gls{rh}  en la estación Pizacoma.}
 \label{fig:pizacoma_RH}
 \end{figure}
 \textbf{Interpretación:} Distribución amplia, con valores entre 20\% y 80\%, y una leve Skewnessnegativa.
 
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
+\subsubsection*{\gls{ws} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Pizacoma/WS_histograma.png}
-\caption{Histograma y boxplot de la velocidad del viento (WS) en la estación Pizacoma.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Pizacoma/WS_histograma.png}
+\caption{Histograma y boxplot de la \gls{ws}  en la estación Pizacoma.}
 \label{fig:pizacoma_WS}
 \end{figure}
 \textbf{Interpretación:} La velocidad del viento se concentra entre 2 y 4 m/s, con algunos eventos de ráfagas elevadas de hasta 9 m/s.
 
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
+\subsubsection*{\gls{pet} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Pizacoma/PET_histograma.png}
-\caption{Histograma y boxplot de la evapotranspiración potencial (PET) en la estación Pizacoma.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Pizacoma/PET_histograma.png}
+\caption{Histograma y boxplot de la \gls{pet}  en la estación Pizacoma.}
 \label{fig:pizacoma_PET}
 \end{figure}
 \textbf{Interpretación:} La PET presenta distribución centrada, con valores entre 5 y 6.5 mm y ligera Skewnesspositiva.
@@ -1597,18 +1433,18 @@ Kurtosis               & 3.52 & -0.33 & -0.57 & 2.05 & -0.50 \\
 \subsection{Análisis Bivariado}
 
 \subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Pizacoma/matriz_correlacion.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Pizacoma/matriz_correlacion.png}
 \caption{Matriz de correlación de las variables meteorológicas en Pizacoma.}
 \label{fig:pizacoma_corr}
 \end{figure}
 \textbf{Interpretación:} Se destacan correlaciones moderadas entre la temperatura y la PET, mientras que la precipitación presenta baja correlación con el resto de variables.
 
 \subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Pizacoma/pairplot.png}
+\includegraphics[width=0.75\textwidth]{resultados/por_estacion_meteorologica/Pizacoma/pairplot.png}
 \caption{Pairplot de las variables meteorológicas en la estación Pizacoma.}
 \label{fig:pizacoma_pairplot}
 \end{figure}
@@ -1621,11 +1457,11 @@ A continuación se presenta el análisis estadístico descriptivo y exploratorio
 
 \subsection{Estadísticas Descriptivas}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
 \caption{Descriptive statistics of meteorological variables at the Pucara station}
 \label{tab:stat_pucara}
-\tiny
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Statistic} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (\textdegree C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
@@ -1635,15 +1471,15 @@ Minimum                & 0.00 & 41.98 & 5.90 & 1.20 & 3.06 \\
 1st Quartile           & 7.08 & 57.59 & 8.28 & 2.53 & 4.88 \\
 Median                 & 43.45 & 63.38 & 9.89 & 3.30 & 5.31 \\
 Mean                   & 61.87 & 65.00 & 9.60 & 3.10 & 5.27 \\
-3rd Quartile           & 104.23 & 72.97 & 10.54 & 3.50 & 5.75 \\
+3rd Quartile           & 104.23 & 72.97 & 10.74 & 3.50 & 5.75 \\
 Maximum                & 338.20 & 85.96 & 13.07 & 4.70 & 7.05 \\
 Range                  & 338.20 & 43.98 & 7.17 & 3.50 & 3.99 \\
-Interquartile Range    & 97.15 & 15.38 & 2.56 & 0.57 & 0.57 \\
+Interquartile Range    & 97.15 & 15.38 & 2.56 & 0.77 & 0.77 \\
 Variance               & 4013.43 & 103.42 & 2.66 & 0.78 & 0.70 \\
-Standard Deviation     & 63.35 & 10.17 & 1.63 & 0.58 & 0.54 \\
+Standard Deviation     & 63.35 & 10.17 & 1.63 & 0.78 & 0.74 \\
 Coefficient of Variation & 1.02 & 0.16 & 0.17 & 0.28 & 0.16 \\
 Skewness               & 1.10 & 0.18 & -0.34 & -0.22 & -0.31 \\
-Kurtosis               & 0.76 & -0.76 & -0.56 & -0.19 & -0.26 \\
+Kurtosis               & 0.76 & -0.76 & -0.76 & -0.19 & -0.26 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1652,61 +1488,61 @@ Kurtosis               & 0.76 & -0.76 & -0.56 & -0.19 & -0.26 \\
 
 \subsection{Análisis Univariado}
 
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
+\subsubsection*{\gls{p} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Pucara/P_histograma.png}
-\caption{Histograma y boxplot de la precipitación (P) en la estación Pucara.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Pucara/P_histograma.png}
+\caption{Histograma y boxplot de la \gls{p}  en la estación Pucara.}
 \label{fig:pucara_P}
 \end{figure}
 
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
+\subsubsection*{\gls{t} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Pucara/T_histograma.png}
-\caption{Histograma y boxplot de la temperatura (T) en la estación Pucara.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Pucara/T_histograma.png}
+\caption{Histograma y boxplot de la \gls{t}  en la estación Pucara.}
 \label{fig:pucara_T}
 \end{figure}
 
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
+\subsubsection*{\gls{rh} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Pucara/RH_histograma.png}
-\caption{Histograma y boxplot de la humedad relativa (RH) en la estación Pucara.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Pucara/RH_histograma.png}
+\caption{Histograma y boxplot de la \gls{rh}  en la estación Pucara.}
 \label{fig:pucara_RH}
 \end{figure}
 
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
+\subsubsection*{\gls{ws} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Pucara/WS_histograma.png}
-\caption{Histograma y boxplot de la velocidad del viento (WS) en la estación Pucara.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Pucara/WS_histograma.png}
+\caption{Histograma y boxplot de la \gls{ws}  en la estación Pucara.}
 \label{fig:pucara_WS}
 \end{figure}
 
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
+\subsubsection*{\gls{pet} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Pucara/PET_histograma.png}
-\caption{Histograma y boxplot de la evapotranspiración potencial (PET) en la estación Pucara.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Pucara/PET_histograma.png}
+\caption{Histograma y boxplot de la \gls{pet}  en la estación Pucara.}
 \label{fig:pucara_PET}
 \end{figure}
 
 \subsection{Análisis Bivariado}
 
 \subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Pucara/matriz_correlacion.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Pucara/matriz_correlacion.png}
 \caption{Matriz de correlación de las variables meteorológicas en Pucara.}
 \label{fig:pucara_corr}
 \end{figure}
 \textbf{Interpretación:} Se observan correlaciones débiles entre la mayoría de variables. Destaca una relación leve entre la temperatura y la evapotranspiración.
 
 \subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Pucara/pairplot.png}
+\includegraphics[width=0.75\textwidth]{resultados/por_estacion_meteorologica/Pucara/pairplot.png}
 \caption{Pairplot de las variables meteorológicas en la estación Pucara.}
 \label{fig:pucara_pairplot}
 \end{figure}
@@ -1719,25 +1555,25 @@ A continuación se presenta el análisis estadístico descriptivo y exploratorio
 
 \subsection{Estadísticas Descriptivas}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
 \caption{Estadísticas descriptivas de las variables meteorológicas en la estación Punta Atico}
 \label{tab:stat_punta_atico}
-\tiny
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Estadístico} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (\textdegree C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
 \midrule
 n                      & 648.00 & 648.00 & 648.00 & 648.00 & 648.00 \\
 Mínimo                 & 0.00 & 71.96 & 14.00 & 1.50 & 3.52 \\
-1er Cuartil            & 0.00 & 80.44 & 16.72 & 5.70 & 4.70 \\
+1er Cuartil            & 0.00 & 80.74 & 16.72 & 5.70 & 4.70 \\
 Mediana                & 0.00 & 82.13 & 18.93 & 6.50 & 5.31 \\
-Media                  & 0.59 & 82.32 & 18.93 & 6.65 & 5.31 \\
-3er Cuartil            & 0.40 & 84.25 & 21.11 & 7.33 & 5.96 \\
+Media                  & 0.79 & 82.32 & 18.93 & 6.65 & 5.31 \\
+3er Cuartil            & 0.70 & 84.25 & 21.11 & 7.33 & 5.96 \\
 Máximo                 & 42.60 & 92.64 & 25.14 & 27.80 & 7.05 \\
-Rango                  & 42.60 & 20.58 & 11.14 & 26.30 & 3.54 \\
-Rango Intercuartílico  & 0.40 & 3.81 & 4.39 & 1.63 & 1.26 \\
-Varianza               & 7.67 & 10.19 & 5.88 & 3.64 & 0.56 \\
+Rango                  & 42.60 & 20.78 & 11.14 & 26.30 & 3.54 \\
+Rango Intercuartílico  & 0.70 & 3.81 & 4.39 & 1.63 & 1.26 \\
+Varianza               & 7.67 & 10.19 & 5.88 & 3.64 & 0.76 \\
 Desviación Estándar    & 2.77 & 3.19 & 2.43 & 1.91 & 0.75 \\
 Coef. de Variación     & 4.03 & 0.04 & 0.13 & 0.29 & 0.14 \\
 Asimetría              & 9.45 & 0.16 & 0.09 & 5.21 & -0.06 \\
@@ -1750,61 +1586,61 @@ Curtosis               & 111.35 & 0.36 & -1.17 & 52.84 & -1.02 \\
 
 \subsection{Análisis Univariado}
 
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
+\subsubsection*{\gls{p} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Punta_Atico/P_histograma.png}
-\caption{Histograma y boxplot de la precipitación (P) en la estación Punta Atico.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Punta_Atico/P_histograma.png}
+\caption{Histograma y boxplot de la \gls{p}  en la estación Punta Atico.}
 \label{fig:punta_atico_P}
 \end{figure}
 
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
+\subsubsection*{\gls{t} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Punta_Atico/T_histograma.png}
-\caption{Histograma y boxplot de la temperatura (T) en la estación Punta Atico.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Punta_Atico/T_histograma.png}
+\caption{Histograma y boxplot de la \gls{t}  en la estación Punta Atico.}
 \label{fig:punta_atico_T}
 \end{figure}
 
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
+\subsubsection*{\gls{rh} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Punta_Atico/RH_histograma.png}
-\caption{Histograma y boxplot de la humedad relativa (RH) en la estación Punta Atico.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Punta_Atico/RH_histograma.png}
+\caption{Histograma y boxplot de la \gls{rh}  en la estación Punta Atico.}
 \label{fig:punta_atico_RH}
 \end{figure}
 
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
+\subsubsection*{\gls{ws} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Punta_Atico/WS_histograma.png}
-\caption{Histograma y boxplot de la velocidad del viento (WS) en la estación Punta Atico.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Punta_Atico/WS_histograma.png}
+\caption{Histograma y boxplot de la \gls{ws}  en la estación Punta Atico.}
 \label{fig:punta_atico_WS}
 \end{figure}
 
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
+\subsubsection*{\gls{pet} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Punta_Atico/PET_histograma.png}
-\caption{Histograma y boxplot de la evapotranspiración potencial (PET) en la estación Punta Atico.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Punta_Atico/PET_histograma.png}
+\caption{Histograma y boxplot de la \gls{pet}  en la estación Punta Atico.}
 \label{fig:punta_atico_PET}
 \end{figure}
 
 \subsection{Análisis Bivariado}
 
 \subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Punta_Atico/matriz_correlacion.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Punta_Atico/matriz_correlacion.png}
 \caption{Matriz de correlación de las variables meteorológicas en Punta Atico.}
 \label{fig:punta_atico_corr}
 \end{figure}
 \textbf{Interpretación:} Las correlaciones son en su mayoría débiles, con una ligera asociación positiva entre temperatura y PET, y entre velocidad del viento y PET.
 
 \subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Punta_Atico/pairplot.png}
+\includegraphics[width=0.75\textwidth]{resultados/por_estacion_meteorologica/Punta_Atico/pairplot.png}
 \caption{Pairplot de las variables meteorológicas en la estación Punta Atico.}
 \label{fig:punta_atico_pairplot}
 \end{figure}
@@ -1819,17 +1655,17 @@ A continuación se presenta el análisis estadístico descriptivo y exploratorio
 
 \subsection{Estadísticas Descriptivas}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
 \caption{Estadísticas descriptivas de las variables meteorológicas en la estación Punta Coles}
 \label{tab:stat_punta_coles}
-\tiny
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Estadístico} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (\textdegree C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
 \midrule
 n                      & 648.00 & 648.00 & 648.00 & 648.00 & 648.00 \\
-Mínimo                 & 0.00 & 75.47 & 14.64 & 0.50 & 3.49 \\
+Mínimo                 & 0.00 & 75.47 & 14.64 & 0.70 & 3.49 \\
 1er Cuartil            & 0.00 & 83.24 & 17.44 & 3.90 & 4.83 \\
 Mediana                & 0.00 & 86.56 & 19.63 & 4.50 & 5.47 \\
 Media                  & 0.29 & 86.47 & 19.58 & 4.49 & 5.40 \\
@@ -1837,11 +1673,11 @@ Media                  & 0.29 & 86.47 & 19.58 & 4.49 & 5.40 \\
 Máximo                 & 9.40 & 97.81 & 26.52 & 7.90 & 7.44 \\
 Rango                  & 9.40 & 22.34 & 11.88 & 7.30 & 3.95 \\
 Rango Intercuartílico  & 0.13 & 6.10 & 4.19 & 1.30 & 1.09 \\
-Varianza               & 0.52 & 22.24 & 5.47 & 1.21 & 0.30 \\
-Desviación Estándar    & 0.50 & 4.72 & 2.34 & 1.10 & 0.59 \\
+Varianza               & 0.72 & 22.24 & 5.47 & 1.21 & 0.30 \\
+Desviación Estándar    & 0.70 & 4.72 & 2.34 & 1.10 & 0.79 \\
 Coef. de Variación     & 3.11 & 0.05 & 0.12 & 0.25 & 0.13 \\
 Asimetría              & 5.24 & 0.16 & 0.10 & -0.37 & -0.10 \\
-Curtosis               & 32.98 & -0.25 & -0.57 & 1.07 & -0.57 \\
+Curtosis               & 32.98 & -0.25 & -0.77 & 1.07 & -0.77 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1850,61 +1686,61 @@ Curtosis               & 32.98 & -0.25 & -0.57 & 1.07 & -0.57 \\
 
 \subsection{Análisis Univariado}
 
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
+\subsubsection*{\gls{p} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Punta_Coles/P_histograma.png}
-\caption{Histograma y boxplot de la precipitación (P) en la estación Punta Coles.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Punta_Coles/P_histograma.png}
+\caption{Histograma y boxplot de la \gls{p}  en la estación Punta Coles.}
 \label{fig:punta_coles_P}
 \end{figure}
 
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
+\subsubsection*{\gls{t} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Punta_Coles/T_histograma.png}
-\caption{Histograma y boxplot de la temperatura (T) en la estación Punta Coles.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Punta_Coles/T_histograma.png}
+\caption{Histograma y boxplot de la \gls{t}  en la estación Punta Coles.}
 \label{fig:punta_coles_T}
 \end{figure}
 
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
+\subsubsection*{\gls{rh} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Punta_Coles/RH_histograma.png}
-\caption{Histograma y boxplot de la humedad relativa (RH) en la estación Punta Coles.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Punta_Coles/RH_histograma.png}
+\caption{Histograma y boxplot de la \gls{rh}  en la estación Punta Coles.}
 \label{fig:punta_coles_RH}
 \end{figure}
 
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
+\subsubsection*{\gls{ws} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Punta_Coles/WS_histograma.png}
-\caption{Histograma y boxplot de la velocidad del viento (WS) en la estación Punta Coles.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Punta_Coles/WS_histograma.png}
+\caption{Histograma y boxplot de la \gls{ws}  en la estación Punta Coles.}
 \label{fig:punta_coles_WS}
 \end{figure}
 
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
+\subsubsection*{\gls{pet} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Punta_Coles/PET_histograma.png}
-\caption{Histograma y boxplot de la evapotranspiración potencial (PET) en la estación Punta Coles.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Punta_Coles/PET_histograma.png}
+\caption{Histograma y boxplot de la \gls{pet}  en la estación Punta Coles.}
 \label{fig:punta_coles_PET}
 \end{figure}
 
 \subsection{Análisis Bivariado}
 
 \subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Punta_Coles/matriz_correlacion.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Punta_Coles/matriz_correlacion.png}
 \caption{Matriz de correlación de las variables meteorológicas en Punta Coles.}
 \label{fig:punta_coles_corr}
 \end{figure}
 \textbf{Interpretación:} Se observan relaciones positivas leves entre temperatura y PET, así como entre velocidad del viento y PET. Las demás variables muestran correlaciones débiles o nulas.
 
 \subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Punta_Coles/pairplot.png}
+\includegraphics[width=0.75\textwidth]{resultados/por_estacion_meteorologica/Punta_Coles/pairplot.png}
 \caption{Pairplot de las variables meteorológicas en la estación Punta Coles.}
 \label{fig:punta_coles_pairplot}
 \end{figure}
@@ -1917,29 +1753,29 @@ A continuación se presenta el análisis estadístico descriptivo y exploratorio
 
 \subsection{Estadísticas Descriptivas}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
 \caption{Estadísticas descriptivas de las variables meteorológicas en la estación Sicuani}
 \label{tab:stat_sicuani}
-\tiny
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Estadístico} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (\textdegree C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
 \midrule
 n                      & 648.00 & 648.00 & 648.00 & 648.00 & 648.00 \\
 Mínimo                 & 0.00 & 42.65 & 7.14 & 0.10 & 3.66 \\
-1er Cuartil            & 6.57 & 58.21 & 10.41 & 0.50 & 5.41 \\
+1er Cuartil            & 6.57 & 58.21 & 10.71 & 0.70 & 5.41 \\
 Mediana                & 45.31 & 64.69 & 11.93 & 1.92 & 5.63 \\
-Media                  & 60.40 & 64.16 & 11.59 & 2.02 & 5.68 \\
+Media                  & 60.70 & 64.16 & 11.59 & 2.02 & 5.68 \\
 3er Cuartil            & 108.30 & 71.38 & 12.75 & 2.60 & 6.09 \\
 Máximo                 & 259.50 & 81.17 & 15.30 & 18.70 & 7.45 \\
 Rango                  & 259.50 & 38.52 & 8.16 & 18.60 & 3.79 \\
-Rango Intercuartílico  & 101.73 & 13.18 & 2.34 & 1.70 & 0.58 \\
+Rango Intercuartílico  & 101.73 & 13.18 & 2.34 & 1.70 & 0.78 \\
 Varianza               & 3368.68 & 68.58 & 2.60 & 2.72 & 0.79 \\
-Desviación Estándar    & 58.04 & 8.28 & 1.61 & 1.65 & 0.59 \\
-Coef. de Variación     & 0.56 & 0.13 & 0.14 & 0.52 & 0.16 \\
-Asimetría              & 0.70 & -0.33 & -0.46 & 4.31 & -0.27 \\
-Curtosis               & -0.57 & -0.78 & -0.45 & 32.06 & -0.27 \\
+Desviación Estándar    & 58.04 & 8.28 & 1.61 & 1.65 & 0.79 \\
+Coef. de Variación     & 0.76 & 0.13 & 0.14 & 0.72 & 0.16 \\
+Asimetría              & 0.70 & -0.33 & -0.76 & 4.31 & -0.27 \\
+Curtosis               & -0.77 & -0.78 & -0.75 & 32.06 & -0.27 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1948,61 +1784,61 @@ Curtosis               & -0.57 & -0.78 & -0.45 & 32.06 & -0.27 \\
 
 \subsection{Análisis Univariado}
 
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
+\subsubsection*{\gls{p} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Sicuani/P_histograma.png}
-\caption{Histograma y boxplot de la precipitación (P) en la estación Sicuani.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Sicuani/P_histograma.png}
+\caption{Histograma y boxplot de la \gls{p}  en la estación Sicuani.}
 \label{fig:sicuani_P}
 \end{figure}
 
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
+\subsubsection*{\gls{t} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Sicuani/T_histograma.png}
-\caption{Histograma y boxplot de la temperatura (T) en la estación Sicuani.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Sicuani/T_histograma.png}
+\caption{Histograma y boxplot de la \gls{t}  en la estación Sicuani.}
 \label{fig:sicuani_T}
 \end{figure}
 
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
+\subsubsection*{\gls{rh} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Sicuani/RH_histograma.png}
-\caption{Histograma y boxplot de la humedad relativa (RH) en la estación Sicuani.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Sicuani/RH_histograma.png}
+\caption{Histograma y boxplot de la \gls{rh}  en la estación Sicuani.}
 \label{fig:sicuani_RH}
 \end{figure}
 
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
+\subsubsection*{\gls{ws} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Sicuani/WS_histograma.png}
-\caption{Histograma y boxplot de la velocidad del viento (WS) en la estación Sicuani.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Sicuani/WS_histograma.png}
+\caption{Histograma y boxplot de la \gls{ws}  en la estación Sicuani.}
 \label{fig:sicuani_WS}
 \end{figure}
 
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
+\subsubsection*{\gls{pet} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Sicuani/PET_histograma.png}
-\caption{Histograma y boxplot de la evapotranspiración potencial (PET) en la estación Sicuani.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Sicuani/PET_histograma.png}
+\caption{Histograma y boxplot de la \gls{pet}  en la estación Sicuani.}
 \label{fig:sicuani_PET}
 \end{figure}
 
 \subsection{Análisis Bivariado}
 
 \subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Sicuani/matriz_correlacion.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Sicuani/matriz_correlacion.png}
 \caption{Matriz de correlación de las variables meteorológicas en Sicuani.}
 \label{fig:sicuani_corr}
 \end{figure}
 \textbf{Interpretación:} Se observan correlaciones moderadas entre la temperatura y la evapotranspiración potencial. Las demás variables presentan relaciones débiles, salvo algunos casos de correlaciones puntuales con la velocidad del viento.
 
 \subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Sicuani/pairplot.png}
+\includegraphics[width=0.75\textwidth]{resultados/por_estacion_meteorologica/Sicuani/pairplot.png}
 \caption{Pairplot de las variables meteorológicas en la estación Sicuani.}
 \label{fig:sicuani_pairplot}
 \end{figure}
@@ -2015,29 +1851,29 @@ A continuación se presenta el análisis estadístico descriptivo y exploratorio
 
 \subsection{Estadísticas Descriptivas}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
 \caption{Estadísticas descriptivas de las variables meteorológicas en la estación Ubinas}
 \label{tab:stat_ubinas}
-\tiny
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Estadístico} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (\textdegree C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
 \midrule
 n                      & 648.00 & 648.00 & 648.00 & 648.00 & 648.00 \\
-Mínimo                 & 0.00 & 32.86 & 7.19 & 0.50 & 4.27 \\
+Mínimo                 & 0.00 & 32.86 & 7.19 & 0.70 & 4.27 \\
 1er Cuartil            & 0.00 & 47.91 & 9.90 & 2.20 & 5.39 \\
 Mediana                & 5.00 & 54.80 & 11.25 & 2.50 & 6.16 \\
 Media                  & 26.48 & 57.74 & 11.07 & 2.46 & 6.05 \\
 3er Cuartil            & 34.33 & 66.28 & 12.40 & 2.80 & 6.64 \\
 Máximo                 & 206.70 & 96.89 & 15.05 & 4.00 & 7.50 \\
 Rango                  & 206.70 & 64.03 & 7.86 & 3.40 & 3.23 \\
-Rango Intercuartílico  & 34.33 & 18.37 & 2.50 & 0.50 & 1.25 \\
-Varianza               & 1783.28 & 156.90 & 2.54 & 0.28 & 0.47 \\
-Desviación Estándar    & 42.23 & 12.53 & 1.59 & 0.53 & 0.59 \\
+Rango Intercuartílico  & 34.33 & 18.37 & 2.50 & 0.70 & 1.25 \\
+Varianza               & 1783.28 & 156.90 & 2.54 & 0.28 & 0.77 \\
+Desviación Estándar    & 42.23 & 12.53 & 1.59 & 0.73 & 0.79 \\
 Coef. de Variación     & 1.59 & 0.22 & 0.14 & 0.21 & 0.11 \\
-Asimetría              & 1.95 & 0.50 & -0.18 & -0.50 & -0.08 \\
-Curtosis               & 3.24 & -0.57 & -0.78 & 0.16 & -1.26 \\
+Asimetría              & 1.95 & 0.70 & -0.18 & -0.70 & -0.08 \\
+Curtosis               & 3.24 & -0.77 & -0.78 & 0.16 & -1.26 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -2046,61 +1882,61 @@ Curtosis               & 3.24 & -0.57 & -0.78 & 0.16 & -1.26 \\
 
 \subsection{Análisis Univariado}
 
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
+\subsubsection*{\gls{p} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Ubinas/P_histograma.png}
-\caption{Histograma y boxplot de la precipitación (P) en la estación Ubinas.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Ubinas/P_histograma.png}
+\caption{Histograma y boxplot de la \gls{p}  en la estación Ubinas.}
 \label{fig:ubinas_P}
 \end{figure}
 
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
+\subsubsection*{\gls{t} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Ubinas/T_histograma.png}
-\caption{Histograma y boxplot de la temperatura (T) en la estación Ubinas.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Ubinas/T_histograma.png}
+\caption{Histograma y boxplot de la \gls{t}  en la estación Ubinas.}
 \label{fig:ubinas_T}
 \end{figure}
 
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
+\subsubsection*{\gls{rh} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Ubinas/RH_histograma.png}
-\caption{Histograma y boxplot de la humedad relativa (RH) en la estación Ubinas.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Ubinas/RH_histograma.png}
+\caption{Histograma y boxplot de la \gls{rh}  en la estación Ubinas.}
 \label{fig:ubinas_RH}
 \end{figure}
 
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
+\subsubsection*{\gls{ws} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Ubinas/WS_histograma.png}
-\caption{Histograma y boxplot de la velocidad del viento (WS) en la estación Ubinas.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Ubinas/WS_histograma.png}
+\caption{Histograma y boxplot de la \gls{ws}  en la estación Ubinas.}
 \label{fig:ubinas_WS}
 \end{figure}
 
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
+\subsubsection*{\gls{pet} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Ubinas/PET_histograma.png}
-\caption{Histograma y boxplot de la evapotranspiración potencial (PET) en la estación Ubinas.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Ubinas/PET_histograma.png}
+\caption{Histograma y boxplot de la \gls{pet}  en la estación Ubinas.}
 \label{fig:ubinas_PET}
 \end{figure}
 
 \subsection{Análisis Bivariado}
 
 \subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Ubinas/matriz_correlacion.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Ubinas/matriz_correlacion.png}
 \caption{Matriz de correlación de las variables meteorológicas en Ubinas.}
 \label{fig:ubinas_corr}
 \end{figure}
 \textbf{Interpretación:} Se observa una correlación positiva moderada entre temperatura y PET. Las demás relaciones entre variables son débiles.
 
 \subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Ubinas/pairplot.png}
+\includegraphics[width=0.75\textwidth]{resultados/por_estacion_meteorologica/Ubinas/pairplot.png}
 \caption{Pairplot de las variables meteorológicas en la estación Ubinas.}
 \label{fig:ubinas_pairplot}
 \end{figure}
@@ -2113,11 +1949,11 @@ A continuación se presenta el análisis estadístico descriptivo y exploratorio
 
 \subsection{Estadísticas Descriptivas}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
 \caption{Estadísticas descriptivas de las variables meteorológicas en la estación Yarada}
 \label{tab:stat_yarada}
-\tiny
+\scriptsize
 \begin{tabular}{lrrrrr}
 \toprule
 \textbf{Estadístico} & \textbf{P (mm)} & \textbf{RH (\%)} & \textbf{T (\textdegree C)} & \textbf{WS (m/s)} & \textbf{PET (mm)} \\
@@ -2130,12 +1966,12 @@ Media                  & 0.38 & 83.11 & 19.95 & 2.33 & 5.86 \\
 3er Cuartil            & 0.17 & 85.55 & 22.15 & 2.56 & 6.63 \\
 Máximo                 & 8.40 & 99.62 & 26.11 & 4.10 & 7.77 \\
 Rango                  & 8.40 & 32.02 & 11.08 & 2.90 & 3.92 \\
-Rango Intercuartílico  & 0.17 & 4.10 & 4.38 & 0.56 & 1.73 \\
-Varianza               & 1.15 & 19.87 & 6.43 & 0.25 & 0.56 \\
-Desviación Estándar    & 1.07 & 4.46 & 2.53 & 0.50 & 0.53 \\
+Rango Intercuartílico  & 0.17 & 4.10 & 4.38 & 0.76 & 1.73 \\
+Varianza               & 1.15 & 19.87 & 6.43 & 0.25 & 0.76 \\
+Desviación Estándar    & 1.07 & 4.46 & 2.53 & 0.70 & 0.73 \\
 Coef. de Variación     & 2.83 & 0.05 & 0.13 & 0.21 & 0.16 \\
-Asimetría              & 4.43 & -0.53 & 0.11 & 0.45 & -0.08 \\
-Curtosis               & 22.59 & 1.94 & -1.20 & 0.50 & -1.45 \\
+Asimetría              & 4.43 & -0.73 & 0.11 & 0.75 & -0.08 \\
+Curtosis               & 22.59 & 1.94 & -1.20 & 0.70 & -1.45 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -2144,61 +1980,61 @@ Curtosis               & 22.59 & 1.94 & -1.20 & 0.50 & -1.45 \\
 
 \subsection{Análisis Univariado}
 
-\subsubsection*{Precipitación (P)}
-\begin{figure}[H]
+\subsubsection*{\gls{p} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Yarada/P_histograma.png}
-\caption{Histograma y boxplot de la precipitación (P) en la estación Yarada.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Yarada/P_histograma.png}
+\caption{Histograma y boxplot de la \gls{p}  en la estación Yarada.}
 \label{fig:yarada_P}
 \end{figure}
 
-\subsubsection*{Temperatura (T)}
-\begin{figure}[H]
+\subsubsection*{\gls{t} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Yarada/T_histograma.png}
-\caption{Histograma y boxplot de la temperatura (T) en la estación Yarada.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Yarada/T_histograma.png}
+\caption{Histograma y boxplot de la \gls{t}  en la estación Yarada.}
 \label{fig:yarada_T}
 \end{figure}
 
-\subsubsection*{Humedad Relativa (RH)}
-\begin{figure}[H]
+\subsubsection*{\gls{rh} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Yarada/RH_histograma.png}
-\caption{Histograma y boxplot de la humedad relativa (RH) en la estación Yarada.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Yarada/RH_histograma.png}
+\caption{Histograma y boxplot de la \gls{rh}  en la estación Yarada.}
 \label{fig:yarada_RH}
 \end{figure}
 
-\subsubsection*{Velocidad del Viento (WS)}
-\begin{figure}[H]
+\subsubsection*{\gls{ws} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Yarada/WS_histograma.png}
-\caption{Histograma y boxplot de la velocidad del viento (WS) en la estación Yarada.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Yarada/WS_histograma.png}
+\caption{Histograma y boxplot de la \gls{ws}  en la estación Yarada.}
 \label{fig:yarada_WS}
 \end{figure}
 
-\subsubsection*{Evapotranspiración Potencial (PET)}
-\begin{figure}[H]
+\subsubsection*{\gls{pet} }
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Yarada/PET_histograma.png}
-\caption{Histograma y boxplot de la evapotranspiración potencial (PET) en la estación Yarada.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Yarada/PET_histograma.png}
+\caption{Histograma y boxplot de la \gls{pet}  en la estación Yarada.}
 \label{fig:yarada_PET}
 \end{figure}
 
 \subsection{Análisis Bivariado}
 
 \subsubsection*{Matriz de Correlación}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_meteorologica/Yarada/matriz_correlacion.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_meteorologica/Yarada/matriz_correlacion.png}
 \caption{Matriz de correlación de las variables meteorológicas en Yarada.}
 \label{fig:yarada_corr}
 \end{figure}
 \textbf{Interpretación:} Se observan correlaciones moderadas entre temperatura y PET. El resto de variables muestran relaciones más débiles o nulas.
 
 \subsubsection*{Gráfico de Pares (Pairplot)}
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{resultados/por_estacion_meteorologica/Yarada/pairplot.png}
+\includegraphics[width=0.75\textwidth]{resultados/por_estacion_meteorologica/Yarada/pairplot.png}
 \caption{Pairplot de las variables meteorológicas en la estación Yarada.}
 \label{fig:yarada_pairplot}
 \end{figure}
@@ -2217,7 +2053,7 @@ A continuación se presentan los análisis estadísticos univariados por tempora
 
 \subsection{Precipitation (P)}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
 \begin{minipage}{0.30\textwidth}
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_HistBoxplot_Summer.png}
@@ -2246,9 +2082,9 @@ A continuación se presentan los análisis estadísticos univariados por tempora
 
 \vspace{0.2cm}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_ClassBoxplot_Season.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/P_ClassBoxplot_Season.png}
 \caption{Comparative seasonal boxplot of precipitation (P) at Ancachuro station.}
 \label{fig:ancachuro_p_box}
 \end{figure}
@@ -2266,9 +2102,9 @@ Las gráficas anteriores muestran el comportamiento estacional de la precipitaci
 
 
 
-\subsection{Evapotranspiración Potencial (PET)}
+\subsection{\gls{pet} }
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
 \begin{minipage}{0.30\textwidth}
     \centering
@@ -2293,16 +2129,16 @@ Las gráficas anteriores muestran el comportamiento estacional de la precipitaci
     \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/Ancachuro/PET_HistBoxplot_Winter.png}
     \caption*{Invierno}
 \end{minipage}
-\caption{Distribución de la Evapotranspiración Potencial (PET) en la estación Ancachuro por temporada.}
+\caption{Distribución de la \gls{pet}  en la estación Ancachuro por temporada.}
 \label{fig:pet_hist_ancachuro}
 \end{figure}
 
 \subsection*{Comparación por temporada}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_del_anio/Ancachuro/PET_ClassBoxplot_Season.png}
-\caption{Boxplot de Evapotranspiración Potencial (PET) por temporada en la estación Ancachuro.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_del_anio/Ancachuro/PET_ClassBoxplot_Season.png}
+\caption{Boxplot de \gls{pet}  por temporada en la estación Ancachuro.}
 \label{fig:pet_box_ancachuro}
 \end{figure}
 
@@ -2320,7 +2156,7 @@ Durante el análisis estacional de la variable \textbf{PET} en la estación Anca
 
 \subsection{Relative Humidity (RH)}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
 \begin{minipage}{0.30\textwidth}
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_HistBoxplot_Summer.png}
@@ -2349,9 +2185,9 @@ Durante el análisis estacional de la variable \textbf{PET} en la estación Anca
 
 \vspace{0.2cm}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_ClassBoxplot_Season.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/RH_ClassBoxplot_Season.png}
 \caption{Comparative seasonal boxplot of relative humidity (RH) at Ancachuro station.}
 \label{fig:ancachuro_rh_box}
 \end{figure}
@@ -2370,7 +2206,7 @@ Las gráficas anteriores muestran el comportamiento estacional de la humedad rel
 
 \subsection{Mean Temperature (T)}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
 \begin{minipage}{0.30\textwidth}
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_HistBoxplot_Summer.png}
@@ -2399,9 +2235,9 @@ Las gráficas anteriores muestran el comportamiento estacional de la humedad rel
 
 \vspace{0.2cm}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_ClassBoxplot_Season.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/T_ClassBoxplot_Season.png}
 \caption{Comparative seasonal boxplot of mean temperature (T) at Ancachuro station.}
 \label{fig:ancachuro_t_box}
 \end{figure}
@@ -2421,7 +2257,7 @@ Las gráficas anteriores muestran la variación estacional de la temperatura med
 
 \subsection{Wind Speed (WS)}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
 \begin{minipage}{0.30\textwidth}
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_HistBoxplot_Summer.png}
@@ -2450,9 +2286,9 @@ Las gráficas anteriores muestran la variación estacional de la temperatura med
 
 \vspace{0.2cm}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_ClassBoxplot_Season.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Ancachuro/WS_ClassBoxplot_Season.png}
 \caption{Comparative seasonal boxplot of wind speed (WS) at Ancachuro station.}
 \label{fig:ancachuro_ws_box}
 \end{figure}
@@ -2471,9 +2307,9 @@ Las gráficas muestran la variación estacional de la velocidad del viento en la
 
 \section{Estación: Andahuaylas}
 
-\subsection{Precipitación (P)}
+\subsection{\gls{p} }
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
 \begin{minipage}{0.30\textwidth}
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_HistBoxplot_Summer.png}
@@ -2502,9 +2338,9 @@ Las gráficas muestran la variación estacional de la velocidad del viento en la
 
 \vspace{0.2cm}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_ClassBoxplot_Season.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/P_ClassBoxplot_Season.png}
 \caption{Comparative seasonal boxplot of precipitation (P) at Andahuaylas station.}
 \label{fig:andahuaylas_p_box}
 \end{figure}
@@ -2521,9 +2357,9 @@ Las gráficas anteriores evidencian la variabilidad estacional de la precipitaci
 \end{itemize}
 
 
-\subsection{Evapotranspiración Potencial (PET)}
+\subsection{\gls{pet} }
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
 \begin{minipage}{0.30\textwidth}
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Summer.png}
@@ -2546,22 +2382,22 @@ Las gráficas anteriores evidencian la variabilidad estacional de la precipitaci
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_HistBoxplot_Spring.png}
   \caption*{Spring}
 \end{minipage}
-\caption{Histogramas y boxplots de evapotranspiración potencial (PET) por estación en Andahuaylas.}
+\caption{Histogramas y boxplots de \gls{pet}  por estación en Andahuaylas.}
 \label{fig:andahuaylas_pet_hist}
 \end{figure}
 
 \vspace{0.2cm}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_ClassBoxplot_Season.png}
-\caption{Boxplot comparativo estacional de la evapotranspiración potencial (PET) en Andahuaylas.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/PET_ClassBoxplot_Season.png}
+\caption{Boxplot comparativo estacional de la \gls{pet}  en Andahuaylas.}
 \label{fig:andahuaylas_pet_box}
 \end{figure}
 
 \subsection*{Interpretación}
 
-Las gráficas anteriores muestran el comportamiento estacional de la evapotranspiración potencial (PET) en la estación meteorológica Andahuaylas. A continuación, se presentan los principales hallazgos:
+Las gráficas anteriores muestran el comportamiento estacional de la \gls{pet}  en la estación meteorológica Andahuaylas. A continuación, se presentan los principales hallazgos:
 
 \begin{itemize}
     \item \textbf{Primavera} presenta los valores más altos de PET, con una mediana superior a 5.5 mm/día y gran dispersión, lo que sugiere mayor demanda evaporativa.
@@ -2571,9 +2407,9 @@ Las gráficas anteriores muestran el comportamiento estacional de la evapotransp
 \end{itemize}
 
 
-\subsection{Humedad Relativa (RH)}
+\subsection{\gls{rh} }
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
 \begin{minipage}{0.30\textwidth}
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Summer.png}
@@ -2596,16 +2432,16 @@ Las gráficas anteriores muestran el comportamiento estacional de la evapotransp
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_HistBoxplot_Spring.png}
   \caption*{Spring}
 \end{minipage}
-\caption{Histogramas y boxplots de humedad relativa (RH) por estación en la estación Andahuaylas.}
+\caption{Histogramas y boxplots de \gls{rh}  por estación en la estación Andahuaylas.}
 \label{fig:andahuaylas_rh_hist}
 \end{figure}
 
 \vspace{0.2cm}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_ClassBoxplot_Season.png}
-\caption{Boxplot comparativo estacional de humedad relativa (RH) en la estación Andahuaylas.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/RH_ClassBoxplot_Season.png}
+\caption{Boxplot comparativo estacional de \gls{rh}  en la estación Andahuaylas.}
 \label{fig:andahuaylas_rh_box}
 \end{figure}
 
@@ -2621,9 +2457,9 @@ Las gráficas anteriores muestran el comportamiento estacional de la humedad rel
 \end{itemize}
 
 
-\subsection{Temperatura (T)}
+\subsection{\gls{t} }
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
 \begin{minipage}{0.30\textwidth}
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Summer.png}
@@ -2646,16 +2482,16 @@ Las gráficas anteriores muestran el comportamiento estacional de la humedad rel
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_HistBoxplot_Spring.png}
   \caption*{Spring}
 \end{minipage}
-\caption{Histogramas y boxplots de temperatura (T) por estación del año en la estación Andahuaylas.}
+\caption{Histogramas y boxplots de \gls{t}  por estación del año en la estación Andahuaylas.}
 \label{fig:andahuaylas_t_hist}
 \end{figure}
 
 \vspace{0.2cm}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_ClassBoxplot_Season.png}
-\caption{Boxplot comparativo estacional de temperatura (T) en la estación Andahuaylas.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/T_ClassBoxplot_Season.png}
+\caption{Boxplot comparativo estacional de \gls{t}  en la estación Andahuaylas.}
 \label{fig:andahuaylas_t_box}
 \end{figure}
 
@@ -2673,9 +2509,9 @@ Las gráficas anteriores muestran el comportamiento estacional de la temperatura
 
 
 
-\subsection{Velocidad del viento (WS)}
+\subsection{\gls{ws} }
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
 \begin{minipage}{0.30\textwidth}
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Summer.png}
@@ -2698,16 +2534,16 @@ Las gráficas anteriores muestran el comportamiento estacional de la temperatura
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_HistBoxplot_Spring.png}
   \caption*{Spring}
 \end{minipage}
-\caption{Histogramas y boxplots de velocidad del viento (WS) por estación en la estación Andahuaylas.}
+\caption{Histogramas y boxplots de \gls{ws}  por estación en la estación Andahuaylas.}
 \label{fig:andahuaylas_ws_hist}
 \end{figure}
 
 \vspace{0.2cm}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_ClassBoxplot_Season.png}
-\caption{Boxplot comparativo estacional de velocidad del viento (WS) en la estación Andahuaylas.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Andahuaylas/WS_ClassBoxplot_Season.png}
+\caption{Boxplot comparativo estacional de \gls{ws}  en la estación Andahuaylas.}
 \label{fig:andahuaylas_ws_box}
 \end{figure}
 
@@ -2723,7 +2559,7 @@ Las gráficas anteriores muestran el comportamiento estacional de la temperatura
 
 \subsection{Precipitation (P)}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
 \begin{minipage}{0.30\textwidth}
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Summer.png}
@@ -2752,9 +2588,9 @@ Las gráficas anteriores muestran el comportamiento estacional de la temperatura
 
 \vspace{0.2cm}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_ClassBoxplot_Season.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_ClassBoxplot_Season.png}
 \caption{Comparative seasonal boxplot of precipitation (P) at Candavare station.}
 \label{fig:candavare_p_box}
 \end{figure}
@@ -2770,7 +2606,7 @@ Las gráficas anteriores muestran el comportamiento estacional de la temperatura
 
 \subsection{Evapotranspiration (PET)}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
 \begin{minipage}{0.30\textwidth}
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_HistBoxplot_Summer.png}
@@ -2799,9 +2635,9 @@ Las gráficas anteriores muestran el comportamiento estacional de la temperatura
 
 \vspace{0.2cm}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_ClassBoxplot_Season.png}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/PET_ClassBoxplot_Season.png}
 \caption{Comparative seasonal boxplot of potential evapotranspiration (PET) at Candavare station.}
 \label{fig:candavare_pet_box}
 \end{figure}
@@ -2816,9 +2652,9 @@ Las gráficas anteriores muestran el comportamiento estacional de la temperatura
 \end{itemize}
 
 
-\subsection{Precipitación (P)}
+\subsection{\gls{p} }
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
 \begin{minipage}{0.30\textwidth}
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Summer.png}
@@ -2841,16 +2677,16 @@ Las gráficas anteriores muestran el comportamiento estacional de la temperatura
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_HistBoxplot_Spring.png}
   \caption*{Spring}
 \end{minipage}
-\caption{Histogramas y boxplots de precipitación (P) por estación en Candavare.}
+\caption{Histogramas y boxplots de \gls{p}  por estación en Candavare.}
 \label{fig:candavare_p_hist}
 \end{figure}
 
 \vspace{0.2cm}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_ClassBoxplot_Season.png}
-\caption{Boxplot comparativo estacional de precipitación (P) en Candavare.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/P_ClassBoxplot_Season.png}
+\caption{Boxplot comparativo estacional de \gls{p}  en Candavare.}
 \label{fig:candavare_p_box}
 \end{figure}
 
@@ -2865,7 +2701,7 @@ Las gráficas anteriores muestran el comportamiento estacional de la temperatura
 
 \subsection{Velocidad Media del Viento (WS)}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
 \begin{minipage}{0.30\textwidth}
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Summer.png}
@@ -2888,16 +2724,16 @@ Las gráficas anteriores muestran el comportamiento estacional de la temperatura
   \includegraphics[width=\linewidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_HistBoxplot_Spring.png}
   \caption*{Spring}
 \end{minipage}
-\caption{Histogramas y boxplots de velocidad del viento (WS) por estación en Candavare.}
+\caption{Histogramas y boxplots de \gls{ws}  por estación en Candavare.}
 \label{fig:candavare_ws_hist}
 \end{figure}
 
 \vspace{0.2cm}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_ClassBoxplot_Season.png}
-\caption{Boxplot comparativo estacional de velocidad del viento (WS) en Candavare.}
+\includegraphics[width=0.7\textwidth]{resultados/por_estacion_del_anio/boxplot_clases_por_estacion/Candavare/WS_ClassBoxplot_Season.png}
+\caption{Boxplot comparativo estacional de \gls{ws}  en Candavare.}
 \label{fig:candavare_ws_box}
 \end{figure}
 

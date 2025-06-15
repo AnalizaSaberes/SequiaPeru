@@ -1,0 +1,140 @@
+\glsdefs@newdocentry{p}%
+{%
+name={\acronymfont {\glsentryshort {p}}},%
+sort={P~(mm/d)},%
+type={acronym},%
+first={P~(mm/d)},%
+firstplural={P~(mm/d)s},%
+text={P~(mm/d)},%
+plural={P~(mm/d)s},%
+description={\textit {precipitation}},%
+descriptionplural={\textit {precipitation}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {precipitation}},%
+longplural={\protect \textit  {precipitation}s},%
+short={P~(mm/d)},%
+shortplural={P~(mm/d)s},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{rh}%
+{%
+name={\acronymfont {\glsentryshort {rh}}},%
+sort={RH~(\%)},%
+type={acronym},%
+first={RH~(\protect \%)},%
+firstplural={RH~(\protect \%)s},%
+text={RH~(\protect \%)},%
+plural={RH~(\protect \%)s},%
+description={\textit {relative humidity}},%
+descriptionplural={\textit {relative humidity}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {relative humidity}},%
+longplural={\protect \textit  {relative humidity}s},%
+short={RH~(\protect \%)},%
+shortplural={RH~(\protect \%)s},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{t}%
+{%
+name={\acronymfont {\glsentryshort {t}}},%
+sort={T~(°C)},%
+type={acronym},%
+first={T~(°C)},%
+firstplural={T~(°C)s},%
+text={T~(°C)},%
+plural={T~(°C)s},%
+description={\textit {temperature}},%
+descriptionplural={\textit {temperature}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {temperature}},%
+longplural={\protect \textit  {temperature}s},%
+short={T~(°C)},%
+shortplural={T~(°C)s},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ws}%
+{%
+name={\acronymfont {\glsentryshort {ws}}},%
+sort={WS~(m/s)},%
+type={acronym},%
+first={WS~(m/s)},%
+firstplural={WS~(m/s)s},%
+text={WS~(m/s)},%
+plural={WS~(m/s)s},%
+description={\textit {wind speed}},%
+descriptionplural={\textit {wind speed}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {wind speed}},%
+longplural={\protect \textit  {wind speed}s},%
+short={WS~(m/s)},%
+shortplural={WS~(m/s)s},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{pet}%
+{%
+name={\acronymfont {\glsentryshort {pet}}},%
+sort={PET~(mm/d)},%
+type={acronym},%
+first={PET~(mm/d)},%
+firstplural={PET~(mm/d)s},%
+text={PET~(mm/d)},%
+plural={PET~(mm/d)s},%
+description={\textit {potential evapotranspiration}},%
+descriptionplural={\textit {potential evapotranspiration}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {potential evapotranspiration}},%
+longplural={\protect \textit  {potential evapotranspiration}s},%
+short={PET~(mm/d)},%
+shortplural={PET~(mm/d)s},%
+counter={page},%
+parent={},%
+%
+}%
+

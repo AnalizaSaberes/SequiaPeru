@@ -8,12 +8,12 @@
 \usepackage[T1]{fontenc}
 \usepackage[spanish]{babel}
 \usepackage{gensymb}
-%\usepackage{mathptmx}
+\usepackage{mathptmx}
 %\usepackage{ebgaramond}
 %\usepackage{libertinus}
 %\usepackage{newpxtext,newpxmath}
 %\usepackage{mathpazo}
-\usepackage{helvet}                % Para utilizar una fuente sans serif similar a Arial
+%\usepackage{helvet}                % Para utilizar una fuente sans serif similar a Arial
 %\renewcommand{\familydefault}{\sfdefault}  % Establece la fuente por defecto en sans serif
 
 \usepackage{tikz}
@@ -44,6 +44,10 @@
 % Gráficos y figuras
 \usepackage{graphicx}
 \usepackage{float}
+
+\floatstyle{plaintop} % Estilo de flotantes con título en la parte superior
+\restylefloat{figure} % Restablece el estilo de las figuras con caption en la parte superior
+
 
 % Paquete para manejar la numeración continua de figuras y tablas
 \usepackage{chngcntr}
@@ -80,7 +84,14 @@ backrefpages = {Citado en las pag.}
 
 \usepackage{fancyhdr}
 \usepackage{tocloft}
+
 % ============================
+%     Configuración del glosario
+% ============================
+\usepackage[acronym]{glossaries}
+\makeglossaries
+
+%=============================
 %     Ajustes de estilo del índice
 % ============================
 
@@ -292,12 +303,19 @@ captionpos=b
 
 
 \cleardoublepage
-%\listoffigures
-%\addcontentsline{toc}{chapter}{Índice de Figuras}
+\listoffigures
+\addcontentsline{toc}{chapter}{Índice de Figuras}
 
 \cleardoublepage
-%\listoftables
-%\addcontentsline{toc}{chapter}{Índice de Tablas}
+\listoftables
+\addcontentsline{toc}{chapter}{Índice de Tablas}
+
+
+\input{glosario.tex} % Este es el glosario de términos
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Glosario de Términos}
+\printglossary[type=\acronymtype, title={Glosario de Términos}]
+
 
 % ---------------------------
 % Contenido principal (Introducción y demás capítulos)
